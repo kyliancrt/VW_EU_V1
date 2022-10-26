@@ -1,8 +1,16 @@
+ {% assign collections = false %}
+    {% assign style = false %}    
+    {% assign couleur = false %}    
+    {% assign best = false %}    
+    
   {% if collection.handle contains "collections" %}
-    {% assign collectionPage = true %}
-  {% elsif collection.handle contains "style" %}collectionFilters
-  {% elsif collection.handle contains "couleur" %}collectionFilters
-
+    {% assign collections = true %}
+  {% elsif collection.handle contains "style" %}
+    {% assign style = true %}    
+  {% elsif collection.handle contains "couleur" %}
+    {% assign couleur = true %}    
+  {% elsif collection.handle contains "best" %}
+    {% assign best = true %}    
     {% endif %}
 
     
