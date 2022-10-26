@@ -1,23 +1,19 @@
- {% assign pageCollections = "false" %}
-    {% assign pageStyle = "false" %}    
-    {% assign pageCouleur = "false" %}    
-    {% assign best = "false" %}    
     
   {% if collection.handle contains "collectionss" %}
-    {% assign pageCollections = "true" %}
+    {% assign pageCollections = "" %}
   {% elsif collection.handle contains "style" %}
-    {% assign pageStyle = "true" %}    
+    {% assign pageStyle = "" %}    
   {% elsif collection.handle contains "couleur" %}
-    {% assign pageCouleur = "true" %}    
+    {% assign pageCouleur = "" %}    
   {% elsif collection.handle contains "best" %}
-    {% assign pagebest = "true" %}    
+    {% assign pagebest ="" %}    
     {% endif %}
 
     
 {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 <div class="
-  {% if pageCollections == "true" %}collectionCollections
+  {% if pageCollections %}collectionCollections
   {% elsif pageStyle %}collectionFilters
   {% elsif pageCouleur %}collectionFilters
     {% endif %}
