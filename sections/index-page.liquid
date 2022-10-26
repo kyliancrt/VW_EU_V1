@@ -116,7 +116,7 @@
                     or collection.handle == "hossegor" or collection.handle == "florence" or collection.handle == "brooklyn" %}
 
                   <li class="splide__slide {{ collection.handle }}">
-                        <h3>{{ collection.title }}</h3>
+                        <h3>{{ collection.handle }}</h3>
                         <a class="slideCollectionsImage" href="{{ collection.url }}">
                             <img src="{{ collection.products.first | img_url: '415x' }}">
                             <div>
