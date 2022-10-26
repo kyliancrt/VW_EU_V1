@@ -728,8 +728,24 @@
     width: 100%;
     padding: 0;
 }
-.SlideCollections .bahia {
-  background-color:#e5e5e5;
+
+.SlideCollections .dublin {
+  background-color:blue;
+}
+.SlideCollections .londres {
+  background-color:red;
+}
+.SlideCollections .berlin {
+  background-color:green;
+}
+.SlideCollections .hossegor {
+  background-color:pink;
+}
+.SlideCollections .florence {
+  background-color:grey;
+}
+.SlideCollections .brooklyn {
+  background-color:brown;
 }
 
 
