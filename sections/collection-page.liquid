@@ -2,8 +2,8 @@
 {{ 'collection-page.js' | asset_url | script_tag }}
 <div class="
   {% if collection.handle contains "collections" %}collectionCollections
-  {% elsif collection.handle contains "styles" %}collectionFilters
-  {% elsif collection.handle contains "couleurs" %}collectionFilters
+  {% elsif collection.handle contains "style" %}collectionFilters
+  {% elsif collection.handle contains "couleur" %}collectionFilters
     {% endif %}
   ">
         <div class="popupPreview">
