@@ -1,12 +1,12 @@
 {
   "sections": {
-    "index-page": {
-      "type": "index-page",
+    "collection-page": {
+      "type": "collection-page",
       "settings": {
       }
     }
   },
   "order": [
-    "index-page"
+    "collection-page"
   ]
 }
