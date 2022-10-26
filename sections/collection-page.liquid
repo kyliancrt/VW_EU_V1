@@ -17,7 +17,7 @@
 {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 <div class="
-  {% if pageCollections %}collectionCollections
+  {% if pageCollections == "true" %}collectionCollections
   {% elsif pageStyle %}collectionFilters
   {% elsif pageCouleur %}collectionFilters
     {% endif %}
