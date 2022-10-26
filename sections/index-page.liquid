@@ -112,8 +112,10 @@
                 <ul class="splide__list">
 
                   {% for collection in collections %}
-                  tt
-                {% endfor %}
+                  {% if collection.handle == "bali" or collection.handle == "bahia" %}
+                    sss
+                  {% endif %}
+                    {% endfor %}
                   
                     <li class="splide__slide" style="background-color:#93a693;">
                         <h3>Marrakech</h3>
