@@ -218,7 +218,7 @@
     padding-top: 1.6rem;
 }
 
-.template-collection .Products>div:nth-child(1) {
+.template-collection .Products>div>:nth-child(1) {
     padding-top: calc(1.6rem + 40px);
 }
 
