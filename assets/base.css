@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 li {
@@ -24,7 +24,7 @@ a {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     padding-top: 100px;
 }
 
