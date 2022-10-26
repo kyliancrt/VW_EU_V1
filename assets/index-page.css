@@ -1,8 +1,8 @@
-.Index section {
+.template-index section {
     width: 100%;
 }
 
-.Index .Presentation {
+.template-index .Presentation {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,11 @@
     padding-bottom: 2rem;
 }
 
-.Index .Presentation video {
+.template-index .Presentation video {
     width: 100%;
 }
 
-.Index .Presentation .titleH1 {
+.template-index .Presentation .titleH1 {
     position: absolute;
     top: 1.5rem;
     width: 100%;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.Index .Presentation h1 {
+.template-index .Presentation h1 {
     font-weight: 900;
     font-size: calc(0.5rem + 5vw);
     display: flex;
@@ -34,25 +34,25 @@
     text-align: center;
 }
 
-.Index .Presentation h1>span {
+.template-index .Presentation h1>span {
     text-transform: uppercase;
 }
 
-.Index .Presentation h1>small {
+.template-index .Presentation h1>small {
     font-size: 90%;
 }
 
-.Index .Presentation .mobileBtnPresentation {
+.template-index .Presentation .mobileBtnPresentation {
     margin: 0 auto;
     margin-top: -25px;
 }
 
-.Index .Presentation .desktopBtnPresentation {
+.template-index .Presentation .desktopBtnPresentation {
     display: none;
 }
 
 
-.Index .Presentation .contentPresentation>div {
+.template-index .Presentation .contentPresentation>div {
     width: 90%;
     margin: auto;
     display: flex;
@@ -62,13 +62,13 @@
     gap: 1.2rem
 }
 
-.Index .Presentation .contentPresentation>div>:nth-child(1) {
+.template-index .Presentation .contentPresentation>div>:nth-child(1) {
     font-weight: 900;
     font-size: calc(1.2rem + 8vw);
     transform: scaleY(1.1);
 }
 
-.Index .Presentation .contentPresentation>div>:nth-child(2) {
+.template-index .Presentation .contentPresentation>div>:nth-child(2) {
     padding: 0;
     margin: 0;
     font-size: calc(0.1rem + 5vw);
@@ -78,7 +78,7 @@
 
 }
 
-.Index .Presentation .mobileIconsPresentation {
+.template-index .Presentation .mobileIconsPresentation {
     width: max-content;
     margin: auto;
     padding: 0;
@@ -86,11 +86,11 @@
 }
 
 
-.Index .Presentation .desktopIconsPresentation {
+.template-index .Presentation .desktopIconsPresentation {
     display: none;
 }
 
-.Index .Presentation .mobileIconsPresentation li {
+.template-index .Presentation .mobileIconsPresentation li {
     list-style: none;
     font-size: calc(0.5rem + 5vw);
     font-weight: 900;
@@ -99,7 +99,7 @@
 }
 
 
-.Index .Presentation .mobileIconsPresentation li::before {
+.template-index .Presentation .mobileIconsPresentation li::before {
     content: '';
     position: relative;
     display: inline-block;
@@ -112,67 +112,67 @@
 }
 
 
-.Index .Transform {
+.template-index .Transform {
     background-color: #FFF;
 }
 
 
-.Index .Transform>div {
+.template-index .Transform>div {
     width: 95%;
     margin: auto;
 }
 
-.Index .Transform h2 {
+.template-index .Transform h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     margin-top: 2rem;
 }
 
-.Index .Transform p {
+.template-index .Transform p {
     padding-bottom: 30px;
     text-align: justify;
     width: 95%;
     margin: auto;
 }
 
-.Index .Transform a {
+.template-index .Transform a {
     margin: auto;
 }
 
-.Index .Transform .btn {
+.template-index .Transform .btn {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.Index .Transform .Truspilot {
+.template-index .Transform .Truspilot {
     margin: 1rem auto;
     margin-bottom: 2rem;
 }
 
-.Index .SlideProducts {
+.template-index .SlideProducts {
     background-color: #f5f5f5;
     padding: 2rem 0;
     text-align: center;
     transition: all 0.5s ease 0s;
 }
 
-.Index .SlideProducts ul {
+.template-index .SlideProducts ul {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-flex;
 }
 
 
-.Index .SlideProducts .splide {
+.template-index .SlideProducts .splide {
     padding-top: 0px;
     padding-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 
-.Index .SlideProducts .splide__slide img {
+.template-index .SlideProducts .splide__slide img {
     display: block;
     width: 100%;
     transition: transform 400ms;
@@ -181,12 +181,12 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 11%);
 }
 
-.Index .SlideProducts .splide__slide.is-active img {
+.template-index .SlideProducts .splide__slide.is-active img {
     transform: scale(1);
     box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
-.Index .SlideProducts .splide__slide span {
+.template-index .SlideProducts .splide__slide span {
     display: block;
     opacity: 0;
     padding-top: 15px;
@@ -195,7 +195,7 @@
     text-transform: uppercase;
 }
 
-.Index .SlideProducts .splide__slide.is-active span {
+.template-index .SlideProducts .splide__slide.is-active span {
     opacity: 1;
 }
 
@@ -262,7 +262,7 @@
     margin-bottom: 30px;
 }
 
-.Index .Quality {
+.template-index .Quality {
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -270,39 +270,39 @@
     overflow: hidden;
 }
 
-.Index .Quality> :nth-child(1) {
+.template-index .Quality> :nth-child(1) {
     padding: 0 2.5%;
 }
 
-.Index .Quality> :nth-child(1) h2 {
+.template-index .Quality> :nth-child(1) h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     margin-top: 0;
 }
 
-.Index .Quality> :nth-child(1) h2 span {
+.template-index .Quality> :nth-child(1) h2 span {
     align-items: center;
     display: flex;
     font-weight: normal;
 }
 
-.Index .Quality> :nth-child(1) h2 b {
+.template-index .Quality> :nth-child(1) h2 b {
     font-weight: 900;
 }
 
-.Index .Quality> :nth-child(1) h2 span img {
+.template-index .Quality> :nth-child(1) h2 span img {
     width: 125px;
     margin-left: 1rem;
 }
 
-.Index .Quality p {
+.template-index .Quality p {
     text-align: justify;
     width: 95%;
     margin: auto;
 }
 
-.Index .Quality> :nth-child(2) {
+.template-index .Quality> :nth-child(2) {
     margin-top: 3rem;
     display: inline-flex;
     align-items: center;
@@ -312,7 +312,7 @@
     padding-bottom: 3rem;
 }
 
-.Index .Quality> :nth-child(2)>ul {
+.template-index .Quality> :nth-child(2)>ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -322,11 +322,11 @@
     margin-top: 1rem;
 }
 
-.Index .Quality> :nth-child(2)>ul li {
+.template-index .Quality> :nth-child(2)>ul li {
     display: flex;
 }
 
-.Index .Quality> :nth-child(2) .couches {
+.template-index .Quality> :nth-child(2) .couches {
     position: relative;
     flex: 40%;
     padding-top: 2rem;
@@ -537,7 +537,7 @@
 /* <= SVG SOUCHE */
 
 
-.Index .Quality> :nth-child(3) {
+.template-index .Quality> :nth-child(3) {
     background-color: #F5F5F5;
     padding: 0 2.5%;
     display: grid;
@@ -546,27 +546,27 @@
     padding-bottom: 3rem;
 }
 
-.Index .Install {
+.template-index .Install {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
 
-.Index .Install .listInstall {
+.template-index .Install .listInstall {
     display: none;
 }
 
-.Index .Install> :nth-child(1) {
+.template-index .Install> :nth-child(1) {
     position: relative;
 }
 
-.Index .Install video {
+.template-index .Install video {
     width: 100%;
     position: relative;
 }
 
 
-.Index .Install h2 {
+.template-index .Install h2 {
     position: absolute;
     top: 1rem;
     left: 30px;
@@ -579,13 +579,13 @@
     margin: 0;
 }
 
-.Index .Install small {
+.template-index .Install small {
     font-size: 100%;
     display: block;
     font-weight: normal;
 }
 
-.Index .Install .btnInstall {
+.template-index .Install .btnInstall {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -597,7 +597,7 @@
     justify-content: center;
 }
 
-.Index .Install span svg {
+.template-index .Install span svg {
     background-color: rgb(255, 255, 255, 0.5);
     padding: 0.6rem;
     width: 3rem;
@@ -608,59 +608,59 @@
     outline: 2px solid transparent;
 }
 
-.Index .Install span svg:hover {
+.template-index .Install span svg:hover {
     outline: 2px solid rgb(255, 255, 255, 0.5);
 }
 
 
-.Index .SlideCollections {
+.template-index .SlideCollections {
     text-align: center;
     transition: all 0.5s ease 0s;
 }
 
-.Index .SlideCollections ul {
+.template-index .SlideCollections ul {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-flex;
     margin: 0;
 }
 
-.Index .SlideCollections .splide {
+.template-index .SlideCollections .splide {
     padding-top: 0px;
     padding-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 
-.Index .SlideCollections ul li {
+.template-index .SlideCollections ul li {
     width: 100%;
     padding: 4rem 2rem;
 }
 
-.Index .SlideCollections ul li .slideCollectionsImage {
+.template-index .SlideCollections ul li .slideCollectionsImage {
     width: 100%;
 }
 
-.Index .SlideCollections ul li .slideCollectionsImage>img {
+.template-index .SlideCollections ul li .slideCollectionsImage>img {
     border: 1px solid #fff;
 }
 
-.Index .SlideCollections ul li .slideCollectionsImage>div {
+.template-index .SlideCollections ul li .slideCollectionsImage>div {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
 }
 
-.Index .SlideCollections ul li .slideCollectionsImage>div {
+.template-index .SlideCollections ul li .slideCollectionsImage>div {
     border: 1px solid #fff;
     border-right: 0;
 }
 
-.Index .SlideCollections ul li .slideCollectionsImage>div :last-child {
+.template-index .SlideCollections ul li .slideCollectionsImage>div :last-child {
     border-right: 1px solid #fff;
 }
 
-.Index .SlideCollections ul li h3 {
+.template-index .SlideCollections ul li h3 {
     color: #fff;
     font-weight: 900;
     font-size: 2rem;
@@ -671,7 +671,7 @@
     text-transform: uppercase;
 }
 
-.Index .SlideCollections ul li .slideCollectionsBtn {
+.template-index .SlideCollections ul li .slideCollectionsBtn {
     margin: auto;
     font-weight: normal;
     text-transform: uppercase;
@@ -684,16 +684,16 @@
     width: max-content;
 }
 
-.Index .SlideCollections ul li .slideCollectionsBtn:hover {
+.template-index .SlideCollections ul li .slideCollectionsBtn:hover {
     background-color: #FFF;
     color: #000;
 }
 
-.Index .SlideCollections .splide__arrows {
+.template-index .SlideCollections .splide__arrows {
     top: 40%;
 }
 
-.Index .SlideRealisations h2 {
+.template-index .SlideRealisations h2 {
     font-weight: normal;
     display: flex;
     flex-direction: column;
@@ -703,28 +703,28 @@
     text-align: center;
 }
 
-.Index .SlideRealisations .splide__slide img {
+.template-index .SlideRealisations .splide__slide img {
     padding: 0.5rem;
 }
 
-.Index .SlideRealisations h2 b {
+.template-index .SlideRealisations h2 b {
     font-weight: 900;
 }
 
-.Index .SlideRealisations ul {
+.template-index .SlideRealisations ul {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-flex;
     margin: 0;
 }
 
-.Index .SlideRealisations .splide {
+.template-index .SlideRealisations .splide {
     padding-top: 0px;
     position: relative;
     overflow: hidden;
 }
 
-.Index .SlideRealisations ul li {
+.template-index .SlideRealisations ul li {
     width: 100%;
     padding: 0;
 }
@@ -734,29 +734,29 @@
 /* MEDIA SCREEN */
 
 @media only screen and (min-width: 500px) {
-    .Index .Presentation .contentPresentation>div>:nth-child(1) {
+    .template-index .Presentation .contentPresentation>div>:nth-child(1) {
         font-size: 3.5rem;
     }
 
-    .Index .Presentation .contentPresentation>div>:nth-child(2) {
+    .template-index .Presentation .contentPresentation>div>:nth-child(2) {
         font-size: 1.5rem;
     }
 
-    .Index .Presentation .contentPresentation {
+    .template-index .Presentation .contentPresentation {
         padding: 1rem 0;
     }
 
-    .Index .Presentation .mobileIconsPresentation li {
+    .template-index .Presentation .mobileIconsPresentation li {
         font-size: 2rem;
     }
 
-    .Index .Quality> :nth-child(2)>ul li {
+    .template-index .Quality> :nth-child(2)>ul li {
         width: 100%;
         display: block;
         position: relative;
     }
 
-    .Index .Quality> :nth-child(2)>ul {
+    .template-index .Quality> :nth-child(2)>ul {
         flex: auto;
         text-align: right;
         padding-right: 2rem;
@@ -764,11 +764,11 @@
         flex: content;
     }
 
-    .Index .Quality> :nth-child(2) .couches {
+    .template-index .Quality> :nth-child(2) .couches {
         flex: 50%;
     }
 
-    .Index .Quality> :nth-child(2)>ul li::after {
+    .template-index .Quality> :nth-child(2)>ul li::after {
         content: '';
         width: 10px;
         height: 2px;
@@ -781,58 +781,58 @@
 }
 
 @media only screen and (min-width: 750px) {
-    .Index .Presentation h1 {
+    .template-index .Presentation h1 {
         font-size: 2.5rem;
     }
 
-    .Index .Presentation .mobileIconsPresentation {
+    .template-index .Presentation .mobileIconsPresentation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .Index .Transform h2 {
+    .template-index .Transform h2 {
         display: block;
     }
 
-    .Index .Quality> :nth-child(2)>ul {
+    .template-index .Quality> :nth-child(2)>ul {
         font-size: 1rem;
     }
 
-    .Index .Quality> :nth-child(2) .couches {
+    .template-index .Quality> :nth-child(2) .couches {
         flex: 40%;
     }
 
-    .Index .Quality> :nth-child(3) {
+    .template-index .Quality> :nth-child(3) {
         gap: 4rem;
     }
 
-    .Index .Install h2 {
+    .template-index .Install h2 {
         left: 0;
         font-size: 2rem;
         text-align: center;
         width: 100%;
     }
 
-    .Index .Transform>div {
+    .template-index .Transform>div {
         padding-top: 2rem;
     }
 
-    .Index .Transform {
+    .template-index .Transform {
         padding-bottom: 2rem;
     }
 
-    .Index .Transform p,
-    .Index .Quality p {
+    .template-index .Transform p,
+    .template-index .Quality p {
         width: 100%;
     }
 }
 
 @media only screen and (min-width: 1025px) {
-    .Index .Presentation .contentPresentation {
+    .template-index .Presentation .contentPresentation {
         position: relative;
     }
 
-    .Index .Presentation .contentPresentation>div {
+    .template-index .Presentation .contentPresentation>div {
         position: absolute;
         top: -16rem;
         width: 100%;
@@ -843,28 +843,28 @@
         padding: 0;
     }
 
-    .Index .Presentation .contentPresentation>div> :nth-child(1) {
+    .template-index .Presentation .contentPresentation>div> :nth-child(1) {
         font-size: 65px;
     }
 
-    .Index .Presentation .contentPresentation>div> :nth-child(2) {
+    .template-index .Presentation .contentPresentation>div> :nth-child(2) {
         display: block;
         font-size: 18px;
     }
 
-    .Index .Presentation {
+    .template-index .Presentation {
         padding-bottom: 0;
         height: calc(100vh - 100px);
         overflow: hidden;
     }
 
-    .Index .Presentation video {
+    .template-index .Presentation video {
         position: absolute;
         top: 0;
         left: 0;
     }
 
-    .Index .Presentation .contentPresentation {
+    .template-index .Presentation .contentPresentation {
         padding-top: 0;
         position: absolute;
         width: 100%;
@@ -873,11 +873,11 @@
         background-color: #f5f5f5;
     }
 
-    .Index .Presentation .mobileIconsPresentation {
+    .template-index .Presentation .mobileIconsPresentation {
         display: none;
     }
 
-    .Index .Presentation .desktopIconsPresentation {
+    .template-index .Presentation .desktopIconsPresentation {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -887,11 +887,11 @@
         max-width: 1280px;
     }
 
-    .Index .Presentation .bgDiag {
+    .template-index .Presentation .bgDiag {
         display: none;
     }
 
-    .Index .Presentation .desktopIconsPresentation li {
+    .template-index .Presentation .desktopIconsPresentation li {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -902,23 +902,23 @@
         gap: 1rem;
     }
 
-    .Index .Presentation .desktopIconsPresentation li small {
+    .template-index .Presentation .desktopIconsPresentation li small {
         font-size: 100%;
         font-weight: normal;
     }
 
-    .Index .Presentation .desktopIconsPresentation li img {
+    .template-index .Presentation .desktopIconsPresentation li img {
         width: 50px;
     }
 
-    .Index .Presentation .desktopIconsPresentation span {
+    .template-index .Presentation .desktopIconsPresentation span {
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
     }
 
-    .Index .Presentation .bgDiag {
+    .template-index .Presentation .bgDiag {
         background: #f5f5f5;
         position: absolute;
         height: 120px;
@@ -930,46 +930,46 @@
         display: block;
     }
 
-    .Index .Presentation .mobileBtnPresentation {
+    .template-index .Presentation .mobileBtnPresentation {
         display: none;
     }
 
-    .Index .Presentation .desktopBtnPresentation {
+    .template-index .Presentation .desktopBtnPresentation {
         display: block;
         margin-top: 1.5rem;
         text-shadow: none;
     }
 
-    .Index .Transform {
+    .template-index .Transform {
         display: flex;
         justify-content: center;
         width: 100%;
         padding: 0;
     }
 
-    .Index .Transform .btn {
+    .template-index .Transform .btn {
         width: max-content;
     }
 
-    .Index .Transform>img {
+    .template-index .Transform>img {
         order: 2;
     }
 
-    .Index .Transform h2 {
+    .template-index .Transform h2 {
         display: flex;
         margin-top: 0;
     }
 
-    .Index .Transform .Truspilot {
+    .template-index .Transform .Truspilot {
         display: none;
     }
 
-    .Index .Transform>div {
+    .template-index .Transform>div {
         width: 100%;
         padding: 4rem 5%;
     }
 
-    .Index .Transform .btn-3 {
+    .template-index .Transform .btn-3 {
         margin-left: 0.5rem;
     }
 
@@ -977,7 +977,7 @@
         top: 40%;
     }
 
-    .Index .SlideCollections ul li {
+    .template-index .SlideCollections ul li {
         margin: 0 1rem;
     }
 
@@ -989,7 +989,7 @@
         right: 40px;
     }
 
-    .Index .Quality {
+    .template-index .Quality {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0;
@@ -997,17 +997,17 @@
         align-items: center;
     }
 
-    .Index .Quality> :nth-child(1) {
+    .template-index .Quality> :nth-child(1) {
         flex: 50%;
         order: 2;
     }
 
-    .Index .Quality> :nth-child(2) .couches {
+    .template-index .Quality> :nth-child(2) .couches {
         flex: inherit;
     }
 
 
-    .Index .Quality> :nth-child(2) {
+    .template-index .Quality> :nth-child(2) {
         flex: 50%;
         padding: 0;
         margin: 0;
@@ -1015,20 +1015,20 @@
         padding: 8rem 0;
     }
 
-    .Index .Quality> :nth-child(3) {
+    .template-index .Quality> :nth-child(3) {
         flex: 100%;
         grid-template-columns: repeat(6, 1fr);
         order: 3;
     }
 
-    .Index .Quality> :nth-child(2) .bgDiag {
+    .template-index .Quality> :nth-child(2) .bgDiag {
         position: absolute;
         height: 100%;
         width: 100%;
         overflow: hidden;
     }
 
-    .Index .Quality> :nth-child(2) .bgDiag>div {
+    .template-index .Quality> :nth-child(2) .bgDiag>div {
         background: #fff;
         position: absolute;
         height: 120%;
@@ -1039,55 +1039,55 @@
         right: -10%;
     }
 
-    .Index .SlideCollections .splide {
+    .template-index .SlideCollections .splide {
         padding-bottom: 0;
     }
 
-    .Index .Quality> :nth-child(3) {
+    .template-index .Quality> :nth-child(3) {
         padding: 4rem 2.5%;
     }
 
-    .Index .Install {
+    .template-index .Install {
         background-color: transparent;
     }
 
-    .Index .Install .btnInstall {
+    .template-index .Install .btnInstall {
         display: none;
     }
 
-    .Index .Install> :nth-child(1) {
+    .template-index .Install> :nth-child(1) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(1) {
+    .template-index .Install> :nth-child(1)> :nth-child(1) {
         order: 2;
         flex: auto;
         position: relative;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(1) {
+    .template-index .Install> :nth-child(1)> :nth-child(1) {
         position: relative;
         height: 100%;
         overflow: hidden;
         flex: 50%;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) {
+    .template-index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) {
         position: absolute;
         width: 100%;
         height: 100%;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) video {
+    .template-index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) video {
         position: relative;
         min-height: 100%;
         width: auto;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(1) .bgDiag {
+    .template-index .Install> :nth-child(1)> :nth-child(1) .bgDiag {
         background: #fff;
         position: absolute;
         height: 120%;
@@ -1098,7 +1098,7 @@
         left: -20%;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(2) {
+    .template-index .Install> :nth-child(1)> :nth-child(2) {
         padding: 4rem 2rem;
         flex: 50%;
         display: flex;
@@ -1107,18 +1107,18 @@
         align-items: center;
     }
 
-    .Index .Install .listInstall {
+    .template-index .Install .listInstall {
         display: flex;
         flex-direction: column;
         grid-area: 2rem;
     }
 
 
-    .Index .Install {
+    .template-index .Install {
         flex-direction: row;
     }
 
-    .Index .Install h2 {
+    .template-index .Install h2 {
         text-shadow: none;
         color: #000;
         position: relative;
@@ -1128,13 +1128,13 @@
         margin-bottom: 2rem;
     }
 
-    .Index .Install .listInstall>div {
+    .template-index .Install .listInstall>div {
         position: relative;
         margin-left: 2rem;
         margin-top: 3rem;
     }
 
-    .Index .Install .listInstall>div :nth-child(1) {
+    .template-index .Install .listInstall>div :nth-child(1) {
         position: absolute;
         bottom: 0;
         left: -1.5rem;
@@ -1144,27 +1144,27 @@
         z-index: 0;
     }
 
-    .Index .Install .listInstall p {
+    .template-index .Install .listInstall p {
         margin-bottom: 2rem;
     }
 
-    .Index .Install .listInstall>div :nth-child(2) {
+    .template-index .Install .listInstall>div :nth-child(2) {
         position: relative;
         font-weight: 900;
         font-size: 2.5rem;
         z-index: 1;
     }
 
-    .Index .SlideRealisations {
+    .template-index .SlideRealisations {
         background-color: #F5F5F5;
         padding-top: 2rem;
     }
 
-    .Index .SlideCollections {
+    .template-index .SlideCollections {
         padding-top: 1rem;
     }
 
-    .Index .Install h2 {
+    .template-index .Install h2 {
         display: none;
     }
 }
@@ -1173,8 +1173,8 @@
 
 @media only screen and (min-width: 1400px) {
 
-    .Index .Transform p,
-    .Index .Quality p {
+    .template-index .Transform p,
+    .template-index .Quality p {
         width: 100%;
         text-align: left;
         width: 90%;
@@ -1182,11 +1182,11 @@
         font-size: 1.1rem;
     }
 
-    .Index h2 {
+    .template-index h2 {
         font-size: 42px;
     }
 
-    .Index .Transform>div {
+    .template-index .Transform>div {
         padding: 8rem 5%;
     }
 
@@ -1231,19 +1231,19 @@
         }
     }
 
-    .Index .Quality> :nth-child(2) .couches {
+    .template-index .Quality> :nth-child(2) .couches {
         flex: auto;
     }
 
-    .Index .Quality> :nth-child(3) {
+    .template-index .Quality> :nth-child(3) {
         padding: 6rem 10rem;
     }
 
-    .Index .Install> :nth-child(1)> :nth-child(2) {
+    .template-index .Install> :nth-child(1)> :nth-child(2) {
         padding: 6rem 2rem;
     }
 
-    .Index .Install h2 {
+    .template-index .Install h2 {
         font-size: 42px;
         display: block;
     }
