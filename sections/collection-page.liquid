@@ -1,10 +1,10 @@
- {% assign pageCollections = false %}
+ {% assign pageCollections = "false" %}
     {% assign pageStyle = false %}    
     {% assign pageCouleur = false %}    
     {% assign best = false %}    
     
   {% if collection.handle contains "collections" %}
-    {% assign pageCollections = true %}
+    {% assign pageCollections = "true" %}
   {% elsif collection.handle contains "style" %}
     {% assign pageStyle = true %}    
   {% elsif collection.handle contains "couleur" %}
