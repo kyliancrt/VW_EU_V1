@@ -112,7 +112,7 @@
                 <ul class="splide__list">
 
                   {% for collection in collections %}
-                  {% if collection.products.type contains "carreaux" %}
+                  {% if collection.products.handle contains "carreaux" %}
 
                   <li class="splide__slide {{ collection.handle }}">
                         <h3>{{ collection.title }}</h3>
