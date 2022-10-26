@@ -91,6 +91,34 @@
         </section>
         <section class="Products">
 
+          {% if pageCouleur %}
+            <div class="filters filterColors">
+                    <ul>
+                        <li id="black" style="background-color:#212121"></li>
+                        <li id="grey" style="background-color:#808080"></li>
+                        <li id="white" style="background-color:#FFFFFF"></li>
+                        <li id="beige" style="background-color:#F5F5DC"></li>
+                        <li class="active" id="brown" style="background-color:#8E6841"></li>
+                        <li id="orange" style="background-color:#FFA500"></li>
+                        <li id="yellow" style="background-color:#FACD00"></li>
+                        <li id="blue" style="background-color:#3A4879"></li>
+                        <li id="green" style="background-color:#008000"></li>
+                        <li id="red" style="background-color:#B61815"></li>
+                        <li id="pink" style="background-color:#FFC0CB"></li>
+                    </ul>
+                </div>
+            {%  elsif pageStyle %}
+            
+                <div class="filters filterStyles">
+                    <ul>
+                        <li id="material" class="active">Matières</li>
+                        <li id="ciment">Ciments</li>
+                        <li id="modern">Modernes</li>
+                        <li id="colorful">Colorés</li>
+                    </ul>
+                </div>
+            {% endif %}
+
           {% for collection in collections %}
           {% if collection.handle == "dublin" or collection.handle == "londres" or collection.handle == "berlin"
           or collection.handle == "hossegor" or collection.handle == "florence" or collection.handle == "brooklyn" %}
