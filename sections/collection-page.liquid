@@ -1,25 +1,25 @@
- {% assign collections = false %}
-    {% assign style = false %}    
-    {% assign couleur = false %}    
+ {% assign pageCollections = false %}
+    {% assign pageStyle = false %}    
+    {% assign pageCouleur = false %}    
     {% assign best = false %}    
     
   {% if collection.handle contains "collections" %}
-    {% assign collections = true %}
+    {% assign pageCollections = true %}
   {% elsif collection.handle contains "style" %}
-    {% assign style = true %}    
+    {% assign pageStyle = true %}    
   {% elsif collection.handle contains "couleur" %}
-    {% assign couleur = true %}    
+    {% assign pageCouleur = true %}    
   {% elsif collection.handle contains "best" %}
-    {% assign best = true %}    
+    {% assign pagebest = true %}    
     {% endif %}
 
     
 {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 <div class="
-  {% if collection.handle contains "collections" %}collectionCollections
-  {% elsif collection.handle contains "style" %}collectionFilters
-  {% elsif collection.handle contains "couleur" %}collectionFilters
+  {% if pageCollections %}collectionCollections
+  {% elsif pageStyle %}collectionFilters
+  {% elsif pageCouleur %}collectionFilters
     {% endif %}
   ">
         <div class="popupPreview">
