@@ -1,8 +1,8 @@
- section {
+.Index section {
     width: 100%;
 }
 
- .Presentation {
+.Index .Presentation {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,11 @@
     padding-bottom: 2rem;
 }
 
- .Presentation video {
+.Index .Presentation video {
     width: 100%;
 }
 
- .Presentation .titleH1 {
+.Index .Presentation .titleH1 {
     position: absolute;
     top: 1.5rem;
     width: 100%;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
- .Presentation h1 {
+.Index .Presentation h1 {
     font-weight: 900;
     font-size: calc(0.5rem + 5vw);
     display: flex;
@@ -34,21 +34,21 @@
     text-align: center;
 }
 
- .Presentation h1>span {
+.Index .Presentation h1>span {
     text-transform: uppercase;
 }
 
- .Presentation h1>small {
+.Index .Presentation h1>small {
     font-size: 90%;
 }
 
- .Presentation .btn {
+.Index .Presentation .btn {
     margin: 0 auto;
     margin-top: -25px;
 }
 
 
- .Presentation .contentPresentation>div {
+.Index .Presentation .contentPresentation>div {
     width: 90%;
     margin: auto;
     display: flex;
@@ -58,25 +58,25 @@
     gap: 1.2rem
 }
 
- .Presentation .contentPresentation>div :nth-child(1) {
+.Index .Presentation .contentPresentation>div :nth-child(1) {
     font-weight: 900;
     font-size: calc(1.2rem + 8vw);
 }
 
- .Presentation .contentPresentation>div :nth-child(2) {
+.Index .Presentation .contentPresentation>div :nth-child(2) {
     font-size: calc(0.1rem + 5vw);
     display: flex;
     text-transform: uppercase;
 }
 
- .Presentation ul {
+.Index .Presentation ul {
     width: max-content;
     margin: auto;
     padding: 0;
     padding-left: 5%;
 }
 
- .Presentation ul li {
+.Index .Presentation ul li {
     list-style: none;
     font-size: calc(0.5rem + 5vw);
     font-weight: 900;
@@ -85,7 +85,7 @@
 }
 
 
- .Presentation ul li::before {
+.Index .Presentation ul li::before {
     content: '';
     position: relative;
     display: inline-block;
@@ -98,58 +98,58 @@
 }
 
 
- .Transform {
+.Index .Transform {
     background-color: #FFF;
 }
 
 
- .Transform>div {
+.Index .Transform>div {
     width: 95%;
     margin: auto;
 }
 
- .Transform h2 {
+.Index .Transform h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
 }
 
- .Transform p {
+.Index .Transform p {
     padding-bottom: 30px;
     text-align: justify;
 }
 
- .Transform a {
+.Index .Transform a {
     margin: auto;
 }
 
- .Transform .btn {
+.Index .Transform .btn {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
- .Transform .Truspilot {
+.Index .Transform .Truspilot {
     margin: 30px auto;
 }
 
- .SlideProducts {
+.Index .SlideProducts {
     background-color: #F7F2EE;
     padding-top: 5px;
     text-align: center;
 }
 
- .SlideProducts ul {
+.Index .SlideProducts ul {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-flex;
 }
 
- .SlideProducts ul li {
+.Index .SlideProducts ul li {
     width: 10vw;
 }
 
- .SlideProducts ul li.active {
+.Index .SlideProducts ul li.active {
     width: 80vw;
 }
 
@@ -231,7 +231,7 @@
     margin-bottom: 30px;
 }
 
- .Quality {
+.Index .Quality {
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -239,36 +239,36 @@
     overflow: hidden;
 }
 
- .Quality> :nth-child(1) {
+.Index .Quality> :nth-child(1) {
     padding: 0 2.5%;
 }
 
- .Quality> :nth-child(1) h2 {
+.Index .Quality> :nth-child(1) h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
 }
 
- .Quality> :nth-child(1) h2 span {
+.Index .Quality> :nth-child(1) h2 span {
     align-items: center;
     display: flex;
     font-weight: normal;
 }
 
- .Quality> :nth-child(1) h2 b {
+.Index .Quality> :nth-child(1) h2 b {
     font-weight: 900;
 }
 
- .Quality> :nth-child(1) h2 span img {
+.Index .Quality> :nth-child(1) h2 span img {
     width: 125px;
     margin-left: 1rem;
 }
 
- .Quality p {
+.Index .Quality p {
     text-align: justify;
 }
 
- .Quality> :nth-child(2) {
+.Index .Quality> :nth-child(2) {
     margin-top: 3rem;
     display: inline-flex;
     align-items: center;
@@ -278,7 +278,7 @@
     padding-bottom: 3rem;
 }
 
- .Quality> :nth-child(2)>ul {
+.Index .Quality> :nth-child(2)>ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -288,11 +288,11 @@
     margin-top: 1rem;
 }
 
- .Quality> :nth-child(2)>ul li {
+.Index .Quality> :nth-child(2)>ul li {
     display: flex;
 }
 
- .Quality> :nth-child(2) .couches {
+.Index .Quality> :nth-child(2) .couches {
     position: relative;
     flex: 40%;
     padding-top: 2rem;
@@ -446,7 +446,7 @@
 /* <= SVG SOUCHE */
 
 
- .Quality> :nth-child(3) {
+.Index .Quality> :nth-child(3) {
     background-color: #F5F5F5;
     padding: 0 2.5%;
     display: grid;
@@ -456,23 +456,23 @@
     ;
 }
 
- .Install {
+.Index .Install {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
 
- .Install> :nth-child(1) {
+.Index .Install> :nth-child(1) {
     position: relative;
 }
 
- .Install video {
+.Index .Install video {
     width: 100%;
     position: relative;
 }
 
 
- .Install h2 {
+.Index .Install h2 {
     position: absolute;
     top: 1rem;
     left: 30px;
@@ -485,7 +485,7 @@
     margin: 0;
 }
 
- .Install span {
+.Index .Install span {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -497,7 +497,7 @@
     justify-content: center;
 }
 
- .Install span svg {
+.Index .Install span svg {
     background-color: rgb(255, 255, 255, 0.5);
     padding: 0.6rem;
     width: 3rem;
@@ -508,6 +508,6 @@
     outline: 2px solid transparent;
 }
 
- .Install span svg:hover {
+.Index .Install span svg:hover {
     outline: 2px solid rgb(255, 255, 255, 0.5);
 }
