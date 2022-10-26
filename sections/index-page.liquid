@@ -117,14 +117,13 @@
                   <li class="splide__slide {{ collection.handle }}">
                         <h3>{{ collection.title }}</h3>
                         <a class="slideCollectionsImage" href="{{ collection.url }}">
-                            <img src="{{ collection.products.first | img_url: 'large' }}">
+                            <img src="{{ collection.products.first | img_url: '415x' }}">
                             <div>
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                                <img src="3.jpg">
-                                <img src="4.jpg">
-                                <img src="1.jpg">
-                                <img src="2.jpg">
+                              
+                              {% for product in collection.products %}
+                                <img src="{{ product.images[1] | img_url: '70x' }}">
+                                {% endfor %}
+                    
                             </div>
                         </a>
                         <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
