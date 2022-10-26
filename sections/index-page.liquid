@@ -111,7 +111,7 @@
                   {% if collection.handle == "dublin" or collection.handle == "londres" or collection.handle == "berlin"
                     or collection.handle == "hossegor" or collection.handle == "florence" or collection.handle == "brooklyn" %}
 
-                  <li class="splide__slide {{ collection.handle }}">
+                  <li class="splide__slide bgCollection {{ collection.handle }}">
                         <h3>{{ collection.handle }}</h3>
                         <a class="slideCollectionsImage" href="{{ collection.url }}">
                             <img src="{{ collection.products.first | img_url: '500x' }}">
