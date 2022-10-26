@@ -1,4 +1,4 @@
-.Product .productImage {
+.template-product .productImage {
     position: relative;
     height: 45vh;
     background-position: center;
@@ -6,38 +6,38 @@
     background-repeat: no-repeat;
 }
 
-.Product .productImage.slide1 {
+.template-product .productImage.slide1 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-CUISINE.png?v=1643974730");
 }
 
-.Product .productImage.slide2 {
+.template-product .productImage.slide2 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-SDB.png?v=1643974763");
 }
 
-.Product .productImage.slide3 {
+.template-product .productImage.slide3 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-MUR.png?v=1643974763");
 }
 
-.Product .productImage.slide4 {
+.template-product .productImage.slide4 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-DOUCHE.png?v=1643974763");
 }
 
-.Product .productImage.slide5 {
+.template-product .productImage.slide5 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-SOL.png?v=1643974763");
 }
 
-.Product .productImage.slide6 {
+.template-product .productImage.slide6 {
     background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-MEUBLE.png?v=1643974763");
 }
 
 
-.Product .productImage .arrows {
+.template-product .productImage .arrows {
     position: absolute;
     top: 40%;
     width: 100%;
 }
 
-.Product .productImage .arrows div {
+.template-product .productImage .arrows div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +45,7 @@
     margin: auto;
 }
 
-.Product .productImage .arrows div span {
+.template-product .productImage .arrows div span {
     background-color: rgb(255, 255, 255, 0.5);
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 5%);
     transform-origin: center;
@@ -60,31 +60,31 @@
     transition: all 0.1s ease;
 }
 
-.Product .productImage .arrows div>span svg {
+.template-product .productImage .arrows div>span svg {
     transform-origin: center;
     padding: 5px;
     fill: #fff;
 }
 
-.Product .productImage .arrows div>:nth-child(1) svg {
+.template-product .productImage .arrows div>:nth-child(1) svg {
     transform: rotate(135deg);
 }
 
-.Product .productImage .arrows div>:nth-child(2) svg {
+.template-product .productImage .arrows div>:nth-child(2) svg {
     transform: rotate(-45deg);
 }
 
-.Product .productImage .arrows div>span:hover {
+.template-product .productImage .arrows div>span:hover {
     outline: 2px solid rgb(255, 255, 255, 0.5);
 }
 
-.Product .productImage .pagination {
+.template-product .productImage .pagination {
     position: absolute;
     bottom: 1rem;
     width: 100%;
 }
 
-.Product .productImage .pagination ul {
+.template-product .productImage .pagination ul {
     width: fit-content;
     height: 100%;
     display: flex;
@@ -95,7 +95,7 @@
     margin: auto;
 }
 
-.Product .productImage .pagination ul li {
+.template-product .productImage .pagination ul li {
     height: 1.5rem;
     width: 1.5rem;
     background-color: rgb(0 0 0 / 50%);
@@ -103,21 +103,21 @@
     cursor: pointer;
 }
 
-.Product .productImage .pagination ul li.active {
+.template-product .productImage .pagination ul li.active {
     background-color: #fff;
     transform: scale(1.1);
 }
 
-.Product .productImage .pagination ul li:hover {
+.template-product .productImage .pagination ul li:hover {
     transform: scale(1.1);
 }
 
-.Product .contentProduct {
+.template-product .contentProduct {
     width: 90%;
     margin: auto;
 }
 
-.Product .contentProduct h1 {
+.template-product .contentProduct h1 {
     font-size: 1.9rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -127,41 +127,41 @@
     margin-bottom: 0;
 }
 
-.Product .contentProduct h1 small {
+.template-product .contentProduct h1 small {
     font-weight: normal;
 }
 
-.Product .contentProduct h2 {
+.template-product .contentProduct h2 {
     font-weight: normal;
     margin-top: 1rem;
     font-size: 1.8rem;
 }
 
-.Product .contentProduct h2 strong {
+.template-product .contentProduct h2 strong {
     font-weight: 900;
 }
 
-.Product .contentProduct h2 small {
+.template-product .contentProduct h2 small {
     display: block;
     padding-top: 0.4rem;
 }
 
-.Product .contentProduct h3 {
+.template-product .contentProduct h3 {
     display: none;
 }
 
-.Product .contentProduct .franceTrust {
+.template-product .contentProduct .franceTrust {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.Product .contentProduct .franceTrust>:nth-child(1) {
+.template-product .contentProduct .franceTrust>:nth-child(1) {
     width: calc(4rem + 8vw);
 }
 
-.Product .contentProduct>.listQuality {
+.template-product .contentProduct>.listQuality {
     width: max-content;
     margin: auto;
     padding: 0;
@@ -171,14 +171,14 @@
     flex-direction: column;
 }
 
-.Product .contentProduct>.listQuality li {
+.template-product .contentProduct>.listQuality li {
     list-style: none;
     font-size: calc(0.2rem + 4vw);
     transition: all 0.3s ease;
 }
 
 
-.Product .contentProduct>.listQuality li::before {
+.template-product .contentProduct>.listQuality li::before {
     content: '';
     position: relative;
     display: inline-block;
@@ -190,11 +190,11 @@
     margin-right: 0.5rem;
 }
 
-.Product .contentProduct>.listTiles p {
+.template-product .contentProduct>.listTiles p {
     color: #97292B;
 }
 
-.Product .contentProduct>.listTiles ul {
+.template-product .contentProduct>.listTiles ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
@@ -202,21 +202,21 @@
     margin-bottom: 4rem;
 }
 
-.Product .contentProduct>.listTiles ul li img {
+.template-product .contentProduct>.listTiles ul li img {
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 5%);
 }
 
-.Product .contentProduct>.productPrice {
+.template-product .contentProduct>.productPrice {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(1) {
+.template-product .contentProduct>.productPrice>:nth-child(1) {
     position: relative;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(1) .discount {
+.template-product .contentProduct>.productPrice>:nth-child(1) .discount {
     position: absolute;
     top: -1.8rem;
     left: 0;
@@ -226,36 +226,36 @@
     font-size: 20px;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(1) .discount.enable {
+.template-product .contentProduct>.productPrice>:nth-child(1) .discount.enable {
     display: flex;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(1) .discount> :nth-child(1) {
+.template-product .contentProduct>.productPrice>:nth-child(1) .discount> :nth-child(1) {
     color: #8E8E8E;
     text-decoration-line: line-through;
     font-weight: bold;
 }
 
 
-.Product .contentProduct>.productPrice>:nth-child(1) .discount> :nth-child(2) {
+.template-product .contentProduct>.productPrice>:nth-child(1) .discount> :nth-child(2) {
     color: #1B8886;
     font-weight: 900;
 }
 
 
-.Product .contentProduct>.productPrice>:nth-child(1) .price {
+.template-product .contentProduct>.productPrice>:nth-child(1) .price {
     position: relative;
     font-weight: 900;
     font-size: 38px;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(2) {
+.template-product .contentProduct>.productPrice>:nth-child(2) {
     display: flex;
     gap: 0.3rem;
     align-items: center;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(2) input {
+.template-product .contentProduct>.productPrice>:nth-child(2) input {
     width: 5rem;
     height: 60px;
     text-align: center;
@@ -266,17 +266,17 @@
     padding: 0 5px;
 }
 
-.Product input::-webkit-outer-spin-button,
-.Product input::-webkit-inner-spin-button {
+.template-product input::-webkit-outer-spin-button,
+.template-product input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.Product input[type=number] {
+.template-product input[type=number] {
     -moz-appearance: textfield;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(2) span {
+.template-product .contentProduct>.productPrice>:nth-child(2) span {
     font-size: 30px;
     font-weight: 900;
     padding: 0.5rem;
@@ -284,11 +284,11 @@
     transform-origin: center;
 }
 
-.Product .contentProduct>.productPrice>:nth-child(2) span:hover {
+.template-product .contentProduct>.productPrice>:nth-child(2) span:hover {
     transform: scale(1.1);
 }
 
-.Product .contentProduct>.btnInfos {
+.template-product .contentProduct>.btnInfos {
     text-transform: uppercase;
     margin-top: 0.5rem;
     display: block;
@@ -303,7 +303,7 @@
     transition: all 0.1s ease;
 }
 
-.Product .contentProduct>.btnInfos::after {
+.template-product .contentProduct>.btnInfos::after {
     content: '?';
     width: 10px;
     height: 10px;
@@ -321,11 +321,11 @@
 }
 
 
-.Product .contentProduct>.btnInfos:hover {
+.template-product .contentProduct>.btnInfos:hover {
     outline-color: transparent;
 }
 
-.Product .contentProduct .btnsOrders {
+.template-product .contentProduct .btnsOrders {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -334,7 +334,7 @@
     margin-top: 2rem;
 }
 
-.Product .contentProduct a {
+.template-product .contentProduct a {
     padding: 1rem;
     width: 100%;
     text-transform: uppercase;
@@ -344,14 +344,14 @@
     transition: all 0.1s ease;
 }
 
-.Product .contentProduct .btnsOrders .btnCheckout {
+.template-product .contentProduct .btnsOrders .btnCheckout {
     background-color: #1B8886;
     color: #fff;
     font-weight: 900;
     font-size: 20px;
 }
 
-.Product .contentProduct .btnsOrders .btnSample {
+.template-product .contentProduct .btnsOrders .btnSample {
     border-color: #1B8886;
     background-color: transparent;
     font-weight: bold;
@@ -360,15 +360,15 @@
     outline-offset: -4px;
 }
 
-.Product .contentProduct .btnsOrders .btnCheckout:hover {
+.template-product .contentProduct .btnsOrders .btnCheckout:hover {
     opacity: 0.8;
 }
 
-.Product .contentProduct .btnsOrders .btnSample:hover {
+.template-product .contentProduct .btnsOrders .btnSample:hover {
     outline-color: #1B8886;
 }
 
-.Product .contentProduct .btnToQuantity {
+.template-product .contentProduct .btnToQuantity {
     width: max-content;
     margin: auto;
     text-transform: uppercase;
@@ -384,12 +384,12 @@
     transition: all 0.3s ease;
 }
 
-.Product .btnToQuantity:hover {
+.template-product .btnToQuantity:hover {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.Product .iconesAdvantages {
+.template-product .iconesAdvantages {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -400,29 +400,29 @@
     padding-bottom: 2rem;
 }
 
-.Product .iconesAdvantages>div {
+.template-product .iconesAdvantages>div {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.Product .iconesAdvantages>div>img {
+.template-product .iconesAdvantages>div>img {
     padding: 0.5rem 1.2rem;
 }
 
-.Product .iconesAdvantages span {
+.template-product .iconesAdvantages span {
     font-weight: bold;
 }
 
-.Product .iconesAdvantages small {
+.template-product .iconesAdvantages small {
     font-size: 100%;
 }
 
-.Product .CalculQuantity {
+.template-product .CalculQuantity {
     width: 100%;
 }
 
-.Product .calculQuantity h3 {
+.template-product .calculQuantity h3 {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -432,7 +432,7 @@
     margin-bottom: 2rem;
 }
 
-.Product .inputsCalculQuantity {
+.template-product .inputsCalculQuantity {
     width: 95%;
     margin: auto;
     display: flex;
@@ -442,7 +442,7 @@
     margin-bottom: 1rem;
 }
 
-.Product .inputsCalculQuantity>div {
+.template-product .inputsCalculQuantity>div {
     width: 100%;
     display: flex;
     align-items: center;
@@ -450,11 +450,11 @@
     gap: 0.4rem;
 }
 
-.Product .inputsCalculQuantity>div>:nth-child(1) {
+.template-product .inputsCalculQuantity>div>:nth-child(1) {
     display: none;
 }
 
-.Product .inputsCalculQuantity input {
+.template-product .inputsCalculQuantity input {
     width: 4rem;
     height: 3rem;
     text-align: center;
@@ -466,7 +466,7 @@
 }
 
 
-.Product .calculQuantity .btnsCalculQuantity {
+.template-product .calculQuantity .btnsCalculQuantity {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,7 +477,7 @@
     margin-bottom: 2rem;
 }
 
-.Product .calculQuantity .btnsCalculQuantity>:nth-child(1) {
+.template-product .calculQuantity .btnsCalculQuantity>:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,7 +489,7 @@
     padding: 0.5rem 0;
 }
 
-.Product .btnsCalculQuantity input {
+.template-product .btnsCalculQuantity input {
     width: 3rem;
     height: 2.5rem;
     text-align: center;
@@ -500,13 +500,13 @@
     padding: 0 5px;
 }
 
-.Product .btnsCalculQuantity input:disabled {
+.template-product .btnsCalculQuantity input:disabled {
     color: #000;
     opacity: 1;
 }
 
 
-.Product .btnsCalculQuantity .btnCheckout {
+.template-product .btnsCalculQuantity .btnCheckout {
     background-color: #1B8886;
     color: #fff;
     font-weight: 900;
@@ -519,17 +519,17 @@
 }
 
 
-.Product .btnsCalculQuantity .btnCheckout:hover {
+.template-product .btnsCalculQuantity .btnCheckout:hover {
     opacity: 0.8;
 }
 
-.Product .faq {
+.template-product .faq {
     width: 100%;
     background-color: #f5f5f5;
     padding: 2rem 5%;
 }
 
-.Product .faq h3 {
+.template-product .faq h3 {
     text-align: left;
     margin: 0;
     padding: 0;
@@ -538,18 +538,18 @@
     margin-bottom: 2rem;
 }
 
-.Product .faq .accordeon {
+.template-product .faq .accordeon {
     display: flex;
     flex-direction: column;
 }
 
-.Product .faq>div {
+.template-product .faq>div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.Product .faq .accordeonItem .accordeonTitle {
+.template-product .faq .accordeonItem .accordeonTitle {
     font-weight: 900;
     font-size: 24px;
     cursor: pointer;
@@ -558,7 +558,7 @@
     position: relative;
 }
 
-.Product .faq .accordeonQuestion {
+.template-product .faq .accordeonQuestion {
     font-weight: bold;
     font-size: 16px;
     width: calc(100% - 3rem);
@@ -570,21 +570,21 @@
     position: relative;
 }
 
-.Product .faq .accordeonItem>div {
+.template-product .faq .accordeonItem>div {
     display: none;
     flex-direction: column;
 }
 
-.Product .faq .accordeonItem.active>div {
+.template-product .faq .accordeonItem.active>div {
     display: flex;
 }
 
-.Product .faq .accordeonItem .accordeonTitle:hover,
-.Product .faq .accordeonItem.active .accordeonTitle {
+.template-product .faq .accordeonItem .accordeonTitle:hover,
+.template-product .faq .accordeonItem.active .accordeonTitle {
     padding-left: 1rem;
 }
 
-.Product .faq .accordeonItem span::after {
+.template-product .faq .accordeonItem span::after {
     content: '+';
     font-weight: 900;
     position: absolute;
@@ -593,28 +593,28 @@
     font-size: 25px;
 }
 
-.Product .faq .accordeonItem.active>span::after {
+.template-product .faq .accordeonItem.active>span::after {
     content: '-';
 }
 
 
-.Product .Install {
+.template-product .Install {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
 
-.Product .Install> :nth-child(1) {
+.template-product .Install> :nth-child(1) {
     position: relative;
 }
 
-.Product .Install video {
+.template-product .Install video {
     width: 100%;
     position: relative;
 }
 
 
-.Product .Install h2 {
+.template-product .Install h2 {
     position: absolute;
     top: 1rem;
     left: 30px;
@@ -627,7 +627,7 @@
     margin: 0;
 }
 
-.Product .Install span {
+.template-product .Install span {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -639,7 +639,7 @@
     justify-content: center;
 }
 
-.Product .Install span svg {
+.template-product .Install span svg {
     background-color: rgb(255, 255, 255, 0.5);
     padding: 0.6rem;
     width: 3rem;
@@ -650,92 +650,92 @@
     outline: 2px solid transparent;
 }
 
-.Product .Install span svg:hover {
+.template-product .Install span svg:hover {
     outline: 2px solid rgb(255, 255, 255, 0.5);
 }
 
-.Product .contentProduct .btnToQuantity.desktop {
+.template-product .contentProduct .btnToQuantity.desktop {
     display: none;
 }
 
-.Product .iconesAdvantages .desktop {
+.template-product .iconesAdvantages .desktop {
     display: none;
 }
 
-.Product .descriptionProduct {
+.template-product .descriptionProduct {
     display: none;
 }
 
 /* MEDIA SCREEN */
 
 @media only screen and (min-width: 400px) {
-    .Product .contentProduct>.listQuality li {
+    .template-product .contentProduct>.listQuality li {
         font-size: 1.2rem;
     }
 
-    .Product .contentProduct .franceTrust> :nth-child(1) {
+    .template-product .contentProduct .franceTrust> :nth-child(1) {
         width: 110px;
     }
 
 }
 
 @media only screen and (min-width: 500px) {
-    .Product .contentProduct>.listQuality li {
+    .template-product .contentProduct>.listQuality li {
         font-size: 1.4rem;
     }
 
-    .Product .contentProduct h1 {
+    .template-product .contentProduct h1 {
         font-size: 50px;
     }
 
-    .Product .contentProduct h2 {
+    .template-product .contentProduct h2 {
         font-size: 30px;
         font-weight: 900;
     }
 
-    .Product .contentProduct h2 small {
+    .template-product .contentProduct h2 small {
         display: inline-block;
         font-weight: normal;
     }
 
-    .Product .contentProduct>.productPrice> :nth-child(1) .price {
+    .template-product .contentProduct>.productPrice> :nth-child(1) .price {
         font-size: 50px;
     }
 
-    .Product .contentProduct>.productPrice> :nth-child(1) .discount {
+    .template-product .contentProduct>.productPrice> :nth-child(1) .discount {
         font-size: 24px;
     }
 
-    .Product .contentProduct>.productPrice {
+    .template-product .contentProduct>.productPrice {
         justify-content: center;
         gap: 3rem;
     }
 
-    .Product .contentProduct>.btnInfos {
+    .template-product .contentProduct>.btnInfos {
         margin: auto;
         margin-top: 1rem;
     }
 
-    .Product .inputsCalculQuantity>div> :nth-child(1) {
+    .template-product .inputsCalculQuantity>div> :nth-child(1) {
         display: block;
     }
 }
 
 @media only screen and (min-width: 760px) {
-    .Product .contentProduct {
+    .template-product .contentProduct {
         max-width: 760px;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
-    .Product .contentProduct .franceTrust {
+    .template-product .contentProduct .franceTrust {
         justify-content: center;
         gap: 3rem;
         justify-content: flex-start;
     }
 
-    .Product .contentProduct>.listQuality {
+    .template-product .contentProduct>.listQuality {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
@@ -743,40 +743,40 @@
         margin-bottom: 2rem;
     }
 
-    .Product .contentProduct>.listQuality li {
+    .template-product .contentProduct>.listQuality li {
         font-size: 18px;
         flex: 40%;
         font-weight: bold;
     }
 
-    .Product .contentProduct>.listTiles ul {
+    .template-product .contentProduct>.listTiles ul {
         grid-template-columns: repeat(8, 1fr);
         gap: 1rem;
     }
 
-    .Product .listTiles {
+    .template-product .listTiles {
         order: 2;
     }
 
-    .Product .contentProduct .btnsOrders {
+    .template-product .contentProduct .btnsOrders {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 0;
     }
 
-    .Product .contentProduct>.listTiles p {
+    .template-product .contentProduct>.listTiles p {
         margin-top: 0;
     }
 
-    .Product .contentProduct .btnToQuantity.mobile {
+    .template-product .contentProduct .btnToQuantity.mobile {
         display: none;
     }
 
-    .Product .contentProduct .btnToQuantity.desktop {
+    .template-product .contentProduct .btnToQuantity.desktop {
         display: flex;
     }
 
-    .Product .contentProduct .btnToQuantity {
+    .template-product .contentProduct .btnToQuantity {
         margin: 0;
         margin-left: auto;
         padding: 0;
@@ -787,53 +787,53 @@
         outline-offset: -1px;
     }
 
-    .Product .contentProduct .btnToQuantity:hover {
+    .template-product .contentProduct .btnToQuantity:hover {
         outline-color: transparent;
     }
 
-    .Product .contentProduct>.btnInfos {
+    .template-product .contentProduct>.btnInfos {
         margin: 0;
     }
 
-    .Product .contentProduct>.productPrice> :nth-child(1) {
+    .template-product .contentProduct>.productPrice> :nth-child(1) {
         min-width: 225px;
     }
 
-    .Product .contentProduct .btnsOrders a {
+    .template-product .contentProduct .btnsOrders a {
         height: 60px;
     }
 
-    .Product .contentProduct .btnsOrders .btnSample {
+    .template-product .contentProduct .btnsOrders .btnSample {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .Product .iconesAdvantages .desktop {
+    .template-product .iconesAdvantages .desktop {
         display: flex;
     }
 
-    .Product .productImage {
+    .template-product .productImage {
         height: 45vh;
         min-height: 500px;
     }
 
-    .Product .contentProduct>.listTiles ul li span {
+    .template-product .contentProduct>.listTiles ul li span {
         width: 100%;
         display: block;
         text-align: center;
     }
 
-    .Product .descriptionProduct {
+    .template-product .descriptionProduct {
         display: block;
         margin-bottom: 0.5rem;
     }
 
-    .Product .contentProduct .franceTrust {
+    .template-product .contentProduct .franceTrust {
         margin-bottom: 0;
     }
 
-    .Product .contentProduct h3 {
+    .template-product .contentProduct h3 {
         display: block;
         margin: 0;
         padding: 0;
@@ -845,7 +845,7 @@
         text-transform: uppercase;
     }
 
-    .Product .contentProduct h1 {
+    .template-product .contentProduct h1 {
         margin-top: 1rem;
     }
 
@@ -853,11 +853,11 @@
 
 
 @media only screen and (min-width: 1200px) {
-    .Product .contentProduct {
+    .template-product .contentProduct {
         padding: 0 0.5rem;
     }
 
-    .Product .productImage {
+    .template-product .productImage {
         height: calc(100vh - 100px);
         width: 40%;
         position: fixed;
@@ -871,14 +871,14 @@
 }
 
 @media only screen and (min-width: 1300px) {
-    .Product .contentProduct {
+    .template-product .contentProduct {
         padding: 0;
     }
 }
 
 @media only screen and (min-width: 1400px) {
 
-    .Product .productImage {
+    .template-product .productImage {
         width: 50%;
     }
 
@@ -886,7 +886,7 @@
         width: 50%;
     }
 
-    .Product .contentProduct h2 {
+    .template-product .contentProduct h2 {
         margin: 0;
     }
 }
