@@ -1,8 +1,8 @@
-.template-index section {
+.Index section {
     width: 100%;
 }
 
-.template-index .Presentation {
+.Index .Presentation {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,11 @@
     padding-bottom: 2rem;
 }
 
-.template-index .Presentation video {
+.Index .Presentation video {
     width: 100%;
 }
 
-.template-index .Presentation .titleH1 {
+.Index .Presentation .titleH1 {
     position: absolute;
     top: 1.5rem;
     width: 100%;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.template-index .Presentation h1 {
+.Index .Presentation h1 {
     font-weight: 900;
     font-size: calc(0.5rem + 5vw);
     display: flex;
@@ -34,21 +34,25 @@
     text-align: center;
 }
 
-.template-index .Presentation h1>span {
+.Index .Presentation h1>span {
     text-transform: uppercase;
 }
 
-.template-index .Presentation h1>small {
+.Index .Presentation h1>small {
     font-size: 90%;
 }
 
-.template-index .Presentation .btn {
+.Index .Presentation .mobileBtnPresentation {
     margin: 0 auto;
     margin-top: -25px;
 }
 
+.Index .Presentation .desktopBtnPresentation {
+    display: none;
+}
 
-.template-index .Presentation .contentPresentation>div {
+
+.Index .Presentation .contentPresentation>div {
     width: 90%;
     margin: auto;
     display: flex;
@@ -58,25 +62,35 @@
     gap: 1.2rem
 }
 
-.template-index .Presentation .contentPresentation>div :nth-child(1) {
+.Index .Presentation .contentPresentation>div>:nth-child(1) {
     font-weight: 900;
     font-size: calc(1.2rem + 8vw);
+    transform: scaleY(1.1);
 }
 
-.template-index .Presentation .contentPresentation>div :nth-child(2) {
+.Index .Presentation .contentPresentation>div>:nth-child(2) {
+    padding: 0;
+    margin: 0;
     font-size: calc(0.1rem + 5vw);
     display: flex;
+    flex-direction: column;
     text-transform: uppercase;
+
 }
 
-.template-index .Presentation ul {
+.Index .Presentation .mobileIconsPresentation {
     width: max-content;
     margin: auto;
     padding: 0;
-    padding-left: 5%;
+    padding-bottom: 1rem;
 }
 
-.template-index .Presentation ul li {
+
+.Index .Presentation .desktopIconsPresentation {
+    display: none;
+}
+
+.Index .Presentation .mobileIconsPresentation li {
     list-style: none;
     font-size: calc(0.5rem + 5vw);
     font-weight: 900;
@@ -85,82 +99,80 @@
 }
 
 
-.template-index .Presentation ul li::before {
+.Index .Presentation .mobileIconsPresentation li::before {
     content: '';
     position: relative;
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-image: url('/li-check.svg');
+    background-image: url('li-check.svg');
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 0.5rem;
 }
 
 
-.template-index .Transform {
+.Index .Transform {
     background-color: #FFF;
 }
 
 
-.template-index .Transform>div {
+.Index .Transform>div {
     width: 95%;
     margin: auto;
 }
 
-.template-index .Transform h2 {
+.Index .Transform h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    margin-top: 2rem;
 }
 
-.template-index .Transform p {
+.Index .Transform p {
     padding-bottom: 30px;
     text-align: justify;
-}
-
-.template-index .Transform a {
+    width: 95%;
     margin: auto;
 }
 
-.template-index .Transform .btn {
+.Index .Transform a {
+    margin: auto;
+}
+
+.Index .Transform .btn {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.template-index .Transform .Truspilot {
-    margin: 30px auto;
+.Index .Transform .Truspilot {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
 }
 
-.template-index .SlideProducts {
-    background-color: #F7F2EE;
-    padding-top: 5px;
+.Index .SlideProducts {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
     text-align: center;
+    transition: all 0.5s ease 0s;
 }
 
-.template-index .SlideProducts ul {
+.Index .SlideProducts ul {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-flex;
 }
 
-.template-index .SlideProducts ul li {
-    width: 10vw;
-}
 
-.template-index .SlideProducts ul li.active {
-    width: 80vw;
-}
-
-.splide {
+.Index .SlideProducts .splide {
     padding-top: 0px;
     padding-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 
-.splide__slide img {
+.Index .SlideProducts .splide__slide img {
     display: block;
     width: 100%;
     transition: transform 400ms;
@@ -169,12 +181,12 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 11%);
 }
 
-.splide__slide.is-active img {
+.Index .SlideProducts .splide__slide.is-active img {
     transform: scale(1);
     box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
-.splide__slide span {
+.Index .SlideProducts .splide__slide span {
     display: block;
     opacity: 0;
     padding-top: 15px;
@@ -183,7 +195,7 @@
     text-transform: uppercase;
 }
 
-.splide__slide.is-active span {
+.Index .SlideProducts .splide__slide.is-active span {
     opacity: 1;
 }
 
@@ -208,6 +220,14 @@
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 5%);
     height: 50px;
     position: absolute;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    outline: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.splide .splide__arrow:hover {
+    outline-color: rgb(255, 255, 255, 0.5);
 }
 
 .splide .splide__arrow svg {
@@ -215,15 +235,26 @@
     height: 24px;
     fill: #FFF;
     text-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    transform-origin: center;
 }
 
 
 .splide__arrow.splide__arrow--prev {
-    left: 10px;
+    left: 20px;
+}
+
+.splide__arrow.splide__arrow--prev svg {
+    transform: rotate(-135deg);
+
 }
 
 .splide__arrow.splide__arrow--next {
-    right: 10px;
+    right: 20px;
+}
+
+.splide__arrow.splide__arrow--next svg {
+    transform: rotate(45deg);
+
 }
 
 .SlideProducts .btn {
@@ -231,7 +262,7 @@
     margin-bottom: 30px;
 }
 
-.template-index .Quality {
+.Index .Quality {
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -239,36 +270,39 @@
     overflow: hidden;
 }
 
-.template-index .Quality> :nth-child(1) {
+.Index .Quality> :nth-child(1) {
     padding: 0 2.5%;
 }
 
-.template-index .Quality> :nth-child(1) h2 {
+.Index .Quality> :nth-child(1) h2 {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    margin-top: 0;
 }
 
-.template-index .Quality> :nth-child(1) h2 span {
+.Index .Quality> :nth-child(1) h2 span {
     align-items: center;
     display: flex;
     font-weight: normal;
 }
 
-.template-index .Quality> :nth-child(1) h2 b {
+.Index .Quality> :nth-child(1) h2 b {
     font-weight: 900;
 }
 
-.template-index .Quality> :nth-child(1) h2 span img {
+.Index .Quality> :nth-child(1) h2 span img {
     width: 125px;
     margin-left: 1rem;
 }
 
-.template-index .Quality p {
+.Index .Quality p {
     text-align: justify;
+    width: 95%;
+    margin: auto;
 }
 
-.template-index .Quality> :nth-child(2) {
+.Index .Quality> :nth-child(2) {
     margin-top: 3rem;
     display: inline-flex;
     align-items: center;
@@ -278,24 +312,60 @@
     padding-bottom: 3rem;
 }
 
-.template-index .Quality> :nth-child(2)>ul {
+.Index .Quality> :nth-child(2)>ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: calc(100% - 0.5vw);
+    font-size: 0.9rem;
     flex: auto;
     padding: 0;
     margin-top: 1rem;
 }
 
-.template-index .Quality> :nth-child(2)>ul li {
+.Index .Quality> :nth-child(2)>ul li {
     display: flex;
 }
 
-.template-index .Quality> :nth-child(2) .couches {
+.Index .Quality> :nth-child(2) .couches {
     position: relative;
     flex: 40%;
     padding-top: 2rem;
+}
+
+.svg-couches .st0 {
+    fill: rgb(255, 255, 255, 0.7);
+}
+
+.svg-couches .st1 {
+    fill: #A9A9A9;
+}
+
+.svg-couches .st2 {
+    fill: #949494;
+}
+
+.svg-couches .st3 {
+    fill: #B5B5B5;
+}
+
+.svg-couches .st4 {
+    fill: #EDE4BC;
+}
+
+.svg-couches .st5 {
+    fill: #BCB89B;
+}
+
+.svg-couches .st6 {
+    fill: #A5A07E;
+}
+
+.svg-couches .st7 {
+    opacity: 0.54;
+}
+
+.svg-couches .st8 {
+    fill: rgb(255, 255, 255, 0.8);
 }
 
 
@@ -306,8 +376,8 @@
     position: absolute;
     left: 0%;
     top: 0%;
-    width: 180%;
     overflow: visible;
+    width: 300px;
 }
 
 .couches svg g {
@@ -318,9 +388,19 @@
 .couches .img-svg {
     left: 0%;
     top: 0%;
-    width: 125%;
-    transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-13.4rem) translateX(-8.5rem);
+    width: 210px;
+    transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
     box-shadow: 50px 50px 80px rgba(0, 0, 0, .15);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('1.jpg');
+    -webkit-animation: svgcouches5 6s infinite;
+    animation: svgcouches5 6s infinite;
+}
+
+.couches .img-svg img {
+    visibility: hidden;
 }
 
 
@@ -348,10 +428,6 @@
     animation: svgcouches4 6s infinite;
 }
 
-.couches .img-svg {
-    -webkit-animation: svgcouches5 6s infinite;
-    animation: svgcouches5 6s infinite;
-}
 
 @keyframes svgcouches1 {
     0% {
@@ -427,52 +503,70 @@
 
 @keyframes svgcouches5 {
     0% {
-        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-18.4rem) translateX(-12.7rem);
+        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
+        background-image: url('1.jpg');
+    }
+
+    25% {
+        background-image: url('2.jpg');
     }
 
     45% {
-        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-3.8rem) translateX(1rem);
+        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
+    }
+
+    50% {
+        background-image: url('3.jpg');
     }
 
     55% {
-        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-3.8rem) translateX(1rem);
+        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
+    }
+
+    75% {
+        background-image: url('4.jpg');
     }
 
     100% {
-        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-18.4rem) translateX(-12.7rem);
+        transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
+
+        background-image: url('1.jpg');
     }
 }
 
 /* <= SVG SOUCHE */
 
 
-.template-index .Quality> :nth-child(3) {
+.Index .Quality> :nth-child(3) {
     background-color: #F5F5F5;
     padding: 0 2.5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-bottom: 3rem;
-    ;
 }
 
-.template-index .Install {
+.Index .Install {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
 
-.template-index .Install> :nth-child(1) {
+.Index .Install .listInstall {
+    display: none;
+}
+
+.Index .Install> :nth-child(1) {
     position: relative;
 }
 
-.template-index .Install video {
+.Index .Install video {
     width: 100%;
     position: relative;
 }
 
 
-.template-index .Install h2 {
+.Index .Install h2 {
     position: absolute;
     top: 1rem;
     left: 30px;
@@ -485,7 +579,13 @@
     margin: 0;
 }
 
-.template-index .Install span {
+.Index .Install small {
+    font-size: 100%;
+    display: block;
+    font-weight: normal;
+}
+
+.Index .Install .btnInstall {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -497,7 +597,7 @@
     justify-content: center;
 }
 
-.template-index .Install span svg {
+.Index .Install span svg {
     background-color: rgb(255, 255, 255, 0.5);
     padding: 0.6rem;
     width: 3rem;
@@ -508,6 +608,644 @@
     outline: 2px solid transparent;
 }
 
-.template-index .Install span svg:hover {
+.Index .Install span svg:hover {
     outline: 2px solid rgb(255, 255, 255, 0.5);
+}
+
+
+.Index .SlideCollections {
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+.Index .SlideCollections ul {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-flex;
+    margin: 0;
+}
+
+.Index .SlideCollections .splide {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Index .SlideCollections ul li {
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+.Index .SlideCollections ul li .slideCollectionsImage {
+    width: 100%;
+}
+
+.Index .SlideCollections ul li .slideCollectionsImage>img {
+    border: 1px solid #fff;
+}
+
+.Index .SlideCollections ul li .slideCollectionsImage>div {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.Index .SlideCollections ul li .slideCollectionsImage>div {
+    border: 1px solid #fff;
+    border-right: 0;
+}
+
+.Index .SlideCollections ul li .slideCollectionsImage>div :last-child {
+    border-right: 1px solid #fff;
+}
+
+.Index .SlideCollections ul li h3 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.Index .SlideCollections ul li .slideCollectionsBtn {
+    margin: auto;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.5rem 4rem;
+    display: block;
+    margin-top: 2rem;
+    color: #fff;
+    border: 1px solid #fff;
+    width: max-content;
+}
+
+.Index .SlideCollections ul li .slideCollectionsBtn:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.Index .SlideCollections .splide__arrows {
+    top: 40%;
+}
+
+.Index .SlideRealisations h2 {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: max-content;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.Index .SlideRealisations .splide__slide img {
+    padding: 0.5rem;
+}
+
+.Index .SlideRealisations h2 b {
+    font-weight: 900;
+}
+
+.Index .SlideRealisations ul {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-flex;
+    margin: 0;
+}
+
+.Index .SlideRealisations .splide {
+    padding-top: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Index .SlideRealisations ul li {
+    width: 100%;
+    padding: 0;
+}
+
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (min-width: 500px) {
+    .Index .Presentation .contentPresentation>div>:nth-child(1) {
+        font-size: 3.5rem;
+    }
+
+    .Index .Presentation .contentPresentation>div>:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .Index .Presentation .contentPresentation {
+        padding: 1rem 0;
+    }
+
+    .Index .Presentation .mobileIconsPresentation li {
+        font-size: 2rem;
+    }
+
+    .Index .Quality> :nth-child(2)>ul li {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .Index .Quality> :nth-child(2)>ul {
+        flex: auto;
+        text-align: right;
+        padding-right: 2rem;
+        width: min-content;
+        flex: content;
+    }
+
+    .Index .Quality> :nth-child(2) .couches {
+        flex: 50%;
+    }
+
+    .Index .Quality> :nth-child(2)>ul li::after {
+        content: '';
+        width: 10px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        top: 40%;
+        right: -20px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .Index .Presentation h1 {
+        font-size: 2.5rem;
+    }
+
+    .Index .Presentation .mobileIconsPresentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Index .Transform h2 {
+        display: block;
+    }
+
+    .Index .Quality> :nth-child(2)>ul {
+        font-size: 1rem;
+    }
+
+    .Index .Quality> :nth-child(2) .couches {
+        flex: 40%;
+    }
+
+    .Index .Quality> :nth-child(3) {
+        gap: 4rem;
+    }
+
+    .Index .Install h2 {
+        left: 0;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Index .Transform>div {
+        padding-top: 2rem;
+    }
+
+    .Index .Transform {
+        padding-bottom: 2rem;
+    }
+
+    .Index .Transform p,
+    .Index .Quality p {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .Index .Presentation .contentPresentation {
+        position: relative;
+    }
+
+    .Index .Presentation .contentPresentation>div {
+        position: absolute;
+        top: -16rem;
+        width: 100%;
+        color: #fff;
+        text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.16);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .Index .Presentation .contentPresentation>div> :nth-child(1) {
+        font-size: 65px;
+    }
+
+    .Index .Presentation .contentPresentation>div> :nth-child(2) {
+        display: block;
+        font-size: 18px;
+    }
+
+    .Index .Presentation {
+        padding-bottom: 0;
+        height: calc(100vh - 100px);
+        overflow: hidden;
+    }
+
+    .Index .Presentation video {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .Index .Presentation .contentPresentation {
+        padding-top: 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #f5f5f5;
+    }
+
+    .Index .Presentation .mobileIconsPresentation {
+        display: none;
+    }
+
+    .Index .Presentation .desktopIconsPresentation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 2rem;
+        max-width: 1280px;
+    }
+
+    .Index .Presentation .bgDiag {
+        display: none;
+    }
+
+    .Index .Presentation .desktopIconsPresentation li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .Index .Presentation .desktopIconsPresentation li small {
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .Index .Presentation .desktopIconsPresentation li img {
+        width: 50px;
+    }
+
+    .Index .Presentation .desktopIconsPresentation span {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Index .Presentation .bgDiag {
+        background: #f5f5f5;
+        position: absolute;
+        height: 120px;
+        width: 120%;
+        transform: rotate(-1.5deg);
+        transform-origin: center;
+        bottom: 13%;
+        z-index: 0;
+        display: block;
+    }
+
+    .Index .Presentation .mobileBtnPresentation {
+        display: none;
+    }
+
+    .Index .Presentation .desktopBtnPresentation {
+        display: block;
+        margin-top: 1.5rem;
+        text-shadow: none;
+    }
+
+    .Index .Transform {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Index .Transform .btn {
+        width: max-content;
+    }
+
+    .Index .Transform>img {
+        order: 2;
+    }
+
+    .Index .Transform h2 {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .Index .Transform .Truspilot {
+        display: none;
+    }
+
+    .Index .Transform>div {
+        width: 100%;
+        padding: 4rem 5%;
+    }
+
+    .Index .Transform .btn-3 {
+        margin-left: 0.5rem;
+    }
+
+    .splide__arrows {
+        top: 40%;
+    }
+
+    .Index .SlideCollections ul li {
+        margin: 0 1rem;
+    }
+
+    .splide__arrow.splide__arrow--prev {
+        left: 40px;
+    }
+
+    .splide__arrow.splide__arrow--next {
+        right: 40px;
+    }
+
+    .Index .Quality {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        overflow: visible;
+        align-items: center;
+    }
+
+    .Index .Quality> :nth-child(1) {
+        flex: 50%;
+        order: 2;
+    }
+
+    .Index .Quality> :nth-child(2) .couches {
+        flex: inherit;
+    }
+
+
+    .Index .Quality> :nth-child(2) {
+        flex: 50%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        padding: 8rem 0;
+    }
+
+    .Index .Quality> :nth-child(3) {
+        flex: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        order: 3;
+    }
+
+    .Index .Quality> :nth-child(2) .bgDiag {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Index .Quality> :nth-child(2) .bgDiag>div {
+        background: #fff;
+        position: absolute;
+        height: 120%;
+        width: 30%;
+        transform: rotate(10deg);
+        transform-origin: center;
+        top: -10%;
+        right: -10%;
+    }
+
+    .Index .SlideCollections .splide {
+        padding-bottom: 0;
+    }
+
+    .Index .Quality> :nth-child(3) {
+        padding: 4rem 2.5%;
+    }
+
+    .Index .Install {
+        background-color: transparent;
+    }
+
+    .Index .Install .btnInstall {
+        display: none;
+    }
+
+    .Index .Install> :nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(1) {
+        order: 2;
+        flex: auto;
+        position: relative;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(1) {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        flex: 50%;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(1)>:nth-child(1) video {
+        position: relative;
+        min-height: 100%;
+        width: auto;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(1) .bgDiag {
+        background: #fff;
+        position: absolute;
+        height: 120%;
+        width: 30%;
+        transform: rotate(-10deg);
+        transform-origin: center;
+        top: -10%;
+        left: -20%;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(2) {
+        padding: 4rem 2rem;
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Index .Install .listInstall {
+        display: flex;
+        flex-direction: column;
+        grid-area: 2rem;
+    }
+
+
+    .Index .Install {
+        flex-direction: row;
+    }
+
+    .Index .Install h2 {
+        text-shadow: none;
+        color: #000;
+        position: relative;
+        top: 0;
+        text-align: left;
+        width: max-content;
+        margin-bottom: 2rem;
+    }
+
+    .Index .Install .listInstall>div {
+        position: relative;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .Index .Install .listInstall>div :nth-child(1) {
+        position: absolute;
+        bottom: 0;
+        left: -1.5rem;
+        font-weight: 900;
+        font-size: 5.5rem;
+        color: #e3e3e3;
+        z-index: 0;
+    }
+
+    .Index .Install .listInstall p {
+        margin-bottom: 2rem;
+    }
+
+    .Index .Install .listInstall>div :nth-child(2) {
+        position: relative;
+        font-weight: 900;
+        font-size: 2.5rem;
+        z-index: 1;
+    }
+
+    .Index .SlideRealisations {
+        background-color: #F5F5F5;
+        padding-top: 2rem;
+    }
+
+    .Index .SlideCollections {
+        padding-top: 1rem;
+    }
+
+    .Index .Install h2 {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+
+    .Index .Transform p,
+    .Index .Quality p {
+        width: 100%;
+        text-align: left;
+        width: 90%;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .Index h2 {
+        font-size: 42px;
+    }
+
+    .Index .Transform>div {
+        padding: 8rem 5%;
+    }
+
+    .couches svg {
+        width: 400px;
+    }
+
+    .couches .img-svg {
+        width: 280px;
+    }
+
+    @keyframes svgcouches5 {
+        0% {
+            transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
+            background-image: url('1.jpg');
+        }
+
+        25% {
+            background-image: url('2.jpg');
+        }
+
+        45% {
+            transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4rem) translateX(2.2rem);
+        }
+
+        50% {
+            background-image: url('3.jpg');
+        }
+
+        55% {
+            transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4rem) translateX(2.2rem);
+        }
+
+        75% {
+            background-image: url('4.jpg');
+        }
+
+        100% {
+            transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
+
+            background-image: url('1.jpg');
+        }
+    }
+
+    .Index .Quality> :nth-child(2) .couches {
+        flex: auto;
+    }
+
+    .Index .Quality> :nth-child(3) {
+        padding: 6rem 10rem;
+    }
+
+    .Index .Install> :nth-child(1)> :nth-child(2) {
+        padding: 6rem 2rem;
+    }
+
+    .Index .Install h2 {
+        font-size: 42px;
+        display: block;
+    }
+
 }
