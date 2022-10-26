@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // VideoPresentationMedia
-    let mainVideo = $('.Index .Presentation video');
+    let mainVideo = $('.template-index .Presentation video');
     let mobileSrc = "https://cdn.shopify.com/videos/c/o/v/e08cb0efd32040f791a7a193a2b98380.mp4";
     let desktopSrc = "https://cdn.shopify.com/s/files/1/0567/1220/0371/files/VYNIL_WAY_FILM_MASTER_V5_AVEC_MUSIQUE_6_1.mp4?v=1643878330";
 
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // SlideProductsBackground
     splideProducts.on('move', function () {
-        let newColor = $('.Index .SlideProducts ul li.is-active').data("color");
-        $('.Index .SlideProducts').css('background-color', newColor)
+        let newColor = $('.template-index .SlideProducts ul li.is-active').data("color");
+        $('.template-index .SlideProducts').css('background-color', newColor)
     });
 
     // SlideCollections
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
         btnInstall.addEventListener('click', function () {
             videoInstall.play();
             videoInstall.setAttribute("controls", "true");
-            document.querySelector(".Index .Install #btnInstall").style.display = "none";
-            document.querySelector(".Index .Install h2").style.display = "none";
+            document.querySelector(".template-index .Install #btnInstall").style.display = "none";
+            document.querySelector(".template-index .Install h2").style.display = "none";
         });
     }
     else {
