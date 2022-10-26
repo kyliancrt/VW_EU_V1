@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //popupPreviewShow
-    $(".Products .productsList li > div > :nth-child(2)").click(function () {
+    $(".template-collection .productsList li > div > :nth-child(2)").click(function () {
         $(".popupPreview").addClass("active");
         $('body').css('overflow', 'hidden');
     });
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // bodyOverflowCollections
-    if ($(".Collection").hasClass("collectionCollections")) {
+    if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
     }
 
