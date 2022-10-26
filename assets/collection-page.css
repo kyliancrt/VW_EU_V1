@@ -815,7 +815,7 @@
         scrollbar-width: thin;
     }
 
-    .template-collection.collectionCollections .Products>div {
+    .template-collection.collectionCollections .Products > div {
         height: calc(100vh - 100px);
         scroll-snap-align: start;
         position: relative;
