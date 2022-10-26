@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     btnInstall.addEventListener('click', function () {
         videoInstall.play();
         videoInstall.setAttribute("controls", "true");
-        document.querySelector(".Index .Install span").style.display = "none";
-        document.querySelector(".Index .Install h2").style.display = "none";
+        document.querySelector(".template-index .Install span").style.display = "none";
+        document.querySelector(".template-index .Install h2").style.display = "none";
     });
 
 
