@@ -113,70 +113,25 @@
 
                   {% for collection in collections %}
                   {% if collection.handle == "bali" or collection.handle == "bahia" %}
-                    sss
+
+                  <li class="splide__slide {{ collection.handle }}">
+                        <h3>{{ collection.title }}</h3>
+                        <a class="slideCollectionsImage" href="{{ collection.url }}">
+                            <img src="{{ collection.products.first | img_url: 'large' }}">
+                            <div>
+                                <img src="1.jpg">
+                                <img src="2.jpg">
+                                <img src="3.jpg">
+                                <img src="4.jpg">
+                                <img src="1.jpg">
+                                <img src="2.jpg">
+                            </div>
+                        </a>
+                        <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
+                    </li>
+                    
                   {% endif %}
                     {% endfor %}
-                  
-                    <li class="splide__slide" style="background-color:#93a693;">
-                        <h3>Marrakech</h3>
-                        <a class="slideCollectionsImage" href="product.php">
-                            <img src="install.jpg">
-                            <div>
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                                <img src="3.jpg">
-                                <img src="4.jpg">
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                            </div>
-                        </a>
-                        <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
-                    </li>
-                    <li class="splide__slide" style="background-color:rgb(174, 162, 152);">
-                        <h3>Concrete</h3>
-                        <a class="slideCollectionsImage" href="product.php">
-                            <img src="install.jpg">
-                            <div>
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                                <img src="3.jpg">
-                                <img src="4.jpg">
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                            </div>
-                        </a>
-                        <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
-                    </li>
-                    <li class="splide__slide" style="background-color:#e5e5e5;">
-                        <h3>Marble</h3>
-                        <a class="slideCollectionsImage" href="product.php">
-                            <img src="install.jpg">
-                            <div>
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                                <img src="3.jpg">
-                                <img src="4.jpg">
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                            </div>
-                        </a>
-                        <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
-                    </li>
-                    <li class="splide__slide" style="background-color:#3F5AB4;">
-                        <h3>Bloow</h3>
-                        <a class="slideCollectionsImage" href="product.php">
-                            <img src="install.jpg">
-                            <div>
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                                <img src="3.jpg">
-                                <img src="4.jpg">
-                                <img src="1.jpg">
-                                <img src="2.jpg">
-                            </div>
-                        </a>
-                        <a href="collections-collections" class="slideCollectionsBtn">Voir</a>
-                    </li>
                 </ul>
             </div>
         </div>
