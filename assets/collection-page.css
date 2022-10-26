@@ -1,0 +1,848 @@
+.Header {
+    position: absolute;
+}
+
+.Header .announcement {
+    position: relative;
+}
+
+.Header .nav {
+    position: fixed;
+}
+
+.Collection section {
+    width: 100%;
+}
+
+.Collection .headerCollection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.Collection .headerCollection img {
+    width: 100%;
+}
+
+.Collection .headerCollection .title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    margin: 0;
+    border-bottom: 3px solid #fff;
+    z-index: 3;
+    position: fixed;
+    transition: all 0.1s ease;
+}
+
+.Collection .headerCollection .title h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.Collection .headerCollection .title h1>small {
+    font-size: 100%;
+    font-weight: normal;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.Collection .headerCollection .title h1 small:nth-child(1) {
+    animation: tileInfoAnimation 8s infinite;
+}
+
+.Collection .headerCollection .title h1 small:nth-child(2) {
+    animation: tileInfoAnimation 8s infinite;
+    animation-delay: 4s;
+}
+
+
+.Collection .headerCollection .title h1 span {
+    visibility: hidden;
+}
+
+@keyframes tileInfoAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    2%,
+    48% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.Collection .headerCollection .blocFilters {
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    transition: all 0.1s ease;
+}
+
+
+
+.Collection .headerCollection .blocFilters ul {
+    width: 75%;
+    margin: auto;
+    padding: 0;
+}
+
+
+.Collection.collectionFilters .headerCollection .blocFilters ul {
+    width: 100%;
+}
+
+
+.Collection.scroll .headerCollection .title,
+.Collection.scroll .headerCollection .blocFilters {
+    margin-top: -40px;
+}
+
+.Collection.scroll .blocFilters ul {
+    width: 100%;
+}
+
+
+.Collection.scroll.collectionFilters .filters {
+    margin-top: -40px;
+}
+
+
+.Collection .headerCollection .blocFilters ul li {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    border-bottom: 1px solid #F5F5F5;
+    ²
+}
+
+.Collection .headerCollection .blocFilters ul li:nth-child(1) {
+    border-bottom: 0;
+}
+
+.Collection .headerCollection .blocFilters ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Collection .headerCollection .blocFilters ul li small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.Collection .headerCollection .blocFilters ul li.active {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    fill: #fff;
+}
+
+.Collection .headerCollection .blocFilters ul li.active svg {
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-left: 0.5rem;
+    margin-top: -0.1rem;
+}
+
+.Collection .headerCollection .blocFilters ul li:hover {
+    background-color: #000;
+    color: #fff;
+    fill: #000;
+}
+
+.Collection .headerCollection .blocFilters ul:hover li.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.Collection .headerCollection .blocFilters ul.active li {
+    display: flex
+}
+
+.Collection .headerCollection .blocFilters ul.active li.active {
+    border-bottom: 1px solid #000;
+}
+
+.Collection .headerCollection .blocFilters ul.active li.active svg {
+    transform: rotate(-90deg);
+    fill: #000
+}
+
+.Collection .Products {
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.Collection .Products>div {
+    padding-top: 1.6rem;
+}
+
+.Collection .Products>div:nth-child(1) {
+    padding-top: calc(1.6rem + 40px);
+}
+
+.Collection .Products .productsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 0;
+    width: calc(100% - 1rem);
+    gap: 0.5rem;
+}
+
+.Collection.collectionFilters .Products .productsList {
+    margin-top: 90px;
+}
+
+.Collection .Products .productsList li {
+    padding-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Collection .Products>h2 {
+    margin-top: 0;
+}
+
+.Collection .Products .productsList li>span {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.Collection .Products .productsList li>a img {
+    margin: 0.7rem 0;
+    transition: all 0.2s ease;
+    width: 150px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Collection .Products .productsList li>a img:hover {
+    margin: 0.7rem 0;
+    transform: scale(1.04);
+}
+
+.Collection .Products .productsList li>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 6px;
+    width: 150px;
+    margin: auto;
+}
+
+.Collection .Products .productsList li>div> :nth-child(1) {
+    background-color: transparent;
+    text-transform: uppercase;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 100%;
+    padding: 0;
+}
+
+.Collection .Products .productsList li>div> :nth-child(2) {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 0 9px;
+    flex: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Collection .Products .productsList li>div> :nth-child(2) svg {
+    width: 19px;
+}
+
+.Collection .Products .black .productsList li>div> :nth-child(1) {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.Collection .Products .productsList li>div> :nth-child(1):hover {
+    filter: invert(1);
+    border-color: #fff;
+}
+
+
+.Collection .Products .black .productsList li>div> :nth-child(2) {
+    border-color: #000;
+    fill: #000;
+}
+
+.Collection .Products .black>h2,
+.Collection .Products .black .productsList li>span {
+    color: #000;
+}
+
+.Collection .Products .black .productsList li>div> :nth-child(2):hover {
+    background-color: #000;
+    border-color: transparent;
+    fill: #fff;
+}
+
+
+.Collection .Products .white .productsList li>div> :nth-child(1) {
+    background-color: #fff;
+    color: #000;
+}
+
+.Collection .Products .white .productsList li>div> :nth-child(2) {
+    border-color: #fff;
+    fill: #fff;
+}
+
+.Collection .Products .white>h2,
+.Collection .Products .white .productsList li>span {
+    color: #fff;
+}
+
+.Collection .Products .white .productsList li>div> :nth-child(2):hover {
+    fill: #000;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.Collection .Products .newport {
+    background-color: #284B77;
+}
+
+.Collection .Products .ceramics {
+    background-color: #CFA9A6;
+}
+
+.Collection .Products .filters {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    transition: all 0.1s ease;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+
+.Collection .Products .filterColors ul {
+    width: 94%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    vertical-align: middle;
+    align-content: center;
+    margin: auto;
+    gap: 2%;
+    padding: 0;
+    max-width: 500px;
+}
+
+.Collection .Products .filterColors ul li {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    background-color: red;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.Collection .Products .filterColors ul li.active {
+    transform: scale(1.3);
+    transform-origin: 40%;
+}
+
+.Collection .Products .filterColors ul li.active:hover {
+    transform: scale(1.3);
+    border: 1px solid red;
+}
+
+.Collection .Products .filterColors ul li:hover {
+    transform: scale(1.1);
+}
+
+.Collection .Products .filterStyles ul {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    vertical-align: middle;
+    align-content: center;
+    margin: auto;
+    gap: 0;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 0;
+}
+
+.Collection .Products .filterStyles ul li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-left: 1px solid rgb(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem 0;
+}
+
+.Collection .Products .filterStyles ul li:nth-child(1) {
+    border-left: 0;
+}
+
+.Collection .Products .filterStyles ul li:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+.Collection .Products .filterStyles ul li.active {
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: default;
+}
+
+.Collection .popupPreview {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    padding-top: 125px;
+    display: none;
+}
+
+.Collection.Collection.collectionFilters .popupPreview {
+    padding-top: 175px;
+}
+
+.Collection .popupPreview .popupPreviewBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.Collection .popupPreview.active {
+    display: block;
+}
+
+.Collection .popupPreview .popupPreviewContent {
+    z-index: 2;
+    height: 50vh;
+    width: 90%;
+    margin: auto;
+    background: url("http://ftp.vinyl-wall.com/mes/52408-SALLEDEBAIN.jpg") center center / cover;
+    background-color: #fff;
+    border: 6px solid #fff;
+    position: relative;
+    box-shadow: 0px 0px 1000px rgb(0, 0, 0, 1);
+}
+
+.Collection .popupPreview .popupPreviewContent>span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.Collection .popupPreview .popupPreviewContent>div {
+    width: 100%;
+    padding: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 6px;
+    text-transform: uppercase;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms {
+    display: flex;
+    width: 100%;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms>div {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    flex: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms ul {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms.active ul {
+    display: flex;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms ul li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #F5F5F5;
+    width: 100%;
+    text-align: center;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms ul li:hover {
+    background-color: #F5F5F5;
+
+}
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms.active>div,
+.Collection .popupPreview .popupPreviewContent>div>.listRooms.active>div:hover {
+    background-color: #F5F5F5;
+    color: #000;
+    fill: #000;
+}
+
+
+
+.Collection .popupPreview .popupPreviewContent>div>.listRooms svg {
+    margin-left: 0.5rem;
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-top: -0.1rem;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>:nth-child(2) {
+    display: flex;
+    background-color: #1B8886;
+    color: #fff;
+    width: 100%;
+    flex-basis: content;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+    gap: 6px;
+    flex: auto;
+    cursor: pointer;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>:nth-child(2) small {
+    font-weight: bold;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>:nth-child(2) span {
+    font-weight: 900;
+}
+
+.Collection .popupPreview .popupPreviewContent>span:hover,
+.Collection .popupPreview .popupPreviewContent>div>.listRooms>div:hover {
+    background-color: #000;
+    color: #fff;
+    fill: #fff;
+}
+
+.Collection .popupPreview .popupPreviewContent>div>:nth-child(2):hover {
+    background-color: #fff;
+    color: #1B8886;
+}
+
+
+
+/* MEDIA SCREEN */
+
+
+@media only screen and (min-width: 370px) {
+
+
+    .Collection .Products .productsList {
+        width: calc(100% - 2rem);
+        gap: 1rem;
+    }
+
+
+    .Collection .Products .productsList li>a img {
+        width: 170px;
+    }
+
+    .Collection .Products .productsList li>div {
+        width: 170px;
+    }
+
+    .Collection .Products .productsList li>div> :nth-child(1) {
+        padding: 0 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+    .Collection .Products .productsList {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 650px;
+    }
+
+    .Collection .Products h2 {
+        margin: 2rem 0;
+        font-size: 40px;
+    }
+
+    .Collection.collectionCollections .headerCollection .blocFilters ul {
+        max-width: 650px;
+    }
+
+
+    .Collection.scroll .blocFilters ul {
+        max-width: 100%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+    .Collection .Products {
+        width: 50%;
+    }
+
+    .Collection .Products .productsList {
+        gap: 0.5rem;
+    }
+
+
+    .Collection .Products .productsList li>a img {
+        width: 140px;
+    }
+
+    .Collection .Products .productsList li>div {
+        width: 140px;
+    }
+
+    .Collection .Products .productsList li>div> :nth-child(1) {
+        padding: 0;
+    }
+
+    .Collection .headerCollection .title {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .Collection .headerCollection .blocFilters {
+        width: 50%;
+        top: 100px;
+        z-index: 3;
+        width: 50%;
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+
+    .Collection .headerCollection .blocFilters {
+        width: 50%;
+        top: 100px;
+        z-index: 3;
+        width: 50%;
+    }
+
+    .Header {
+        position: fixed;
+    }
+
+    .Collection .popupPreview {
+        width: 50%;
+        padding-top: 0;
+        display: block;
+        right: 0;
+        height: calc(100% - 100px);
+    }
+
+    .Collection .popupPreview .popupPreviewBg {
+        display: none;
+    }
+
+    .Collection .popupPreview .popupPreviewContent {
+        height: 100%;
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        border: 0;
+        border-left: 3px solid #fff;
+        box-shadow: none;
+    }
+
+    .Collection .popupPreview .popupPreviewContent>span {
+        display: none;
+    }
+
+    .Collection.collectionCollections .Products>div {
+        padding-top: 40px;
+    }
+
+    .Collection.Collection.collectionFilters .popupPreview {
+        padding: 0;
+    }
+
+    .Collection .Products .filters {
+        width: 50%;
+        top: 145px;
+    }
+
+    .Collection .Products .filterColors ul {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .Collection .Products .filterColors ul li {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .Collection .headerCollection .blocFilters ul li small {
+        display: none;
+    }
+
+    .Collection .headerCollection .blocFilters ul,
+    .Collection.collectionFilters .headerCollection .blocFilters ul {
+        width: 200px;
+        float: right;
+    }
+
+    .Collection.collectionFilters .Products .productsList {
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    .Collection .headerCollection .blocFilters ul,
+    .Collection.collectionFilters .headerCollection .blocFilters ul {
+        width: 290px;
+    }
+
+    .Collection .headerCollection .blocFilters ul li small {
+        display: block;
+    }
+
+    .Collection.collectionCollections .Products {
+        overflow-y: scroll;
+        height: calc(100vh - 100px);
+        scroll-snap-points-y: repeat(calc(100vh - 100px));
+        scroll-snap-type: y mandatory;
+        width: 50%;
+        scrollbar-width: thin;
+    }
+
+    .Collection.collectionCollections .Products>div {
+        height: calc(100vh - 100px);
+        scroll-snap-align: start;
+        position: relative;
+    }
+
+    .Collection .Products .productsList {
+        width: calc(100% - 2rem);
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+
+    .Collection .Products .productsList li>a img {
+        width: 170px;
+    }
+
+    .Collection .Products .productsList li>div {
+        width: 170px;
+    }
+
+    .Collection .Products .productsList li>div> :nth-child(1) {
+        padding: 0 1rem;
+    }
+
+    .Collection.collectionCollections .Products>div {
+        height: calc(100vh - 100px);
+        padding-top: calc(1.6rem + 40px);
+    }
+
+}
