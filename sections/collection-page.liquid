@@ -156,7 +156,7 @@
                       {% else %}
 
                 <ul class="productsList">                  
-                  {% for product in collection.all %}                    
+                  {% for product in collection.all.products %}                    
                     <li>
                         <span>{{ product.title }}</span>
                         <a href="{{ product.url }}"><img src="{{ product.images[1] | img_url: '100x' }}">
