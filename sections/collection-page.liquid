@@ -1,3 +1,11 @@
+  {% if collection.handle contains "collections" %}
+    {% assign collectionPage = true %}
+  {% elsif collection.handle contains "style" %}collectionFilters
+  {% elsif collection.handle contains "couleur" %}collectionFilters
+
+    {% endif %}
+
+    
 {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 <div class="
