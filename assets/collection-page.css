@@ -759,7 +759,7 @@
         padding-top: 40px;
     }
 
-    .template-collection .collectionFilters .popupPreview {
+    .template-collection.template-collection .collectionFilters .popupPreview{
         padding: 0;
     }
 
