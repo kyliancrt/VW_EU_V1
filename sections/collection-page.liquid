@@ -185,7 +185,9 @@
   {% elsif pageStyle %}
     $('.listFilterStyle').addClass('active');    
   {% elsif pageCouleur %}
-    $('.listFilterColor').addClass('active');    
+    $('.listFilterColor').addClass('active');   
+  {% else %}
+    $('.listFilterCollections').addClass('active');    
     {% endif %}
 
        $( ".listFilter.active a" ).prepend("<small>Filtre par</small>");
