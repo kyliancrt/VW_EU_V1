@@ -141,7 +141,7 @@
     cursor: pointer;
     height: 40px;
     border-bottom: 1px solid #F5F5F5;
-    ²
+    order:2;
 }
 
 .template-collection .headerCollection .blocFilters ul li:nth-child(1) {
