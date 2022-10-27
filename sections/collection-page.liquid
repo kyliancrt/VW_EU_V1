@@ -186,12 +186,11 @@
      {% javascript %}
        
   {% if pageCollections %}
-    $('.listFilterCollections').css('order','1');
     $('.listFilterCollections').addClass('active');
   {% elsif pageStyle %}
-    
+    $('.listFilterStyle').addClass('active');    
   {% elsif pageCouleur %}
-    
+    $('.listFilterColor').addClass('active');    
     {% endif %}
        
     {% endjavascript %}
