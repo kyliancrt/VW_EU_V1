@@ -124,6 +124,9 @@
            <div class="bgCollection {{ collection.handle }} white">
                 <h2>{{ collection.title }}</h2>
                 <ul class="productsList">
+
+                  {% assign current_variant = product.selected_or_first_available_variant %}
+              <span class="variant-sku">{{ current_variant.sku }}</span>
                   
                   {% for product in collection.products %}                    
                     <li>
