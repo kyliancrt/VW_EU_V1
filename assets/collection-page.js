@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //listFiltres
     if ($(window).width() < 1025) {
-        $(".blocFilters li.active").click(function () {
+        $(".blocFilters li.active").click(function(event) {
+    event.preventDefault();
 
             if ($(".blocFilters ul").hasClass("active")) {
                 $(".blocFilters ul").removeClass("active");
