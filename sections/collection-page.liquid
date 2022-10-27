@@ -201,6 +201,7 @@
        
   {% if findRoom contains "cuisine" %}
     {% assign roomKitchen = "" %}   
+    $('.roomKitchen').addClass('active');  
   {% elsif findRoom contains "douche" %}
     {% assign roomShower = "" %}   
   {% elsif findRoom contains "salledebain" %}
