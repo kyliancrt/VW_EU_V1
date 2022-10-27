@@ -103,7 +103,9 @@
 .template-collection .headerCollection .blocFilters ul {
     width: 75%;
     margin: auto;
-    padding: 0;
+    padding: 0;  
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -119,8 +121,6 @@
 
 .template-collection.scroll .blocFilters ul {
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 
