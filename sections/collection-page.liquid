@@ -185,7 +185,6 @@
 
      {% javascript %}
 
-       document.addEventListener('DOMContentLoaded', function () {
   {% if pageCollections %}
     $('.listFilterCollections').addClass('active');
   {% elsif pageStyle %}
@@ -193,7 +192,5 @@
   {% elsif pageCouleur %}
     $('.listFilterColor').addClass('active');    
     {% endif %}
-       
-});
        
     {% endjavascript %}
