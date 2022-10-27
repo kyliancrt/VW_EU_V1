@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       
     //listRoomsDisplay
-    $(".listRooms >div").hover(function () {
+    $(".listRooms").hover(function () {
         if ($(".listRooms").hasClass("active")) {
             $(".listRooms").removeClass("active");
         }
