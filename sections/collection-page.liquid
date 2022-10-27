@@ -184,7 +184,16 @@
                                     </div>
 
      {% javascript %}
-       
+
+       document.addEventListener('DOMContentLoaded', function () {
+  {% if pageCollections %}
     $('.listFilterCollections').addClass('active');
+  {% elsif pageStyle %}
+    $('.listFilterStyle').addClass('active');    
+  {% elsif pageCouleur %}
+    $('.listFilterColor').addClass('active');    
+    {% endif %}
+       
+});
        
     {% endjavascript %}
