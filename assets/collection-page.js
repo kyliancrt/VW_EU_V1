@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    if ($(window).width() < 1025) {
     //popupPreviewShow
+  
     $(".template-collection .productsList li > div > :nth-child(2)").click(function () {
         $(".popupPreview").addClass("active");
         $('body').css('overflow', 'hidden');
@@ -55,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".popupPreview").removeClass("active");
         $('body').css('overflow', 'visible');
     });
-
+  
     //listRoomsDisplay
     $(".listRooms >div").click(function () {
         if ($(".listRooms").hasClass("active")) {
@@ -65,6 +67,20 @@ document.addEventListener('DOMContentLoaded', function () {
             $(".listRooms").addClass("active");
         }
     });
+      
+    } else {
+      
+    //listRoomsDisplay
+    $(".listRooms >div").hover(function () {
+        if ($(".listRooms").hasClass("active")) {
+            $(".listRooms").removeClass("active");
+        }
+        else {
+            $(".listRooms").addClass("active");
+        }
+    });
+      
+    }
 
 
     //listRoomsChange
