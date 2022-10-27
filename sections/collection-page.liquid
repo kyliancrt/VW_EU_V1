@@ -1,9 +1,7 @@
 {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 
-  {% if collection.handle contains "collections" %}
-    {% assign pageCollections = "" %}
-  {% elsif collection.handle contains "style" %}
+  {% if collection.handle contains "style" %}
     {% assign pageStyle = "" %}    
   {% elsif collection.handle contains "couleur" %}
     {% assign pageCouleur = "" %}    
