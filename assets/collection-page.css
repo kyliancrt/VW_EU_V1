@@ -549,7 +549,7 @@
 }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms ul {
-    display:flex;
+    display: none;
     background-color: #fff;
     width: 100%;
     flex-basis: content;
