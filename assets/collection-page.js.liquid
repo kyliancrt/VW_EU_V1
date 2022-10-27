@@ -1,13 +1,3 @@
- {% if collection.handle contains "collections" %}
-    {% assign pageCollections = "" %}
-  {% elsif collection.handle contains "style" %}
-    {% assign pageStyle = "" %}    
-  {% elsif collection.handle contains "couleur" %}
-    {% assign pageCouleur = "" %}    
-  {% elsif collection.handle contains "best" %}
-    {% assign pagebest = "" %}    
-    {% endif %}
-
 document.addEventListener('DOMContentLoaded', function () {
 
     //listFiltres
@@ -86,18 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
     }
-
-  //changeBlocFilters  
-  {% if pageCollections %}
-    $('.listFilterCollections').addClass('active');
-  {% elsif pageStyle %}
-    $('.listFilterStyle').addClass('active');    
-  {% elsif pageCouleur %}
-    $('.listFilterColor').addClass('active');    
-    {% endif %}
-  $( ".listFilter.active a" ).prepend("<small>Filtre par</small>");
-  $( ".listFilter.active a" ).append("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' width='18' height='18'><path d='m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z'></path></svg>");
-       
+  
 
 
 });
