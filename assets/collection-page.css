@@ -631,6 +631,9 @@
     color: #1B8886;
 }
 
+.variant-sku {
+  display:none;
+}
 
 
 /* MEDIA SCREEN */
