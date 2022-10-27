@@ -125,11 +125,12 @@
                 <h2>{{ collection.title }}</h2>
                 <ul class="productsList">
 
-                  {% assign current_variant = product.selected_or_first_available_variant %}
-              <span class="variant-sku">{{ current_variant.sku }}</span>
                   
                   {% for product in collection.products %}                    
                     <li>
+                      
+                  {% assign current_variant = product.selected_or_first_available_variant %}
+              <span class="variant-sku">{{ current_variant.sku }}</span>
                         <span>{{ product.title }}</span>
                         <a href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
