@@ -200,11 +200,11 @@
 
        //changeListRooms
        let findRoom = window.location.href;
-       console.log(findRoom)
        
   {% if findRoom contains "cuisine" %}
     {% assign roomKitchen = "" %}   
     $('.listRooms>div span').text($('.roomKitchen').text());
+       console.log(findRoom)
   {% elsif findRoom contains "douche" %}
     {% assign roomShower = "" %}   
     $('.listRooms>div span').text($('.roomShower').text());
