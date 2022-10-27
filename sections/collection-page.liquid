@@ -184,9 +184,10 @@
                                     </div>
 
      {% javascript %}
-
+       
   {% if pageCollections %}
-    
+    $('.listFilterCollections').css('order','1');
+    $('.listFilterCollections').addClass('active');
   {% elsif pageStyle %}
     
   {% elsif pageCouleur %}
