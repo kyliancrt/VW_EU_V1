@@ -209,21 +209,14 @@
        }
 
        //changeImageRoom 
-          $(".template-collection .Products .white .productsList li > div > :nth-child(2)").click(function() {
-            
-            {% for product in collection.products %}
-            {% endfor %}
-                    <li>
-                        <span>{{ product.title }}</span>
-                        <a href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
-                        </a>
-                        <div>
-                            <a href="product.php">Produit</a>
-                            <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
-            
+          $(".template-collection .Products .white .productsList li > div > :nth-child(2)").click(function() {   
+   var mesproduit = document.getElementById("valuepiece2").innerHTML;
+   var piece = document.getElementById("valuepiece").innerHTML;
+   piece = this.id;
+   $("#mes-col").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + mesproduit + "-" + piece + ".jpg)");
+    $( ".btnspieces" ).removeClass( "active" );
+    $(this).addClass( "active" );            
         });
-       let imageRoom == "";
-       if( $('.template-collection .Products .white .productsList li > div > :nth-child(2)') ) {}
     
        
     </script>
