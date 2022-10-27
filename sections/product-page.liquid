@@ -281,26 +281,26 @@
 
   {% style %}  
 .template-product .productImage.slide1 {
-    background-image: url("{{ product.images[8] | img_url: 'master' }}");
+    background-image: url("{{ product.images[0] | img_url: 'master' }}");
 }
 
 .template-product .productImage.slide2 {
-    background-image: url("{{ product.images[8] | img_url: '100x' }}");
+    background-image: url("{{ product.images[9] | img_url: 'master' }}");
 }
 
 .template-product .productImage.slide3 {
-    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-MUR.png?v=1643974763");
+    background-image: url("{{ product.images[10] | img_url: 'master' }}");
 }
 
 .template-product .productImage.slide4 {
-    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-DOUCHE.png?v=1643974763");
+    background-image: url("{{ product.images[11] | img_url: 'master' }}");
 }
 
 .template-product .productImage.slide5 {
-    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-SOL.png?v=1643974763");
+    background-image: url("{{ product.images[12] | img_url: 'master' }}");
 }
 
 .template-product .productImage.slide6 {
-    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/products/19094-MEUBLE.png?v=1643974763");
+    background-image: url("{{ product.images[13] | img_url: 'master' }}");
 }
   {% endstyle %}
