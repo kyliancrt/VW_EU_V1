@@ -203,18 +203,23 @@
        
   {% if findRoom contains "cuisine" %}
     {% assign roomKitchen = "" %}   
+    $('.listRooms>div span').text($('.roomKitchen').text());
   {% elsif findRoom contains "douche" %}
     {% assign roomShower = "" %}   
+    $('.listRooms>div span').text($('.roomShower').text());
   {% elsif findRoom contains "salledebain" %}
     {% assign roomBath = "" %}   
+    $('.listRooms>div span').text($('.roomBath').text());
   {% elsif findRoom contains "meuble" %}
     {% assign roomFurniture = "" %}   
+    $('.listRooms>div span').text($('.roomFurniture').text());
   {% elsif findRoom contains "mur" %}
     {% assign roomWall = "" %}   
+    $('.listRooms>div span').text($('.roomWall').text());
   {% elsif findRoom contains "sol" %}
     {% assign roomFloor = "" %}    
+    $('.listRooms>div span').text($('.roomFloor').text());
     {% endif %}
-    $('.listRooms>div span').text($('.roomKitchen').text());
     
        
     </script>
