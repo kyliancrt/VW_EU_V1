@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    $('.listFilterStyle').addClass('active');   
 
 
 
