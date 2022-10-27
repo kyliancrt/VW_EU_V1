@@ -127,13 +127,14 @@
 
                   
                   {% for product in collection.products %}                    
-                    <li id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
+                    <li>
                         <span>{{ product.title }}</span>
                         <a href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
                         <div>
                             <a href="product.php">Produit</a>
-                            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
                                     xml:space="preserve">
