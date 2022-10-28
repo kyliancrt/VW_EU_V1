@@ -208,7 +208,7 @@
       if ($(window).width() < 600) {
       resolutionMES = "500x";
       }       
-        let actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image');
+        let actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
        
        //changeImageMES 
       
@@ -224,7 +224,7 @@
         selectedPiece = this.id;   
         let newBackgroundRoom = actualBackgroundRoom.replace("CUISINE", "MUR");
         $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image' , newBackgroundRoom);
-           alert(actualBackgroundRoom.replace(/(url\(|\)|")/g, ''));
+           alert(actualBackgroundRoom);
         });
         
     
