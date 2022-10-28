@@ -755,9 +755,11 @@
         box-shadow: none;
     }
 
-    .template-collection .popupPreview .popupPreviewContent>span {
+    .template-collection .popupPreview .popupPreviewContent>span,
+  .template-collection .popupPreview .popupPreviewContent>div>:nth-child(2) {
         display: none;
     }
+  
 
     .template-collection .collectionCollections .Products>div {
         padding-top: 40px;
