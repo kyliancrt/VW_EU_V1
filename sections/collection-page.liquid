@@ -132,7 +132,7 @@
                         <a href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
                         <div>
-                            <a href="product.php">Produit</a>
+                            <a href="{{ product.url }}">Produit</a>
                             <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -161,7 +161,7 @@
                         <a href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
                         <div>
-                            <a href="product.php">Produit</a>
+                            <a href="{{ product.url }}">Produit</a>
                             <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
                               <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
