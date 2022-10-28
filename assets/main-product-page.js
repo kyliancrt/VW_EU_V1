@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // calculQuantity
         let calculA, calculB, calculC;
+  calculC = 1;
     $(".inputsCalculQuantity input").change(function () {
         calculA = $('#inputA').val();
         calculB = $('#inputB').val();
