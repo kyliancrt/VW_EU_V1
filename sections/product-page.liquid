@@ -107,6 +107,8 @@
                     </li>
                 </ul>
             </div>
+          
+          {% form 'product', product %}
             <div class="productPrice">
                 <div>
                     <div class="discount">
@@ -124,16 +126,13 @@
             </div>
             <span class="btnInfos">réductions & livraison</span>
             <div class="btnsOrders">
-                <a class="btnCheckout" href="#">Ajouter au panier</a>
+          <input class="btnCheckout" name="add" value="Ajouter " type="submit" /> 
                 <a class="btnSample">commander un échantillon</a>
             </div>
 
-
-          {% form 'product', product %}
+          {% endform %}
           <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
           <input name="quantity" value="3">
-          <input name="add" value="ORDER NOW" type="submit" /> 
-          {% endform %}
     
 
           
