@@ -233,6 +233,11 @@
           location.href = "{{ collection.url }}/" + this.id;
         });
        
+        $(".template-collection .Products .filters ul li").each(function() {    
+           if (window.location.href.indexOf("orange") > -1) {
+      alert("your url contains the name franky");
+    }
+        });
         
        
     </script>
