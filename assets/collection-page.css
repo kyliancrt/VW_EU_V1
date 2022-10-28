@@ -213,7 +213,7 @@
 
 .template-collection .Products {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 89px;
     text-align: center;
 }
 
@@ -222,7 +222,10 @@
 }
 
 .template-collection .Products>:nth-child(1) {
-    padding-top: calc(1.6rem + 40px);
+    padding-top: 0;
+}
+.template-collection.scroll .Products {
+  padding-top: 49px;
 }
 
 .template-collection .Products .productsList {
