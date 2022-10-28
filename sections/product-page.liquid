@@ -134,8 +134,8 @@
             <p class="option-title">Size</p>
             <div class="line"></div>
             <div class="options">
-                {% for product_option in product.options_by_name['Size'].values %} 
-                    <input type="radio" id = "{{ product_option }}" name="size" value="{{ product_option }}" > 
+                {% for product_option in product.options_by_name['Format'].values %} 
+                    <input type="radio" id = "{{ product_option }}" name="format" value="{{ product_option }}" > 
                     <label for="{{ product_option }}">{{ product_option }}</label> 
                 {% endfor %}
             </div>
