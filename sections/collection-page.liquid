@@ -209,11 +209,11 @@
        //changeImageRoom 
        
           $(".template-collection .productsList li > div > span").click(function() {   
-   let refProduct = $("#valuepiece2").innerHTML;
+   let refProduct = "VIS4947320208".replace("VIS","");
+   let smallRefProduct = refProduct.slice(0, 5);
    let selectedPiece = "CUISINE";
-   piece = this.id;
-   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + refProduct + "-" + selectedPiece + ".jpg)");     
-            alert('ok');
+   selectedPiece = this.id;
+   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
         });
         
     
