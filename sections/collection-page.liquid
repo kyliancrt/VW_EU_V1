@@ -221,8 +221,9 @@
        
          $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li").click(function() {             
         selectedPiece = this.id;   
-            $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image').replace("CUISINE", "MUR");
-       alert($('.template-collection .popupPreview .popupPreviewContent').css('background-image'));
+        let actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image');
+        let newBackgroundRoom = actualBackgroundRoom.replace("CUISINE", "MUR");
+        $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image' , newBackgroundRoom);
         });
         
     
