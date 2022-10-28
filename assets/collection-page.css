@@ -687,6 +687,16 @@
 
 @media only screen and (min-width: 1025px) {
 
+  .template-collection .popupPreview .popupPreviewContent > div {
+    width: 200px;
+    height: 52px;
+    top: -2px;
+  }
+  .template-collection .popupPreview .popupPreviewContent > div > .listRooms ul {
+    bottom:auto;
+    top:100%;
+  }
+
     .template-collection .Products {
         width: 50%;
     }
