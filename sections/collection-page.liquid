@@ -209,14 +209,15 @@
        //changeImageRoom 
        
           $(".template-collection .productsList li > div > span").click(function() {   
-   let refProduct = this.id.replace("VIS","").slice(0, 5);
+   let refProduct = this.id.replace("VIS","");
+   let smallRefProduct = refProduct.slice(0, 5);
    let selectedPiece = "CUISINE";            
     if ($(window).width() < 600) {
       let resolutionMES = "1200x";
     } else {
       let resolutionMES = "500x";
     }
-   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + resolutionMES + "/" + refProduct + "-" + selectedPiece + ".jpg)");  
+   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + resolutionMES + "/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
         });
         
     
