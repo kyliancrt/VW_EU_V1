@@ -185,12 +185,6 @@
 
                                       
      <script>
-<<<<<<< HEAD
-       
-=======
-    
->>>>>>> 666c956f3b92cf3d8b9d6dd92164970f68ecfda3
-       // changeBlocFilters
        
   {% if pageBest %}
     $('.listFilterBest').addClass('active');
@@ -209,17 +203,15 @@
        let findRoom = window.location.href;
        let imageProductRoom = "{{ product.images[1] | img_url: '1100x' }}";
        if(findRoom.indexOf("cuisine") != -1) {         
-<<<<<<< HEAD
     $('.listRooms>div span').text($('.roomKitchen').text());
-         imageProductRoom == "{{ product.images[1] | img_url: '1100x' }}";
+         imageProductRoom = "{{ product.images[1] | img_url: '1100x' }}";
        }
-=======
         $('.listRooms>div span').text($('.roomKitchen').text());
          imageProductRoom = "{{ product.images[1] | img_url: '1100x' }}";
         }
->>>>>>> 666c956f3b92cf3d8b9d6dd92164970f68ecfda3
 
        //changeImageRoom 
+       
           $(".template-collection .Products .white .productsList li > div > :nth-child(2)").click(function() {   
    var mesproduit = document.getElementById("valuepiece2").innerHTML;
    var piece = document.getElementById("valuepiece").innerHTML;
