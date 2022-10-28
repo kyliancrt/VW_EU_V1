@@ -114,9 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             $('.template-product .productImage').attr('class', 'productImage');
-            $('.template-product .productImage .pagination ul li').removeClass('active')
+            $('.template-product .productImage .pagination ul li').removeClass('active');
             $('.template-product .productImage').addClass(nextSlideId);
-            $(nextSlide).addClass('active')
+            $(nextSlide).addClass('active');
         }
 
     });
@@ -127,6 +127,13 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.template-product .productImage').addClass(this.id);
         $(this).addClass('active')
     });
+
+  //ButtonSample
+  
+    $(".template-product .btnSample").click(function () {
+        $(".template-product #quantityCheckout").val("1");
+    });
+
 
 
 
