@@ -132,13 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
     $(".template-product .btnSample").click(function () {
         $(".template-product #quantityCheckout").val("1");
+        displayPrice();
       $('#btnCheckout').trigger('click');
     });
 
   //buttonCalculCheckout
     $(".template-product #btnCheckoutCalcul").click(function () {
-        $(".template-product #quantityCheckout").val("1");
-      $('#btnCheckout').trigger('click');
+        $(".template-product #quantityCheckout").val(calculC);
+        displayPrice();
     });
 
 
