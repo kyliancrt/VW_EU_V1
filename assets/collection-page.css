@@ -434,7 +434,6 @@
 
 .template-collection .Products .filterColors ul li.active:hover {
     transform: scale(1.3);
-    border: 1px solid red;
 }
 
 .template-collection .Products .filterColors ul li:hover {
