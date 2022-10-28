@@ -94,8 +94,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    $('.listFilterBest').addClass('active');
-
-
 
 });
