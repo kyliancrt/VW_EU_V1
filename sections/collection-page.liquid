@@ -229,7 +229,10 @@
         $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms > div span').text($(this).text());          
         });
         
-    
+        $(".template-collection .Products .filters ul li").click(function() {    
+          location.href = "{{ collecion.url }}/" + this.id;
+        });
+        
        
     </script>
     
