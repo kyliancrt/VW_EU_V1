@@ -226,6 +226,7 @@
         let newBackgroundRoom = actualBackgroundRoom.replace(/CUISINE|MUR|SALLEDEBAIN|DOUCHE|SOL|MEUBLE/g, selectedPiece);
         $('.template-collection .popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);
         $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms ul").css('display' , 'none');
+        $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms").removeClass('active');
         });
         
     
