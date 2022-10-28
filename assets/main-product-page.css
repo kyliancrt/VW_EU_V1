@@ -311,7 +311,7 @@
     margin-top: 2rem;
 }
 
-.template-product .contentProduct a , .template-product .contentProduct button {
+.template-product .contentProduct a , .template-product .contentProduct input {
     padding: 1rem;
     width: 100%;
     text-transform: uppercase;
