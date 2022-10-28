@@ -209,7 +209,7 @@
        //changeImageRoom 
        
           $(".template-collection .productsList li > div > span").click(function() {   
-   let refProduct = $(this).id.replace("VIS","");
+   let refProduct = $(this.id).replace("VIS","");
    let smallRefProduct = refProduct.slice(0, 5);
    let selectedPiece = "CUISINE";
    $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
