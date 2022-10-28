@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() >= 1) {
                 $('.Header').addClass('scroll');
-                $('.Collection').addClass('scroll');
+                $('.template-collection').addClass('scroll');
             }
             else {
                 $('.Header').removeClass('scroll');
-                $('.Collection').removeClass('scroll');
+                $('.template-collection').removeClass('scroll');
             }
         });
     }
