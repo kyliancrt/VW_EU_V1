@@ -223,8 +223,7 @@
          $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li").click(function() {             
         selectedPiece = this.id;   
         let newBackgroundRoom = actualBackgroundRoom.replace("CUISINE", "MUR");
-        $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li').css('background-image' , newBackgroundRoom);
-           alert(actualBackgroundRoom);
+        $('.template-collection .popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);
         });
         
     
