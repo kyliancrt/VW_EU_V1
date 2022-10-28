@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#discountPercent').text('-15%');
         }
 
-        let discountPrice = (valQuantity * 2.99 * discountPercent).toFixed(2);
-        let regularPrice = (valQuantity * 2.99).toFixed(2);
+        let discountPrice = (valQuantity * 2.99 * discountPercent).toFixed(1);
+        let regularPrice = (valQuantity * 2.99).toFixed(1);
         $('#regularPrice').text(regularPrice);
         $('#price').text(discountPrice);
 
