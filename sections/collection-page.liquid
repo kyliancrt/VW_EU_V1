@@ -203,8 +203,6 @@
 
        // variables
           
-   let refProduct = this.id.replace("VIS","");
-   let smallRefProduct = refProduct.slice(0, 5);
    let selectedPiece = "CUISINE";   
    let resolutionMES = "1200x";
       if ($(window).width() < 600) {
@@ -213,7 +211,9 @@
        
        //changeImageMES 
       
-          $(".template-collection .productsList li > div > span").click(function() { 
+          $(".template-collection .productsList li > div > span").click(function() {             
+   let refProduct = this.id.replace("VIS","");
+   let smallRefProduct = refProduct.slice(0, 5);
    $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + resolutionMES + "/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
         });
         
