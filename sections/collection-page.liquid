@@ -211,7 +211,7 @@
         let actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
        
        //changeImageMES 
-      
+       
           $(".template-collection .productsList li > div > span").click(function() {             
    let refProduct = this.id.replace("VIS","");
    let smallRefProduct = refProduct.slice(0, 5);
@@ -225,6 +225,7 @@
         selectedPiece = this.id;   
         let newBackgroundRoom = actualBackgroundRoom.replace(/CUISINE|MUR|SALLEDEBAIN|DOUCHE|SOL|MEUBLE/g, selectedPiece);
         $('.template-collection .popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);
+        $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms").removeClass('active');
         });
         
     
