@@ -213,9 +213,8 @@
 
 .template-collection .Products {
     width: 100%;
-    padding-top: 89px;
+    padding-top: 1.5rem;
     text-align: center;
-  transition: all .1s ease;
 }
 
 .template-collection .Products>div {
@@ -223,10 +222,7 @@
 }
 
 .template-collection .Products>:nth-child(1) {
-    padding-top: 0;
-}
-.template-collection.scroll .Products {
-  padding-top: 49px;
+    padding-top: calc(1.6rem + 40px);
 }
 
 .template-collection .Products .productsList {
@@ -243,7 +239,7 @@
 }
 
 .template-collection .collectionFilters .Products .productsList {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .template-collection .Products .productsList li {
