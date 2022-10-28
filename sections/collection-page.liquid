@@ -1,4 +1,4 @@
-{{ 'collection-page.css' | asset_url | stylesheet_tag }}
+ {{ 'collection-page.css' | asset_url | stylesheet_tag }}
 {{ 'collection-page.js' | asset_url | script_tag }}
 
   {% if collection.handle contains "style" %}
@@ -230,13 +230,17 @@
         });
         
         $(".template-collection .Products .filters ul li").click(function() {    
+          if ( $(this).hasClass('active') ) {
+        $(this).removeClass('active');
+          } else {
           location.href = "{{ collection.url }}/" + this.id;
-        });
+          } 
+          });
        
         $(".template-collection .Products .filters ul li").each(function() {    
-           if (window.location.href.indexOf(this.id) > -1) {
+        if (window.location.href.indexOf(this.id) > -1) {
         $(this).addClass('active');
-    }
+        }
         });
         
        
