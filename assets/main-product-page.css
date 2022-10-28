@@ -265,7 +265,7 @@
     transform: scale(1.1);
 }
 
-.template-product .contentProduct>.btnInfos {
+.template-product .contentProduct .btnInfos {
     text-transform: uppercase;
     margin-top: 0.5rem;
     display: block;
@@ -280,7 +280,7 @@
     transition: all 0.1s ease;
 }
 
-.template-product .contentProduct>.btnInfos::after {
+.template-product .contentProduct .btnInfos::after {
     content: '?';
     width: 10px;
     height: 10px;
@@ -298,7 +298,7 @@
 }
 
 
-.template-product .contentProduct>.btnInfos:hover {
+.template-product .contentProduct .btnInfos:hover {
     outline-color: transparent;
 }
 
