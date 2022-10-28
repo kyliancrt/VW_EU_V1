@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".template-product #btnCheckoutCalcul").click(function () {
         $(".template-product #quantityCheckout").val(calculC);
         displayPrice();
+      $('#btnCheckout').trigger('click');
     });
 
 
