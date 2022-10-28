@@ -580,8 +580,8 @@
 
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div:hover {
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div,
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div:hover {
     background-color: #F5F5F5;
     color: #000;
     fill: #000;
