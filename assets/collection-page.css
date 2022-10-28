@@ -564,6 +564,7 @@
     padding: 0;
 }
 
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul,
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
     display: flex;
 }
@@ -580,6 +581,8 @@
 
 }
 
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div,
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div:hover,
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div,
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div:hover {
     background-color: #F5F5F5;
