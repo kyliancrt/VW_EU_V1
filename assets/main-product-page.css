@@ -311,7 +311,7 @@
     margin-top: 2rem;
 }
 
-.template-product .contentProduct a {
+.template-product .contentProduct a , .template-product .contentProduct button {
     padding: 1rem;
     width: 100%;
     text-transform: uppercase;
@@ -326,6 +326,7 @@
     color: #fff;
     font-weight: 900;
     font-size: 20px;
+  border:0;
 }
 
 .template-product .contentProduct .btnsOrders .btnSample {
