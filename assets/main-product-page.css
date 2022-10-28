@@ -639,10 +639,6 @@
     display: none;
 }
 
-.template-product .descriptionProduct {
-    display: none;
-}
-
 /* MEDIA SCREEN */
 
 @media only screen and (min-width: 400px) {
@@ -801,10 +797,6 @@
         text-align: center;
     }
 
-    .template-product .descriptionProduct {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
 
     .template-product .contentProduct .franceTrust {
         margin-bottom: 0;
