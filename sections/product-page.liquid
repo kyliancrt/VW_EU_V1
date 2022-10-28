@@ -130,29 +130,10 @@
 
 
           {% form 'product', product %}
-        <div>
-            <p class="option-title">Size</p>
-            <div class="line"></div>
-            <div class="options">
-                {% for product_option in product.options_by_name['Format'].values %} 
-                    <input type="radio" id = "{{ product_option }}" name="format" value="{{ product_option }}" > 
-                    <label for="{{ product_option }}">{{ product_option }}</label> 
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="quantity-add">
-            <div class="input-quantity">
-                <input class="input-quantity" type="number" min="1" placeholder="1"> 
-                <input type="hidden" name="id" data-productid="{{ product.variants[0].id }}" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}" />
-            </div>
-            <div class="cart-button">
-                <button class="cart-btn" type="submit" value="Add To Cart">ADD</button> 
-            </div>
-        </div>     
-    {% endform %}
+          <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+          <input name="quantity" value="3">
+          <input name="add" value="ORDER NOW" type="submit" /> 
+          {% endform %}
     
 
           
