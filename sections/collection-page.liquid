@@ -216,7 +216,8 @@
    let refProduct = this.id.replace("VIS","");
    let smallRefProduct = refProduct.slice(0, 5);
    $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(http://ftp.vinyl-wall.com/mes/" + resolutionMES + "/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
-        });
+  actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
+          });
 
        //changeRoomMES
        
