@@ -204,10 +204,9 @@
        //changeListRoom
        
        let findRoom = window.location.href;
-       let imageProductRoom == "";
+       let imageProductRoom == "{{ product.images[1] | img_url: '1100x' }}";
        if(findRoom.indexOf("cuisine") != -1) {         
-        $('.listRooms>div span').text($('.roomKitchen').text());
-         imageProductRoom == "";
+         imageProductRoom == "{{ product.images[1] | img_url: '1100x' }}";
         }
 
        //changeImageRoom 
