@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // calculQuantity
+        let calculA, calculB, calculC;
     $(".inputsCalculQuantity input").change(function () {
-        let a, b, c;
-        a = $('#inputA').val();
-        b = $('#inputB').val();
-        c = Math.ceil(a / 20) * Math.ceil(b / 20);
-        $('#inputC').val(c);
-        $('#quantityCheckout').val(c);
+        calculA = $('#inputA').val();
+        calculB = $('#inputB').val();
+        calculC = Math.ceil(calculA / 20) * Math.ceil(calculB / 20);
+        $('#inputC').val(calculC);
+        $('#quantityCheckout').val(calculC);
         displayPrice();
     });
 
@@ -128,12 +128,19 @@ document.addEventListener('DOMContentLoaded', function () {
         $(this).addClass('active')
     });
 
-  //ButtonSample
+  //buttonSample
   
     $(".template-product .btnSample").click(function () {
         $(".template-product #quantityCheckout").val("1");
       $('#btnCheckout').trigger('click');
     });
+
+  //buttonCalculCheckout
+    $(".template-product #btnCheckoutCalcul").click(function () {
+        $(".template-product #quantityCheckout").val("1");
+      $('#btnCheckout').trigger('click');
+    });
+
 
 
 
