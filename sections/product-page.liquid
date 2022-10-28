@@ -119,20 +119,20 @@
                 </div>
                 <div>
                     <span id="downQuantity">-</span>
-                    <input id="quantityCheckout" type="number" value="1" min="1" max="999" maxlength="3" />
+                    <input name="quantity" id="quantityCheckout" type="number" value="1" min="1" max="999" maxlength="3" />
                     <span id="upQuantity">+</span>
                 </div>                
             <a href="#calcul" class="btnToQuantity desktop">Calculer ma quantité</a>
             </div>
             <span class="btnInfos">réductions & livraison</span>
             <div class="btnsOrders">
-          <input class="btnCheckout" name="add" value="Ajouter " type="submit" /> 
+              
+          <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+          <input class="btnCheckout" name="add" value="Ajouter au panier" type="submit" /> 
                 <a class="btnSample">commander un échantillon</a>
             </div>
 
           {% endform %}
-          <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
-          <input name="quantity" value="3">
     
 
           
