@@ -104,5 +104,9 @@ h2 {
   max-width:1600px;
   margin:auto;
 }
+.visually-hidden {
+  visualy:hidden;
+  height:0px;
+}
 
 /* cart page */
