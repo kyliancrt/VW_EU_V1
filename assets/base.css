@@ -102,6 +102,7 @@ h2 {
 
 /* BASE */
 
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
