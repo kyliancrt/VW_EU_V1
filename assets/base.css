@@ -127,6 +127,17 @@ h2 {
 .cart-item {
   gap: 1rem 0.5rem;
 }
-.cart-item__totals.small-hide {
+.medium-hide {
   display: none;
+}  
+
+@media only screen and (min-width: 1025px) {
+  
+.small-hide {
+  display: none;
+}
+.medium-hide {
+  display: block;
+}  
+  
 }
