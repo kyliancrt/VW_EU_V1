@@ -130,6 +130,10 @@ h2 {
 .small-hide, .cart-item__totals.small-hide {
   display: none;
 }  
+.cart-items thead tr {
+  margin-bottom:0;
+}
+
 
 @media only screen and (min-width: 1025px) {
   
