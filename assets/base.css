@@ -124,3 +124,9 @@ h2 {
 .price.price--end{
   font-size: 1.2rem;
 }
+.cart-item {
+  gap: 1rem 0.5rem;
+}
+.cart-item__totals {
+  display: none;
+}
