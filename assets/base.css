@@ -110,3 +110,14 @@ h2 {
 }
 
 /* cart page */
+
+.cart-item__details a {
+  font-size: 1.65em;
+  font-weight:900;
+}
+.product-option dt {
+  display: none;
+}
+.product-option dd {
+  font-size: 1.2rem;
+}
