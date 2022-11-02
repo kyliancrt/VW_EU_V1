@@ -102,3 +102,8 @@ h2 {
 
 /* BASE */
 
+.page-width {
+  width:95%;
+  max-width:1600px;
+  margin:auto;
+}
