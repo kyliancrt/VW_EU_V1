@@ -127,13 +127,13 @@ h2 {
 .cart-item {
   gap: 1rem 0.5rem;
 }
-.small-hide {
+.small-hide, .cart-item__totals.small-hide {
   display: none;
 }  
 
 @media only screen and (min-width: 1025px) {
   
-.small-hide {
+.small-hide, .cart-item__totals.small-hide {
   display: block;
 }
 .medium-hide {
