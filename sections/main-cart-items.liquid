@@ -14,33 +14,33 @@
 
           {% for item in cart.items %}
             
-        <div>
+        <div  id="CartItem-{{ item.index | plus: 1 }}">
             
         <div class="listTiles">
                 <ul>
                     <li>
-                        <img src="{{ item.product.images[2] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[2] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[3] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[3] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[4] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[4] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[5] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[5] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[6] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[6] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[7] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[7] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[8] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[8] | image_url: width: 300 }}">
                     </li>
                     <li>
-                        <img src="{{ item.product.images[9] | image_url: width: 300 }}">
+                        <img loading="lazy" src="{{ item.product.images[9] | image_url: width: 300 }}">
                     </li>
                 </ul>
                 <p>Cette référence est composée de 4 motifs.</p>
@@ -53,7 +53,7 @@
             <div>
             <div class="productPrice">
                  <div>
-                        <span class="price"><span id="price">200.99</span>€</span>
+                        <span class="price"><span id="price">{{ item.final_price | money }}</span>€</span>
                     </div>
                     <div>
                         <span id="downQuantity">-</span>
