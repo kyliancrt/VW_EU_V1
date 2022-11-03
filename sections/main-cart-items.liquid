@@ -17,7 +17,8 @@
         <div  id="CartItem-{{ item.index | plus: 1 }}">
             
         <div class="listTiles">
-                <ul>
+                <a href="{{ item.url }}">
+            <ul>
                     <li>
                         <img loading="lazy" src="{{ item.product.images[2] | image_url: width: 300 }}">
                     </li>
@@ -43,11 +44,12 @@
                         <img loading="lazy" src="{{ item.product.images[9] | image_url: width: 300 }}">
                     </li>
                 </ul>
+                </a>
                 <p>Cette référence est composée de 4 motifs.</p>
             </div>
             <div class="productContent">
                 <div>
-            <h2>{{ item.product.title }}<small>(x1)</small></h2>
+            <h2><a href="{{ item.url }}">{{ item.product.title }}<small>(x1)</small></a></h2>
             <h3><strong>Carreaux</strong> adhésifs <small>20 x 20 cm</small></h3>
             </div>
             <div>
