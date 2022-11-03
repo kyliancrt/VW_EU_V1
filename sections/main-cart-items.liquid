@@ -60,8 +60,10 @@
               <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
                       </label>
+              
                       <quantity-input class="quantity">
-                        <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        
+                        <button id="downQuantity" class="quantity__button no-js-hidden" name="minus" type="button">
                           <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
@@ -69,16 +71,18 @@
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
-                          min="0"
+                          min="1" max="999" maxlength="3"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
                         >
-                        <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <button id="upQuantity" class="quantity__button no-js-hidden" name="plus" type="button">
                           <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-plus' %}
                         </button>
+                        
                       </quantity-input>
+              
                     <div>
                         <span id="downQuantity">-</span>
                         <input id="quantityCheckout" type="number" value="1" min="1" max="999" maxlength="3" />
