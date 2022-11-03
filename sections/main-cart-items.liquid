@@ -2,6 +2,7 @@
 {{ 'main-cart-items.js' | asset_url | script_tag }}
 
 
+<cart-items class="{% if cart == empty %}is-empty{% endif %}">
  <section class="cartTemplate">
 
         <div class="cartTemplateHeader">
@@ -11,33 +12,34 @@
 
         <div class="cartGrid">
 
+          {% for item in cart.items %}
         <div>
             
         <div class="listTiles">
                 <ul>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_03_dab9539b-8f52-48a3-9262-8a465af9b052.png?v=1643974739">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_05_2f45b97a-0516-4390-8019-95c1e0310cff.png?v=1643974736">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_11_f7f5c290-be5b-4cdb-b36a-ef936755c9ed.png?v=1643974738">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_13_fff745d1-788e-434b-95a8-9044e8d09eb8.png?v=1643974737">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_07_7db7fcd9-7814-4c75-9683-9f783736c7ae.png?v=1643974737">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_09_976d233c-aa96-4621-b40c-90c9f360a9e0.png?v=1643974737">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_15_056277ba-57c1-4d22-b38e-c6d39cde97f2.png?v=1643974738">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                     <li>
-                        <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/products/fichier-WA8_17_f884c4df-910a-4e68-bb2a-12bb1809dd40.png?v=1643974736">
+                        <img src="{{ item.images[2] | image_url: width: '100x' }}">
                     </li>
                 </ul>
                 <p>Cette référence est composée de 4 motifs.</p>
@@ -90,51 +92,22 @@
                     <span class="price"><span id="price">40</span>€</span>
                 </div>
             </div>
+            {% endfor %}
 
         </div>
             
         </section>
 
+  </form>
+</cart-items>
 
 
           
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
-  <div class="title-wrapper-with-link">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-  </div>
-
-  <div class="cart__warnings">
-    <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="button">
-      {{ 'general.continue_shopping' | t }}
-    </a>
-
-    {%- if shop.customer_accounts_enabled and customer == nil -%}
-      <h2 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h2>
-      <p class="cart__login-paragraph">
-        {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
-      </p>
-    {%- endif -%}
-  </div>
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-    <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
-      <div class="js-contents">
-        {%- if cart != empty -%}
-          <table class="cart-items">
-            <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
-            <thead>
-              <tr>
-                <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
-                <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
-                <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
-                <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
-              </tr>
-            </thead>
 
-            <tbody>
-              {%- for item in cart.items -%}
+   {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -360,46 +333,4 @@
                     </div>
                   </td>
                 </tr>
-              {%- endfor -%}
-            </tbody>
-          </table>
-        {%- endif -%}
-      </div>
-    </div>
-
-    <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
-    <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
-  </form>
-</cart-items>
-
-{% schema %}
-{
-  "name": "t:sections.main-cart-items.name",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ]
-}
-{% endschema %}
+              {% endfor %}
