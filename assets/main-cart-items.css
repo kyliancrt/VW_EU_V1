@@ -163,7 +163,7 @@
     transform-origin: center;
 }
 
-.template-cart .productPrice>:nth-child(2)>svg {
+.template-cart .productPrice .btnRemove svg {
     cursor: pointer;
     transform-origin: center;
     width: 25px;
@@ -171,7 +171,7 @@
 }
 
 .template-cart .productPrice>:nth-child(2)>span:hover,
-.template-cart .productPrice>:nth-child(2)>svg:hover {
+.template-cart .productPrice .btnRemove svg:hover {
     transform: scale(1.1);
 }
 
