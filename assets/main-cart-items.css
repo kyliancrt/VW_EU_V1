@@ -103,6 +103,11 @@
     margin: 0;
 }
 
+
+.template-cart .listTiles ul li {
+    max-width: 80px;
+}
+
 .template-cart .listTiles ul li img {
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 5%);
 }
