@@ -218,12 +218,18 @@
     position: absolute;
     top: -1.8rem;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1.5rem;
     font-size: 24px;
     font-weight: 900;
 }
+
+
+.template-cart .productPrice.discountEnable .discount {
+  display:flex;
+}
+
 
 .template-cart .divTotal .discount> :nth-child(1) {
     color: #8E8E8E;
@@ -273,9 +279,13 @@
     display: flex;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     text-align: center;
     text-decoration: underline;
+}
+
+.template-cart .productPrice.discountEnable .discount {
+    margin-bottom: 3rem;
 }
 
 .template-cart .divTotal .productPrice .price {
