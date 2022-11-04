@@ -140,7 +140,7 @@
         let inputQuantity = $(this).parent().children('.quantity__input');
         let valQuantity = $(this).parent().children('.quantity__input')val();
         if (valQuantity > 1) {
-            inputQuantity.val(--valQuantity);
+            $(this).parent().children('.quantity__input').val(--valQuantity);
             displayPrice();
         }
     });
