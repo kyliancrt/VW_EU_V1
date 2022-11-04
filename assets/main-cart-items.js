@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         let discountPercent = 1;
         let totalPrice = parseFloat($('#price').text());
         let totalQuantity = parseInt(totalPrice / 2.99);
-      alert(totalQuantity)
 
         if (totalPrice >= 30) {
             $('.productPrice').addClass('discountEnable');
