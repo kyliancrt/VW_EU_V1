@@ -7,6 +7,9 @@
         <div class="divTotal{% if cart == empty %} is-empty{% endif %}">
         <div>
             <div>
+              <button type="submit" id="checkout" class="btnCheckout" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                  {{ 'sections.cart.checkout' | t }}
+                </button>
             <button class="btnCheckout">Procéder au paiement
         <small>Paiement en 4 fois sans frais</small>
             </button>
