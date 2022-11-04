@@ -65,7 +65,10 @@
                     <div class="quantityProduct">
                       
                       <quantity-input class="quantity">                        
-                        <span id="downQuantity">-</span>
+                        <button id="downQuantity" class="quantity__button no-js-hidden" name="minus" type="button">
+                          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                          {% render 'icon-minus' %}
+                        </button>
                         <input class="quantity__input"
                           type="number"
                           name="updates[]"
@@ -76,7 +79,10 @@
                           data-index="{{ item.index | plus: 1 }}"
                           onblur="this.form.submit()"
                         >
-                       <span id="upQuantity">+</span>                       
+                        <button id="upQuantity" class="quantity__button no-js-hidden" name="plus" type="button">
+                          <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
+                          {% render 'icon-plus' %}
+                        </button>                        
                       </quantity-input>
               
                       <cart-remove-button class="btnRemove" id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
@@ -129,23 +135,7 @@
           <script>
             document.addEventListener('DOMContentLoaded', function () {
 
-             $(".template-cart #upQuantity").click(function () {
-               let parent1 = $(this.parent());
-        let valQuantity = $(parent1 + ' .quantity__input').val();
-        if (valQuantity < 999) {
-            $('#quantityCheckout').val(++valQuantity);
-            displayPrice();
-        }
-    });
-    $(".template-cart #downQuantity").click(function () {
-        let valQuantity = $('#quantityCheckout').val();
-        if (valQuantity > 1) {
-            $('#quantityCheckout').val(--valQuantity);
-            displayPrice();
-        }
-    });
-
-    // displayPrice
+        // displayPrice
     function displayPrice() {
         let discountPercent = 1;
         let valQuantity = $('#quantityCheckout').val();
