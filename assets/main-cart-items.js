@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.productPrice').removeClass('discountEnable');
         }
 
-        if (totalPrice >= 30) {
+        if (totalQuantity >= 30) {
             discountPercent = 0.95;
             $('#discountPercent').text('-5%');
         }
-        if (totalPrice >= 60) {
+        if (totalQuantity >= 60) {
             discountPercent = 0.90;
             $('#discountPercent').text('-10%');
         }
-        if (totalPrice >= 90) {
+        if (totalQuantity >= 90) {
             discountPercent = 0.85;
             $('#discountPercent').text('-15%');
         }    
