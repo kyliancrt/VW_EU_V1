@@ -131,7 +131,7 @@
 
              $(".template-cart #upQuantity").click(function () {
                let parent1 = $(this).parent();
-        let valQuantity = $(parent1 + '.quantity__input').val();
+        let valQuantity = $('.quantity__input').val();
         if (valQuantity < 999) {
             $('#quantityCheckout').val(++valQuantity);
             displayPrice();
