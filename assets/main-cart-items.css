@@ -208,7 +208,7 @@
 }
 
 .template-cart .btnPaypal {
-  
+  width: 150px;
 }
 .template-cart .divTotal .discount {
     position: absolute;
