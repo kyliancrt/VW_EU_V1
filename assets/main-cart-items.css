@@ -284,7 +284,7 @@
     text-decoration: underline;
 }
 
-.template-cart .productPrice.discountEnable .discount {
+.template-cart .divTotal .productPrice.discountEnable p {
     margin-bottom: 3rem;
 }
 
