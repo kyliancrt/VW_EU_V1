@@ -131,9 +131,7 @@
 
              $(".template-cart #upQuantity").click(function () {
                	
-            let parentThis =  $( this ).parent();
-               $(parentThis + '.quantity__input').css( "background-color", "red" );
-               $(parentThis).css( "background-color", "red" );
+            let parentThis =  $(this).parent().children('.quantity__input').css( "background-color", "red" );;
               
             });
               
