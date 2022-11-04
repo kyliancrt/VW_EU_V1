@@ -9,7 +9,7 @@
             <h1>Votre panier</h1>
             <a href="/collections/carreaux-adhesifs/">Continuer mes achats</a>
         </div>
-      <form action="{{ routes.cart_url }}" method="post">
+        <form action="{{ routes.cart_url }}" method="post">
         <div class="cartGrid">
 
           {% for item in cart.items %}
@@ -68,7 +68,7 @@
                           <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
-                        <input class="quantity__input"
+                        <input disabled class="quantity__input"
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
@@ -97,10 +97,34 @@
         </div>
                 
             {% endfor %}
+
+        <div class="divTotal">
+        <div>
+            <div>
+            <button class="btnCheckout">Procéder au paiement
+        <small>Paiement en 4 fois sans frais</small>
+            </button>
+            <button class="btnPaypal">
+                <img src="paypal.svg">
+            </button>
+             </div>
+        <span class="infoDelivery">Livraison offerte à partir de 49€</span>
+        <span class="btnInfos">réductions & livraison</span>
+        </div>
+            <div class="productPrice">
+                <p>Sous-total :</p>
+                <div>
+                    <div class="discount">
+                        <div><span id="regularPrice">60</span>€</div>
+                        <span id="discountPercent">10%</span>
+                    </div>
+                    <span class="price"><span id="price">40</span>€</span>
+                </div>
+            </div>
+
+        </div>
             
         </section>
-
-            <input type="submit" name="checkout" value="Checkout">
 
   </form>
 </cart-items>
