@@ -270,6 +270,7 @@
 
 .template-cart .divTotal {
     align-items: center;
+  margin-top: 25px;
 }
 
 .template-cart .divTotal .productPrice {
