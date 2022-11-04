@@ -21,10 +21,10 @@
                 <p>Sous-total :</p>
                 <div>
                     <div class="discount">
-                        <div><span id="regularPrice">{{ cart.total_price | money_with_currency }}</div>
+                        <div><span id="regularPrice">60</span>€</div>
                         <span id="discountPercent">10%</span>
                     </div>
-                    <span class="price"><span id="price">40</span>€</span>
+                    <span class="price"><span id="price">{{ cart.total_price | money_with_currency }}</span></span>
                 </div>
             </div>
 
