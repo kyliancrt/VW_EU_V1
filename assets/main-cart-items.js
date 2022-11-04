@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayPrice() {
         let discountPercent = 1;
         let totalPrice = parseFloat($('#price').text());
-        let totalQuantity = totalPrice / 2.99;
+        let totalQuantity = parseInt(totalPrice / 2.99);
       alert(totalQuantity)
 
         if (totalPrice >= 30) {
