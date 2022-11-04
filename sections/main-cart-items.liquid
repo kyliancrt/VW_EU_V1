@@ -137,8 +137,9 @@
             });
               
     $(".template-cart #downQuantity").click(function () {
-        if ($(this).parent().children('.quantity__input').val() > 1) {
-            $(this).parent().children('.quantity__input').val("1");
+        let valQuantity = $(this).parent().children('.quantity__input').val();
+        if (valQuantity > 1) {
+            $(this).parent().children('.quantity__input').val("5");
         }
     });
 
