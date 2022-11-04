@@ -69,7 +69,7 @@
                           <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
-                        <input disabled class="quantity__input"
+                        <input class="quantity__input"
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
