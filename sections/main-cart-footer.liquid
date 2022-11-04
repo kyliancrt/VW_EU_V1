@@ -1,3 +1,37 @@
+ {{ 'main-cart-items.css' | asset_url | stylesheet_tag }}
+{{ 'main-cart-items.js' | asset_url | script_tag }}
+
+ <section class="cartTemplate">
+   
+        <div class="divTotal">
+        <div>
+            <div>
+            <button class="btnCheckout">Procéder au paiement
+        <small>Paiement en 4 fois sans frais</small>
+            </button>
+            <button class="btnPaypal">
+                <img src="paypal.svg">
+            </button>
+             </div>
+        <span class="infoDelivery">Livraison offerte à partir de 49€</span>
+        <span class="btnInfos">réductions & livraison</span>
+        </div>
+            <div class="productPrice">
+                <p>Sous-total :</p>
+                <div>
+                    <div class="discount">
+                        <div><span id="regularPrice">60</span>€</div>
+                        <span id="discountPercent">10%</span>
+                    </div>
+                    <span class="price"><span id="price">40</span>€</span>
+                </div>
+            </div>
+
+        </div>
+            
+        </section>
+
+
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
