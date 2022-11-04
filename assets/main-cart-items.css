@@ -192,7 +192,7 @@
     background-color: #1b8886;
     color: #fff;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 18px;
     width: max-content;
     padding: 5px 20px;
     text-transform: uppercase;
@@ -203,7 +203,7 @@
 .template-cart .btnCheckout small {
     display: block;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: initial;
 }
 
