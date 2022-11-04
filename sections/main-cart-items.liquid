@@ -106,7 +106,7 @@
              </div>
         <span class="infoDelivery">Livraison offerte à partir de 49€</span>
         <span class="btnInfos">réductions & livraison</span>
-        <input type="submit" name="update" value="Update cart" />
+        <input id="btnUpdate" type="submit" name="update" value="Update cart" />
         </div>
             <div class="productPrice">
                 <p>Sous-total :</p>
@@ -127,13 +127,15 @@
 </cart-items>
 
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            
+document.addEventListener('DOMContentLoaded', function () {
 
              $(".template-cart #downQuantity").click(function () {               
         let inputQuantity = $(this).parent().children('.quantity__input');
         let valQuantity = $(this).parent().children('.quantity__input').val();
         if (valQuantity > 1) {
             $(this).parent().children('.quantity__input').val(--valQuantity);
+          $( "#foo" ).trigger( "click" );
         }
             });
               
@@ -144,39 +146,6 @@
             $(this).parent().children('.quantity__input').val(++valQuantity);
         }
     });
-
-    // displayPrice
-    function displayPrice() {
-        let discountPercent = 1;
-        let valQuantity = $('#quantityCheckout').val();
-
-        if (valQuantity >= 30) {
-            $('.discount').addClass('enable');
-        }
-        else {
-            $('.discount').removeClass('enable');
-        }
-
-        if (valQuantity >= 30) {
-            discountPercent = 0.95;
-            $('#discountPercent').text('-5%');
-        }
-        if (valQuantity >= 60) {
-            discountPercent = 0.90;
-            $('#discountPercent').text('-10%');
-        }
-        if (valQuantity >= 90) {
-            discountPercent = 0.85;
-            $('#discountPercent').text('-15%');
-        }
-
-        let discountPrice = (valQuantity * 2.99 * discountPercent).toFixed(2);
-        let regularPrice = (valQuantity * 2.99).toFixed(2);
-        $('#regularPrice').text(regularPrice);
-        $('#price').text(discountPrice);
-
-    };
-
               
 });
 
