@@ -137,9 +137,10 @@
             });
               
     $(".template-cart #downQuantity").click(function () {
+        let inputQuantity = $(this).parent().children('.quantity__input');
         let valQuantity = $(this).parent().children('.quantity__input').val();
         if (valQuantity > 1) {
-            $(this).parent().children('.quantity__input').val("5");
+            $(this).parent().children('.quantity__input').val(--valQuantity);
         }
     });
 
