@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let valQuantity = $(this).parent().children('.quantity__input').val();
         if (valQuantity > 1) {
             $(this).parent().children('.quantity__input').val(--valQuantity);
-          $( "#foo" ).trigger( "click" );
+          $( "#btnUpdate" ).trigger( "click" );
         }
             });
               
@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let valQuantity = $(this).parent().children('.quantity__input').val();
         if (valQuantity > 1) {
             $(this).parent().children('.quantity__input').val(++valQuantity);
+          $( "#btnUpdate" ).trigger( "click" );
         }
     });
               
