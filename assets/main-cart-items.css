@@ -183,14 +183,15 @@
 }
 
 .template-cart .btnCheckout {
-    background-color: #1B8886;
-    color: #fff;
-    font-weight: 900;
-    font-size: 18px;
-    width: max-content;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
+    background-color: #1b8886;
+color: #fff;
+font-weight: 900;
+font-size: 18px;
+width: max-content;
+padding: 5px 20px;
+text-transform: uppercase;
+cursor: pointer;
+height: 54px;
 }
 
 .template-cart .btnCheckout small {
