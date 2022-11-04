@@ -124,7 +124,7 @@
 .template-cart .productPrice>:nth-child(1) .price {
     position: relative;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .template-cart .productPrice>:nth-child(2) {
