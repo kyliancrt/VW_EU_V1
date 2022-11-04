@@ -163,11 +163,14 @@
     transform-origin: center;
 }
 
+.template-cart .productPrice .btnRemove {
+    margin-left: 20px;
+}
+
 .template-cart .productPrice .btnRemove svg {
     cursor: pointer;
     transform-origin: center;
     width: 25px;
-    margin-left: 20px;
 }
 
 .template-cart .productPrice>:nth-child(2)>span:hover,
