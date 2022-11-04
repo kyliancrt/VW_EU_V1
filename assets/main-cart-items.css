@@ -293,7 +293,7 @@
     transform: scale(1);
 }
 
-.template-cart .productPrice>:nth-child(1)>div {
+.template-cart .productPrice .quantityProduct {
   display: flex;
 align-items: center;
 justify-content: center;
