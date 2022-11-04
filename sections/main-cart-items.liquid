@@ -131,9 +131,11 @@
 
              $(".template-cart #upQuantity").click(function () {
                	
-
-        $( this ).parent().css( "background-color", "red" );
-    });
+            let parentThis =  $( this ).parent();
+               $(parentThis + "input").css( "background-color", "red" );
+              
+            });
+              
     $(".template-cart #downQuantity").click(function () {
         let valQuantity = $('#quantityCheckout').val();
         if (valQuantity > 1) {
