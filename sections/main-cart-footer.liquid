@@ -1,10 +1,10 @@
  {{ 'main-cart-items.css' | asset_url | stylesheet_tag }}
 {{ 'main-cart-items.js' | asset_url | script_tag }}
 
- <section class="cartTemplate"  class="{% if cart == empty %}is-empty{% endif %}">
+ <section class="cartTemplate" >
    
         <div class="cartGrid">
-        <div class="divTotal">
+        <div class="divTotal{% if cart == empty %} is-empty{% endif %}">
         <div>
             <div>
             <button class="btnCheckout">Procéder au paiement
