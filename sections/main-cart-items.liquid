@@ -132,12 +132,14 @@
 
 </cart-items>
 
-          <script> $(document).ready(function(){
+          <script> 
+            $(document).ready(function(){
 
-$("input[name='updates[]']").on('input', function() {
-
+$("input[name='updates[]']").click(function () {
+  
 $( "input[name='update']" ).trigger( "click" );
 
-}); });
+});
+            });
 
 </script>
