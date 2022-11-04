@@ -129,14 +129,18 @@
           <script>
             document.addEventListener('DOMContentLoaded', function () {
 
-             $(".template-cart #upQuantity").click(function () {
-               	
-            let parentThis =  $(this).parent().children('.quantity__input').css( "background-color", "red" );;
               
+        let inputQuantity = $(this).parent().children('.quantity__input');
+        let valQuantity = inputQuantity.val();
+              
+             $(".template-cart #upQuantity").click(function () {
+               	 if (valQuantity < 999) {
+            inputQuantity.val(--valQuantity);
+            displayPrice();
+                 }
             });
               
     $(".template-cart #downQuantity").click(function () {
-        let valQuantity = $('#quantityCheckout').val();
         if (valQuantity > 1) {
             $('#quantityCheckout').val(--valQuantity);
             displayPrice();
