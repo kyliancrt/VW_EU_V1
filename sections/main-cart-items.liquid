@@ -10,6 +10,7 @@
             <a href="/collections/carreaux-adhesifs/">Continuer mes achats</a>
         </div>
         <form action="{{ routes.cart_url }}" method="post">
+          
         <div class="cartGrid">
 
           {% for item in cart.items %}
@@ -101,6 +102,7 @@
         <div class="divTotal">
         <div>
             <div>
+                <button type="submit" name="checkout">Submit</button>
             <button class="btnCheckout">Procéder au paiement
         <small>Paiement en 4 fois sans frais</small>
             </button>
@@ -124,7 +126,7 @@
 
         </div>
             
+  </form>
         </section>
 
-  </form>
 </cart-items>
