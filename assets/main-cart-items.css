@@ -296,6 +296,15 @@ justify-content: center;
   margin-top: 0px !important;
 }
 
+#btnUpdate {
+  visibility : hidden;
+  height:0;
+  width:0;
+}
+
+
+
+
 /* MEDIA TEL */
 
 @media only screen and (max-width: 800px) {
