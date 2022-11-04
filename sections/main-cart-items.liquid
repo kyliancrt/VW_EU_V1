@@ -108,6 +108,10 @@
             <button class="btnPaypal">
                 <img src="paypal.svg">
             </button>
+
+               {% if additional_checkout_buttons %}
+    <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+  {% endif %}
               
              </div>
         <span class="infoDelivery">Livraison offerte à partir de 49€</span>
@@ -130,7 +134,3 @@
         </section>
 
 </cart-items>
-
- {% if additional_checkout_buttons %}
-    <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
-  {% endif %}
