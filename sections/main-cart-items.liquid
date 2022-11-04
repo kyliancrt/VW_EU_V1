@@ -65,7 +65,7 @@
                     <div class="quantityProduct">
                       
                       <quantity-input class="quantity">                        
-                        <button id="downQuantity" class="quantity__button no-js-hidden" name="minus" type="button">
+                        <button id="downQuantity" class="quantity__button no-js-hidden" type="button">
                           <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
@@ -79,7 +79,7 @@
                           data-index="{{ item.index | plus: 1 }}"
                           onblur="this.form.submit()"
                         >
-                        <button id="upQuantity" class="quantity__button no-js-hidden" name="plus" type="button">
+                        <button id="upQuantity" class="quantity__button no-js-hidden"type="button">
                           <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-plus' %}
                         </button>                        
