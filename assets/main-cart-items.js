@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
         let totalPrice = parseFloat($('#price').text());
 
         if (totalPrice >= 30) {
-            $('.discount').addClass('enable');
+            $('.productPrice').addClass('discountEnable');
         }
         else {
-            $('.discount').removeClass('enable');
+            $('.productPrice').removeClass('discountEnable');
         }
 
         if (totalPrice >= 30) {
