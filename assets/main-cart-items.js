@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#discountPercent').text('-15%');
         }    
       
-        let discountPrice = (totalPrice * discountPercent);
+        let discountPrice = (totalPrice * discountPercent).toFixed(2);
         $('#totalPrice').text(discountPrice);
     };
   
