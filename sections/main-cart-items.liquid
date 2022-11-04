@@ -135,6 +135,21 @@
           <script>
             document.addEventListener('DOMContentLoaded', function () {
 
+             $(".template-cart #upQuantity").click(function () {
+               let parent1 = $(this).parent();
+        let valQuantity = $(parent1 + ' #quantityCheckout').val();
+        if (valQuantity < 999) {
+            $('#quantityCheckout').val(++valQuantity);
+            displayPrice();
+        }
+    });
+    $(".template-cart #downQuantity").click(function () {
+        let valQuantity = $('#quantityCheckout').val();
+        if (valQuantity > 1) {
+            $('#quantityCheckout').val(--valQuantity);
+            displayPrice();
+        }
+    });
 
     // displayPrice
     function displayPrice() {
