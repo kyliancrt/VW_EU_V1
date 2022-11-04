@@ -129,18 +129,19 @@
           <script>
             document.addEventListener('DOMContentLoaded', function () {
 
-             $(".template-cart #upQuantity").click(function () {
-               	
-            let parentThis =  $( this ).parent();
-               
-              
-            });
-              
-    $(".template-cart #downQuantity").click(function () {
+             $(".template-cart #upQuantity").click(function () {               
         let inputQuantity = $(this).parent().children('.quantity__input');
         let valQuantity = $(this).parent().children('.quantity__input').val();
         if (valQuantity > 1) {
             $(this).parent().children('.quantity__input').val(--valQuantity);
+        }
+            });
+              
+    $(".template-cart #upQuantity").click(function () {
+        let inputQuantity = $(this).parent().children('.quantity__input');
+        let valQuantity = $(this).parent().children('.quantity__input').val();
+        if (valQuantity > 1) {
+            $(this).parent().children('.quantity__input').val(++valQuantity);
         }
     });
 
