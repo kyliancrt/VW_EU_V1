@@ -23,12 +23,15 @@ document.addEventListener('DOMContentLoaded', function () {
         if (totalPrice >= 90) {
             discountPercent = 0.85;
             $('#discountPercent').text('-15%');
-        }
-
+        }    
+      
+        let discountPrice = (totalPrice * discountPercent).toFixed(2);
+        $('#regularPrice').text(totalPrice);
+        $('#price').text(discountPrice);
     };
   
   displayPrice();
-
+  
              $(".template-cart #downQuantity").click(function () {               
         let inputQuantity = $(this).parent().children('.quantity__input');
         let valQuantity = $(this).parent().children('.quantity__input').val();
