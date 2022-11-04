@@ -65,10 +65,7 @@
                     <div class="quantityProduct">
                       
                       <quantity-input class="quantity">                        
-                        <button id="downQuantity" class="quantity__button no-js-hidden" type="button">
-                          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
-                          {% render 'icon-minus' %}
-                        </button>
+                        <span id="downQuantity">-</span>
                         <input class="quantity__input"
                           type="number"
                           name="updates[]"
@@ -79,10 +76,7 @@
                           data-index="{{ item.index | plus: 1 }}"
                           onblur="this.form.submit()"
                         >
-                        <button id="upQuantity" class="quantity__button no-js-hidden"type="button">
-                          <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
-                          {% render 'icon-plus' %}
-                        </button>                        
+                       <span id=upQuantity">-</span>                       
                       </quantity-input>
               
                       <cart-remove-button class="btnRemove" id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
@@ -132,4 +126,58 @@
 
 </cart-items>
 
-          
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+             $(".template-cart #upQuantity").click(function () {
+               let parent1 = $(this).parent();
+        let valQuantity = $(parent1 + ' #quantityCheckout').val();
+        if (valQuantity < 999) {
+            $('#quantityCheckout').val(++valQuantity);
+            displayPrice();
+        }
+    });
+    $(".template-cart #downQuantity").click(function () {
+        let valQuantity = $('#quantityCheckout').val();
+        if (valQuantity > 1) {
+            $('#quantityCheckout').val(--valQuantity);
+            displayPrice();
+        }
+    });
+
+    // displayPrice
+    function displayPrice() {
+        let discountPercent = 1;
+        let valQuantity = $('#quantityCheckout').val();
+
+        if (valQuantity >= 30) {
+            $('.discount').addClass('enable');
+        }
+        else {
+            $('.discount').removeClass('enable');
+        }
+
+        if (valQuantity >= 30) {
+            discountPercent = 0.95;
+            $('#discountPercent').text('-5%');
+        }
+        if (valQuantity >= 60) {
+            discountPercent = 0.90;
+            $('#discountPercent').text('-10%');
+        }
+        if (valQuantity >= 90) {
+            discountPercent = 0.85;
+            $('#discountPercent').text('-15%');
+        }
+
+        let discountPrice = (valQuantity * 2.99 * discountPercent).toFixed(2);
+        let regularPrice = (valQuantity * 2.99).toFixed(2);
+        $('#regularPrice').text(regularPrice);
+        $('#price').text(discountPrice);
+
+    };
+
+              
+});
+
+</script>
