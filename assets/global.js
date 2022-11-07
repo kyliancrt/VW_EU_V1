@@ -945,3 +945,20 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+    // POPUP DELIVERY
+
+        //popupPreviewShow
+        $(".btnInfos").click(function () {
+            $(".popupDelivery").addClass("active");
+            $('body').css('overflow', 'hidden');
+        });
+
+        //popupPreviewHide
+        $(".popupDeliveryHide").click(function () {
+            $(".popupDelivery").removeClass("active");
+            $('body').css('overflow', 'visible');
+        });
+
+    // END POPUP DELIVERY
