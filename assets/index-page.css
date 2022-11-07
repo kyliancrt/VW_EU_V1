@@ -665,6 +665,9 @@
 .template-index .SlideCollections ul li .slideCollectionsImage>div :last-child {
     border-right: 1px solid #fff;
 }
+.template-index .SlideCollections ul li .slideCollectionsImage > div a {
+  sss
+}
 
 .template-index .SlideCollections ul li h3 {
     color: #fff;
