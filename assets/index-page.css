@@ -543,7 +543,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;align-self: center;
 }
 
 .template-index .Quality> :nth-child(3) img {
