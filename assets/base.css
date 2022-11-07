@@ -232,10 +232,14 @@ padding: 0 1rem;
 }
 
  .popupDelivery .popupDeliveryContent>div>div>span {
-   font-weight: bold;
+   font-weight: 900;
    padding-bottom: 4px;
    border-bottom: 1px solid #000;
    text-transform: uppercase;
+ }
+ .popupDelivery .popupDeliveryContent .reduc{
+   font-weight: 900;
+   color: #1B8886;
  }
 
 /* END POPUP DELIVERY */
