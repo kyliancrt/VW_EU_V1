@@ -672,11 +672,10 @@
 
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct img {
   transition: all 0.3s ease;
-  outline: 1px solid #fff;
 }
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover img {
   transform: scale(1.1);
-  outline-color: #fff;
+  border: 1px solid #fff;
 }
 
 .template-index .SlideCollections ul li h3 {
