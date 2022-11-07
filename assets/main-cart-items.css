@@ -321,6 +321,14 @@ justify-content: center;
   display : flex;
 }
 
+.quantityProduct>span {
+  font-size: 30px;
+    font-weight: 900;
+    padding: 0.5rem;
+    cursor: pointer;
+    transform-origin: center;
+}
+
 
 
 /* MEDIA TEL */
