@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (totalQuantity >= 30) {
-            discountPercent = 0.95;
-            $('#discountPercent').text('-5%');
-        }
-        if (totalQuantity >= 60) {
             discountPercent = 0.90;
             $('#discountPercent').text('-10%');
         }
-        if (totalQuantity >= 90) {
+        if (totalQuantity >= 60) {
             discountPercent = 0.85;
             $('#discountPercent').text('-15%');
+        }
+        if (totalQuantity >= 90) {
+            discountPercent = 0.80;
+            $('#discountPercent').text('-20%');
         }    
       
         let discountPrice = (totalPrice * discountPercent).toFixed(2);
