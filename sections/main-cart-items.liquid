@@ -115,7 +115,7 @@
                         <div><span id="regularPrice">{{ cart.total_price | money_without_currency }}</span>€</div>
                         <span id="discountPercent">0%</span>
                     </div>
-                    <span class="price"><span id="totalPrice"></span>€</span>
+                    <span class="price"><span id="totalPrice">{{ cart.total_price | money_without_currency }}</span>€</span>
                 </div>
             </div>
 
