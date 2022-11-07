@@ -174,11 +174,15 @@ padding: 0 1rem;
 /* POPUP DELIVERY */
 
  .popupDelivery {
-      width: 100%;
+  width: 100%;
   height: 100%;
   position: fixed;
-  display: flex;
+  display: none;
   top: 0;
+}
+
+ .popupDelivery.active {
+  display: flex;
 }
 
  .collectionFilters .popupDelivery {
