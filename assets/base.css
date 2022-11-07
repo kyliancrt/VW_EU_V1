@@ -178,7 +178,7 @@ padding: 0 1rem;
     height: 100%;
     position: fixed;
     padding-top: 125px;
-    display: none;
+    display: block;
 }
 
  .collectionFilters .popupDelivery {
@@ -190,10 +190,6 @@ padding: 0 1rem;
     height: 100%;
     position: absolute;
     z-index: 1;
-}
-
- .popupDelivery.active {
-    display: block;
 }
 
  .popupDelivery .popupDeliveryContent {
