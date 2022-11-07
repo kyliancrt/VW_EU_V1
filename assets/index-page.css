@@ -646,10 +646,6 @@
 .template-index .SlideCollections ul li .slideCollectionsImage {
     width: 100%;
 }
-
-.template-index .SlideCollections ul li .slideCollectionsImage>a {
-  background-color: #fff;
-}
 .template-index .SlideCollections ul li .slideCollections
 .template-index .SlideCollections ul li .slideCollectionsImage>a>img {
     border: 1px solid #fff;
