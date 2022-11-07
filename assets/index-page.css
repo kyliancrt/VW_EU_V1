@@ -674,6 +674,7 @@
 }
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover img {
   transform: scale(1.1);
+  border-color: transparent;
 }
 
 .template-index .SlideCollections ul li h3 {
