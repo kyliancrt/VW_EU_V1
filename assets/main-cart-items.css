@@ -315,6 +315,13 @@ justify-content: center;
   display : none;
 }
 
+.is-empty .divEmpty {
+  display : none;
+}
+.is-empty .divEmpty {
+  display : flex;
+}
+
 
 
 /* MEDIA TEL */
