@@ -677,7 +677,6 @@
   height: max-content;
 }
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct img {
-  transition: all 0.3s ease;
 }
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover img {
   transform: scale(1.1);
