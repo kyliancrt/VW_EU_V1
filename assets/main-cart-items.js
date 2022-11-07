@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // displayPrice
     function displayPrice() {
         let discountPercent = 1;
-        let totalPrice = parseFloat($('#regularPrice').text());
+        let totalPrice = parseInt($('#regularPrice').text());
         let totalQuantity = parseInt(totalPrice / 2.99);
       alert(totalPrice + " - " + totalQuantity);
 
