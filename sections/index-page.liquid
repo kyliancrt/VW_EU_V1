@@ -104,7 +104,7 @@
                   <li class="splide__slide bgCollection {{ collection.handle }}">
                         <h3>{{ collection.handle }}</h3>
                     <div  class="slideCollectionsImage">    
-                    <a href="{{ collection.url }}">
+                    <a href="/collections/carreaux-adhesifs-collections/#{{ collection.handle }}">
                             <img loading="lazy" src="{{ collection.products.first | img_url: '500x' }}">
                         </a>
                               <div>                              
@@ -113,7 +113,7 @@
                                 {% endfor %}                    
                             </div>
                        </div> 
-                        <a href="{{ collection.url }}" class="slideCollectionsBtn">Voir</a>
+                        <a href="/collections/carreaux-adhesifs-collections/#{{ collection.handle }}" class="slideCollectionsBtn">Voir</a>
                     </li>
                     
                   {% endif %}
