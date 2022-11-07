@@ -665,8 +665,9 @@
 .template-index .SlideCollections ul li .slideCollectionsImage>div :last-child {
     border-right: 1px solid #fff;
 }
-.template-index .SlideCollections ul li .slideCollectionsImage .testA {
-  display: none;
+.template-index .SlideCollections ul li .slideCollectionsImage .linkProduct {
+  display: flex;
+  height: max-content;
 }
 
 .template-index .SlideCollections ul li h3 {
