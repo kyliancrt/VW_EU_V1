@@ -672,11 +672,11 @@
 
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct img {
   transition: all 0.3s ease;
-  border: 1px solid transparent;
+  outline: 1px solid #fff;
 }
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover img {
   transform: scale(1.1);
-  border-color: #fff;
+  outline-color: #fff;
 }
 
 .template-index .SlideCollections ul li h3 {
