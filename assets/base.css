@@ -241,6 +241,10 @@ padding: 0 1rem;
    font-weight: 900;
    color: #1B8886;
  }
+ .popupDelivery .popupDeliveryContent .deli{
+   font-weight: bold;
+   color: #1B8886;
+ }
 
 /* END POPUP DELIVERY */
 
