@@ -671,7 +671,7 @@
   border: 1px solid transparent;
 }
 
-.template-index .SlideCollections ul li .slideCollectionsImage .linkProduct {
+.template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover {
   border-color: #fff;
 }
 
