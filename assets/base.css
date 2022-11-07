@@ -173,7 +173,7 @@ padding: 0 1rem;
 
 /* POPUP DELIVERY */
 
-.template-collection .popupPreview {
+.template-collection .popupDelivery {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -181,22 +181,22 @@ padding: 0 1rem;
     display: none;
 }
 
-.template-collection.template-collection .collectionFilters .popupPreview {
+.template-collection.template-collection .collectionFilters .popupDelivery {
     padding-top: 175px;
 }
 
-.template-collection .popupPreview .popupPreviewBg {
+.template-collection .popupDelivery .popupDeliveryBg {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
 }
 
-.template-collection .popupPreview.active {
+.template-collection .popupDelivery.active {
     display: block;
 }
 
-.template-collection .popupPreview .popupPreviewContent {
+.template-collection .popupDelivery .popupDeliveryContent {
     z-index: 2;
     height: 50vh;
     width: 90%;
@@ -208,7 +208,7 @@ padding: 0 1rem;
     box-shadow: 0px 0px 1000px rgb(0, 0, 0, 1);
 }
 
-.template-collection .popupPreview .popupPreviewContent>span {
+.template-collection .popupDelivery .popupDeliveryContent>span {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -224,7 +224,7 @@ padding: 0 1rem;
     cursor: pointer;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div {
+.template-collection .popupDelivery .popupDeliveryContent>div {
     width: 100%;
     padding: 6px;
     position: absolute;
