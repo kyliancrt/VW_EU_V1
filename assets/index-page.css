@@ -547,7 +547,7 @@
 }
 
 .template-index .Quality> :nth-child(3) img {
-    width:100%;
+    width:auto;
   max-height: 60px;
 }
 
