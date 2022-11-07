@@ -223,6 +223,9 @@ padding: 0 1rem;
     cursor: pointer;
    z-index:2;
 }
+ .popupDelivery .popupDeliveryContent>span:hover {
+    transform: scale(1.05);
+}
 
  .popupDelivery .popupDeliveryContent>div {
     width: 100%;
