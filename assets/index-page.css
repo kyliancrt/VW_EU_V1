@@ -546,10 +546,6 @@
     padding-bottom: 3rem;
 }
 
-.template-index .Quality> :nth-child(3) img {
-    width:auto;
-}
-
 .template-index .Install {
     background-color: #F5F5F5;
     display: flex;
