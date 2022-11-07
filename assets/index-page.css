@@ -668,11 +668,11 @@
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct {
   display: flex;
   height: max-content;
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover {
-  border-color: #fff;
+  outline: #fff;
 }
 
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct img {
