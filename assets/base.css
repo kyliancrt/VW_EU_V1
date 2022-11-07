@@ -197,9 +197,7 @@ padding: 0 1rem;
     height: 50vh;
     width: 90%;
     margin: auto;
-    background: url("http://ftp.vinyl-wall.com/mes/52408-SALLEDEBAIN.jpg") center center / cover;
-    background-color: #f5f5f5;
-    border: 6px solid #fff;
+    background-color: #fff;
     position: relative;
     box-shadow: 0px 0px 1000px rgb(0, 0, 0, 1);
 }
