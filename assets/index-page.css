@@ -649,8 +649,11 @@
 .template-index .SlideCollections ul li .slideCollections
 .template-index .SlideCollections ul li .slideCollectionsImage>a>img {
     border: 1px solid #fff;
+}
+.template-index .SlideCollections ul li .slideCollectionsImage>a {    
   transition: all 0.3s ease;
 }
+
 .template-index .SlideCollections ul li .slideCollectionsImage>a:hover img {
     opacity: 0.9;
 }
