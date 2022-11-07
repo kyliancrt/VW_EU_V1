@@ -228,9 +228,15 @@ padding: 0 1rem;
     display: flex;
     flex-direction: column;
     gap: 6px;
-    text-transform: uppercase;
     position: relative;
 }
+
+ .popupDelivery .popupDeliveryContent>div>div>span {
+   font-weight: bold;
+   padding-bottom: 4px;
+   border-bottom: 1px solid #000:
+    text-transform: uppercase;
+ }
 
 /* END POPUP DELIVERY */
 
