@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayPrice() {
         let discountPercent = 1;
         let decTotalPrice = $('#regularPrice').text().replace('-' , '.');
+      alert(decTotalPrice);
         let totalPrice = parseFloat(decTotalPrice);
         let totalQuantity = parseInt(totalPrice / 2.99);
-      alert(totalPrice + " - " + totalQuantity);
 
         if (totalQuantity >= 30) {
             $('.productPrice').addClass('discountEnable');
