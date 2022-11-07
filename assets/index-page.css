@@ -668,13 +668,7 @@
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct {
   display: flex;
   height: max-content;
-  outline: 1px solid transparent;
 }
-
-.template-index .SlideCollections ul li .slideCollectionsImage .linkProduct:hover {
-  outline: #fff;
-}
-
 .template-index .SlideCollections ul li .slideCollectionsImage .linkProduct img {
   transition: all 0.3s ease;
 }
