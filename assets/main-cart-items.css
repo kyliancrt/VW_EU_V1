@@ -311,7 +311,9 @@ justify-content: center;
   height:0;
   width:0;
 }
-
+.divTotal.is-empty {
+  display : none;
+}
 
 
 
