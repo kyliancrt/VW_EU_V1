@@ -651,7 +651,7 @@
     border: 1px solid #fff;
   transition: all 0.3s ease;
 }
-.template-index .SlideCollections ul li .slideCollectionsImage>img:hover {
+.template-index .SlideCollections ul li .slideCollectionsImage>a:hover img {
     opacity: 0.9;
 }
 
