@@ -232,6 +232,9 @@
     border-radius: 100%;
     font-size: 70%;
 }
+.Header .nav .btnsHeader .cartHeader span.is-empty {
+    display : none;
+}
 
 .Header .nav .btnsHeader img {
     width: 32px;
