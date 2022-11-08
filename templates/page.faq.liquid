@@ -1,5 +1,14 @@
 {% render 'faq' %}
 
 <style>
-  
+  .faq .accordeon>div>div {
+    display:flex !important;
+  }
+  .faq .accordeonTitle::after {
+  display: none !important;
+}
+  .faq .accordeonTitle:hover {
+  padding: 0 !important;
+  cursor: text !important;
+}
 </style>
