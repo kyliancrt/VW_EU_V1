@@ -1,3 +1,8 @@
+main>:nth-child(1) {
+  position: relative;
+display: inline-block;
+width: 100%;
+}
 .template-product .productImage {
     position: relative;
     height: 45vh;
