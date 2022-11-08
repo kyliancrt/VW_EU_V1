@@ -139,6 +139,8 @@
         justify-content: center;
         margin-top: 2rem;
         gap: 1rem;
+        padding: 0;
+        border: 0
     }
 
     .Footer .copyright>:nth-child(1) {
