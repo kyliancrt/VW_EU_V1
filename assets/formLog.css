@@ -28,3 +28,7 @@ form {
   padding: 0 5px;
   order: 2;
 }
+.login a {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
