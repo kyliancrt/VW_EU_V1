@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    //faqAccordeon
-    $(".template-product .faq .accordeonItem>span").click(function () {
-        $(this).parent().toggleClass("active");
-    });
-
     // InstallPlay
 
     let btnInstall = document.getElementById("btnInstall");
