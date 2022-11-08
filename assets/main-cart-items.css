@@ -46,7 +46,7 @@
     width: 100%;
 }
 .cartGrid>:nth-last-child {
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .cartGrid>div {
