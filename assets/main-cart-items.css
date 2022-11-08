@@ -207,6 +207,10 @@
     text-transform: initial;
 }
 
+.template-cart .btnCheckout {
+  opacity: 0.95;
+}
+
 .template-cart .btnPaypal {
   width: 150px;
   background-color: #ffc439;

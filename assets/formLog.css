@@ -11,7 +11,7 @@ form {
 .field {
   display: flex;
   flex-direction: column;
-  width: max-content;
+  width: 100%;
   text-align: left;
   gap: 5px;
   align-items: center;
@@ -31,4 +31,29 @@ form {
 .login a {
   margin-left: auto !important;
   margin-right: auto !important;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+  width: max-content;
+  position: relative;
+  outline: 1px solid #fff;
+  outline-color: rgb(255, 255, 255);
+  outline-offset: -1px;
+  transition: all .1s ease;
+}
+.login a:hover {
+  outline-color: transparent;
+}
+.customer button {
+  margin: 2rem auto 1rem auto;
+  background-color: #1b8886;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  width: max-content;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.customer button:hover {
+  opacity:0.95;
 }
