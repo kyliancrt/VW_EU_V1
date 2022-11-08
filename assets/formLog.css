@@ -3,10 +3,7 @@ main {
 }
 
 form {
-  display: flex;
-  width: 100%;
   padding: 25px;
-  justify-content: space-between;
   background-color: #fff;
   box-shadow: 0 0 6px 3px #0000000d;
 }
