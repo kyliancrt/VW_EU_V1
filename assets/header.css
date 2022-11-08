@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.Header .announcement span.spanGap {
+  gap: 5px;
+}
+
 .Header .announcement .madeinfrance img {
     width: 4rem;
     margin-right: 1rem;
