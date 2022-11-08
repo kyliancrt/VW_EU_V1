@@ -45,6 +45,9 @@
     gap: 25px;
     width: 100%;
 }
+.cartGrid>:nth-last-child {
+    margin-bottom: 25px
+}
 
 .cartGrid>div {
     display: flex;
