@@ -42,6 +42,7 @@ form {
 }
 .login a:hover {
   outline-color: transparent;
+  font-size: 14px;
 }
 .customer button {
   margin: 2rem auto 1rem auto;
