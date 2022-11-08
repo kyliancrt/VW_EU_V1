@@ -179,6 +179,7 @@ padding: 0 1rem;
   position: fixed;
   display: none;
   top: 0;
+   z-index: 4;
 }
 
  .popupDelivery.active {
