@@ -43,17 +43,17 @@
 }
 
 .Header .announcement span:nth-child(2) {
-    animation: announcementAnimation 18s infinite;
+    animation: announcementAnimation 20s infinite;
     animation-delay: 5s;
 }
 
 .Header .announcement span:nth-child(3) {
-    animation: announcementAnimation 18s infinite;
+    animation: announcementAnimation 20s infinite;
     animation-delay: 10s;
 }
 
 .Header .announcement span:nth-child(4) {
-    animation: announcementAnimation 18s infinite;
+    animation: announcementAnimation 20s infinite;
     animation-delay: 15s;
 }
 
