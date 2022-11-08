@@ -1,11 +1,11 @@
 
-.template-product .faq {
+ .faq {
     width: 100%;
     background-color: #f5f5f5;
     padding: 2rem 5%;
 }
 
-.template-product .faq h3 {
+ .faq h3 {
     text-align: left;
     margin: 0;
     padding: 0;
@@ -14,18 +14,18 @@
     margin-bottom: 2rem;
 }
 
-.template-product .faq .accordeon {
+ .faq .accordeon {
     display: flex;
     flex-direction: column;
 }
 
-.template-product .faq>div {
+ .faq>div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.template-product .faq .accordeonItem .accordeonTitle {
+ .faq .accordeonItem .accordeonTitle {
     font-weight: 900;
     font-size: 24px;
     cursor: pointer;
@@ -34,7 +34,7 @@
     position: relative;
 }
 
-.template-product .faq .accordeonQuestion {
+ .faq .accordeonQuestion {
     font-weight: bold;
     font-size: 16px;
     width: calc(100% - 3rem);
@@ -46,21 +46,21 @@
     position: relative;
 }
 
-.template-product .faq .accordeonItem>div {
+ .faq .accordeonItem>div {
     display: none;
     flex-direction: column;
 }
 
-.template-product .faq .accordeonItem.active>div {
+ .faq .accordeonItem.active>div {
     display: flex;
 }
 
-.template-product .faq .accordeonItem .accordeonTitle:hover,
-.template-product .faq .accordeonItem.active .accordeonTitle {
+ .faq .accordeonItem .accordeonTitle:hover,
+ .faq .accordeonItem.active .accordeonTitle {
     padding-left: 1rem;
 }
 
-.template-product .faq .accordeonItem span::after {
+ .faq .accordeonItem span::after {
     content: '+';
     font-weight: 900;
     position: absolute;
@@ -69,6 +69,6 @@
     font-size: 25px;
 }
 
-.template-product .faq .accordeonItem.active>span::after {
+ .faq .accordeonItem.active>span::after {
     content: '-';
 }
