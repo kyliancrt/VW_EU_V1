@@ -684,8 +684,8 @@ width: max-content;
     }
 
     .template-product .contentProduct .productPrice {
-  gap: 0;
   margin-bottom: 2rem;
+      justify-content: center;
 }
 
     .template-product .inputsCalculQuantity>div> :nth-child(1) {
@@ -796,6 +796,8 @@ width: max-content;
   
     .template-product .contentProduct .productPrice {
   justify-content: flex-start;
+      
+  gap: 0;
 }
 
   .template-product .iconesAdvantages ul {
