@@ -614,12 +614,15 @@ width: 100%;
 }
  .template-product .iconesAdvantages ul {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 0;
-        padding-bottom: 3rem;
-        max-width: 1280px;
+justify-content: space-around;
+align-items: center;
+margin: auto;
+padding: 0;
+  padding-bottom: 0px;
+padding-bottom: 3rem;
+max-width: 1280px;
+flex-wrap: wrap;
+gap: 1rem 0;
     }
 
     .template-product .iconesAdvantages li {
