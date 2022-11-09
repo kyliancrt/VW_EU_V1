@@ -612,6 +612,13 @@ width: 100%;
 .template-product .contentProduct .btnToQuantity.desktop {
     display: none;
 }
+
+.template-product .iconesAdvantages 
+  background: #f5f5f5;
+width:100%;
+  
+}
+
  .template-product .iconesAdvantages ul {
         display: flex;
 justify-content: space-around;
@@ -633,7 +640,7 @@ text-align: center;
 align-items: center;
 font-weight: 900;
 font-size: 1.2rem;
-gap: rem;
+gap: 1rem;
 flex: 50%;
     }
 
