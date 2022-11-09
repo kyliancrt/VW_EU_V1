@@ -797,7 +797,8 @@ width: max-content;
 @media only screen and (min-width: 1200px) {
   
     .template-product .contentProduct .productPrice {
-  justify-content: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
 }
 
   .template-product .iconesAdvantages ul {
