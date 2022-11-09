@@ -612,6 +612,53 @@ width: 100%;
 .template-product .contentProduct .btnToQuantity.desktop {
     display: none;
 }
+ .template-product .iconesAdvantages ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 3rem;
+        max-width: 1280px;
+    }
+
+    .template-product .iconesAdvantages li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .template-product .iconesAdvantages li small {
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .template-product .iconesAdvantages li img {
+        width: 60px;
+    }
+
+    .template-product .iconesAdvantages span {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      font-size: 20px;
+    }
+  
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA SCREEN */
@@ -668,6 +715,7 @@ width: 100%;
         display: block;
     }
 }
+
 
 @media only screen and (min-width: 760px) {
     .template-product .contentProduct {
@@ -746,47 +794,7 @@ width: 100%;
     .template-product .contentProduct .productPrice> :nth-child(1) {
         min-width: 225px;
     }
-
-
-  
-    .template-product .iconesAdvantages ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 0;
-        padding-bottom: 3rem;
-        max-width: 1280px;
-    }
-
-    .template-product .iconesAdvantages li {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        font-weight: 900;
-        font-size: 1.2rem;
-        gap: 1rem;
-    }
-
-    .template-product .iconesAdvantages li small {
-        font-size: 100%;
-        font-weight: normal;
-    }
-
-    .template-product .iconesAdvantages li img {
-        width: 60px;
-    }
-
-    .template-product .iconesAdvantages span {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-      font-size: 20px;
-    }
-  
+   
   
 
     .template-product .contentProduct .btnsOrders a {
