@@ -747,6 +747,48 @@ width: 100%;
         min-width: 225px;
     }
 
+
+  
+    .template-product .Presentation .desktopIconsPresentation ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 3rem;
+        max-width: 1280px;
+    }
+
+    .template-product .Presentation .desktopIconsPresentation li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .template-product .Presentation .desktopIconsPresentation li small {
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .template-product .Presentation .desktopIconsPresentation li img {
+        width: 60px;
+    }
+
+    .template-product .Presentation .desktopIconsPresentation span {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      font-size: 20px;
+    }
+  
+  
+
     .template-product .contentProduct .btnsOrders a {
         height: 60px;
     }
