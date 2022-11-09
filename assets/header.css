@@ -319,6 +319,12 @@
     font-weight: 900;
 }
 
+.Header .menuListHeadersmall {
+    font-size:80%;
+    font-weight: normal;
+  }
+
+
 /* MEDIA SCREEN */
 
 @media only screen and (min-width: 750px) {
@@ -333,8 +339,7 @@
 @media only screen and (min-width: 1025px) {
 
   .Header .menuListHeadersmall {
-    font-size:80%;
-    font-weight: normal;
+   display: none;
   }
   
     .Header {
