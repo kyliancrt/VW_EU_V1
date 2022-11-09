@@ -830,6 +830,9 @@ width: max-content;
   .template-product .btnsInfoProduct {
   margin: 0;
 }
+  .template-product .contentProduct > .listQuality {
+    margin-bottom: 0;
+  }
 
   .template-product .contentProduct p {
     margin-bottom: 0;
