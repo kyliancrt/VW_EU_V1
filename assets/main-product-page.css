@@ -827,6 +827,10 @@ width: max-content;
 }
 @media only screen and (min-width: 1600px) {
 
+  .template-product .contentProduct p {
+    margin-bottom: 0;
+  }
+
     .template-product .productImage {
         width: 50%;
     }
