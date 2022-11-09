@@ -872,15 +872,12 @@ flex: 50%;
         width: 60%;
         float: right;
     }
-}
-
-@media only screen and (min-width: 1300px) {
+  
     .template-product .contentProduct {
         padding: 0;
     }
 }
-
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
 
     .template-product .productImage {
         width: 50%;
