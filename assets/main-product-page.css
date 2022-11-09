@@ -749,7 +749,7 @@ width: 100%;
 
 
   
-    .template-product .iconesAdvantages ul {
+    .template-product .contentProductContainer .iconesAdvantages ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
