@@ -634,7 +634,9 @@ width: max-content;
     margin-right: 0.3rem;
     margin-left: 0.1rem;
   }
-
+.template-product . contentProduct p {
+  margin: 1rem 0;
+}
 
 
 
