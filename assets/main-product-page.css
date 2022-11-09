@@ -156,8 +156,9 @@ width: 100%;
 
 .template-product .contentProduct>.listQuality li {
     list-style: none;
-    font-size: calc(0.2rem + 4vw);
+    font-size: 16px;
     transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 
