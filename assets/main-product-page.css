@@ -667,6 +667,7 @@ width: max-content;
     .template-product .contentProduct h2 {
         font-size: 30px;
         font-weight: 900;
+        margin: 0;
     }
 
     .template-product .contentProduct h2 small {
