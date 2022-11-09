@@ -158,7 +158,7 @@ width: 100%;
     list-style: none;
     font-size: 16px;
     transition: all 0.3s ease;
-  font-weight: bold;
+    font-weight: bold;
 }
 
 
@@ -645,9 +645,6 @@ width: max-content;
 /* MEDIA SCREEN */
 
 @media only screen and (min-width: 400px) {
-    .template-product .contentProduct>.listQuality li {
-        font-size: 1.2rem;
-    }
 
     .template-product .contentProduct .franceTrust> :nth-child(1) {
         width: 110px;
@@ -656,9 +653,6 @@ width: max-content;
 }
 
 @media only screen and (min-width: 500px) {
-    .template-product .contentProduct>.listQuality li {
-        font-size: 1.4rem;
-    }
 
     .template-product .contentProduct h1 {
         font-size: 50px;
@@ -723,9 +717,7 @@ width: max-content;
     }
 
     .template-product .contentProduct>.listQuality li {
-        font-size: 16px;
         flex: 100%;
-        font-weight: bold;
     }
 
     .template-product .contentProduct>.listTiles ul {
