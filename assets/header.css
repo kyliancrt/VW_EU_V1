@@ -294,7 +294,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     height: max-content;
-    text-transform: capitalize;
+    text-transform: initial;
     width: max-content;
 }
 
