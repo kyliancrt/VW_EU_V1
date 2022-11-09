@@ -684,7 +684,6 @@ width: max-content;
     }
 
     .template-product .contentProduct .productPrice {
-  justify-content: flex-start;
   gap: 0;
   margin-bottom: 2rem;
 }
@@ -794,6 +793,10 @@ width: max-content;
 
 
 @media only screen and (min-width: 1200px) {
+  
+    .template-product .contentProduct .productPrice {
+  justify-content: flex-start;
+}
 
   .template-product .iconesAdvantages ul {
   flex-wrap: nowrap;
