@@ -111,6 +111,7 @@ width: 100%;
 
 .template-product .contentProduct h1 small {
     font-weight: normal;
+    text-transform: initial;
 }
 
 .template-product .contentProduct h2 {
