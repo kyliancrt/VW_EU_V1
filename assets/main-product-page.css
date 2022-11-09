@@ -679,9 +679,10 @@ width: max-content;
     }
 
     .template-product .contentProduct .productPrice {
-        justify-content: center;
-        gap: 3rem;
-    }
+  justify-content: flex-start;
+  gap: 0;
+  margin-bottom: 2rem;
+}
 
     .template-product .inputsCalculQuantity>div> :nth-child(1) {
         display: block;
