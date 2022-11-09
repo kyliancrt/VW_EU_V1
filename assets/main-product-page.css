@@ -271,42 +271,6 @@ width: 100%;
     transform: scale(1.1);
 }
 
-.template-product .contentProduct .btnInfos {
-    text-transform: uppercase;
-    margin-top: 0.5rem;
-    display: block;
-    font-size: 14px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #000;
-    width: max-content;
-    position: relative;
-    cursor: pointer;
-    outline: 1px solid #fff;
-    outline-offset: -1px;
-    transition: all 0.1s ease;
-}
-
-.template-product .contentProduct .btnInfos::after {
-    content: '?';
-    width: 10px;
-    height: 10px;
-    border: 1px solid #000;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    position: absolute;
-    right: -25px;
-    top: 2px;
-    font-size: 80%;
-    padding-top: 1px;
-}
-
-
-.template-product .contentProduct .btnInfos:hover {
-    outline-color: transparent;
-}
 
 .template-product .contentProduct .btnsOrders {
     display: flex;
@@ -694,11 +658,6 @@ flex: 50%;
         gap: 3rem;
     }
 
-    .template-product .contentProduct>.btnInfos {
-        margin: auto;
-        margin-top: 1rem;
-    }
-
     .template-product .inputsCalculQuantity>div> :nth-child(1) {
         display: block;
     }
@@ -757,10 +716,6 @@ flex: 50%;
 
     .template-product .contentProduct>.listTiles p {
         margin-top: 0;
-    }
-
-    .template-product .contentProduct>.btnInfos {
-        margin: 0;
     }
 
     .template-product .contentProduct .productPrice> :nth-child(1) {
