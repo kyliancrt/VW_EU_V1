@@ -728,6 +728,12 @@ flex: 50%;
 
 
 @media only screen and (min-width: 760px) {
+
+  .template-product .contentProduct h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2rem;
+  }
+  
     .template-product .contentProduct {
         max-width: 760px;
         display: flex;
@@ -751,7 +757,7 @@ flex: 50%;
 
     .template-product .contentProduct>.listQuality li {
         font-size: 18px;
-        flex: 40%;
+        flex: 100%;
         font-weight: bold;
     }
 
