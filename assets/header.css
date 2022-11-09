@@ -324,6 +324,11 @@
     font-weight: normal;
   }
 
+.Header .menuListHeadersmallFirst {
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
 
 /* MEDIA SCREEN */
 
