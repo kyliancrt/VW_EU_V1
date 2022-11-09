@@ -890,4 +890,7 @@ flex: 50%;
     .template-product .contentProduct h2 {
         margin: 0;
     }
+  .contentProduct {
+    height: calc(100vh - 300px);
+  }
 }
