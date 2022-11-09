@@ -855,6 +855,7 @@ flex: 50%;
 
   .template-product .iconesAdvantages ul {
   flex-wrap: nowrap;
+  }
   
     .template-product .contentProduct {
         padding: 0 0.5rem;
