@@ -372,34 +372,6 @@ width: 100%;
     padding-right: 1rem;
 }
 
-.template-product .iconesAdvantages {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    border-top: 1px solid rgb(0 0 0 / 50%);
-    border-bottom: 1px solid rgb(0 0 0 / 50%);
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-.template-product .iconesAdvantages>div {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.template-product .iconesAdvantages>div>img {
-    padding: 0.5rem 1.2rem;
-}
-
-.template-product .iconesAdvantages span {
-    font-weight: bold;
-}
-
-.template-product .iconesAdvantages small {
-    font-size: 100%;
-}
 
 .template-product .CalculQuantity {
     width: 100%;
@@ -641,9 +613,6 @@ width: 100%;
     display: none;
 }
 
-.template-product .iconesAdvantages .desktop {
-    display: none;
-}
 
 /* MEDIA SCREEN */
 
@@ -786,10 +755,6 @@ width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .template-product .iconesAdvantages .desktop {
-        display: flex;
     }
 
     .template-product .productImage {
