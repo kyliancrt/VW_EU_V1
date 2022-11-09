@@ -609,16 +609,19 @@ flex: 50%;
 
   .template-product .btnsInfoProduct a {
    text-transform: initial;
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
+padding: 0;
+border: 0;
+width: max-content;
   }
 
   .template-product .btnsInfoProduct a::before {
     content: '';
     background-image: url('https://cdn.shopify.com/s/files/1/0567/1220/0371/files/arrow.svg?v=1667990253');
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
+    width: 15px;
+    height: 15px;
+    margin-right: 0.3rem;
     display: block;
   }
 
