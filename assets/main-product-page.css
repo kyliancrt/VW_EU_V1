@@ -601,8 +601,22 @@ flex: 50%;
         text-align: center;
       font-size: 20px;
     }
-  
+  .template-product .btnsInfoProduct {
+    display: flex;
+    gap: 1rem;
+  }
 
+
+  .template-product .btnsInfoProduct a {
+   text-transform: initial;
+  }
+
+  .template-product .btnsInfoProduct a::before {
+    background-image: url('https://cdn.shopify.com/s/files/1/0567/1220/0371/files/arrow.svg?v=1667990253');
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
 
 
 
