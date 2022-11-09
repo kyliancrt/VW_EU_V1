@@ -749,7 +749,7 @@ width: 100%;
 
 
   
-    .template-product .Presentation .desktopIconsPresentation ul {
+    .template-product .iconesAdvantages ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -759,7 +759,7 @@ width: 100%;
         max-width: 1280px;
     }
 
-    .template-product .Presentation .desktopIconsPresentation li {
+    .template-product .iconesAdvantages li {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -770,16 +770,16 @@ width: 100%;
         gap: 1rem;
     }
 
-    .template-product .Presentation .desktopIconsPresentation li small {
+    .template-product .iconesAdvantages li small {
         font-size: 100%;
         font-weight: normal;
     }
 
-    .template-product .Presentation .desktopIconsPresentation li img {
+    .template-product .iconesAdvantages li img {
         width: 60px;
     }
 
-    .template-product .Presentation .desktopIconsPresentation span {
+    .template-product .iconesAdvantages span {
         display: flex;
         justify-content: center;
         flex-direction: column;
