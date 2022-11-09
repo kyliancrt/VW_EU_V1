@@ -624,12 +624,12 @@ width: max-content;
     height: 15px;
     margin-right: 0.4rem;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
 
   .template-product .btnsInfoProduct a:hover::before {
-    margin-right: 0.2rem;
-    margin-left: 0.2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.1rem;
   }
 
 
