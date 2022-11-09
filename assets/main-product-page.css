@@ -628,6 +628,7 @@ width: max-content;
 
   .template-product .btnsInfoProduct a:hover::before {
     margin-right: 0.2rem;
+    margin-left: 0.2rem;
   }
 
 
