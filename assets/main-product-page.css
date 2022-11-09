@@ -118,6 +118,8 @@ width: 100%;
     font-weight: normal;
     margin-top: 1rem;
     font-size: 1.8rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2rem;
 }
 
 .template-product .contentProduct h2 strong {
@@ -127,8 +129,6 @@ width: 100%;
 .template-product .contentProduct h2 small {
     display: block;
     padding-top: 0.4rem;  
-  border-bottom: 1px solid #000;
-  padding-bottom: 2rem;
 }
 
 .template-product .contentProduct h3 {
