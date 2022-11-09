@@ -684,6 +684,7 @@ width: max-content;
     }
 
     .template-product .contentProduct .productPrice {
+  gap: 1rem;
   margin-bottom: 2rem;
       justify-content: center;
 }
@@ -796,8 +797,6 @@ width: max-content;
   
     .template-product .contentProduct .productPrice {
   justify-content: flex-start;
-      
-  gap: 0;
 }
 
   .template-product .iconesAdvantages ul {
