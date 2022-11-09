@@ -609,6 +609,8 @@ flex: 50%;
 
   .template-product .btnsInfoProduct a {
    text-transform: initial;
+    display: flex;
+    align-items: center;
   }
 
   .template-product .btnsInfoProduct a::before {
