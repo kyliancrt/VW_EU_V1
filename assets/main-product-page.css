@@ -126,7 +126,9 @@ width: 100%;
 
 .template-product .contentProduct h2 small {
     display: block;
-    padding-top: 0.4rem;
+    padding-top: 0.4rem;  
+  border-bottom: 1px solid #000;
+  padding-bottom: 2rem;
 }
 
 .template-product .contentProduct h3 {
@@ -688,11 +690,6 @@ width: max-content;
 
 
 @media only screen and (min-width: 760px) {
-
-  .template-product .contentProduct h2 {
-  border-bottom: 1px solid #000;
-  padding-bottom: 2rem;
-  }
   
     .template-product .contentProduct {
         max-width: 760px;
