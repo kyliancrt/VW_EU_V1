@@ -809,6 +809,13 @@ font-size: 14px;
 
 @media only screen and (min-width: 400px) {
 
+  
+.template-product .productImage .slideTiles p {
+  font-size: 15px;
+top: 12%;
+left: 10%;
+}
+
     .template-product .contentProduct .franceTrust> :nth-child(1) {
         width: 110px;
     }
