@@ -22,11 +22,11 @@ width: 100%;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: none;
+  visibility: hidden;
 }
 
 .template-product .productImage .ProductImageContent .slide.active {
- display: block;
+  visibility: visible;
 }
 
 .template-product .productImage .ProductImageContent .slide > img{
