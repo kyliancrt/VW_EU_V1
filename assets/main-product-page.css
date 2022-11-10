@@ -668,6 +668,67 @@ width: max-content;
   margin: 1.5rem 0;
 }
 
+.slideTiles > img {  
+  width:15%;
+  height:17%;
+  box-shadow: -1.5px 1.5px 0px 0px rgb(0,0,0,0.3);
+}
+.slideTiles .tile1 {
+  top:30%;
+  left:22%;
+  z-index:4;
+  -webkit-animation: moveslide2img1 4s infinite ;
+  animation:   moveslide2img1 4s infinite ;
+}
+.slideTiles .tile2 {
+  top:30%;
+  left:37%;
+  z-index:3;
+  -webkit-animation: moveslide2img2 4s infinite ;
+  animation:   moveslide2img2 4s infinite ;
+}
+.slideTiles .tile3 {
+  top:47%;
+  left:22%;
+  z-index:4;
+  -webkit-animation: moveslide2img3 4s infinite ;
+  animation:   moveslide2img3 4s infinite ;
+}
+.slideTiles .tile4 {
+  top:47%;
+  left:37%;
+  z-index:3;
+  -webkit-animation: moveslide2img4 4s infinite ;
+  animation:   moveslide2img4 4s infinite ;
+}
+.slideTiles .tile5 {
+  top:30%;
+  left:52%;
+  z-index:2;
+  -webkit-animation: moveslide2img5 4s infinite ;
+  animation:   moveslide2img5 4s infinite ;
+}
+.slideTiles .tile6 {
+  top:30%;
+  left:67%;
+  z-index:1;
+  -webkit-animation: moveslide2img6 4s infinite ;
+  animation:   moveslide2img6 4s infinite ;
+}
+.slideTiles .tile7 {
+  top:47%;
+  left:52%;
+  z-index:2;
+  -webkit-animation: moveslide2img7 4s infinite ;
+  animation:   moveslide2img7 4s infinite ;
+}
+.slideTiles .tile8 {
+  top:47%;
+  left:67%;
+  z-index:1;
+  -webkit-animation: moveslide2img8 4s infinite ;
+  animation:   moveslide2img8 4s infinite ;
+}
 
 
 
