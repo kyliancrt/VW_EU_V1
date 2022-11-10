@@ -816,8 +816,6 @@ padding: 0;
   padding-bottom: 0px;
 font-size: 25px;
 font-weight: 900;
-margin-top: 1.5rem;
-margin-bottom: 2rem;
 width: 100%;
   margin-top: 2rem;
 }
@@ -866,10 +864,10 @@ width: 100%;
   overflow: hidden;
 }
 .trustSlide .splide__arrow.splide__arrow--prev {
-  left: -70px;
+  left: -40px;
 }
 .trustSlide .splide__arrow.splide__arrow--next {
-  right: -70px;
+  right: -40px;
 }
 
 
