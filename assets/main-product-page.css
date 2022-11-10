@@ -668,7 +668,7 @@ width: max-content;
   margin: 1.5rem 0;
 }
 
-.template-product .productImage .ProductImageContent .slideTiles .tiles {}
+.template-product .productImage .ProductImageContent .slideTiles .tiles {
 position: absolute;
 width: 100%;
 height: 100%;
@@ -683,6 +683,7 @@ box-shadow: -1.5px 1.5px #0000004d;
 min-width: initial;
 min-height: initial;
 }
+
 .template-product .productImage .ProductImageContent .slideTiles .tile1 {
   top:30%;
   left:22%;
