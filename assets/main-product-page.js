@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
             1025: { perPage: 2 },
             400: { perPage: 1 }
         },
-        focus: 'center',
+        focus: 'left',
         autoplay: true,
         interval: 4000,
         flickMaxPages: 3,
