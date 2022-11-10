@@ -22,7 +22,13 @@ width: 100%;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: none;
 }
+
+.template-product .productImage .ProductImageContent .slide.active {
+ display: block;
+}
+
 .template-product .productImage .ProductImageContent .slide > img{
  position: absolute;
 top: 0;
