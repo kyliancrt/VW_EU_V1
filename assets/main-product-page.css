@@ -789,6 +789,14 @@ min-height: initial;
   90% { transform: translateY(0px) translateX(0px); }
   100% { transform: translateY(0px) translateX(0px); }
 }
+.template-product .productImage .slideTiles p {
+  position: absolute;
+left: 5%;
+top: 5%;
+margin: 0;
+padding: 0;
+font-size: 14px;
+}
 
 
 
