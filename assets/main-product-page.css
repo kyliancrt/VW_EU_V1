@@ -679,7 +679,7 @@ transform: perspective(400px) rotateY(25deg);
 
 .template-product .productImage .ProductImageContent .slideTiles .tiles img {  
   width: 15%;
-height: 15%;
+height: 17%;
 box-shadow: -1.5px 1.5px #0000004d;
 min-width: initial;
 min-height: initial;
