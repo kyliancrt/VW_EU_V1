@@ -991,15 +991,24 @@ left: 10%;
     }
 }
 @media only screen and (min-width: 1600px) {
+
+  .template-product .faq>* {
+    max-width: 760px;
+margin-left: auto;
+margin-right: auto;
+  }
+  
   .template-product .calculQuantity h3 {
     margin-top: 3rem;
   }
+  
   .template-product .calculQuantity>div {
       max-width: 760px;
   }
+  
   .template-product .calculQuantity .btnsCalculQuantity {
   margin-bottom: 4rem;
-}
+  }
 
   .template-product .btnsInfoProduct {
   margin: 0;
