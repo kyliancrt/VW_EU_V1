@@ -854,10 +854,10 @@ font-size: 14px;
   overflow: hidden;
 }
 .trustSlide .splide__arrow.splide__arrow--prev {
-  left: -5%;
+  left: -70px;
 }
 .trustSlide .splide__arrow.splide__arrow--next {
-  right: -5%;
+  right: -70px;
 }
 
 
