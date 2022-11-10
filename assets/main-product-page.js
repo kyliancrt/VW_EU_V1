@@ -89,14 +89,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let prevSlide = $('.template-product .productImage .pagination ul li.active').prev();
         let prevSlideId = $('.template-product .productImage .pagination ul li.active').prev().attr("id");
-      
-        $('.template-product .productImage .pagination ul li').removeClass('active');
-            $('.template-product .productImage .slide').removeClass('active')
-      
-        if ($('.template-product .productImage .pagination ul :first-child').hasClass('active')) {       
-            $(".template-product .productImage .pagination ul :last-child").addClass('active');
+        if ($('.template-product .productImage .pagination ul li:first-child.active').hasClass('active')) {
+
         }
         else {
+            $('.template-product .productImage').attr('class', 'productImage');
+            $('.template-product .productImage .pagination ul li').removeClass('active');
+            $('.template-product .productImage .slide').removeClass('active')
             $('.' + prevSlideId).addClass('active');
             $(prevSlide).addClass('active')
         }
