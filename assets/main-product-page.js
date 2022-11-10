@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             $('.template-product .productImage').attr('class', 'productImage');
-            $('.template-product .productImage .pagination ul li').removeClass('active')
-            $('.template-product .productImage').addClass(prevSlideId);
+            $('.template-product .productImage .pagination ul li').removeClass('active');
+            $('.' + prevSlideId).addClass('active');
             $(prevSlide).addClass('active')
         }
 
@@ -109,9 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
         else {
-            $('.template-product .productImage').attr('class', 'productImage');
             $('.template-product .productImage .pagination ul li').removeClass('active');
-            $('.template-product .productImage').addClass(nextSlideId);
+        $('.' + nextSlideId).addClass('active');
             $(nextSlide).addClass('active');
         }
 
