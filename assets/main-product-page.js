@@ -93,7 +93,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.template-product .productImage .pagination ul li').removeClass('active');
             $('.template-product .productImage .slide').removeClass('active')
       
-        if ($('.template-product .productImage .pagination ul li:first-child').hasClass('active')) {   
+        if ($('.template-product .productImage .pagination ul li:first-child').hasClass('active')) {          
+            $('.' + prevSlideId).addClass('active');
             $(".template-product .productImage .pagination ul li:last-child").addClass('active')
         }
         else {
