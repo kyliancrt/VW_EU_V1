@@ -5,7 +5,7 @@ width: 100%;
 }
 .template-product .productImage {
     position: relative;
-    height: 45vh;
+    height: 100vw;
     background-color:#f5f5f5;
 }
 
@@ -847,10 +847,6 @@ min-height: initial;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .template-product .productImage {
-        height: 100vw;
     }
 
     .template-product .contentProduct>.listTiles ul li span {
