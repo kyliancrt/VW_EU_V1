@@ -24,11 +24,11 @@ width: 100%;
   overflow: hidden;
 }
 .template-product .productImage .ProductImageContent .slide > img{
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: auto;
-  height: 100%;
+ position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
 }
 
 .template-product .productImage .arrows {
