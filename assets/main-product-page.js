@@ -149,12 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         focus: 'center',
         autoplay: true,
-        interval: 8000,
+        interval: 4000,
         flickMaxPages: 3,
         updateOnMove: true,
         pagination: false,
-        padding: '1%',
-        throttle: 300
+        padding: '1rem',
     }).mount();
 
 
