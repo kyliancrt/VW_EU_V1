@@ -808,6 +808,10 @@ font-size: 14px;
   align-items: flex-start;
 }
 
+.trustSlide ul li {
+  padding: 0 1rem;
+}
+
 .trustSlide ul li svg{
   width: 120px;
 }
