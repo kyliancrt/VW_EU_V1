@@ -992,10 +992,10 @@ left: 10%;
 }
 @media only screen and (min-width: 1600px) {
 
-  .template-product .faq>* {
+  .template-product .contentProductContainer .faq>* {
     max-width: 760px;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .template-product .calculQuantity h3 {
