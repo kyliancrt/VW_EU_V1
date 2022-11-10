@@ -139,19 +139,22 @@ document.addEventListener('DOMContentLoaded', function () {
         displayPrice();
       $('#btnCheckout').trigger('click');
     });
-
-  //trustSlider
-  document.addEventListener( 'DOMContentLoaded', function () {
-	new Splide( '#trust-slider', {
-		gap        : 40,
-		rewind     : true,
-		cover      : true,
-		pagination : false,
-      autoWidth: true,
-	focus    : 'center',
-      type : 'loop',
-	} ).mount();
-} );
+  
+   let splideTrust = new Splide('#splideTrust', {
+        type: 'loop',
+        perPage: 3,
+        breakpoints: {
+            1025: { perPage: 2 },
+            600: { perPage: 1 },
+        },
+        focus: 'center',
+        autoplay: true,
+        interval: 4000,
+        flickMaxPages: 3,
+        updateOnMove: true,
+        pagination: false,
+        padding: '1rem',
+    }).mount();
 
 
 
