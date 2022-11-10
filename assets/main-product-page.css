@@ -804,6 +804,7 @@ font-size: 14px;
 
 .trustSlide {
   position: relative;
+  width: calc(100% - 300px);
 }
 
 .trustSlide ul {
