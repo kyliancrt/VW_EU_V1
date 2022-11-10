@@ -812,6 +812,17 @@ font-size: 14px;
   width: 120px;
 }
 
+.trustSlide ul li .p1 {
+  font-weight: bold;
+}
+.trustSlide ul li .p2 {
+  font-size: 90%;
+}
+.trustSlide ul li .p3 {
+  font-size: 80%;
+  opacity: 0.9;
+}
+
 
 
 
