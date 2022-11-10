@@ -6,7 +6,7 @@ width: 100%;
 .template-product .productImage {
     position: relative;
     height: 100vw;
-     background: #f5f5f5 url("https://cdn.shopify.com/s/files/1/0567/1220/0371/files/bg-slide.jpg?v=1668074869") no-repeat center center;
+     background: #f5f5f5;
   background-size: cover;
 }
 
