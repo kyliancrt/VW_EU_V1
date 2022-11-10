@@ -352,13 +352,16 @@ min-height: 100%;
 }
 
 .template-product .calculQuantity h3 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
-    font-weight: 900;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+   text-align: center;
+padding: 0;
+font-size: 25px;
+font-weight: 900;
+margin-top: 1.5rem;
+margin-bottom: 2rem;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+width: 70%;
+margin: 2rem auto 2rem auto;
+padding-bottom: 1rem;
 }
 
 .template-product .inputsCalculQuantity {
@@ -403,7 +406,7 @@ min-height: 100%;
     width: 95%;
     margin: auto;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .template-product .calculQuantity .btnsCalculQuantity>:nth-child(1) {
