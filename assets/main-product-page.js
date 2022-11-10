@@ -140,6 +140,19 @@ document.addEventListener('DOMContentLoaded', function () {
       $('#btnCheckout').trigger('click');
     });
 
+  //trustSlider
+  document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#trust-slider', {
+		gap        : 40,
+		rewind     : true,
+		cover      : true,
+		pagination : false,
+      autoWidth: true,
+	focus    : 'center',
+      type : 'loop',
+	} ).mount();
+} );
+
 
 
 
