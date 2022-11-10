@@ -838,16 +838,18 @@ font-size: 14px;
 .trustSlide .splide .splide__arrow {
   background-color: transparent;
   box-shadow: 0;
-  border: 1px solid #000;
-}
-
-.trustSlide .splide .splide__arrow:hover {
-  outline-color: #000;
+  border: 0;
+  outline: 0;
 }
 
 .trustSlide .splide .splide__arrow svg {
-  fill: #000;
+  fill: rgb(0,0,0,0.7);
 }
+
+.trustSlide .splide .splide__arrow:hover svg {
+  fill: rgb(0,0,0,1);
+}
+
 .trustSlide .splide__track {
   overflow: hidden;
 }
