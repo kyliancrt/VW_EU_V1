@@ -1,7 +1,14 @@
 {{ 'main-product-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-product-page.js' | asset_url | script_tag }}
 
-        <section class="productImage slide1">
+        <section class="productImage">
+
+          <div class="ProductImageContent">
+            <div class="slide slide1 active">
+              <img src="{{ product.images[22] | img_url: '1100x' }}">
+            </div>
+          </div>
+          
             <div class="arrows">
                 <div>
                     <span id="productImagePrev">
@@ -197,31 +204,3 @@
               </div>
             </div>
         </div>
-
-
-
-  {% style %}  
-.template-product .productImage.slide1 {
-    background-image: url("{{ product.images[0] | img_url: '1100x' }}");
-}
-
-.template-product .productImage.slide2 {
-    background-image: url("{{ product.images[22] | img_url: '1100x' }}");
-}
-
-.template-product .productImage.slide3 {
-    background-image: url("{{ product.images[23] | img_url: '1100x' }}");
-}
-
-.template-product .productImage.slide4 {
-    background-image: url("{{ product.images[24] | img_url: '1100x' }}");
-}
-
-.template-product .productImage.slide5 {
-    background-image: url("{{ product.images[25] | img_url: '1100x' }}");
-}
-
-.template-product .productImage.slide6 {
-    background-image: url("{{ product.images[26] | img_url: '1100x' }}");
-}
-  {% endstyle %}
