@@ -145,7 +145,8 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'loop',
         perPage: 3,
         breakpoints: {
-            1025: { perPage: 2 }
+            1025: { perPage: 2 },
+            600: { perPage: 1 }
         },
         focus: 'center',
         autoplay: true,
