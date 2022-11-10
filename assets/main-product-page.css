@@ -29,7 +29,8 @@ width: 100%;
  display: block;
 }
 
-.template-product .productImage .ProductImageContent .slide > img{
+.template-product .productImage .ProductImageContent .slide > img,
+.template-product .productImage .ProductImageContent .slide > video{
  position: absolute;
 top: 0;
 left: 0;
