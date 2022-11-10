@@ -842,6 +842,9 @@ font-size: 14px;
   outline-color: #000;
 }
 
+.trustSlide .splide .splide__arrow svg {
+  fill: #000;
+}
 
 
 
