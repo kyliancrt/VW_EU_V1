@@ -802,6 +802,11 @@ padding: 0;
 font-size: 14px;
 }
 
+.trustSlide {
+  position: relative;
+  overflow: hidden;
+}
+
 .trustSlide ul {
   width: max-content;
   display: flex;
@@ -825,9 +830,17 @@ font-size: 14px;
 .trustSlide ul li .p3 {
   font-size: 90%;
   opacity: 0.9;
-  
+ }
+
+.trustSlide .splide .splide__arrow {
+  background-color: transparent;
+  box-shadow: 0;
+  border: 1px solid #000;
 }
 
+.trustSlide .splide .splide__arrow:hover {
+  outline-color: #000;
+}
 
 
 
