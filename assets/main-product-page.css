@@ -845,6 +845,9 @@ min-height: initial;
 
 
 @media only screen and (min-width: 760px) {
+  .template-product .productImage .ProductImageContent .slideTiles .tiles {
+    left: 5%;
+  }
   
     .template-product .contentProduct {
         max-width: 760px;
@@ -981,15 +984,6 @@ min-height: initial;
     margin-bottom: 0;
     margin-top: 1rem;
   }
-
-    .template-product .productImage {
-        width: 50%;
-    }
-
-    .contentProductContainer {
-        width: 50%;
-    }
-
     .template-product .contentProduct h2 {
         margin: 0;
     }
