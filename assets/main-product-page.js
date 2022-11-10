@@ -140,7 +140,8 @@ document.addEventListener('DOMContentLoaded', function () {
       $('#btnCheckout').trigger('click');
     });
 
-  let splideProducts = new Splide('#splideProducts', {
+  //trustSlide
+   let splideTrust = new Splide('#splideTrust', {
         type: 'loop',
         perPage: 3,
         breakpoints: {
