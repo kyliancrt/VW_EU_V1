@@ -139,7 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
         displayPrice();
       $('#btnCheckout').trigger('click');
     });
-  
+
+  //trustSlider
    let splideTrust = new Splide('#splideTrust', {
         type: 'loop',
         perPage: 3,
