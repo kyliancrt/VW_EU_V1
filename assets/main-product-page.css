@@ -805,6 +805,8 @@ font-size: 14px;
 .trustSlide {
   position: relative;
   overflow: hidden;
+    width: calc(100% - 200px);
+  margin: auto;
 }
 
 .trustSlide ul {
@@ -844,6 +846,15 @@ font-size: 14px;
 
 .trustSlide .splide .splide__arrow svg {
   fill: #000;
+}
+.trustSlide .splide__track {
+  overflow: hidden;
+}
+.trustSlide .splide__arrow.splide__arrow--prev {
+  left: -70px;
+}
+.trustSlide .splide__arrow.splide__arrow--next {
+  right: -70px;
 }
 
 
