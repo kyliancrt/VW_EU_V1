@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
         flickMaxPages: 3,
         updateOnMove: true,
         pagination: false,
-        padding: '1rem',
+        padding: '1%'
     }).mount();
 
 
