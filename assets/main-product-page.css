@@ -994,7 +994,7 @@ left: 10%;
   .template-product .calculQuantity h3 {
     margin-top: 3rem;
   }
-  .template-product .calculQuantity {
+  .template-product .calculQuantity>div {
       max-width: 760px;
   }
   .template-product .calculQuantity .btnsCalculQuantity {
