@@ -83,6 +83,22 @@ document.addEventListener('DOMContentLoaded', function () {
         videoInstall.setAttribute("autoplay", "true");
     }
 
+   //trustSlide
+   let splideTrust = new Splide('#splideTrust', {
+        type: 'loop',
+        perPage: 3,
+        breakpoints: {
+            1025: { perPage: 2 }
+        },
+        focus: 'center',
+        autoplay: true,
+        interval: 8000,
+        flickMaxPages: 3,
+        updateOnMove: true,
+        pagination: false,
+        padding: '1%',
+        throttle: 300
+    }).mount();
 
 
 });
