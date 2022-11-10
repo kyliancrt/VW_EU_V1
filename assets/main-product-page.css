@@ -577,6 +577,7 @@ margin: auto;
 padding: 0;
 flex-wrap: wrap;
 gap: 1.5rem 0;
+   width: 100%;
     }
 
     .template-product .iconesAdvantages li {
