@@ -118,9 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $(".template-product .productImage .pagination ul li").click(function () {
-        $('.template-product .productImage').attr('class', 'productImage');
         $('.template-product .productImage .pagination ul li').removeClass('active')
-        $('.template-product .productImage').addClass(this.id);
+        $('.' + this.id).addClass('active');
         $(this).addClass('active')
     });
 
