@@ -979,6 +979,9 @@ min-height: initial;
   .template-product .contentProduct > .listQuality {
     margin-bottom: 0;
   }
+   .template-product .productImage .ProductImageContent .slideTiles .tiles {
+    left: 8%;
+  }
 
   .template-product .contentProduct p {
     margin-bottom: 0;
