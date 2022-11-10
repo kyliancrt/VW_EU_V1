@@ -741,6 +741,54 @@ min-height: initial;
   -webkit-animation: moveslide2img8 4s infinite ;
   animation:   moveslide2img8 4s infinite ;
 }
+@keyframes moveslide2img1 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(-7px) translateX(-10px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img2 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(-7px) translateX(0px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img3 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(7px) translateX(-10px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img4 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(7px) translateX(0px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img5 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(-7px) translateX(10px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img6 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(-7px) translateX(20px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img7 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(7px) translateX(10px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes moveslide2img8 {
+  0% { transform: translateY(0)  translateX(0); }
+  45% { transform: translateY(7px) translateX(20px); }
+  90% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
 
 
 
