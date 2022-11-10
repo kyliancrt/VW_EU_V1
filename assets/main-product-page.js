@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             $('.template-product .productImage').attr('class', 'productImage');
             $('.template-product .productImage .pagination ul li').removeClass('active');
+        $('.template-product .productImage .slide').removeClass('active')
             $('.' + prevSlideId).addClass('active');
             $(prevSlide).addClass('active')
         }
@@ -110,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             $('.template-product .productImage .pagination ul li').removeClass('active');
+        $('.template-product .productImage .slide').removeClass('active')
         $('.' + nextSlideId).addClass('active');
             $(nextSlide).addClass('active');
         }
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $(".template-product .productImage .pagination ul li").click(function () {
         $('.template-product .productImage .pagination ul li').removeClass('active')
+        $('.template-product .productImage .slide').removeClass('active')
         $('.' + this.id).addClass('active');
         $(this).addClass('active')
     });
