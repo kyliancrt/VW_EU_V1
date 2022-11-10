@@ -199,64 +199,6 @@
     opacity: 1;
 }
 
-.splide__arrows {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    top: 35%;
-    z-index: 2;
-}
-
-.splide .splide__arrow {
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    transform: none;
-    border-radius: unset;
-    width: 50px;
-    opacity: .9;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255, 0.5);
-    box-shadow: 0 0 6px 3px rgb(0 0 0 / 5%);
-    height: 50px;
-    position: absolute;
-    transform-origin: center;
-    transform: rotate(-45deg);
-    outline: 2px solid transparent;
-    transition: all 0.2s ease;
-}
-
-.splide .splide__arrow:hover {
-    outline-color: rgb(255, 255, 255, 0.5);
-}
-
-.splide .splide__arrow svg {
-    width: 24px;
-    height: 24px;
-    fill: #FFF;
-    text-shadow: 0 0 15px rgb(0 0 0 / 20%);
-    transform-origin: center;
-}
-
-
-.splide__arrow.splide__arrow--prev {
-    left: 20px;
-}
-
-.splide__arrow.splide__arrow--prev svg {
-    transform: rotate(-135deg);
-
-}
-
-.splide__arrow.splide__arrow--next {
-    right: 20px;
-}
-
-.splide__arrow.splide__arrow--next svg {
-    transform: rotate(45deg);
-
-}
-
 .SlideProducts .btn {
     display: inline-block;
     margin-bottom: 30px;
