@@ -89,13 +89,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let prevSlide = $('.template-product .productImage .pagination ul li.active').prev();
         let prevSlideId = $('.template-product .productImage .pagination ul li.active').prev().attr("id");
-        if ($('.template-product .productImage .pagination ul li:first-child.active').hasClass('active')) {
-
+      
+        $('.template-product .productImage .pagination ul li').removeClass('active');
+            $('.template-product .productImage .slide').removeClass('active')
+      
+        if ($('.template-product .productImage .pagination ul li:first-child.active').hasClass('active')) {          
+            $('.' + prevSlideId).addClass('active');
+            $(".template-product .productImage .pagination ul li:last-child").addClass('active')
         }
         else {
-            $('.template-product .productImage').attr('class', 'productImage');
-            $('.template-product .productImage .pagination ul li').removeClass('active');
-        $('.template-product .productImage .slide').removeClass('active')
             $('.' + prevSlideId).addClass('active');
             $(prevSlide).addClass('active')
         }
