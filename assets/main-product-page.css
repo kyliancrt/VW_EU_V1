@@ -1008,4 +1008,9 @@ left: 10%;
   .contentProduct {
     min-height: calc(100vh - 270px);
   }
+  .template-product .productImage .slideTiles p {
+  font-size: 16px;
+  top: 15%;
+  left: 15%;
+}
 }
