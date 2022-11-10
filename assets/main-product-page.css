@@ -795,12 +795,16 @@ min-height: initial;
 }
 
 .template-product .productImage .slideTiles p {
-  position: absolute;
+position: absolute;
 left: 5%;
 top: 5%;
 margin: 0;
 padding: 0;
 font-size: 14px;
+}
+
+.trustSlide .splide {
+  padding: 1.5rem 0;
 }
 
 .trustSlide .splide {
