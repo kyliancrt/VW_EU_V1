@@ -805,7 +805,7 @@ font-size: 14px;
 
 .trustSlide {
   position: relative;
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   margin: 2rem auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -843,7 +843,7 @@ font-size: 14px;
 }
 
 .trustSlide .splide .splide__arrow svg {
-  fill: rgb(0,0,0,0.7);
+  fill: rgb(0,0,0,0.8);
 }
 
 .trustSlide .splide .splide__arrow:hover svg {
