@@ -850,8 +850,7 @@ min-height: initial;
     }
 
     .template-product .productImage {
-        height: 45vh;
-        min-height: 500px;
+        height: 100vw;
     }
 
     .template-product .contentProduct>.listTiles ul li span {
