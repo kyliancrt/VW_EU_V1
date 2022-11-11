@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     // InstallPlay
-    if ($(window).width() < 1200) {
         let btnInstall = document.getElementById("btnInstall");
         let videoInstall = document.getElementById("videoInstall");
 
@@ -14,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector(".template-product .Install #btnInstall").style.display = "none";
             document.querySelector(".template-product .Install h2").style.display = "none";
         });
-    }
-    else {
-        videoInstall.setAttribute("autoplay", "true");
-    }
 
     // calculQuantity
         let calculA, calculB, calculC;
