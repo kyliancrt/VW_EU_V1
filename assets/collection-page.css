@@ -660,11 +660,6 @@
 @media only screen and (min-width: 370px) {
 
 
-    .template-collection .Products .productsList {
-        width: calc(100% - 2rem);
-        gap: 1rem;
-    }
-
 
     .template-collection .Products .productsList li>a img {
         width: 170px;
@@ -681,6 +676,12 @@
 }
 
 @media only screen and (min-width: 600px) {
+
+  
+    .template-collection .Products .productsList {
+        width: calc(100% - 2rem);
+        gap: 1rem;
+    }
 
 
     .template-collection .Products .productsList {
