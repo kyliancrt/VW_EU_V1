@@ -898,6 +898,10 @@ left: 10%;
 
 @media only screen and (min-width: 500px) {
 
+  .trustSlide .splide {
+  width: 80%;
+  }
+
     .template-product .contentProduct h1 {
         font-size: 50px;
     }
