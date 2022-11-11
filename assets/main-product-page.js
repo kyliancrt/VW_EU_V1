@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     // InstallPlay
-    if ($(window).width() < 1025) {
+    if ($(window).width() < 1200) {
         let btnInstall = document.getElementById("btnInstall");
         let videoInstall = document.getElementById("videoInstall");
 
