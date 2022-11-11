@@ -2,15 +2,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // InstallPlay
 
-    let btnInstall = document.getElementById("btnInstall");
-    let videoInstall = document.getElementById("videoInstall");
+    
+    // InstallPlay
+    if ($(window).width() < 1025) {
+        let btnInstall = document.getElementById("btnInstall");
+        let videoInstall = document.getElementById("videoInstall");
 
-    btnInstall.addEventListener('click', function () {
-        videoInstall.play();
-        videoInstall.setAttribute("controls", "true");
-        document.querySelector(".template-product .Install span").style.display = "none";
-        document.querySelector(".template-product .Install h2").style.display = "none";
-    });
+        btnInstall.addEventListener('click', function () {
+            videoInstall.play();
+            videoInstall.setAttribute("controls", "true");
+            document.querySelector(".template-index .Install #btnInstall").style.display = "none";
+            document.querySelector(".template-index .Install h2").style.display = "none";
+        });
+    }
+    else {
+        videoInstall.setAttribute("autoplay", "true");
+    }
 
     // calculQuantity
         let calculA, calculB, calculC;
