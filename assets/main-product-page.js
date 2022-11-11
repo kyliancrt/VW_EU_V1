@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             videoInstall.play();
             videoInstall.setAttribute("controls", "true");
             document.querySelector(".template-product .Install #btnInstall").style.display = "none";
+            document.querySelector(".template-product .Install .btnInstall").style.display = "none";
             document.querySelector(".template-product .Install h2").style.display = "none";
         });
 
