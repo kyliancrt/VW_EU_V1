@@ -874,7 +874,7 @@ width: 100%;
   right: -40px;
 }
 
-.template-product .Install > :nth-child(1) > :nth-child(2) {
+.template-product .Install .listInstall {
   display: none;
 }
 
