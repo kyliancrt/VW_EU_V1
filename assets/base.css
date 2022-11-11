@@ -320,8 +320,8 @@ padding: 0 1rem;
 /* END SPLIDE ARROW */
 
 
-input , button {
-  border-radius: none;
+input , button , textarea {
+  border-radius: 0;
 }
 
 
