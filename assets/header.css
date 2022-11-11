@@ -256,7 +256,7 @@
 .Header .nav .menuHamburger,
 .Header .nav .logoHeader,
 .Header .nav .btnsHeader {
-    flex: 100%;
+  flex: 33.33%;
 }
 
 .Header .menuHamburger .menuListHeader {
