@@ -203,6 +203,7 @@
     transform-origin: center;
     margin-left: 0.5rem;
     margin-top: -0.1rem;
+    fill: #FFF;
 }
 
 .template-collection .headerCollection .blocFilters ul li:hover {
