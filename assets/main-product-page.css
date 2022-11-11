@@ -874,9 +874,6 @@ width: 100%;
   right: -40px;
 }
 
-.template-product .Install .listInstall {
-  display: none;
-}
 
 
 
@@ -1043,6 +1040,9 @@ left: 10%;
 
 
 @media only screen and (min-width: 1200px) {
+
+  
+
     .template-product .Install {
         background-color: transparent;
     }
