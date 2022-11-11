@@ -45,6 +45,7 @@
 .template-index .Presentation .mobileBtnPresentation {
     margin: 0 auto;
     margin-top: -25px;
+  z-index: 2;
 }
 
 .template-index .Presentation .desktopBtnPresentation {
