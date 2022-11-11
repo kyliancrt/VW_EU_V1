@@ -830,10 +830,10 @@ se
 
     .template-index .Presentation .contentPresentation {
         padding-top: 0;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
         background-color: #f5f5f5;
     }
 
@@ -842,13 +842,12 @@ se
     }
 
     .template-index .Presentation .desktopIconsPresentation {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 0;
-        padding-bottom: 3rem;
-        max-width: 1280px;
+          display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  max-width: 1280px;
+  padding: 1rem 0;
     }
 
     .template-index .Presentation .bgDiag {
