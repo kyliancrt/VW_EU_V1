@@ -792,10 +792,6 @@ se
 }
 
 @media only screen and (min-width: 1025px) {
-
-  .template-index section {
-    min-height: 100vh;
-  }
   
     .template-index .Presentation .contentPresentation {
         position: relative;
