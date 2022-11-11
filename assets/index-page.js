@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             videoInstall.play();
             videoInstall.setAttribute("controls", "true");
             document.querySelector(".template-index .Install #btnInstall").style.display = "none";
+            document.querySelector(".template-index .Install .btnInstall").style.display = "none";
             document.querySelector(".template-index .Install h2").style.display = "none";
         });
     }
