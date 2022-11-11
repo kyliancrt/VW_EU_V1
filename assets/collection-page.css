@@ -712,7 +712,7 @@
 
 
 .template-collection .headerCollection .blocFilters ul li.active:hover svg,
-  .template-collection .headerCollection .blocFilters ul li.active svg {
+  .template-collection .headerCollection .blocFilters ul.active li.active svg {
     fill: #000;
 }
 
