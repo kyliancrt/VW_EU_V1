@@ -170,7 +170,7 @@
 .Header .nav .logoHeader {
     width: 100%;
     height: 100%;
-    display: flex;
+  display: flex;
     justify-content: center;
 }
 
@@ -187,6 +187,7 @@
 .Header .nav .logoHeader img {
     transition: all 0.1s ease;
     transform-origin: center;
+    width: 50px;
 }
 
 .Header .nav .logoHeader img:hover {
