@@ -175,7 +175,6 @@
     gap: 0.5rem;
     width: 100%;
     height: 100%;
-    fill: #FFF;
 }
 
 
@@ -227,7 +226,7 @@
 
 .template-collection .headerCollection .blocFilters ul.active li.active svg {
     transform: rotate(-90deg);
-    fill: #000
+    fill: #FFF
 }
 
 .template-collection .Products {
