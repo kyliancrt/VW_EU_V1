@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // VideoPresentationMedia
     let mainVideo = $('.template-index .Presentation video');
     let mobileSrc = "https://cdn.shopify.com/videos/c/o/v/e08cb0efd32040f791a7a193a2b98380.mp4";
-    let desktopSrc = "https://cdn.shopify.com/s/files/1/0567/1220/0371/files/VYNIL_WAY_FILM_MASTER_V5_AVEC_MUSIQUE_6_1.mp4?v=1643878330";
+    let desktopSrc = "https://cdn.shopify.com/videos/c/o/v/f078abbd425640f9ac5fdb9238d54cc3.mp4";
 
     if ($(window).width() < 750) {
         mainVideo.append("<source type='video/mp4' src='" + mobileSrc + "' />");
