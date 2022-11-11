@@ -1040,6 +1040,15 @@ left: 10%;
 
 
 @media only screen and (min-width: 1200px) {
+
+  .template-product .Install {
+    padding-top: 3rem;
+  }
+  .template-product .Install > :nth-child(1) {
+  position: relative;
+  margin: auto;
+  max-width: 760px;
+}
   
     .template-product .contentProduct .productPrice {
     justify-content: flex-start;
