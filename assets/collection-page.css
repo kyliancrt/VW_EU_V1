@@ -709,6 +709,13 @@
 
 @media only screen and (min-width: 1025px) {
 
+
+
+.template-collection .headerCollection .blocFilters ul li.active:hover svg {
+    fill: #000;
+}
+
+  
   .template-collection .popupPreview .popupPreviewContent > div {
     width: 200px;
     height: 52px;
