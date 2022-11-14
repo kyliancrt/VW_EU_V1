@@ -1,0 +1,288 @@
+{{ 'index-page.css' | asset_url | stylesheet_tag }}
+{{ 'index-page.js' | asset_url | script_tag }}
+<div class="template-index">
+  
+    <section class="Presentation">
+        <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" autoplay=""
+            muted="" loop="" playsinline="" id="videointro" alt="Vidéo de présentation des carreaux adhésifs Vinyl Way">
+            Un problème est survenu lors de la lecture de la vidéo.
+        </video>
+
+        <div class="titleH1">
+            <h1>
+                <span>Carreaux adhésifs</span>
+                <small>20 x 20 cm</small>
+            </h1>
+        </div>
+        <a class="mobileBtnPresentation btn btn-1" href="/collections/carreaux-adhesifs/">Découvrir les collections</a>
+        <div class="contentPresentation">
+            <div>
+                <span>2,99€</span>
+                <p><span>Tous les</span> <span>carreaux</span></p>
+                <a class="desktopBtnPresentation btn btn-1" href="/collections/carreaux-adhesifs/">Découvrir les
+                    collections</a>
+            </div>
+            <ul class="mobileIconsPresentation">
+                <li>économique</li>
+                <li>facile à poser</li>
+                <li>waterproof</li>
+                <li>thermo-résistant</li>
+            </ul>
+            <ul class="desktopIconsPresentation">
+                <li>
+                    <img alt="icône économique" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/eco.svg?v=1667834089" />
+                    <span>économique
+                    </span>
+                </li>
+                <li>
+                    <img alt="icône facile à poser" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/speed.svg?v=1667834089" />
+                    <span>facile à poser
+                    </span>
+                </li>
+                <li>
+                    <img alt="icône Waterproof" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/waterproof.svg?v=1667834089" />
+                    <span>waterproof
+                    </span>
+                </li>
+                <li>
+                    <img alt="icône thermo-résistant" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/resistant.svg?v=1667834089" />
+                    <span>thermo-résistant
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section class="Transform">
+        <img alt="Carreaux adhésifs Vinyl Way collés sur une crédence de cuisine et une douche" loading="lazy" src="https://cdn.shopify.com/s/files/1/0648/8670/2332/files/Sans-titre-1.gif?v=1665584574">
+        <div>
+            <h2><span>Transformez</span> <span>votre intérieur</span></h2>
+            <p>On joue ici avec les matériaux pour des effets variés et travaillés. Du marbre pour le chic, des
+                briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
+                blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
+            <a class="btn btn-2" href="/collections/carreaux-adhesifs/">Nos collections</a>
+            <a class="btn btn-3" href="/collections/carreaux-adhesifs-couleurs/">Tous nos carreaux</a>
+        </div>
+      
+    </section>
+    <section class="SlideProducts" style="background-color:#F7F2EE;">
+        <h2>Nos Best Sellers</h2>
+        <div id="splideProducts" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                  {% for product in collections.carreaux-adhesifs-bestsellers.products %}
+                    {% for tag in product.tags %}
+                      {% if tag contains '#' %}
+                      {% assign dataColor = tag %}
+                      {% endif %}
+                    {% endfor %}
+                    <li class="splide__slide" data-color="{{ dataColor }}">
+                        <a href="{{ product.url }}">
+                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
+                            <span>{{ product.title }}</span>
+                        </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <a class="btn btn-2" href="/carreaux-adhesifs-bestsellers/">Voir tous les Best Sellers</a>
+    </section>
+    <section class="SlideCollections">
+        <h2>Nos collections</h2>
+        <div id="splideCollections" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+
+                  {% for collection in collections %}
+                  {% if collection.handle == "dublin" or collection.handle == "londres" or collection.handle == "berlin"
+                    or collection.handle == "hossegor" or collection.handle == "florence" or collection.handle == "brooklyn" %}
+
+                  <li class="splide__slide bgCollection {{ collection.handle }}">
+                        <h3>{{ collection.handle }}</h3>
+                    <div  class="slideCollectionsImage">    
+                    <a href="/collections/carreaux-adhesifs-collections/#{{ collection.handle }}">
+                            <img alt="Vinyl Way - Collection {{ collection.title }} - carreaux adhésifs collés sur une crédence de cuisine" loading="lazy" src="{{ collection.products.first | img_url: '500x' }}">
+                        </a>
+                              <div>                              
+                              {% for product in collection.products %}
+                                <a class="linkProduct" href="{{ product.url }}">
+                                  <img alt="Vinyl Way - Carreau adhésif {{ product.title }} de la collection {{ collection.title }}" loading="lazy" src="{{ product.images[1] | img_url: '100x' }}">
+                                </a>
+                                {% endfor %}                    
+                            </div>
+                       </div> 
+                        <a href="/collections/carreaux-adhesifs-collections/#{{ collection.handle }}" class="slideCollectionsBtn">Voir</a>
+                    </li>
+                    
+                  {% endif %}
+                    {% endfor %}
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="Quality">
+        <div>
+            <h2><span>Qualité <img alt="Logo Made in France - créé et fabriqué en France" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/madeinfrance.svg?v=1666779214">
+                </span>
+                <b>Made in France</b></span>
+            </h2>
+            <p>On joue ici avec les matériaux pour des effets variés et travaillés. Du marbre pour le chic, des
+                briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
+                blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
+        </div>
+        <div>
+
+            <div class="bgDiag">
+                <div>
+                </div>
+            </div>
+
+            <ul>
+                <li>Visuel imprimé</li>
+                <li>Couche d'usure</li>
+                <li>Vinyle 1.3 mm</li>
+                <li>Adhésif Vinyl Way</li>
+                <li>Film Polypropylène</li>
+            </ul>
+            <div class="couches">
+                <svg class="svg-couches couchesthumbslide" version="1.1" id="Calque_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 483 420" xml:space="preserve">
+                    <g>
+                        <polygon class="st0" points="258,373 22,327 242,221 480,267 " />
+                    </g>
+                    <g>
+                        <polygon class="st1" points="258,313 22,267 22,264 258,310 " />
+                    </g>
+                    <g>
+                        <polygon class="st2" points="258,313 258,310 480,204 480,207 " />
+                    </g>
+                    <g>
+                        <polygon class="st3" points="258,310 22,264 242,158 480,204 " />
+                    </g>
+                    <g>
+                        <polygon class="st6" points="258,250 22,203 22,193 258,239 	" />
+                    </g>
+                    <g>
+                        <polygon class="st5" points="258,250 258,239 480,133 480,143 " />
+                    </g>
+                    <g>
+                        <polygon class="st4" points="258,239 22,193 242,87 480,133 	" />
+                    </g>
+                    <g class="st7">
+                        <polygon class="st8" points="258,164 22,118 242,12 480,58 	" />
+                    </g>
+                </svg>
+
+                <div class="img-svg">
+                    <img alt="carreau adhésif Viynl Way" loading="lazy" src="1.jpg">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img alt="logo Castorama" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/Castorama_Logo.png?v=1667830799">
+            <img alt="logo Salon Maison et Objet" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/MaisonObjet-1line-logotype_black.png?v=1667831417">
+            <img alt="logo Messe FrankFurt - Salon Ambiente" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/ambiente-datum-2020.png?v=1667830799">
+            <img alt="logo MIF EXPO - Salon du Made In France" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/mif-2.png?v=1667831417">
+            <img alt="logo Marie Claire Maison" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/logo.png?v=1635941585">
+            <img alt="logo Le Journal des Femmes" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/logo-jdf.png?v=1635941585">
+        </div>
+    </section>
+
+    <section class="Install" id="installation">
+        <div>
+            <div>
+                <div>
+                <video id="videoInstall" poster="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-poster.jpg?v=1668414921" muted="" loop="" playsinline="" id="videointro"
+                    alt="Vidéo d'Installation - Comment poser ses carreaux adhésifs Vinyl Way">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/e08cb0efd32040f791a7a193a2b98380.mp4"
+                        type="video/mp4">
+                    Un problème est survenu lors de la lecture de la vidéo.
+                </video>
+                </div>
+                <div class="bgDiag"></div>
+            </div>
+            <div>
+                <h2>
+                    Comment poser <small>ses carreaux ?</small>
+                </h2>
+                <div class="listInstall">
+                    <div>
+                        <span>01</span>
+                        <span>Nettoyer</span>
+                    </div>
+                    <p>On joue ici avec les matériaux pour des effets variés.</p>
+                <div>
+                    <span>02</span>
+                    <span>Coller</span>
+                </div>
+                <p>On joue ici avec les matériaux pour des effets variés.</p>
+                <div>
+                <span>03</span>
+                <span>Admirer</span>
+            </div>
+            <p>On joue ici avec les matériaux pour des effets variés.</p>
+        </div>
+        <span class="btnInstall"><svg id="btnInstall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+                <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                </path>
+            </svg></span>
+        </div>
+        </div>
+    </section>
+    <section class="SlideRealisations" id="realisations">
+        <h2>
+            <b>Réalisations</b>
+            <span>de nos clients</span>
+        </h2>
+        <div id="splideRealisations" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client2.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client3.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client4.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client5.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client6.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client7.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client8.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client9.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client10.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client11.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client12.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client13.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img alt="Réalisation d'un client avec des carreaux adhésifs Vinyl Way" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/client1.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    </div>
