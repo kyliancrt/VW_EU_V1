@@ -47,7 +47,7 @@
                 </ul>
                 </a>
 
-           {% for tag in product.tags %}
+           {% for tag in item.product.tags %}
                       {% if tag contains 'motifs_1' %}
                       {% assign nbMotifs = 1 %}
                       {% elsif tag contains 'motifs_2' %}
