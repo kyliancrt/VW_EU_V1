@@ -67,9 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(".listRooms").addClass("active");
             }
         });
-        $(".popupPreviewBg").click(function () {
-                $(".listRooms").removeClass("active");
-        });
 
     }
 
