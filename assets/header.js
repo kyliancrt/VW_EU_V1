@@ -10,11 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
     //     }
     // });
 
-    // menuHamburge    
+    // menuHamburger    
     if ($(window).width() < 1025) {
         $(".Header .menu-toggle").click(function () {
             $(this).toggleClass('opened');
             $('.Header .menuListHeader').toggleClass('opened');
+        });
+      
+        $(".Header .menuHamburger .menuListHeader ul li").click(function () {
+            $('.Header .menu-toggle').removeClass('opened');
+            $('.Header .menuListHeader').removeClass('opened');
         });
     }
 
