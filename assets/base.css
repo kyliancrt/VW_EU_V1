@@ -324,6 +324,10 @@ input , button , textarea {
   border-radius: 0;
 }
 
+.otCookiesNotification #logo-cookie {
+  display: none !important;
+}
+
 
 
 
