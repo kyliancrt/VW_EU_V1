@@ -80,8 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".listRooms > div").click(function () {
         $(".listRooms ul").css("display" , "none");
     });
+  
     $(".listRooms > div").hover(function () {
-        $(".listRooms ul").css("display" , "none");
+        $(".listRooms ul").css("display" , "flex");
     });
 
     //bodyOverflowHidden
