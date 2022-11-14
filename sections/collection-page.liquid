@@ -238,7 +238,7 @@
         $(".template-collection .Products .filters ul li").click(function() {    
           if ( $(this).hasClass('active') ) {
         $(this).removeClass('active');
-          location.href = "{{ collection.url }}/";
+          location.href = "{{ collection.url }}/?" + selectedPiece.toLowerCase();
           } else {
           location.href = "{{ collection.url }}/" + this.id;
           } 
