@@ -123,7 +123,11 @@
         <div class="additional-checkout-buttons btnPaypal">{{ content_for_additional_checkout_buttons }}</div>
               
              </div>
-        <span class="infoDelivery">Livraison offerte à partir de 49€</span>
+        <span class="infoDelivery">
+           {% if cart.item_count < 2 %}Livraison offerte à partir de 49€
+           {% else %}Livraison offerte pour 1 échantillon
+             {% endif %}
+            </span>
         <span class="btnInfos">réductions & livraison</span>
         <input id="btnUpdate" type="submit" name="update" value="Update cart" />
         </div>
