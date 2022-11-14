@@ -746,6 +746,12 @@ se
 }
 
 @media only screen and (min-width: 750px) {
+
+  
+.template-index .Presentation video {
+    background: transparent url("https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-poster.jpg?v=1668414921") 50% 50% / cover no-repeat ;
+}
+  
     .template-index .Presentation h1 {
         font-size: 2.5rem;
     }
