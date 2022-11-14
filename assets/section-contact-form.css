@@ -19,6 +19,10 @@ justify-content: center;
 gap: 1rem;
 }
 
+label {
+  font-size: 95%;
+}
+
 form {
   padding: 25px;
   background-color: #fff;
