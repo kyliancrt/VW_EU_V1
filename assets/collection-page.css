@@ -586,7 +586,7 @@
 }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul {
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
     display: flex;
 }
 
