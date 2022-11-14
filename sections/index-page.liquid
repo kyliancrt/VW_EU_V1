@@ -79,7 +79,7 @@
                     <li class="splide__slide" data-color="{{ dataColor }}">
                         <a href="{{ product.url }}">
                         <img loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
-                            <span>Napoli n°1</span>
+                            <span>{{ product.title }}</span>
                         </a>
                     </li>
                   {% endfor %}
