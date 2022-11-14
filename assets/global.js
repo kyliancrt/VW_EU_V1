@@ -961,4 +961,10 @@ customElements.define('product-recommendations', ProductRecommendations);
             $('body').css('overflow', 'visible');
         });
 
-    // END POPUP DELIVERY
+
+      // HIDE TIDIO BUBLE
+      
+      $('#tidio-chat-iframe').on('load', function() {
+          $("#tidio-chat-iframe").contents().find(".flyMessage").css("display", "none");
+      }); 
+    
