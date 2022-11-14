@@ -240,7 +240,7 @@
         $(this).removeClass('active');
           location.href = "{{ collection.url }}/?" + selectedPiece.toLowerCase();
           } else {
-          location.href = "{{ collection.url }}/" + this.id;
+          location.href = "{{ collection.url }}/" + this.id + "?" + selectedPiece.toLowerCase();
           } 
           });
        
