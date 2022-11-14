@@ -23,13 +23,13 @@
 
               {% for tag in product.tags %}
                       {% if tag contains 'motifs_1' %}
-                      {% assign nbMotifs = tag %}
+                      {% assign nbMotifs = 1 %}
                       {% elsif tag contains 'motifs_2' %}
-                      {% assign nbMotifs = "2" %}
+                      {% assign nbMotifs = 2 %}
                       {% elsif tag contains 'motifs_4' %}
-                      {% assign nbMotifs = tag %}
+                      {% assign nbMotifs = 4 %}
                       {% elsif tag contains 'motifs_8' %}
-                      {% assign nbMotifs = tag %}
+                      {% assign nbMotifs = 8 %}
                       {% endif %}
                     {% endfor %}
               
