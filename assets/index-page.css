@@ -370,78 +370,95 @@ se
 @keyframes svgcouches1 {
     0% {
         transform: translateY(0px) translateX(0);
+        -webkit-transform: translateY(0px) translateX(0);
     }
 
     45% {
         transform: translateY(-90px) translateX(0px);
+        -webkit-transform: translateY(-90px) translateX(0px);
     }
 
     55% {
         transform: translateY(-90px) translateX(0px);
+        -webkit-transform: translateY(-90px) translateX(0px);
     }
 
     100% {
         transform: translateY(0px) translateX(0px);
+        -webkit-transform: translateY(0px) translateX(0px);
     }
 }
 
 @keyframes svgcouches2 {
     0% {
         transform: translateY(0px) translateX(0);
+        -webkit-transform: translateY(0px) translateX(0);
     }
 
     45% {
         transform: translateY(-30px) translateX(0px);
+        -webkit-transform: translateY(-30px) translateX(0px);
     }
 
     55% {
         transform: translateY(-30px) translateX(0px);
+        -webkit-transform: translateY(-30px) translateX(0px);
     }
 
     100% {
         transform: translateY(0px) translateX(0px);
+        -webkit-transform: translateY(0px) translateX(0px);
     }
 }
 
 @keyframes svgcouches3 {
     0% {
         transform: translateY(0px) translateX(0);
+        -webkit-transform: translateY(0px) translateX(0);
     }
 
     45% {
         transform: translateY(30px) translateX(0px);
+        -webkit-transform: translateY(30px) translateX(0px);
     }
 
     55% {
         transform: translateY(30px) translateX(0px);
+        -webkit-transform: translateY(30px) translateX(0px);
     }
 
     100% {
         transform: translateY(0px) translateX(0px);
+        -webkit-transform: translateY(0px) translateX(0px);
     }
 }
 
 @keyframes svgcouches4 {
     0% {
         transform: translateY(0px) translateX(0);
+        -webkit-transform: translateY(0px) translateX(0);
     }
 
     45% {
         transform: translateY(105px) translateX(0px);
+        -webkit-transform: translateY(105px) translateX(0px);
     }
 
     55% {
         transform: translateY(105px) translateX(0px);
+        -webkit-transform: translateY(105px) translateX(0px);
     }
 
     100% {
         transform: translateY(0px) translateX(0px);
+        -webkit-transform: translateY(0px) translateX(0px);
     }
 }
 
 @keyframes svgcouches5 {
     0% {
         transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
+        -webkit-transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
         background-image: url('https://cdn.shopify.com/s/files/1/0567/1220/0371/products/VIN57052WB2_03.png?v=1641891419');
     }
 
@@ -451,6 +468,7 @@ se
 
     45% {
         transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
+        -webkit-transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
     }
 
     50% {
@@ -459,6 +477,7 @@ se
 
     55% {
         transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
+        -webkit-transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-4.1rem) translateX(0.7rem);
     }
 
     75% {
@@ -467,7 +486,7 @@ se
 
     100% {
         transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
-
+        -webkit-transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
         background-image: url('https://cdn.shopify.com/s/files/1/0567/1220/0371/products/VIN57052WB2_03.png?v=1641891419');
     }
 }
