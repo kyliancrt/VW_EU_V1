@@ -747,10 +747,6 @@ se
         right: -20px;
     }
   
-
-.template-index .Presentation video {
-    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-poster.jpg?v=1668414921");
-}
 }
 
 @media only screen and (min-width: 750px) {
