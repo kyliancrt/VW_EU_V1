@@ -20,8 +20,21 @@
               <img alt="Carreau adhésif Vinyl Way : {{ product.title }} - Carreau numéro 7" class="tile7" src="{{ product.images[8] | img_url:'150x' }}">     
               <img alt="Carreau adhésif Vinyl Way : {{ product.title }} - Carreau numéro 8" class="tile8" src="{{ product.images[9] | img_url:'150x' }}">    
               </div>
+
+              {% for tag in product.tags %}
+                      {% if tag contains 'motifs_1' %}
+                      {% assign nbMotifs = tag %}
+                      {% elsif tag contains 'motifs_2' %}
+                      {% assign nbMotifs = tag %}
+                      {% elsif tag contains 'motifs_4' %}
+                      {% assign nbMotifs = tag %}
+                      {% elsif tag contains 'motifs_8' %}
+                      {% assign nbMotifs = tag %}
+                      {% endif %}
+                    {% endfor %}
+              
               <p>
-                Ce visuel contient <strong>4 motifs différents</strong>.<br>
+                Ce visuel contient <strong>{{ nbMotifs }} motifs différents</strong>.<br>
                 Votre commande sera livrée dans cet ordre:
               </p>
               
