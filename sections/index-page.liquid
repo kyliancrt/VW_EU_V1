@@ -61,21 +61,16 @@
                 briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
                 blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
             <a class="btn btn-2" href="/collections/carreaux-adhesifs/">Nos collections</a>
-            <a class="btn btn-3" href="collection-colors.php">Tous nos carreaux</a>
+            <a class="btn btn-3" href="/collections/carreaux-adhesifs-couleurs/">Tous nos carreaux</a>
         </div>
-
-      <!-- TrustBox widget - Micro Combo -->
-<div class="Truspilot trustpilot-widget" data-locale="fr-FR" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="60e42806f733a10001be85f3" data-style-height="20px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-no-reviews="hide" data-scroll-to-list="true" data-allow-robots="true">
-  <a href="https://fr.trustpilot.com/review/vinyl-wall.com" target="_blank" rel="noopener">Trustpilot</a>
-</div>
-<!-- End TrustBox widget -->
       
     </section>
     <section class="SlideProducts" style="background-color:#F7F2EE;">
-        <h2>Nos coups de cœur</h2>
+        <h2>Meilleures ventes</h2>
         <div id="splideProducts" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
+                  {% for product in collections.carreaux-adhesifs-bestseller.products %}
                     <li class="splide__slide" data-color="#F7F2EE">
                         <a href="product.php"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/3.jpg?v=1666780078">
                             <span>Napoli n°1</span>
@@ -86,6 +81,7 @@
                             <span>Berlin n°2</span>
                         </a>
                     </li>
+                  {% endfor %}
                 </ul>
             </div>
         </div>
