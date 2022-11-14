@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //listRoomsChange
     $(".listRooms ul li").click(function () {
         $(".listRooms").removeClass("active");
-        $(".listRooms ul li").addClass("active");
+        $(".listRooms ul li").removeClass("active");
         $(this).addClass("active");
     });
 
