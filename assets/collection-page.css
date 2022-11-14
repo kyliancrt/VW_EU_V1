@@ -585,8 +585,7 @@
     padding: 0;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul {
     display: flex;
 }
 
@@ -709,7 +708,9 @@
 
 @media only screen and (min-width: 1025px) {
 
-
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
+    display: flex;
+}
 
 .template-collection .headerCollection .blocFilters ul li.active:hover svg,
   .template-collection .headerCollection .blocFilters ul.active li.active svg {
