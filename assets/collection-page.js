@@ -84,6 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".listRooms > div").hover(function () {
         $(".listRooms ul").css("display" , "flex");
     });
+    $(".listRooms").mouseout(function () {
+        $(".listRooms ul").css("display" , "flex");
+    });
 
     //bodyOverflowHidden
     if ($(".template-collection").hasClass("collectionCollections")) {
