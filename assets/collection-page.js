@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(".listRooms").addClass("active");
             }
         });
-        $(".listRooms").parent().mouseout(function () {
+        $(".listRooms ul").mouseout(function () {
                 $(".listRooms").removeClass("active");
         });
 
