@@ -1,6 +1,8 @@
 {{ 'index-page.css' | asset_url | stylesheet_tag }}
 {{ 'index-page.js' | asset_url | script_tag }}
-<div class="template-index">
+{{ 'page-pieces.css' | asset_url | stylesheet_tag }}
+
+<div class="template-index template-pagePieces">
   
     <section class="Presentation">
         <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" autoplay=""
