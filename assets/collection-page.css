@@ -597,11 +597,8 @@
     text-align: center;
 }
 
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li:hover,
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li.active {
-    display: none;
-}
-
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li:hover {
     background-color: #F5F5F5;
 }
 
