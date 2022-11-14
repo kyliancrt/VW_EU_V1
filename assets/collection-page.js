@@ -72,12 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
   else {    
         //listRoomsDisplay
         $(".listRooms").hover(function () {
-            if ($(".listRooms").hasClass("active")) {
-                $(".listRooms").removeClass("active");
-            }
-            else {
                 $(".listRooms").addClass("active");
-            }
         });    
   }
 
