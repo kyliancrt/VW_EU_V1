@@ -845,7 +845,8 @@
 
 
     .template-collection .headerCollection .blocFilters ul,
-    .template-collection .collectionFilters .headerCollection .blocFilters ul {
+    .template-collection .collectionFilters .headerCollection .blocFilters ul,
+  .template-collection .popupPreview .popupPreviewContent > div {
         width: 290px;
     }
 
