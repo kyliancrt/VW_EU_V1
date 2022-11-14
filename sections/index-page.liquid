@@ -1,6 +1,9 @@
 {{ 'index-page.css' | asset_url | stylesheet_tag }}
 {{ 'index-page.js' | asset_url | script_tag }}
+{{ 'page-pieces.css' | asset_url | stylesheet_tag }}
 
+<div class="template-index template-pagePieces">
+  
     <section class="Presentation">
         <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" autoplay=""
             muted="" loop="" playsinline="" id="videointro" alt="Vidéo de présentation des carreaux adhésifs Vinyl Way">
@@ -283,3 +286,5 @@
             </div>
         </div>
     </section>
+
+    </div>
