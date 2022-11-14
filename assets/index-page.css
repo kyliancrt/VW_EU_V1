@@ -749,7 +749,7 @@ se
 
   
 .template-index .Presentation video {
-    background: transparent url("https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-poster.jpg?v=1668414921") 50% 50% / cover no-repeat ;
+    background-image: url("https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-poster.jpg?v=1668414921");
 }
   
     .template-index .Presentation h1 {
