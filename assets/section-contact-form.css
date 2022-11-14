@@ -28,6 +28,18 @@ form {
   padding: 0 5px;
   order: 2;
 }
+
+.field textarea {
+  width: 90%;
+  height: 200px;
+  text-align: left;
+  font-size: 14px;
+  border: 1px solid rgb(0 0 0 / .3);
+  background-color: #f5f5f5;
+  padding: 0 5px;
+  order: 2;
+}
+
 .contact a {
   margin-left: auto !important;
   margin-right: auto !important;
