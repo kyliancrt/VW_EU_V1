@@ -586,7 +586,7 @@
 }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
+.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul {
     display: flex;
 }
 
@@ -599,7 +599,6 @@
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li:hover {
     background-color: #F5F5F5;
-
 }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div,
