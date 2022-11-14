@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       
         $(".Header .menuHamburger .menuListHeader ul li").click(function () {
+          setTimeout(function() {            
             $('.Header .menu-toggle').removeClass('opened');
             $('.Header .menuListHeader').removeClass('opened');
+          }, 1000);
         });
     }
 
