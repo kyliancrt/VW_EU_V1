@@ -46,7 +46,24 @@
                     </li>
                 </ul>
                 </a>
-                <p>Cette référence est composée de 4 motifs.</p>
+
+           {% for tag in product.tags %}
+                      {% if tag contains 'motifs_1' %}
+                      {% assign nbMotifs = 1 %}
+                      {% elsif tag contains 'motifs_2' %}
+                      {% assign nbMotifs = 2 %}
+                      {% elsif tag contains 'motifs_4' %}
+                      {% assign nbMotifs = 4 %}
+                      {% elsif tag contains 'motifs_8' %}
+                      {% assign nbMotifs = 8 %}
+                      {% endif %}
+                    {% endfor %}
+          
+                  <p>
+                Ce visuel contient <strong>{{ nbMotifs }} motifs différents</strong>.<br>
+                Votre commande sera livrée dans l'order ci-dessus.
+              </p>
+          
             </div>
             <div class="productContent">
                 <div>
