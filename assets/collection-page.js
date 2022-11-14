@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //listRoomsChange
     $(".listRooms ul li").click(function () {
         $(".listRooms").removeClass("active");
+        $(".listRooms ul li").addClass("active");
+        $(this).addClass("active");
     });
 
     //bodyOverflowCollections
