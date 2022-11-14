@@ -57,12 +57,12 @@
                       {% elsif tag contains 'motifs_8' %}
                       {% assign nbMotifs = 8 %}
                         {% else %}
-                        X
+                      {% assign nbMotifs = 'X' %}
                       {% endif %}
                     {% endfor %}
           
                   <p>
-                Ce visuel contient <strong>{{ nbMotifs }} motifs différent{% unless nbMotifs == 1 %}s{% endunless %}}</strong>.<br>
+                Ce visuel contient <strong>{{ nbMotifs }} motifs différent{% unless nbMotifs == 1 %}s{% endunless %}</strong>.<br>
                 Vos carreaux seront livrés dans l'ordre ci-dessus.
               </p>
           
