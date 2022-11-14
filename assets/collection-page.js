@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(".listRooms").addClass("active");
             }
         });
+        $(".listRooms").mouseout(function () {
+                $(".listRooms").removeClass("active");
+        });
 
     }
 
@@ -75,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".listRooms ul li").click(function () {
         $(".listRooms").removeClass("active");
     });
-  
-    //bodyOverflowHidden
+
+    //bodyOverflowCollections
     if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
     }
