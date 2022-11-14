@@ -106,7 +106,9 @@
                         </a>
                               <div>                              
                               {% for product in collection.products %}
-                                <a class="linkProduct" href="{{ product.url }}"><img loading="lazy" src="{{ product.images[1] | img_url: '100x' }}"></a>
+                                <a class="linkProduct" href="{{ product.url }}">
+                                  <img alt="Vinyl Way - Carreau adhésif {{ product.title }} de la collection {{ collection.title }}" loading="lazy" src="{{ product.images[1] | img_url: '100x' }}">
+                                </a>
                                 {% endfor %}                    
                             </div>
                        </div> 
