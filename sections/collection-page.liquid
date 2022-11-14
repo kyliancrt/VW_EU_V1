@@ -208,6 +208,7 @@
           
    let selectedPiece = "CUISINE";          
    let selectedHref = "/products/carreaux-adhesif-dublin-1";
+   let urlPiece = location.fref.substring(str.indexOf('?') + 1);
        
    let resolutionMES = "1200x";
       if ($(window).width() < 600) {
@@ -253,14 +254,14 @@
        //listFiltersFref
 
          $(".template-collection .headerCollection .blocFilters ul li a").click(function() {
+           
+       alert(urlPiece);
           let dataHref = $(this).data('href');
            location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
 
        // urlPiece
        
-       let urlPiece = location.fref.substring(str.indexOf('?') + 1);
-       alert(urlPiece);
 
        
         
