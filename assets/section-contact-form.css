@@ -1,39 +1,63 @@
-.contact img {
-  max-width: 100%;
+main {
+  background-color: #f5f5f5;
 }
 
-.contact .form__message {
-  align-items: flex-start;
+form {
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 6px 3px #0000000d;
 }
 
-.contact .icon-success {
-  margin-top: 0.2rem;
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact .field {
-  margin-bottom: 1.5rem;
+.field input {
+  width: 200px;
+  height: 35px;
+  text-align: left;
+  font-size: 14px;
+  border: 1px solid rgb(0 0 0 / .3);
+  background-color: #f5f5f5;
+  padding: 0 5px;
+  order: 2;
 }
-
-@media screen and (min-width: 750px) {
-  .contact .field {
-    margin-bottom: 2rem;
-  }
+.customer a {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+  width: max-content;
+  position: relative;
+  outline: 1px solid #fff;
+  outline-color: rgb(255, 255, 255);
+  outline-offset: -1px;
+  transition: all .1s ease;
 }
-
-.contact__button {
-  margin-top: 3rem;
+.customer a:hover {
+  outline-color: transparent;
 }
-
-@media screen and (min-width: 750px) {
-  .contact__button {
-    margin-top: 4rem;
-  }
+.customer button {
+  margin: 2rem auto 1rem auto;
+  background-color: #1b8886;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  width: max-content;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-
-@media screen and (min-width: 750px) {
-  .contact__fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-  }
+.customer button:hover {
+  opacity:0.95;
+}
+.customer svg {
+  width:20px;
+  height: 20px;
 }
