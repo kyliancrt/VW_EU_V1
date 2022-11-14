@@ -74,6 +74,9 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".listRooms").hover(function () {
                 $(".listRooms").addClass("active");
         });    
+        $(".listRooms").mouseout(function () {
+                $(".listRooms").removeClass("active");
+        });    
   }
 
 
