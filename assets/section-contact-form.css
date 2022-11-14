@@ -9,7 +9,8 @@ main {
   padding: 0 !important;
 }
 h1 {
-  margin: 0 !important;
+  margin-bottom: 0 !important;
+  text-align: center;
 }
 
 .contact__fields {
