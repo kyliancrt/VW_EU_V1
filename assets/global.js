@@ -960,11 +960,4 @@ customElements.define('product-recommendations', ProductRecommendations);
             $(".popupDelivery").removeClass("active");
             $('body').css('overflow', 'visible');
         });
-
-
-      // HIDE TIDIO BUBLE
-      
-      $('#tidio-chat-iframe').on('load', function() {
-          $("#tidio-chat-iframe").contents().find(".flyMessage").css("display", "none");
-      }); 
     
