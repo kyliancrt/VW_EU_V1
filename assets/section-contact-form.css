@@ -25,7 +25,7 @@ form {
 }
 
 
-.contact__fields>:nth-child(1) {
+.contact__fields .field {
   width: max-content;
 }
 
