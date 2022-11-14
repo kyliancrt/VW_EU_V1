@@ -208,7 +208,7 @@
           
    let selectedPiece = "CUISINE";          
    let selectedHref = "/products/carreaux-adhesif-dublin-1";
-   let urlPiece = location.fref.substring(str.indexOf('?') + 1);
+   let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
        
    let resolutionMES = "1200x";
       if ($(window).width() < 600) {
