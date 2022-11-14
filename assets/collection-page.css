@@ -544,7 +544,7 @@
 }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms {
-    display: none;
+    display: flex;
     width: 100%;
     flex-basis: content;
     align-items: center;
