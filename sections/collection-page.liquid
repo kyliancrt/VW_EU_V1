@@ -225,6 +225,8 @@
        //changeRoomMES
        
         $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li").click(function() {
+        selectedHref = $(this).parent().children(a).attr('href');
+          alert(selectedHref);
         selectedPiece = this.id;   
         let newBackgroundRoom = actualBackgroundRoom.replace(/CUISINE|MUR|SALLEDEBAIN|DOUCHE|SOL|MEUBLE/g, selectedPiece);
         $('.template-collection .popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);          
