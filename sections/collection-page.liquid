@@ -254,7 +254,7 @@
 
          $(".template-collection .headerCollection .blocFilters ul li a").click(function() {
           let dataHref = $(this).data('href');
-           location.href = dataHref + "?" + selectedPiece
+           location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
         
        
