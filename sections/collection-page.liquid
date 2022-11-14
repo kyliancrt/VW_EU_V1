@@ -253,7 +253,8 @@
        //listFiltersFref
 
          $(".template-collection .headerCollection .blocFilters ul li a").click(function() {
-         location.href = $(this).data('href');     
+          let dataHref = $(this).data('href');
+           location.href = dataHref + "?" + selectedPiece
         });
         
        
