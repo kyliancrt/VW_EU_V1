@@ -249,6 +249,12 @@
         $(this).addClass('active');
         }
         });
+
+       //listFiltersFref
+
+         $(".template-collection .headerCollection .blocFilters ul li a").click(function() {
+         location.href = $(this).data('href');     
+        });
         
        
     </script>
