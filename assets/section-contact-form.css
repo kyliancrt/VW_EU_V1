@@ -28,7 +28,7 @@ form {
   padding: 0 5px;
   order: 2;
 }
-.customer a {
+.contact a {
   margin-left: auto !important;
   margin-right: auto !important;
   padding-bottom: 4px;
@@ -40,10 +40,10 @@ form {
   outline-offset: -1px;
   transition: all .1s ease;
 }
-.customer a:hover {
+.contact a:hover {
   outline-color: transparent;
 }
-.customer button {
+.contact button {
   margin: 2rem auto 1rem auto;
   background-color: #1b8886;
   color: #fff;
@@ -54,10 +54,10 @@ form {
   text-transform: uppercase;
   cursor: pointer;
 }
-.customer button:hover {
+.contact button:hover {
   opacity:0.95;
 }
-.customer svg {
+.contact svg {
   width:20px;
   height: 20px;
 }
