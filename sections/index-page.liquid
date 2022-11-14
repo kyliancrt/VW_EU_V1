@@ -78,7 +78,7 @@
                     {% endfor %}
                     <li class="splide__slide" data-color="{{ dataColor }}">
                         <a href="{{ product.url }}">
-                        <img loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
+                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.tile }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
                             <span>{{ product.title }}</span>
                         </a>
                     </li>
@@ -102,7 +102,7 @@
                         <h3>{{ collection.handle }}</h3>
                     <div  class="slideCollectionsImage">    
                     <a href="/collections/carreaux-adhesifs-collections/#{{ collection.handle }}">
-                            <img loading="lazy" src="{{ collection.products.first | img_url: '500x' }}">
+                            <img alt="Vinyl Way - Collection {{ collection.title }} - carreaux adhésifs collés sur une crédence de cuisine" loading="lazy" src="{{ collection.products.first | img_url: '500x' }}">
                         </a>
                               <div>                              
                               {% for product in collection.products %}
