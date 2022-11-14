@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // SlideRealisations
-    var splideRealisations = new Splide('#splideRealisations', {
+    let splideRealisations = new Splide('#splideRealisations', {
         type: 'loop',
         perPage: 3,
         breakpoints: {
