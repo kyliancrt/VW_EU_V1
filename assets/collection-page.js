@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".listRooms").removeClass("active");
     });
 
-    //bodyOverflowCollections
+    //bodyOverflowHidden
     if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
     }
