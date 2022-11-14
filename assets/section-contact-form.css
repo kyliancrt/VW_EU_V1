@@ -5,6 +5,12 @@ main {
 .contact {
   padding-top: 0 !important;
 }
+.page-width {
+  padding: 0 !important;
+}
+h1 {
+  margin: 0 !important;
+}
 
 .contact__fields {
   display: flex;
