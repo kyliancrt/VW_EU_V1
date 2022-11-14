@@ -327,7 +327,6 @@ se
     left: 0%;
     top: 0%;
     width: 210px;  
-    aspect-ratio: 1 / 1;
     transform: rotateX(65deg) rotateZ(45deg) rotateY(-10deg) skewY(0deg) skewX(5deg) translateY(-140%) translateX(-100%);
     box-shadow: 50px 50px 80px rgba(0, 0, 0, .15);
     background-repeat: no-repeat;
@@ -1239,4 +1238,10 @@ se
         display: block;
     }
 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.couches .img-svg {
+   aspect-ratio: 1 / 1;
+}
 }
