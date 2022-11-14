@@ -75,6 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".listRooms ul li").click(function () {
         $(".listRooms").removeClass("active");
     });
+  
+    //listRoomsHide
+    $(".listRooms > div").click(function () {
+        $(".listRooms ul").css("display" , "none");
+    });
 
     //bodyOverflowHidden
     if ($(".template-collection").hasClass("collectionCollections")) {
