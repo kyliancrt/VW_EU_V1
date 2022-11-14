@@ -76,18 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".listRooms").removeClass("active");
     });
   
-    //listRoomsHide
-    $(".listRooms > div").click(function () {
-        $(".listRooms ul").css("display" , "none");
-    });
-  
-    $(".listRooms > div").hover(function () {
-        $(".listRooms ul").css("display" , "flex");
-    });
-    $(".listRooms").mouseout(function () {
-        $(".listRooms ul").css("display" , "flex");
-    });
-
     //bodyOverflowHidden
     if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
