@@ -69,15 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     }
-  else {    
-        //listRoomsDisplay
-        $(".listRooms").hover(function () {
-                $(".listRooms").addClass("active");
-        });    
-        $(".listRooms").mouseout(function () {
-                $(".listRooms").removeClass("active");
-        });    
-  }
 
 
     //listRoomsChange
