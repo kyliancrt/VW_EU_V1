@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.template-product .productImage .pagination ul li').removeClass('active')
         $('.template-product .productImage .slide').removeClass('active')
         $('.' + selectedPiece).addClass('active');
-        $(selectedPiece).addClass('active')
+        $('#' +selectedPiece).addClass('active')
           
   }
   loadPiece();
