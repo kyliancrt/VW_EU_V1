@@ -112,6 +112,16 @@
     background-color: #FFF;
 }
 
+.Transform .bgImg {
+  background-image: url('https://cdn.shopify.com/s/files/1/0648/8670/2332/files/Sans-titre-1.gif?v=1665584574');
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: 0;
+  height: 80vw;
+}
 
 .template-index .Transform>div {
     width: 95%;
