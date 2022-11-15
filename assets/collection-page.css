@@ -714,11 +714,8 @@
 
   .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
     display: block;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 1rem;
-    color: #000;
-    cursor: pointer;
   }
 
   .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div {
