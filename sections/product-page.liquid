@@ -278,10 +278,14 @@
         <script>
   function loadPiece() {
     
-          
-    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+
+    let showerArray = ['douche', 'shower'];
+    let wallArray = ['mur', 'wall'];
+    let bathroomArray = ['salledebain', 'bathroom'];
+    let showerArray = ['douche', 'shower'];
+    let floorArray = ['mur', 'floor'];
+    let furnitureArray = ['meuble', 'furniture'];
   
-   var foundPresent = $.inArray('floor', urlPiece) > -1;
   alert('foundPresent');    
     
   }
