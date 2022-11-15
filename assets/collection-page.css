@@ -654,6 +654,10 @@
     color: #1B8886;
 }
 
+.template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
+  display: none;
+}
+
 /* MEDIA SCREEN */
 
 
