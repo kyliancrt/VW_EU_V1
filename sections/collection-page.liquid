@@ -45,7 +45,7 @@
                             <li id="SOL">Sol</li>
                         </ul>
                     </div>
-                    <a href="#"><small>page</small> <span>produit</span></a>
+                    <a data-href="#"><small>page</small> <span>produit</span></a>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
                     <img alt="Carreau adhésif {{ product.title }} de la collection {{ collection.title }}" loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
                         <div>
-                            <a href="{{ product.url }}">Produit</a>
+                            <a data-href="{{ product.url }}">Produit</a>
                             <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -164,7 +164,7 @@
                           <img alt="Carreau adhésif {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: '200x' }}">
                         </a>
                         <div>
-                            <a href="{{ product.url }}">Produit</a>
+                            <a data-href="{{ product.url }}">Produit</a>
                             <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
                               <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
