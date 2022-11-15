@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //previewClickProduct
         $(".template-collection .Products .productsList li > a").click(function () {           
-          $(".template-collection .productsList :nth-child(1) > div > span").trigger('click');   
+          $(this).parent().children("div > span").trigger('click');   
         });
 
 
