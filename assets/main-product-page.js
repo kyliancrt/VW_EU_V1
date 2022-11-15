@@ -160,6 +160,10 @@ document.addEventListener('DOMContentLoaded', function () {
         padding: '0',
     }).mount();
 
+  //urlPiece  
+   if (strng.includes("human", 10)) {
+   let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+     
 
 
 
