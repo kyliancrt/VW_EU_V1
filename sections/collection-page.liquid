@@ -251,25 +251,33 @@
         }
         });
 
-       //listFiltersFref
+       //listFiltersHref
 
          $(".template-collection .headerCollection .blocFilters ul li a").click(function() {
           let dataHref = $(this).data('href');
            location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
 
-       // urlPiece
+       // loadUrlPiece
        if (window.location.href.indexOf("?") > -1) {
        function loadUrlPiece() {
        $('#' + urlPiece.toUpperCase()).trigger('click');
        }
        loadUrlPiece();
-    }
+    }       
        
+       // loadFirstProduct
        function loadFirstProduct() {         
           $(".template-collection .productsList :nth-child(1) > div > span").trigger('click');            
        }       
        loadFirstProduct(); 
+       
+
+       //productHref
+         $(".template-collection .Products .white .productsList li > div > a").click(function() {
+          let dataHref = $(this).data('href');
+           location.href = dataHref + "?" + selectedPiece.toLowerCase();
+        });
 
         
        
