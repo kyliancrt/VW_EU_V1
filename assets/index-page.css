@@ -593,7 +593,7 @@ se
 
 .template-index .SlideCollections .splide {
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
 }
@@ -830,6 +830,11 @@ se
 }
 
 @media only screen and (min-width: 1025px) {
+
+  
+.template-index .SlideCollections .splide {
+padding-bottom: 30px;
+}
 
   
 .template-index .Transform .bgImg {
