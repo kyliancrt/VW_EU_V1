@@ -738,7 +738,7 @@ se
     width: auto;
     min-height: 100%;
     transform: rotate(80deg);
-    left: -40%;
+    left: -25%;
     bottom: 20%;    
     -webkit-animation: moveTiles 6s infinite;
     animation: moveTiles 6s infinite;
