@@ -733,13 +733,29 @@ se
   overflow: hidden;
 }
 
-.template-index .Transform .bgTiles img {position: absolute;
-width: auto;
-min-height: 100%;
-transform: rotate(80deg);
-left: -40%;
-top: 0;
+.template-index .Transform .bgTiles img {
+  position: absolute;
+    width: auto;
+    min-height: 100%;
+    transform: rotate(80deg);
+    left: -40%;
+    bottom: 20%;    
+    -webkit-animation: moveTiles 6s infinite;
+    animation: moveTiles 6s infinite;
 }
+
+
+@keyframes moveTiles {
+    0% {
+    bottom: 20%;    
+    }
+
+    100% {
+       bottom: -40%;
+    }
+}
+
+
 
 
 /* MEDIA SCREEN */
