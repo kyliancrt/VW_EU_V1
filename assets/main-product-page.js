@@ -162,8 +162,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //urlPiece  
    if (strng.includes("human", 10)) {
-   let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
-  let shower = ['douche', 'shower']
+    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+    let shower = ['douche', 'shower'];
+    let wall = ['mur', 'wall'];
+    let bathroom = ['salledebain', 'bathroom'];
+    let shower = ['douche', 'shower'];
+    let floor = ['mur', 'floor'];
+    let furniture = ['meuble', 'furniture'];
 
+     
+     
+   }
 
+  
 });
