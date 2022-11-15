@@ -754,7 +754,7 @@
         gap: 0.5rem;
     }
 
-  .template-collection .Products .productsList li > a {
+  .template-collection .Products .productsList li a {
     cursor: pointer;
   }
 
