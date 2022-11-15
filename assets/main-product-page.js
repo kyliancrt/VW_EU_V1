@@ -1,4 +1,4 @@
-;document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     // InstallPlay
 
@@ -169,12 +169,12 @@
     let floor = ['mur', 'floor'];
     let furniture = ['meuble', 'furniture'];
   
-   let foundPresent = $.inArray('floor', floor) > -1;
-   
+   var foundPresent = $.inArray('floor', floor) > -1;
+  if (foundPresent) { 
+  alert('foundPresent');
+  }
+  
      
 
   
 });
-
-
-  addEventListener('load', (event) => {alert('foundPresent');});
