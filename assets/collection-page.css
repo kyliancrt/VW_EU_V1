@@ -714,14 +714,16 @@
 
   .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
     display: block;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 400;
   }
 
   .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div {
     background-color: #000;
     color: #fff;
     fill: #fff;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
   }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
