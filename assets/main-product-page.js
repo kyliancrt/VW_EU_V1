@@ -160,19 +160,3 @@ document.addEventListener('DOMContentLoaded', function () {
         padding: '0',
     }).mount();
 
-  //urlPiece  
-    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
-    let shower = ['douche', 'shower'];
-    let wall = ['mur', 'wall'];
-    let bathroom = ['salledebain', 'bathroom'];
-    let shower = ['douche', 'shower'];
-    let floor = ['mur', 'floor'];
-    let furniture = ['meuble', 'furniture'];
-  
-   var foundPresent = $.inArray('floor', floor) > -1;
-  
-  alert('foundPresent');
-  
-  
-});
-
