@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $("body").css("overflow", "hidden");
     }
 
+  //previewClickProduct
+        $(".template-collection .Products .productsList li > a").click(function () {           
+          $(".template-collection .productsList :nth-child(1) > div > span").trigger('click');   
+        });
+
 
 
 });
