@@ -70,29 +70,7 @@
         </div>
       
     </section>
-    <section class="SlideProducts" style="background-color:#F7F2EE;">
-        <h2>Nos Best Sellers</h2>
-        <div id="splideProducts" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                  {% for product in collections.carreaux-adhesifs-bestsellers.products %}
-                    {% for tag in product.tags %}
-                      {% if tag contains '#' %}
-                      {% assign dataColor = tag %}
-                      {% endif %}
-                    {% endfor %}
-                    <li class="splide__slide" data-color="{{ dataColor }}">
-                        <a href="{{ product.url }}">
-                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
-                            <span>{{ product.title }}</span>
-                        </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-            </div>
-        </div>
-        <a class="btn btn-2" href="/carreaux-adhesifs-bestsellers/">Voir tous les Best Sellers</a>
-    </section>
+  
     <section class="SlideCollections">
         <h2>Nos collections</h2>
         <div id="splideCollections" class="splide">
@@ -127,6 +105,31 @@
             </div>
         </div>
     </section>
+
+    <section class="SlideProducts" style="background-color:#F7F2EE;">
+        <h2>Nos Best Sellers</h2>
+        <div id="splideProducts" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                  {% for product in collections.carreaux-adhesifs-bestsellers.products %}
+                    {% for tag in product.tags %}
+                      {% if tag contains '#' %}
+                      {% assign dataColor = tag %}
+                      {% endif %}
+                    {% endfor %}
+                    <li class="splide__slide" data-color="{{ dataColor }}">
+                        <a href="{{ product.url }}">
+                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
+                            <span>{{ product.title }}</span>
+                        </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <a class="btn btn-2" href="/carreaux-adhesifs-bestsellers/">Voir tous les Best Sellers</a>
+    </section>
+  
     <section class="Quality">
         <div>
             <h2><span>Qualité <img alt="Logo Made in France - créé et fabriqué en France" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/madeinfrance.svg?v=1666779214">
