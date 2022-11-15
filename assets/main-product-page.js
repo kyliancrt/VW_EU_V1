@@ -170,9 +170,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let furniture = ['meuble', 'furniture'];
   
    var foundPresent = $.inArray('floor', floor) > -1;
-  if (foundPresent) { 
+  function test() {
+    if (foundPresent) { 
   alert('foundPresent');
   }
+  }
+  test();
+
+  
   
      
 
