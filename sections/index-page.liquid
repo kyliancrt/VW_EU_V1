@@ -3,23 +3,6 @@
 {{ 'page-pieces.css' | asset_url | stylesheet_tag }}
 
 
-
-  {% if page.title contains "cuisine" %}
-      {% assign actualRoom = "cuisine" %}
-  {% elsif page.title contains "mur" %}
-      {% assign actualRoom = "mur" %}
-  {% elsif page.title contains "salle de bain" %}
-      {% assign actualRoom = "salledebain" %}
-  {% elsif page.title contains "douche" %}
-      {% assign actualRoom = "douche" %}
-  {% elsif page.title contains "sol" %}
-      {% assign actualRoom = "sol" %}
-  {% elsif page.title contains "meuble" %}
-      {% assign actualRoom = "meuble" %}
-  {% endif %}
-
-
-
 <div class="template-index">
   
     <section class="Presentation">
@@ -80,9 +63,10 @@
         style="background-image: url('https://cdn.shopify.com/s/files/1/0648/8670/2332/files/Sans-titre-1.gif?v=1665584574');"></div>
       
       <div>
-            
-            {{ page.content }}
-            
+            <h2><span>Transformez</span> <span>votre intérieur</span></h2>
+            <p>On joue ici avec les matériaux pour des effets variés et travaillés. Du marbre pour le chic, des
+                briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
+                blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
             <a class="btn btn-2" href="/collections/carreaux-adhesifs/">Nos collections</a>
             <a class="btn btn-3" href="/collections/carreaux-adhesifs-couleurs/">Tous nos carreaux</a>
         </div>
