@@ -278,7 +278,6 @@
         <script>
           
   //urlPiece  
-          $( document ).ready(function() {
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
     let shower = ['douche', 'shower'];
     let wall = ['mur', 'wall'];
@@ -288,9 +287,10 @@
     let furniture = ['meuble', 'furniture'];
   
    var foundPresent = $.inArray('floor', floor) > -1;
-  
-  alert('foundPresent');
-            });
+  function urlPiece() {
+  alert('foundPresent');    
+  }
+  urlPiece();
   
   
         </script>
