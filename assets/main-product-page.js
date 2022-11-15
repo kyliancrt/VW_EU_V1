@@ -171,11 +171,9 @@ document.addEventListener('DOMContentLoaded', function () {
   
    var foundPresent = $.inArray('floor', floor) > -1;
   
+});
+
   function test() {
   alert('foundPresent');
   }
-  test();
-  
-});
-
 test();
