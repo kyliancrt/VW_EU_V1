@@ -4,10 +4,20 @@
 
 
 
-  {% assign actualRoom = "douche" %}
-  
-  
-  <p>ddd {{ actualRoom }}</p>
+  {% if page.title contains "cuisine" %}
+      {% assign actualRoom = "cuisine" %}
+  {% elsif page.title contains "mur" %}
+      {% assign actualRoom = "" %}
+  {% elsif page.title contains "salle de bain" %}
+      {% assign actualRoom = "mur" %}
+  {% elsif page.title contains "douche" %}
+      {% assign actualRoom = "douche" %}
+  {% elsif page.title contains "sol" %}
+      {% assign actualRoom = "sol" %}
+  {% elsif page.title contains "meuble" %}
+      {% assign actualRoom = "meuble" %}
+  {% endif %}
+
 
 
 <div class="template-index">
