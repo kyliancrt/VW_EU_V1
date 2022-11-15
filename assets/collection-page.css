@@ -712,6 +712,10 @@
 
 @media only screen and (min-width: 1025px) {
 
+  .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
+    display: flex;
+  }
+
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
     display: flex;
 }
