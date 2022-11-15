@@ -733,6 +733,15 @@ se
   overflow: hidden;
 }
 
+.template-index .Transform .bgTiles img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+
+
+
 
 
 /* MEDIA SCREEN */
