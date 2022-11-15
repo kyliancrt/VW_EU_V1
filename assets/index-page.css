@@ -730,12 +730,15 @@ se
 
 .template-index .Transform .bgTiles {
   position: relative;
+  overflow: hidden;
 }
 
-.template-index .Transform .bgTiles img {
- position: absolute;
-  width:100%;
-  height: auto;
+.template-index .Transform .bgTiles img {position: absolute;
+width: auto;
+min-height: 100%;
+transform: rotate(80deg);
+left: -40%;
+top: 0;
 }
 
 
