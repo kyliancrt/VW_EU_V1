@@ -174,11 +174,13 @@ document.addEventListener('DOMContentLoaded', function () {
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
   
    if ($.inArray(urlPiece , floorArray) > -1) {
+     selectedPiece = slide6
+    }
+    
         $('.template-product .productImage .pagination ul li').removeClass('active')
         $('.template-product .productImage .slide').removeClass('active')
-        $('.' + this.id).addClass('active');
-        $(this).addClass('active')
-    }
+        $('.' + selectedPiece).addClass('active');
+        $(selectedPiece).addClass('active')
           
   }
   loadPiece();
