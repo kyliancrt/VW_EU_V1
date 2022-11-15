@@ -713,7 +713,13 @@
 @media only screen and (min-width: 1025px) {
 
   .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
-    display: flex;
+    display: block;
+  }
+
+  .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div {
+    background-color: #000;
+    color: #fff;
+    fill: #fff;
   }
 
 .template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
