@@ -169,8 +169,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let floor = ['mur', 'floor'];
     let furniture = ['meuble', 'furniture'];
   
-   var foundPresent = $.inArray('floor', floor) > -1;
-   alert('foundPresent');
+   let foundPresent = $.inArray('floor', floor) > -1;
+   
+  addEventListener('load', (event) => {alert('foundPresent');});
      
 
   
