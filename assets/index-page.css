@@ -964,7 +964,7 @@ padding-bottom: 30px;
         width: max-content;
     }
 
-    .template-index .Transform .bgImg {
+    .template-index .Transform.transformRevert .bgImg {
         order: 2;
     }
   
