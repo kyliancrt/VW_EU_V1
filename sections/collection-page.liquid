@@ -253,7 +253,7 @@
 
        //listFiltersHref
 
-         $(".template-collection .headerCollection .blocFilters ul li a").slice(1).click(function() {
+         $(".template-collection .headerCollection .blocFilters ul li a").not(".active").click(function() {
           let dataHref = $(this).data('href');
            location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
