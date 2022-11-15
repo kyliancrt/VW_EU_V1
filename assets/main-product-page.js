@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }).mount();
 
   //urlPiece  
-   if (strng.includes("human", 10)) {
+   if (widon.location.href.includes("?", 1)) {
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
     let shower = ['douche', 'shower'];
     let wall = ['mur', 'wall'];
@@ -170,7 +170,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let floor = ['mur', 'floor'];
     let furniture = ['meuble', 'furniture'];
 
-     
+    if (shower.some(v => urlPiece.includes(v))) {
+   alert('douche');
+    }
      
    }
 
