@@ -276,8 +276,7 @@
         </div>
 
         <script>
-  function loadPiece() {
-    
+  function loadPiece() {  
           
     let kitchenArray = ['cuisine', 'kitchen'];
     let wallArray = ['mur', 'wall'];
@@ -289,8 +288,8 @@
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
   
    if ($.inArray(urlPiece , floorArray) > -1) {
-  alert("oui");    
-  }
+    $("#slide6").trigger("click");
+    }
           
   }
   loadPiece();
