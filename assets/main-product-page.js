@@ -173,7 +173,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
 });
 
-  function test() {
-  alert('foundPresent');
-  }
-test();
+       
+       function loadFirstProduct() {         
+         alert('test');        
+       }       
+       loadFirstProduct(); 
