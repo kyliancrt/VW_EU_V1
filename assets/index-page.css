@@ -964,9 +964,12 @@ padding-bottom: 30px;
         width: max-content;
     }
 
-    .template-index .Transform>img {
+    .template-index .Transform .bgImg {
         order: 2;
     }
+  
+    .template-index .Transform.tranformRevert .bgImg {
+        order: 0;
 
     .template-index .Transform h2 {
         display: flex;
