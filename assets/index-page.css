@@ -728,6 +728,15 @@ se
   height: 80vw;
 }
 
+.template-index .Transform .bgTiles {
+  position: relative;
+}
+
+.template-index .Transform .bgTiles img {
+ position: absolute;
+  width:100%;
+  height: auto;
+}
 
 
 /* MEDIA SCREEN */
