@@ -160,6 +160,26 @@ document.addEventListener('DOMContentLoaded', function () {
         padding: '0',
     }).mount();
 
+
+  
+  function loadPiece() {  
+          
+    let kitchenArray = ['cuisine', 'kitchen'];
+    let wallArray = ['mur', 'wall'];
+    let bathroomArray = ['salledebain', 'bathroom'];
+    let showerArray = ['douche', 'shower'];
+    let floorArray = ['sol', 'floor'];
+    let furnitureArray = ['meuble', 'furniture'];
+    
+    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+  
+   if ($.inArray(urlPiece , floorArray) > -1) {
+     alert('oui');
+    }
+          
+  }
+  loadPiece();
+
   
 });
 
