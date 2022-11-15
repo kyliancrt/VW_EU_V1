@@ -274,8 +274,9 @@
        
 
        // productHref
-         $(".template-collection .Products .productsList li > div > :nth-child(1)").click(function() {
-           alert("oui");
+         $(".template-collection .Products .productsList li > div > a").click(function() {
+          let dataHref = $(this).data('href');
+          location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
 
         
