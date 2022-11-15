@@ -288,7 +288,8 @@
     
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
   
-  alert('oui');    
+   var foundPresent = $.inArray(urlPiece , floorArray) > -1;
+  alert(foundPresent');    
   }
   loadPiece();
   
