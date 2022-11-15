@@ -171,8 +171,10 @@
   
    let foundPresent = $.inArray('floor', floor) > -1;
    
-  addEventListener('load', (event) => {alert('foundPresent');});
      
 
   
 });
+
+
+  addEventListener('load', (event) => {alert('foundPresent');});
