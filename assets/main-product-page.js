@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let furnitureArray = ['meuble', 'furniture'];
     
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+    let selectedPiece;
   
    if ($.inArray(urlPiece , floorArray) > -1) {
      selectedPiece == "slide6";
