@@ -849,14 +849,14 @@ se
 .template-index .Transform .bgTiles img {
   position: absolute;
     width: auto;
-    min-height: 160%;
     transform: rotate(80deg);
-    left: -45%;
     bottom: 20%;    
     -webkit-animation: moveTiles 5s infinite;
     animation: moveTiles 5s infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  min-height: 120%;
+  left: -40%;
 }
 
 
@@ -1225,6 +1225,12 @@ padding-bottom: 30px;
 
 
 @media only screen and (min-width: 1400px) {
+
+  
+.template-index .Transform .bgTiles img {
+    min-height: 160%;
+    left: -45%;
+}
 
     .template-index .Transform p,
     .template-index .Quality p {
