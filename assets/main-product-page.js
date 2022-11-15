@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
           
   }
   
-   if ($.inArray(urlPiece , "?") > -1) {
+   if ($.inArray(location.href , "?") > -1) {
   loadPiece();
     }
   
