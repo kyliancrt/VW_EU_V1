@@ -178,22 +178,22 @@ document.addEventListener('DOMContentLoaded', function () {
      selectedPiece = "slide1";
     }
    if ($.inArray(urlPiece , wallArray) > -1) {
-     selectedPiece = "slide2";
-    }
-    
-   if ($.inArray(urlPiece , bathroomArray) > -1) {
      selectedPiece = "slide3";
     }
     
-   if ($.inArray(urlPiece , showerArray) > -1) {
+   if ($.inArray(urlPiece , bathroomArray) > -1) {
      selectedPiece = "slide4";
     }
     
-   if ($.inArray(urlPiece , floorArray) > -1) {
+   if ($.inArray(urlPiece , showerArray) > -1) {
      selectedPiece = "slide5";
     }
-   if ($.inArray(urlPiece , furnitureArray) > -1) {
+    
+   if ($.inArray(urlPiece , floorArray) > -1) {
      selectedPiece = "slide6";
+    }
+   if ($.inArray(urlPiece , furnitureArray) > -1) {
+     selectedPiece = "slide7";
     }
         $('.template-product .productImage .pagination ul li').removeClass('active')
         $('.template-product .productImage .slide').removeClass('active')
