@@ -968,9 +968,6 @@ padding-bottom: 30px;
         order: 2;
     }
   
-    .template-index .Transform.transformRevert .bgImg {
-        order: 0;
-
     .template-index .Transform h2 {
         display: flex;
         margin-top: 0;
