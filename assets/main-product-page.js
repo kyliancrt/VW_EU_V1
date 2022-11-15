@@ -174,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
   
    if ($.inArray(urlPiece , floorArray) > -1) {
+    $(".template-product .productImage .pagination ul li").removeClass('active');
     $(".template-product .productImage .pagination ul li#slide6").addClass('active');
     }
           
