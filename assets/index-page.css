@@ -736,9 +736,9 @@ se
 .template-index .Transform .bgTiles img {
   position: absolute;
     width: auto;
-    min-height: 100%;
+    min-height: 150%;
     transform: rotate(80deg);
-    left: -35%;
+    left: -32%;
     bottom: 20%;    
     -webkit-animation: moveTiles 5s infinite;
     animation: moveTiles 5s infinite;
