@@ -163,8 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
   //urlPiece  
    if (strng.includes("human", 10)) {
    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
-     
-
+  let shower = ['douche', 'shower']
 
 
 });
