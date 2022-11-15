@@ -201,7 +201,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#' + selectedPiece).addClass('active')
           
   }
+  
+   if ($.inArray(urlPiece , "?") > -1) {
   loadPiece();
+    }
+  
 
   
 });
