@@ -1,8 +1,25 @@
 {{ 'index-page.css' | asset_url | stylesheet_tag }}
 {{ 'index-page.js' | asset_url | script_tag }}
-{{ 'page-pieces.css' | asset_url | stylesheet_tag }}
 
-<div class="template-index template-pagePieces">
+
+
+  {% if page.title contains "cuisine" %}
+      {% assign actualRoom = "cuisine" %}
+  {% elsif page.title contains "mur" %}
+      {% assign actualRoom = "mur" %}
+  {% elsif page.title contains "salle de bain" %}
+      {% assign actualRoom = "salledebain" %}
+  {% elsif page.title contains "douche" %}
+      {% assign actualRoom = "douche" %}
+  {% elsif page.title contains "sol" %}
+      {% assign actualRoom = "sol" %}
+  {% elsif page.title contains "meuble" %}
+      {% assign actualRoom = "meuble" %}
+  {% endif %}
+
+
+
+<div class="template-index">
   
     <section class="Presentation">
         <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" autoplay=""
@@ -56,41 +73,21 @@
     </section>
 
     
-    <section class="Transform">
-        <img alt="Carreaux adhésifs Vinyl Way collés sur une crédence de cuisine et une douche" loading="lazy" src="https://cdn.shopify.com/s/files/1/0648/8670/2332/files/Sans-titre-1.gif?v=1665584574">
-        <div>
-            <h2><span>Transformez</span> <span>votre intérieur</span></h2>
-            <p>On joue ici avec les matériaux pour des effets variés et travaillés. Du marbre pour le chic, des
-                briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
-                blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
+    <section class="Transform transformRevert">
+
+      <div class="bgImg" role="img" alt="Carreaux adhésifs Vinyl Way collés sur une crédence de cuisine et une douche"
+        style="background-image: url('https://cdn.shopify.com/s/files/1/0648/8670/2332/files/Sans-titre-1.gif?v=1665584574');"></div>
+      
+      <div>
+            
+            {{ page.content }}
+            
             <a class="btn btn-2" href="/collections/carreaux-adhesifs/">Nos collections</a>
             <a class="btn btn-3" href="/collections/carreaux-adhesifs-couleurs/">Tous nos carreaux</a>
         </div>
       
     </section>
-    <section class="SlideProducts" style="background-color:#F7F2EE;">
-        <h2>Nos Best Sellers</h2>
-        <div id="splideProducts" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                  {% for product in collections.carreaux-adhesifs-bestsellers.products %}
-                    {% for tag in product.tags %}
-                      {% if tag contains '#' %}
-                      {% assign dataColor = tag %}
-                      {% endif %}
-                    {% endfor %}
-                    <li class="splide__slide" data-color="{{ dataColor }}">
-                        <a href="{{ product.url }}">
-                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
-                            <span>{{ product.title }}</span>
-                        </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-            </div>
-        </div>
-        <a class="btn btn-2" href="/carreaux-adhesifs-bestsellers/">Voir tous les Best Sellers</a>
-    </section>
+  
     <section class="SlideCollections">
         <h2>Nos collections</h2>
         <div id="splideCollections" class="splide">
@@ -125,6 +122,49 @@
             </div>
         </div>
     </section>
+
+  
+    <section class="Transform">
+
+       <div class="bgImg bgTiles">
+         <img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/tile-bg.jpg?v=1668522527" alt="Mosaïc de carreaux adhésifs Vinyl Way">
+         </div>
+      
+      <div>
+            <h2><span>Transformez</span> <span>votre intérieur</span></h2>
+            <p>On joue ici avec les matériaux pour des effets variés et travaillés. Du marbre pour le chic, des
+                briques pour du rustique. Des carreaux de métro pour une touche urbaine ou encore un beau bois
+                blanchi pour un style scandinave. Bref, faites vous plaisir, tous les effets sont permis !</p>
+            <a class="btn btn-2" href="/collections/carreaux-adhesifs/">Nos collections</a>
+            <a class="btn btn-3" href="/collections/carreaux-adhesifs-couleurs/">Tous nos carreaux</a>
+        </div>
+      
+    </section>
+
+    <section class="SlideProducts" style="background-color:#F7F2EE;">
+        <h2>Nos Best Sellers</h2>
+        <div id="splideProducts" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                  {% for product in collections.carreaux-adhesifs-bestsellers.products %}
+                    {% for tag in product.tags %}
+                      {% if tag contains '#' %}
+                      {% assign dataColor = tag %}
+                      {% endif %}
+                    {% endfor %}
+                    <li class="splide__slide" data-color="{{ dataColor }}">
+                        <a href="{{ product.url }}">
+                        <img alt="Meilleure vente - Carreau adhésif Vinyl Way {{ product.title }}" loading="lazy" src="{{ product.images[1] | img_url: 'master' }}">
+                            <span>{{ product.title }}</span>
+                        </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <a class="btn btn-2" href="/carreaux-adhesifs-bestsellers/">Voir tous les Best Sellers</a>
+    </section>
+  
     <section class="Quality">
         <div>
             <h2><span>Qualité <img alt="Logo Made in France - créé et fabriqué en France" loading="lazy" src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/madeinfrance.svg?v=1666779214">
