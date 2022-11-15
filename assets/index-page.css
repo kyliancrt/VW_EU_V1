@@ -742,6 +742,7 @@ se
     bottom: 20%;    
     -webkit-animation: moveTiles 6s infinite;
     animation: moveTiles 6s infinite;
+  animation-direction: alternate;
 }
 
 
