@@ -740,9 +740,10 @@ se
     transform: rotate(80deg);
     left: -35%;
     bottom: 20%;    
-    -webkit-animation: moveTiles 6s infinite;
-    animation: moveTiles 6s infinite;
+    -webkit-animation: moveTiles 5s infinite;
+    animation: moveTiles 5s infinite;
   animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 
