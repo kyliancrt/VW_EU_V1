@@ -733,31 +733,6 @@ se
   overflow: hidden;
 }
 
-.template-index .Transform .bgTiles img {
-  position: absolute;
-    width: auto;
-    min-height: 160%;
-    transform: rotate(80deg);
-    left: -45%;
-    bottom: 20%;    
-    -webkit-animation: moveTiles 5s infinite;
-    animation: moveTiles 5s infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-@keyframes moveTiles {
-    0% {
-    bottom: 20%;    
-    }
-
-    100% {
-       bottom: -40%;
-    }
-}
-
-
 
 
 /* MEDIA SCREEN */
@@ -860,6 +835,33 @@ se
 
 @media only screen and (min-width: 1025px) {
 
+  
+
+.template-index .Transform .bgTiles img {
+  position: absolute;
+    width: auto;
+    min-height: 160%;
+    transform: rotate(80deg);
+    left: -45%;
+    bottom: 20%;    
+    -webkit-animation: moveTiles 5s infinite;
+    animation: moveTiles 5s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes moveTiles {
+    0% {
+    bottom: 20%;    
+    }
+
+    100% {
+       bottom: -40%;
+    }
+}
+
+  
   
 .template-index .SlideCollections .splide {
 padding-bottom: 30px;
