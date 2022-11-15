@@ -288,7 +288,7 @@
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
   
    if ($.inArray(urlPiece , floorArray) > -1) {
-    $("#slide6").trigger("click");
+    $(".template-collection .productsList :nth-child(1) > div > span").trigger('click');
     }
           
   }
