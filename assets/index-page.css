@@ -825,7 +825,7 @@ se
 
     .template-index .Presentation .contentPresentation>div {
         position: absolute;
-        top: -16rem;
+        top: -12rem;
         width: 100%;
         color: #fff;
         text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.16);
