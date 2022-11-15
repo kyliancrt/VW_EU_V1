@@ -7,9 +7,9 @@
   {% if page.title contains "cuisine" %}
       {% assign actualRoom = "cuisine" %}
   {% elsif page.title contains "mur" %}
-      {% assign actualRoom = "" %}
-  {% elsif page.title contains "salle de bain" %}
       {% assign actualRoom = "mur" %}
+  {% elsif page.title contains "salle de bain" %}
+      {% assign actualRoom = "salledebain" %}
   {% elsif page.title contains "douche" %}
       {% assign actualRoom = "douche" %}
   {% elsif page.title contains "sol" %}
