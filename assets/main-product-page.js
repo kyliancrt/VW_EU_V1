@@ -161,7 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }).mount();
 
   //urlPiece  
-   if (widon.location.href.includes("?", 1)) {
     let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
     let shower = ['douche', 'shower'];
     let wall = ['mur', 'wall'];
@@ -169,12 +168,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let shower = ['douche', 'shower'];
     let floor = ['mur', 'floor'];
     let furniture = ['meuble', 'furniture'];
-
-    if (shower.some(v => urlPiece.includes(v))) {
-   alert('douche');
-    }
+  
+   var foundPresent = $.inArray('floor', floor) > -1;
+   alert('foundPresent');
      
-   }
 
   
 });
