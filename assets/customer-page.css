@@ -61,3 +61,8 @@ form {
   width:20px;
   height: 20px;
 }
+
+.template-customers-register form {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
