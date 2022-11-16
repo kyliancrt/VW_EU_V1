@@ -431,7 +431,10 @@
       "cant_add_more_quantity": "You have reached the maximum limit. You cannot add any more items.",
       "cart_updated": "Some items are no longer available. Your cart has been updated.",
       "getting_customer_details": "Getting\/Syncing Customer Details",
-      "something_went_wrong": "Something went wrong. Please try again."
+      "something_went_wrong": "Something went wrong. Please try again.",
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
     },
     "navigation": {
       "profile": "My Profile",
@@ -506,7 +509,9 @@
       "delete_button": "Delete",
       "delete_confirmation_message": "Are you sure you want to delete this address?",
       "deleting_address": "Deleting Address...",
-      "address_deleted_successfully": "Address deleted successfully"
+      "address_deleted_successfully": "Address deleted successfully",
+      "yes": "Yes",
+      "no": "No"
     },
     "order_page": {
       "blank_screen_line_1_html": "You haven't placed any orders yet.<br>We can't wait to have you as a customer.",
@@ -534,7 +539,8 @@
       "billing_address": "Billing Address",
       "cancel_at": "Cancelled at",
       "fulfillment_status": "Fulfillment Status",
-      "payment_type": "Payment Type"
+      "payment_type": "Payment Type",
+      "address": "Address"
     },
     "order_contact_us": {
       "contact_us_button": "Contact Us",
@@ -594,7 +600,8 @@
       "number_of_order_high_to_low": "Number of order (High to Low)",
       "last_30_days": "Last 30 days",
       "last_60_days": "Last 60 days",
-      "number_of_order": "Total quantity ordered till now"
+      "number_of_order": "Total quantity ordered till now",
+      "sort_by": "Sort By"
     },
     "wishlisted_product_page": {
       "blank_screen_line_1_html": "Your wish is our command but<br>you haven’t wishlisted any products.",
@@ -633,7 +640,12 @@
       "repeat_customer": "Repeat Customer",
       "fault_in_product": "Fault in product",
       "canceled_order_first_time_by_customer": "Canceled order first time by customer",
-      "delay_in_delivery_time": "Delay in delivery time"
+      "delay_in_delivery_time": "Delay in delivery time",
+      "header_line_html": "Save Money <strong>Through Rewards<\/strong>",
+      "chart1_header": "Credit infosphere",
+      "how_to_earn": "How to Earn?",
+      "how_to_spend": "How to Spend?",
+      "balance": "Balance"
     },
     "how_to_earn_credit_page": {
       "no_rule_found": "The store has not set up any rules yet",
@@ -658,7 +670,16 @@
       "product_tag_credit_rule_title": "Credit for specific product collection",
       "product_tag_credit_rule_description": "Buy product\/s with (any tag) {{ tag }} and get {{ credit }} credit.",
       "wishlisted_product_credit_rule_title": "Wishlisted product credit",
-      "wishlisted_product_credit_rule_description": "You can earn {{ credit }} credit when you add product\/s in wishlist."
+      "wishlisted_product_credit_rule_description": "You can earn {{ credit }} credit when you add product\/s in wishlist.",
+      "header_line_html": "Earn More <strong>Spend More<\/strong>",
+      "chart1_header": "Your Earned Credit",
+      "subscribed_successfully": "Hurray! You will recieve subscriber credit in a short while.",
+      "add_birthdate": "Add your Birthdate",
+      "unlock_fixed_credit": "Unlock {{ credit }}",
+      "unlock_some_percentage_credit": "Unlock {{ credit }} cashback",
+      "rule_not_applicable": "*Not Applicable",
+      "why_rule_not_applicable_description": "Rule may have been set up on a later date.",
+      "total_earned_credit_by_rule": "Total earn credit till date: {{ credit }}"
     },
     "how_to_spend_credit_page": {
       "spend_credit_on_cart_rule_title": "Spend on cart",
@@ -667,7 +688,17 @@
       "spend_credit_on_cart_rule_description_3": "Your cart value is {{ min_cart_value }} (or more). Congratulations you can use {{ credit }} credit.",
       "spend_credit_on_cart_rule_description_4": "Your cart value is {{ min_cart_value }} (or more). Congratulations you are eligible to use {{ credit }} of cart value as credit.",
       "spend_credit_on_shipping_rule_title": "Free Shipping",
-      "spend_credit_on_shipping_rule_description": "You can use your credit on shipping charges."
+      "spend_credit_on_shipping_rule_description": "You can use your credit on shipping charges.",
+      "header_line_html": "Spend More <strong>Save More<\/strong>",
+      "chart1_header": "Your Total Savings",
+      "chart2_header": "Your Current Credit",
+      "still_you_have_remaining_credit": "You have {{ credit }} credit remaining",
+      "no_rule_found": "The store has not set up any rules yet",
+      "select_cart_value": "Click on the circles to check the amount of credit you can spend based on cart value.",
+      "how_to_spend_credit_header": "How to Spend Credit?",
+      "how_to_spend_credit_step_1": "Add product to the cart",
+      "how_to_spend_credit_step_2": "Choose available credit to spend on your order",
+      "how_to_spend_credit_step_3": "Proceed to checkout"
     },
     "refer_friend_page": {
       "popup_greetings": "Welcome Newcomer",
@@ -703,7 +734,11 @@
       "credit": "Credit",
       "time": "Referred Since",
       "you_are_referred_by": "Referred by",
-      "customer_deleted": "Customer Deleted"
+      "customer_deleted": "Customer Deleted",
+      "chart1_header": "Your Earned Credit",
+      "unlock_referral_rewards": "Unlock your referral Rewards",
+      "total_referral": "Total Referrals",
+      "share_referral_link_title": "Share referral link via"
     },
     "from_admin_page": {
       "header_line_html": "From Store Owner"
@@ -718,14 +753,17 @@
       "password_hint_message": "Password must be between 6 to 40 characters",
       "password_not_match": "Passwords didn't match. Try again.",
       "updating_password": "Updating password...",
-      "password_updated_successfully": "Your password for account {{ email }} has been successfully updated"
+      "password_updated_successfully": "Your password for account {{ email }} has been successfully updated",
+      "header_line_html": "Update your password for"
     },
     "buttons": {
       "back": "Back",
       "shop_now": "View Products",
       "add_to_cart": "Add to Cart",
       "sold_out": "Sold Out",
-      "product_unavailable_text": "Currently Unavailable"
+      "product_unavailable_text": "Currently Unavailable",
+      "previous": "Previous",
+      "next": "Next"
     },
     "months": {
       "january": "January",
