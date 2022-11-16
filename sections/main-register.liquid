@@ -227,11 +227,11 @@
         var requestOptions = {
             method: 'GET',
             redirect: 'follow',
-            headers: myHeaders
+            headers: myHeaders;
         };
 
         fetch("https://api.apilayer.com/tax_data/validate?vat_number=50751108002&country_code=FR", requestOptions)
-            .then(response => response.text())
+            .then(response => response.text());
             .then(result => alert(result));
             .catch(error => alert('error', error));
               }
