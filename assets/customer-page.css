@@ -72,7 +72,7 @@ form {
 }
 
 .template-customers-register form.pro .inputPro {
-  display: block;
+  display: flex;
 }
 
 .template-customers-register.pro h1 span {
