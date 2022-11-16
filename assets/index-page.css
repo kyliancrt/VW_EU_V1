@@ -755,10 +755,6 @@ se
 }
 
 
-    .template-index .SlideRealisations {
-        background-color: #F5F5F5;
-    }
-
 
 
 
@@ -1229,6 +1225,7 @@ padding-bottom: 30px;
 
     .template-index .SlideRealisations {
         background-color: #F5F5F5;
+        padding-top: 2rem;
     }
 
     .template-index .SlideCollections {
