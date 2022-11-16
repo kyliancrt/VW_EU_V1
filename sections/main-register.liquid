@@ -221,19 +221,31 @@
 
              // verificationTVA
         function verificationTVA() {         
-              var myHeaders = new Headers();
-        myHeaders.append("apikey", "UuOqCq3PupHsW7L1ov9hl2SlClfFrZSJ");
+            let myHeaders = new Headers();
+      myHeaders.append("apikey", "UuOqCq3PupHsW7L1ov9hl2SlClfFrZSJ");
+      
+      let requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+        headers: myHeaders
+      };
 
-        var requestOptions = {
-            method: 'GET',
-            redirect: 'follow',
-            headers: myHeaders
-        };
+        let countryCode = $("#RegisterForm-country").val();
+        let vat_number = $("#RegisterForm-tva").val();
 
-        fetch("https://api.apilayer.com/tax_data/validate?vat_number=50751108002&country_code=FR", requestOptions)
-            .then(response => response.text())
-            .then(result => alert(result))
-            .catch(error => alert('error', error));
+      fetch("https://api.apilayer.com/tax_data/validate?vat_number=" + vat_number + "&country_code=" + countryCode, requestOptions)
+        .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      if (data.valid) {
+      console.log("oui");
+      } else {
+        console.log("La validation ");
+      }
+
+    })
+  .catch(error => alert.log('Une erreur est survenue lors de la vérification. Veuillez ré-essayer.', error));
         }
               
            </script>
