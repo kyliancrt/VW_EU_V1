@@ -233,6 +233,9 @@
         let countryCode = $("#RegisterForm-country").val();
         let vat_number = $("#RegisterForm-tva").val();
 
+        $(".verificationTVA").text('Vérification...');
+        $(".verificationTVA").css('cursor','progress');
+
       fetch("https://api.apilayer.com/tax_data/validate?vat_number=" + vat_number + "&country_code=" + countryCode, requestOptions)
         .then((response) => {
       return response.json();
@@ -240,9 +243,11 @@
     .then((data) => {
                    
       if (data.valid) {
-      alert("oui");
+      $("form button").trigger('click');
       } else {
-        alert("La vérification de votre numéro de TVA à échouée, veuillez vérifier vos informations.");
+        alert("La vérification de votre numéro de TVA à échouée, veuillez vérifier vos informations.");        
+        $(".verificationTVA").text('Créer mon compte');
+        $(".verificationTVA").css('cursor','pointer');
       }
       
     })
