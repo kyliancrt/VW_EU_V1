@@ -74,7 +74,7 @@
         placeholder=""
       >
       <label for="RegisterForm-LastName">
-        {{ 'customer.register.last_name' | t }}
+        Nom
       </label>
     </div>
     <div class="field">      
@@ -194,10 +194,11 @@
         placeholder=""
       >
       <label for="RegisterForm-tva">
-        Numéro de TVA
+        N° de TVA
       </label>
     </div>
 
+      <span class="verificationTVA">Créer mon compte</span>
             
     <button>
       Créer mon compte
@@ -223,6 +224,7 @@
           });              
 
              // verificationTVA
+              function verificationTVA() {
               var myHeaders = new Headers();
         myHeaders.append("apikey", "UuOqCq3PupHsW7L1ov9hl2SlClfFrZSJ");
 
@@ -236,6 +238,7 @@
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
+              }
               
            </script>
 
