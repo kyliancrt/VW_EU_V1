@@ -202,6 +202,11 @@
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
+            
+    <a href="/account/register/?pro">
+      Compte professionnel
+    </a>
+            
   {%- endform -%}
 </div>
 
@@ -210,8 +215,7 @@
               if (window.location.href.indexOf("?pro") > -1) {
                 $("form").addClass('pro');
               }
-          });
-              
+          });              
            </script>
 
 
