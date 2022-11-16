@@ -236,6 +236,7 @@
       fetch("https://api.apilayer.com/tax_data/validate?vat_number=" + vat_number + "&country_code=" + countryCode, requestOptions)
         .then((response) => {
       return response.json();
+          console.log(response);
     })
     .then((data) => {
       if (data.valid) {
@@ -243,7 +244,6 @@
       } else {
         alert("non");
       }
-      alert(data[0]);
 
     })
   .catch(error => alert.log('Une erreur est survenue lors de la vérification. Veuillez ré-essayer.', error));
