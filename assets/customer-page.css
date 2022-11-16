@@ -71,7 +71,7 @@ form {
   display: none;
 }
 
-.template-customers-register form.pro .inputPro {
+.template-customers-register.pro .inputPro {
   display: flex;
 }
 
