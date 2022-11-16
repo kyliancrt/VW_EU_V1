@@ -115,7 +115,7 @@ font-weight: bold;
 
 /* MEDIA SCREEN */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
 
   .template-customers-register form {
   display: grid;
