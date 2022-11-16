@@ -93,3 +93,7 @@ cursor: pointer;
 .template-customers-register.pro .inputPro small {
   order:3;
 }
+
+.template-customers-register.pro button {
+ display: none;
+}
