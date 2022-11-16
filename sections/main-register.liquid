@@ -238,11 +238,15 @@
       return response.json();
     })
     .then((data) => {
-                    let reponse = data;
-                    console.log(reponse);
-
+                   
+      if (data.valid) {
+      alert("oui");
+      } else {
+        alert("La vérification de votre numéro de TVA à échouée, veuillez vérifier vos informations.");
+      }
+      
     })
-  .catch(error => alert('Une erreur est survenue lors de la vérification. Veuillez ré-essayer.', error));
+  .catch(error => alert('Une erreur est survenue lors de la vérification. Veuillez recommencer.', error));
         }
               
            </script>
