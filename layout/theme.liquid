@@ -119,5 +119,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  	{%- render 'flits_capture_code' with 'load_snippet',template:'flits_snippet' -%}
+</body>
 </html>
