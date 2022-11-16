@@ -66,6 +66,15 @@ form {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-.template-customers-register h1 span {
+
+.template-customers-register form .inputPro {
+  display: none;
+}
+
+.template-customers-register form.pro .inputPro {
+  display: block;
+}
+
+.template-customers-register.pro h1 span {
  display: block;
 }
