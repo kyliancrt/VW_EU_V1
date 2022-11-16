@@ -238,7 +238,7 @@
       return response.json();
     })
     .then((data) => {
-      alert(data[0]);
+      alert(data.countryCode);
 
     })
   .catch(error => alert.log('Une erreur est survenue lors de la vérification. Veuillez ré-essayer.', error));
