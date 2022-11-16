@@ -128,8 +128,10 @@
         </svg>
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
+    {%- endif -%}
 
-<div class="field">      
+
+            <div class="field">      
       <input
         type="email"
         name="customer[email]"
@@ -149,10 +151,8 @@
         {{ 'customer.register.email' | t }}
       </label>
     </div>
-            
 
             
-    {%- endif -%}
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
