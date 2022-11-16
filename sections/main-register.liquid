@@ -204,7 +204,7 @@
     </button>
             
     <a class="toggleTypeAccount" href="/account/register/?pro">
-      Compte professionnel
+      Je suis un professionnel
     </a>
             
   {%- endform -%}
@@ -214,7 +214,7 @@
             document.addEventListener('DOMContentLoaded', function () {
               if (window.location.href.indexOf("?pro") > -1) {
                 $("form").addClass('pro');
-                $(".toggleTypeAccount").text('Compte particulier');
+                $(".toggleTypeAccount").text('Je suis un particulier');
               }
           });              
            </script>
