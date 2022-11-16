@@ -203,7 +203,7 @@
       {{ 'customer.register.submit' | t }}
     </button>
             
-    <a href="/account/register/?pro">
+    <a class="toggleTypeAccount" href="/account/register/?pro">
       Compte professionnel
     </a>
             
@@ -214,6 +214,7 @@
             document.addEventListener('DOMContentLoaded', function () {
               if (window.location.href.indexOf("?pro") > -1) {
                 $("form").addClass('pro');
+                $(".toggleTypeAccount").text('Compte particulier');
               }
           });              
            </script>
