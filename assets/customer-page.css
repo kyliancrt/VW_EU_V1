@@ -97,3 +97,9 @@ cursor: pointer;
 .template-customers-register.pro button {
  display: none;
 }
+.template-customers-register .verificationTVA {
+  display: none;
+}
+.template-customers-register.pro .verificationTVA {
+  display: block;
+}
