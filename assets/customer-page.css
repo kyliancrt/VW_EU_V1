@@ -16,6 +16,8 @@ form {
   gap: 5px;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .field input , .field select {
