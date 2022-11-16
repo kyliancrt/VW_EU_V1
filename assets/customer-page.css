@@ -78,3 +78,13 @@ form {
 .template-customers-register.pro h1 span {
  display: block;
 }
+
+.template-customers-register .toggleTypeAccount {
+  height: max-content;
+margin: 2rem auto 1rem auto;
+  margin-right: auto;
+  margin-left: auto;
+width: max-content;
+padding: 10px 00px;
+cursor: pointer;
+}
