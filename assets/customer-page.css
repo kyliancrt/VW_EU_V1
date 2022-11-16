@@ -62,7 +62,7 @@ form {
   height: 20px;
 }
 
-.template-customers-register form {
+.template-customers-register form.pro {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
