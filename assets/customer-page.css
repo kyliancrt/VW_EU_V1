@@ -75,6 +75,7 @@ form {
 
 .template-customers-register.pro .inputPro {
   display: flex;
+  justify-content: flex-start;
 }
 
 .template-customers-register.pro h1 {
