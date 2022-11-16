@@ -128,6 +128,30 @@
         </svg>
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
+
+<div class="field">      
+      <input
+        type="email"
+        name="customer[email]"
+        id="RegisterForm-email"
+        {% if form.email %} value="{{ form.email }}"{% endif %}
+        spellcheck="false"
+        autocapitalize="off"
+        autocomplete="email"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-email-error"
+        {% endif %}
+        placeholder=""
+      >
+      <label for="RegisterForm-email">
+        {{ 'customer.register.email' | t }}
+      </label>
+    </div>
+            
+
+            
     {%- endif -%}
     <button>
       {{ 'customer.register.submit' | t }}
