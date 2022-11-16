@@ -43,7 +43,7 @@ form {
 .customer a:hover {
   outline-color: transparent;
 }
-.customer button {
+.customer button, .verificationTVA {
   margin: 2rem auto 1rem auto;
   background-color: #1b8886;
   color: #fff;
@@ -54,7 +54,7 @@ form {
   text-transform: uppercase;
   cursor: pointer;
 }
-.customer button:hover {
+.customer button:hover, , .verificationTVA:hover {
   opacity:0.95;
 }
 .customer svg {
