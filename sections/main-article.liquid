@@ -1,7 +1,7 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.js' | asset_url | script_tag }}
 
-<section class="intro">
+<section class="intro" style="background-image: url('{{ article.image.src | img_url:'500x' }}')">
 
   <div>
   <div class="divH1">
