@@ -63,10 +63,9 @@
 .intro .blocFilters {
     width: 100%;
     position: fixed;
-    top: 150px;
+    bottom: 0px;
     transition: all 0.1s ease;
 }
-
 
 
 .intro .blocFilters ul {
@@ -91,8 +90,6 @@
 .template-collection.scroll .blocFilters ul {
     width: 100%;
 }
-
-
 
 .intro .blocFilters ul li {
     display: none;
