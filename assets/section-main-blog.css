@@ -37,3 +37,10 @@
   font-size: 30px;
   color: #000;
   }
+
+.intro .divH2 {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
