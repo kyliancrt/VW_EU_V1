@@ -134,7 +134,7 @@
 
 .intro .blocFilters ul li.active {
     display: flex;
-    background-color: #489F9E;
+    background-color: #000;
     color: #fff;
     fill: #fff;
   order:1;
