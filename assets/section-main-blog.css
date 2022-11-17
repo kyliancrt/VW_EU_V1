@@ -173,6 +173,12 @@
     fill: #FFF
 }
 
+
+.listArticles {
+  background: #f5f5f5;
+  padding: 2rem 0;
+}
+
 .listArticles ul {
   padding:0;
   margin:auto;
