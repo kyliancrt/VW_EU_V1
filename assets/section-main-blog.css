@@ -234,14 +234,14 @@ position: relative;
 
   .listArticles > ul {
     width: 100%;
-    padding: 2rem 2rem 2rem 0;
-    margin: auto;
+    padding: 2rem;
+    margin: 0;
     max-width: 900px;
   }
   .blocFilters {
     margin: 0;
     flex: 30%;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: -40px;
     max-width:400px;
     }
@@ -259,5 +259,10 @@ position: relative;
     display: flex;
   }
 
+}
+
+@media only screen and (min-width: 1600px) { 
+
+  
 
 }
