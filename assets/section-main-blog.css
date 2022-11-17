@@ -6,25 +6,25 @@
   background-size: cover;
   background-position: center;
 }
-.intro .divTitle {
+.intro .divH1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.intro .divTitle h1 {
+.intro .divH1 h1 {
   font-weight: 900;
 }
 
-.intro .divTitle h1>:nth-child(1) {
+.intro .divH1 h1>:nth-child(1) {
   font-size: 50px;
   color: transparent;
   text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
              1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
-.intro .divTitle h1>:nth-child(2) {
+.intro .divH1 h1>:nth-child(2) {
   font-size: 30px;
   color: #000;
   }
