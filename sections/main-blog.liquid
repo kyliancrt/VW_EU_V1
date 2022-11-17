@@ -48,15 +48,17 @@
 <section class="listArticles">
 
   <ul>
+    {% for article in blogs.potion-notions.articles %}
     <li>
-      <div style="background-image: url('https://cdn.shopify.com/s/files/1/0648/8670/2332/files/poster_usa.jpg?v=1663845051');"></div>
-      <a href="">
+      <div style="background-image: url('{{ article.featured_image }}');"></div>
+      <a href="{{ article.url }}">
         Lire l'article
       </a>
       <h3>
-        Comment réussir la déco
+       {{ article.title }}
       </h3>
     </li>
+    {% endfor %}
   </ul>
   
 </section>
