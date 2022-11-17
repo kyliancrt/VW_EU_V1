@@ -246,5 +246,8 @@ position: relative;
     width: 90%;
     margin: 0;
   }
+  .blocFilters ul li {
+    display: flex;
+  }
 
 }
