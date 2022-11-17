@@ -58,7 +58,7 @@
   text-align: center;
 }
 
-.blocFilters {
+.intro .blocFilters {
    width: 100%;
     position: absolute;
     bottom: 0px;
@@ -67,7 +67,7 @@
 }
 
 
-.blocFilters ul {
+.intro .blocFilters ul {
     width: 75%;
     margin: auto;
     padding: 0;  
@@ -75,7 +75,7 @@
     flex-direction: column;
 }
 
-.blocFilters ul li {
+.intro .blocFilters ul li {
     display: none;
     align-items: center;
     justify-content: center;
@@ -92,11 +92,11 @@
     order:2;
 }
 
-.blocFilters ul li:nth-child(1) {
+.intro .blocFilters ul li:nth-child(1) {
     border-bottom: 0;
 }
 
-.blocFilters ul li a {
+.intro .blocFilters ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@
 }
 
 
-.blocFilters ul li small {
+.intro .blocFilters ul li small {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@
     font-weight: normal;
 }
 
-.blocFilters ul li.active {
+.intro .blocFilters ul li.active {
     display: flex;
     background-color: #000;
     color: #fff;
@@ -125,7 +125,7 @@
   order:1;
 }
 
-.blocFilters ul li.active svg {
+.intro .blocFilters ul li.active svg {
     transform-origin: 0%;
     transform: rotate(90deg);
     transform-origin: center;
@@ -134,26 +134,26 @@
     fill: #FFF;
 }
 
-.blocFilters ul li:hover {
+.intro .blocFilters ul li:hover {
     background-color: #000;
     color: #fff;
     fill: #000;
 }
 
-.blocFilters ul:hover li.active {
+.intro .blocFilters ul:hover li.active {
     background-color: #fff;
     color: #000;
 }
 
-.blocFilters ul.active li {
+.intro .blocFilters ul.active li {
     display: flex
 }
 
-.blocFilters ul.active li.active {
+.intro .blocFilters ul.active li.active {
     border-bottom: 1px solid #000;
 }
 
-.blocFilters ul.active li.active svg {
+.intro .blocFilters ul.active li.active svg {
     transform: rotate(-90deg);
     fill: #FFF
 }
