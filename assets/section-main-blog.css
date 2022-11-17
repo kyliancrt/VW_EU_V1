@@ -207,10 +207,22 @@
 }
 
 .listArticles ul li > a {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    height: 40px;
-    background-color: #489F9E;
-    color: #fff;
+ text-transform: uppercase;
+font-weight: 700;
+font-size: 1rem;
+height: 40px;
+background-color: #489f9e;
+color: #fff;
+padding: 0.7rem 2rem;
+margin: auto;
+  margin-top: auto;
+display: block;
+width: max-content;
+margin-top: -25px;
+z-index: 9;
+position: relative;
+}
+
+.listArticles ul li > a:hover {
+  opacity: 0.9;
 }
