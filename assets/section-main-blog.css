@@ -93,27 +93,6 @@
 }
 
 
-.template-collection.scroll.collectionFilters .filters {
-    margin-top: -40px;
-}
-
-
-.template-collection .collectionFilters .Products {
-    padding-top: 89px;
-  transition: all .1s ease;
-}
-
-.template-collection .Products>div {
-    padding-top: 1.6rem;
-}
-
-.template-collection .collectionFilters .Products>:nth-child(1) {
-    padding-top: 0;
-}
-.template-collection.scroll .collectionFilters .Products {
-  padding-top: 49px;
-}
-
 
 .intro .blocFilters ul li {
     display: none;
