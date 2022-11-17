@@ -164,7 +164,7 @@ margin-top: -40px;
   padding: 2rem 0;
 }
 
-.listArticles ul {
+.listArticles>ul {
   padding:0;
   margin:auto;
   width: calc(100% - 1rem);
@@ -174,24 +174,24 @@ margin-top: -40px;
 }
 
 
-.listArticles ul li {
+.listArticles>ul li {
   padding: 1px;
   box-shadow: 0 0 10px 1px #00000008;
   background: #fff;
 }
 
-.listArticles ul li > div {
+.listArticles>ul li > div {
   background-size: cover;
   background-position: center;
   width: 100%;
   aspect-ratio: 1 / 1;
 }
 
-.listArticles ul li > h3 {
+.listArticles>ul li > h3 {
   text-align: center;
 }
 
-.listArticles ul li > a {
+.listArticles>ul li > a {
  text-transform: uppercase;
 font-weight: 700;
 font-size: 1rem;
@@ -208,6 +208,6 @@ z-index: 9;
 position: relative;
 }
 
-.listArticles ul li > a:hover {
+.listArticles>ul li > a:hover {
   background-color: #65AEAA;
 }
