@@ -250,7 +250,8 @@ position: relative;
     flex: 30%;
     justify-content: flex-end;
     margin-top: -40px;
-    max-width:400px;
+    max-width:350px;
+    order: 2;
     }
 
   .blocFilters ul {
