@@ -57,3 +57,143 @@
   gap: 0;
   text-align: center;
 }
+
+
+
+.intro .blocFilters {
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    transition: all 0.1s ease;
+}
+
+
+
+.intro .blocFilters ul {
+    width: 75%;
+    margin: auto;
+    padding: 0;  
+    display: flex;
+    flex-direction: column;
+}
+
+
+.template-collection .collectionFilters .headerCollection .blocFilters ul {
+    width: 100%;
+}
+
+
+.template-collection.scroll .headerCollection .title,
+.template-collection.scroll .headerCollection .blocFilters {
+    margin-top: -40px;
+}
+
+.template-collection.scroll .blocFilters ul {
+    width: 100%;
+}
+
+
+.template-collection.scroll.collectionFilters .filters {
+    margin-top: -40px;
+}
+
+
+.template-collection .collectionFilters .Products {
+    padding-top: 89px;
+  transition: all .1s ease;
+}
+
+.template-collection .Products>div {
+    padding-top: 1.6rem;
+}
+
+.template-collection .collectionFilters .Products>:nth-child(1) {
+    padding-top: 0;
+}
+.template-collection.scroll .collectionFilters .Products {
+  padding-top: 49px;
+}
+
+
+.intro .blocFilters ul li {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    border-bottom: 1px solid #F5F5F5;
+    order:2;
+}
+
+.intro .blocFilters ul li:nth-child(1) {
+    border-bottom: 0;
+}
+
+.intro .blocFilters ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro .blocFilters ul li small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.intro .blocFilters ul li.active {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    fill: #fff;
+  order:1;
+}
+
+.intro .blocFilters ul li.active svg {
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-left: 0.5rem;
+    margin-top: -0.1rem;
+    fill: #FFF;
+}
+
+.intro .blocFilters ul li:hover {
+    background-color: #000;
+    color: #fff;
+    fill: #000;
+}
+
+.intro .blocFilters ul:hover li.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.intro .blocFilters ul.active li {
+    display: flex
+}
+
+.intro .blocFilters ul.active li.active {
+    border-bottom: 1px solid #000;
+}
+
+.intro .blocFilters ul.active li.active svg {
+    transform: rotate(-90deg);
+    fill: #FFF
+}
