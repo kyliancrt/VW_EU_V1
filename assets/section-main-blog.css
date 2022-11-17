@@ -216,7 +216,7 @@ position: relative;
   background-color: #65AEAA;
 }
 .divArticle {
-  width: 90%;
+  width: calc(100% - 2rem;);
   margin: auto;
   background: #fff;
   padding: 1rem;
