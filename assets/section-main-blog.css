@@ -282,4 +282,9 @@ position: relative;
   font-size: 25px;
   }
 
+  .divArticle {
+  margin: 2rem;
+  max-width: 900px;
+  }
+
 }
