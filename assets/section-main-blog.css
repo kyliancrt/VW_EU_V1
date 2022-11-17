@@ -91,7 +91,7 @@ justify-content: center;
     color: #000;
     cursor: pointer;
     height: 40px;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 2px solid #fff;
     order:2;
 }
 
