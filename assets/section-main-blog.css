@@ -201,3 +201,16 @@
   width: 100%;
   aspect-ratio: 1 / 1;
 }
+
+.listArticles ul li > h3 {
+  text-align: center;
+}
+
+.listArticles ul li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    height: 40px;
+}
