@@ -260,10 +260,16 @@ position: relative;
     justify-content: center;
   }
 
-}
-
-@media only screen and (min-width: 1600px) { 
-
+  .intro .divH1 h1 {
+    line-height: 70px;
+  }
   
+  .intro .divH1 h1:nth-child(1) {
+    font-size: 107px;
+  }
+  
+  .intro .divH1 h1:nth-child(2) {
+   font-size: 50px;
+  }
 
 }
