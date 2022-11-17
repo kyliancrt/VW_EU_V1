@@ -215,7 +215,12 @@ position: relative;
 .listArticles>ul li > a:hover {
   background-color: #65AEAA;
 }
-
+.divArticle {
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  padding: 1rem;
+}
 
 
 
