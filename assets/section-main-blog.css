@@ -222,8 +222,18 @@ position: relative;
 /* MEDIA SCREEN */
 
 
+@media only screen and (min-width: 700px) {
+
+  .listArticles > ul {
+  grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
 @media only screen and (min-width: 1025px) {
 
-  
+  .listArticles > ul {
+  grid-template-columns: repeat(2,1fr);
+  }
 
 }
