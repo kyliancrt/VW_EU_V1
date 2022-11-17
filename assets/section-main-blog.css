@@ -271,5 +271,8 @@ position: relative;
   .intro .divH1 h1 > :nth-child(2) {
    font-size: 50px;
   }
+  .intro .divH2 h2 {
+  font-size: 25px;
+  }
 
 }
