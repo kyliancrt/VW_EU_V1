@@ -235,7 +235,7 @@ position: relative;
   .listArticles > ul {
     width: 100%;
     padding: 2rem 2rem 2rem 0;
-    margin: 0;
+    margin: auto;
     max-width: 900px;
   }
   .blocFilters {
@@ -248,7 +248,7 @@ position: relative;
 
   .blocFilters ul {
     width: 90%;
-    margin: auto;
+    margin: 0;
   }
   
   .blocFilters ul li {
