@@ -225,7 +225,7 @@ position: relative;
 @media only screen and (min-width: 700px) {
 
   .listArticles > ul {
-     
+  grid-template-columns: repeat(2,1fr);
   }
 
 }
