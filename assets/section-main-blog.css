@@ -172,3 +172,12 @@
     transform: rotate(-90deg);
     fill: #FFF
 }
+
+.listArticles ul {
+  padding:0;
+  margin:auto;
+  width: calc(100% - 1rem);
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 1rem;
+}
