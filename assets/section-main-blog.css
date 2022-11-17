@@ -248,7 +248,7 @@ position: relative;
 
   .blocFilters ul {
     width: 90%;
-    margin: 0;
+    margin: auto;
   }
   
   .blocFilters ul li {
