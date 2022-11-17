@@ -20,10 +20,12 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  gap: 0;
+  line-height: 40px;
 }
 
 .intro .divH1 h1>:nth-child(1) {
-  font-size: 50px;
+  font-size: 63px;
   color: transparent;
   text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
              1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
