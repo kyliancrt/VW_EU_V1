@@ -54,8 +54,12 @@
                         .toArray()
                         .map(e => Array.from(e.classList).join());
     
-    if (window.location.href.indexOf(arrayArticlesTags) > -1) {
+     for (var i = 0; i < arrayArticlesTags.length; i++) {
+        if(window.location.href.indexOf(arrayArticlesTags[i]) > -1) {
+            alert("your url contains the string "+arrayArticlesTags[i]);
+        }
     }
+    
   });
   
   
