@@ -1,6 +1,18 @@
 {{ 'main-product-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-product-page.js' | asset_url | script_tag }}
 
+
+
+{% unless customer and curtomer.tags contains 'pro' %}
+{% assign priceTile = '2.99' %}
+{% else %}
+{% assign priceTile = priceTile | minus: 2 %}
+{% endunless %}
+
+{{ priceTile }}
+
+
+
         <section class="productImage">
 
           <div class="ProductImageContent">
