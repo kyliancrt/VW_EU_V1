@@ -50,6 +50,8 @@
   //filterByTag
   $(document).ready(function() {
 
+    let dataTagsArray = [];
+    
     $( "listArticles ul li" ).each(function() {
       dataTagsArray.push($(this).prop('class').split(' ')[0]);
     });
