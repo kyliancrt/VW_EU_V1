@@ -3,7 +3,7 @@
 
 
 
-{% unless customer and curtomer.tags contains 'pro' %}
+{% unless customer and curtomer.tag contains 'pro' %}
 {% assign priceTile = 2 %}
 {% else %}
 {% assign priceTile = 3 %}
