@@ -8,8 +8,6 @@
 {% assign priceTile = 2.99 | divided_by: 1.2 | round: 2 %}
 {% endunless %}
 
-{{ priceTile }}
-
 
 
         <section class="productImage">
@@ -126,10 +124,10 @@
             <div class="productPrice">
                 <div>
                     <div class="discount">
-                        <div><span id="regularPrice">2.99</span>€</div>
+                        <div><span id="regularPrice">{{ priceTile }}</span>€</div>
                         <span id="discountPercent">0%</span>
                     </div>
-                    <span class="price"><span id="price">2.99</span>€</span>
+                    <span class="price"><span id="price">{{ priceTile }}</span>€</span>
                 </div>
                 <div>
                     <span id="downQuantity">-</span>
