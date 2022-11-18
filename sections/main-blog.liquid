@@ -57,9 +57,7 @@
      for (var i = 0; i < arrayArticlesTags.length; i++) {
         if(window.location.href.indexOf(arrayArticlesTags[i]) > -1) {
 
-          alert(arrayArticlesTags[i]);
-          
-      $('.listArticles > ul li').not(arrayArticlesTags[i]).css('display' , 'none');
+      $('.listArticles > ul li').not('.' + arrayArticlesTags[i]).css('display' , 'none');
           
         }
     }
