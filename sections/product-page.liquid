@@ -2,11 +2,11 @@
 {{ 'main-product-page.js' | asset_url | script_tag }}
 
 
-
+{% assign testVar = 1.2 %}
 {% unless customer and customer.tags contains 'pro' %}
 {% assign priceTile = 2 %}
 {% else %}
-{% assign priceTile = priceTile | times: 100 %}
+{% assign priceTile = priceTile | divided_by: testVar  %}
 {% endunless %}
 
 {{ priceTile }}
