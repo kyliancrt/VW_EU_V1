@@ -50,13 +50,11 @@
   //filterByTag
   $(document).ready(function() {
 
-  var arraySelectors = $('.listArticles > ul li')
+  var arrayArticlesTags = $('.listArticles > ul li')
                         .toArray()
                         .map(e => Array.from(e.classList).join());
     
-    alert(arraySelectors);
-    
-    if (window.location.href.indexOf("{{ article.tags }}") > -1) {
+    if (window.location.href.indexOf(arrayArticlesTags) > -1) {
     }
   });
   
