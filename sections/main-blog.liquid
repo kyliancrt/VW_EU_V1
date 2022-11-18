@@ -29,7 +29,7 @@
 
   <ul>
     {% for article in blog.articles %}
-    <li data-tags="{{ article.tags }}" >
+    <li class="{{ article.tags }}" >
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
         Lire l'article
@@ -50,8 +50,8 @@
   //filterByTag
   $(document).ready(function() {
 
-    let listTags = $('.listArticles > ul li').data('tags');
-  var arraySelectors = listTags.toArray();
+  var arraySelectors = $('.listArticles > ul li')
+                        .toArray();
     
     alert(arraySelectors);
     
