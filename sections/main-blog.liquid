@@ -48,8 +48,11 @@
 <script>
 
   //filterByTag
-  if( window.location.href.indexOf('test') > 1 ) {
-    alert'oui');
-  }
+  $(document).ready(function() {
+    if (window.location.href.indexOf("test") > -1) {
+      alert("your url contains the name franky");
+    }
+  });
+  
   
 </script>
