@@ -52,7 +52,7 @@
 
   var arraySelectors = $('.listArticles > ul li')
                         .toArray()
-                        .map(e => '.' + Array.from(e.classList).join());
+                        .map(e => Array.from(e.classList).join(" "));
     
     alert(arraySelectors);
     
