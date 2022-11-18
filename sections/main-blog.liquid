@@ -50,9 +50,9 @@
   //filterByTag
   $(document).ready(function() {
 
-  var arraySelectors = $('.listArticles > ul li');
+  var arraySelectors = $('.listArticles > ul li').data('tags');
                         .toArray()
-                        .map(e => Array.from(e.data('tags')).join('.'));
+                        .map(e => Array.from(e).join('.'));
     
     alert(arraySelectors);
     
