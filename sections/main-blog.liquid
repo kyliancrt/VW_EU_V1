@@ -29,7 +29,7 @@
 
   <ul>
     {% for article in blog.articles %}
-    <li class="{{ article.tags }}" >
+    <li data-tags="{{ article.tags }}" >
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
         Lire l'article
