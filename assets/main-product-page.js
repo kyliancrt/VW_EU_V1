@@ -53,38 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // displayPrice
-    function displayPrice() {
-        let discountPercent = 1;
-        let valQuantity = $('#quantityCheckout').val();
-
-        if (valQuantity >= 30) {
-            $('.discount').addClass('enable');
-        }
-        else {
-            $('.discount').removeClass('enable');
-        }
-
-        if (valQuantity >= 30) {
-            discountPercent = 0.90;
-            $('#discountPercent').text('-10%');
-        }
-        if (valQuantity >= 60) {
-            discountPercent = 0.85;
-            $('#discountPercent').text('-15%');
-        }
-        if (valQuantity >= 90) {
-            discountPercent = 0.80;
-            $('#discountPercent').text('-20%');
-        }
-
-        let discountPrice = (valQuantity * 2.99 * discountPercent).toFixed(2);
-        let regularPrice = (valQuantity * 2.99).toFixed(2);
-        $('#regularPrice').text(regularPrice);
-        $('#price').text(discountPrice);
-
-    };
-
+   
 
 
     // slideImage
