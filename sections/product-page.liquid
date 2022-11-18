@@ -1,6 +1,15 @@
 {{ 'main-product-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-product-page.js' | asset_url | script_tag }}
 
+
+{% unless customer and customer.tags contains 'pro' %}
+{% assign priceTile = product.first_available_variant.price %}
+{% else %}
+{% assign priceTile = product.first_available_variant.price | divided_by: 10  %}
+{% endunless %}
+
+
+
         <section class="productImage">
 
           <div class="ProductImageContent">
