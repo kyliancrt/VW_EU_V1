@@ -29,7 +29,7 @@
 
   <ul>
     {% for article in blog.articles %}
-    <li data-tags="{{ article.tags }}" >
+    <li class="{{ article.tags }}" >
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
         Lire l'article
@@ -53,7 +53,7 @@
     let dataTagsArray = [];
     
     $( "listArticles ul li" ).each(function() {
-      dataTagsArray.push($(this).data('tags').split(' ')[0]);
+      dataTagsArray.push($(this).prop('class').split(' ')[0]);
     });
     
     alert(dataTagsArray);
