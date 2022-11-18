@@ -184,3 +184,41 @@
               </div>
             </div>
         </div>
+
+        <script>
+
+          
+    // displayPrice
+    function displayPrice() {
+        let discountPercent = 1;
+        let decTotalPrice = $('#regularPrice').text().replace(',' , '.');
+        let totalPrice = parseFloat(decTotalPrice);
+        let totalQuantity = parseInt(totalPrice / 2.99);
+
+        if (totalQuantity >= 30) {
+            $('.productPrice').addClass('discountEnable');
+        }
+        else {
+            $('.productPrice').removeClass('discountEnable');
+        }
+
+        if (totalQuantity >= 30) {
+            discountPercent = 0.90;
+            $('#discountPercent').text('-10%');
+        }
+        if (totalQuantity >= 60) {
+            discountPercent = 0.85;
+            $('#discountPercent').text('-15%');
+        }
+        if (totalQuantity >= 90) {
+            discountPercent = 0.80;
+            $('#discountPercent').text('-20%');
+        }    
+      
+        let discountPrice = (totalPrice * discountPercent).toFixed(2);
+        $('#totalPrice').text(discountPrice);
+    };
+  
+  displayPrice();
+          
+        </script>
