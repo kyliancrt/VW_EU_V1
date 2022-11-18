@@ -24,13 +24,12 @@
 
 <section class="listArticles">
 
-  {{ blog.handle }}
-
   
 {% render 'listFilterBlog' %}
 
   <ul>
-    {% for article in blogs.this.articles %}
+    {%  assign url =  %}
+    {% for article in blogs.url.articles %}
     <li>
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
