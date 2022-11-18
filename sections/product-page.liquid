@@ -4,7 +4,7 @@
 
 {% assign testVar = 2 %}
 {% unless customer and customer.tags contains 'pro' %}
-{% assign priceTile = 10 %}
+{% assign priceTile = 100 %}
 {% else %}
 {% assign priceTile = priceTile | divided_by: 10  %}
 {% endunless %}
