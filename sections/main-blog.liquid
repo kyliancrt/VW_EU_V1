@@ -29,7 +29,7 @@
 
   <ul>
     {% for article in blog.articles %}
-    <li class=" cur {{ article.tags }}" >
+    <li class="{{ article.tags }}" >
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
         Lire l'article
@@ -50,14 +50,14 @@
   //filterByTag
   $(document).ready(function() {
 
+    var yourArray = [];
+$('.listArticles > ul li').each(function() {
+    if($(this).hasClass('cur')) {
+        yourArray.push($(this).prop('class').split(' ')[0]);
+    }
+});
     
-
-var arraySelectors = $('.listArticles ul li')
-                        .toArray()
-                        .map(e => '.' + Array.from(e.classList).join('.'));
-
-    
-    alert(arraySelectors);
+    alert(yourArray);
     
     if (window.location.href.indexOf("{{ article.tags }}") > -1) {
     }
