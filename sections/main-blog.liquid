@@ -50,14 +50,14 @@
   //filterByTag
   $(document).ready(function() {
 
-    var yourArray = [];
-$('.listFilterBlog ul li').each(function() {
-    if($(this).hasClass('cur')) {
-        yourArray.push($(this).prop('class').split(' ')[0]);
-    }
-});
     
-    alert(yourArray);
+
+var arraySelectors = $('.listFilterBlog ul li')
+                        .toArray()
+                        .map(e => '.' + Array.from(e.classList).join('.'));
+
+    
+    alert(arraySelectors);
     
     if (window.location.href.indexOf("{{ article.tags }}") > -1) {
     }
