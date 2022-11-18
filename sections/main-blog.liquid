@@ -28,8 +28,7 @@
 {% render 'listFilterBlog' %}
 
   <ul>
-    {% for articles in blogs %}
-    {% for article in articles %}
+    {% for article in blogs.infos.articles %}
     <li>
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
@@ -39,7 +38,6 @@
        {{ article.title }}
       </h3>
     </li>
-    {% endfor %}
     {% endfor %}
   </ul>
   
