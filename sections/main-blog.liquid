@@ -53,7 +53,7 @@
     let dataTagsArray = [];
     
     $( "listArticles ul li" ).each(function() {
-      dataTagsArray.push($(this).prop('class').split(' ')[0]);
+      dataTagsArray.push($(this).data('tags').split(' ')[0]);
     });
     
     alert(dataTagsArray);
