@@ -28,9 +28,7 @@
 {% render 'listFilterBlog' %}
 
   <ul>
-    {%  assign thisHandle = blog.handle %}
-    {{ thisHandle }}
-    {% for article in blogs.thisHandle.articles %}
+    {% for article in blog.articles %}
     <li>
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
