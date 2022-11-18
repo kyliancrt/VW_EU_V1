@@ -5,7 +5,7 @@
 {% unless customer and customer.tags contains 'pro' %}
 {% assign priceTile = 2.99 %}
 {% else %}
-{% assign priceTile = 2.99 | divided_by: 1.2  %}
+{% assign priceTile = 2.99 | divided_by: 1.2 | at_most: 3  %}
 {% endunless %}
 
 {{ priceTile }}
