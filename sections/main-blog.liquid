@@ -50,8 +50,9 @@
   //filterByTag
   $(document).ready(function() {
 
-    let dataTags = $(".listArticles ul li").data('tags');
     
+    let dataTags = $(".listArticles ul li").data('tags');
+    alert(dataTags);
     if (window.location.href.indexOf("{{ article.tags }}") > -1) {
     }
   });
