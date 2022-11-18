@@ -196,7 +196,7 @@
 
             
            
-    <input type="hidden" id="customer_tags" name="customer[tags]" value=""/>
+    <input type="text" id="customer_tags" name="customer[tags]" value=""/>
 
       <span class="verificationTVA" onclick="verificationTVA();">Créer mon compte</span>
             
@@ -220,6 +220,8 @@
                 $(".toggleTypeAccount").text('Je suis un particulier');
                 $("h1").append('<span>Professionnel</spann>');
                 $(".toggleTypeAccount").attr("href", "/account/register/")
+                $("#customer_tags").val('pro';)
+                
               }
           });              
 
