@@ -2,19 +2,15 @@
 {{ 'customer-page.css' | asset_url | stylesheet_tag }}
 
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+{% unless customer and curtomer.tags contains 'pro' %}
+{% assign priceTile = '2.99' %}
+{% else %}
+{% assign priceTile = priceTile | minus: 2 %}
+{% endunless %}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+{{ priceTile }}
+
+
 
 <div class="customer register section-{{ section.id }}-padding">
   <svg style="display: none">
