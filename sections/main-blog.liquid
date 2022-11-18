@@ -28,7 +28,7 @@
 {% render 'listFilterBlog' %}
 
   <ul>
-    {% for article in blogs %}
+    {% for articles in blogs %}
     <li>
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
