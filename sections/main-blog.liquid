@@ -50,9 +50,8 @@
   //filterByTag
   $(document).ready(function() {
 
-  var arraySelectors = $('.listArticles > ul li')
-                        .toArray()
-                        .map(e => '.' + Array.from(e.data('tags')).join('.'));
+  var arraySelectors = $('.profile-nav ul li a.cur:not(.apply)')
+                        .toArray();
     
     alert(arraySelectors);
     
