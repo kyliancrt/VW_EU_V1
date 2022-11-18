@@ -2,16 +2,6 @@
 {{ 'customer-page.css' | asset_url | stylesheet_tag }}
 
 
-{% unless customer and curtomer.tags contains 'pro' %}
-{% assign priceTile = '2.99' %}
-{% else %}
-{% assign priceTile = priceTile | minus: 2 %}
-{% endunless %}
-
-{{ priceTile }}
-
-
-
 <div class="customer register section-{{ section.id }}-padding">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
