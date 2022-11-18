@@ -28,8 +28,8 @@
 {% render 'listFilterBlog' %}
 
   <ul>
-    {%  assign url =  %}
-    {% for article in blogs.url.articles %}
+    {%  assign thisUrl = blog.url %}
+    {% for article in blogs.thisUrl.articles %}
     <li>
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
