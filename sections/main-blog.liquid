@@ -45,8 +45,9 @@
 
 
 
+  {% if blog.handle contains 'articles' %}
+    
 <script>
-
   //filterByTag
   $(document).ready(function() {
 
@@ -62,7 +63,8 @@
         }
     }
     
-  });
-  
+  });  
   
 </script>
+
+    {% endif %}
