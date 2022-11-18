@@ -42,29 +42,3 @@
   </ul>
   
 </section>
-
-
-
-  {% if blog.handle contains 'articles' %}
-    
-<script>
-  //filterByTag
-  $(document).ready(function() {
-
-  var arrayArticlesTags = $('.listArticles > ul li')
-                        .toArray()
-                        .map(e => Array.from(e.classList).join());
-    
-     for (var i = 0; i < arrayArticlesTags.length; i++) {
-        if(window.location.href.indexOf(arrayArticlesTags[i]) > -1) {
-
-      $('.listArticles > ul li').not('.' + arrayArticlesTags[i]).css('display' , 'none');
-          
-        }
-    }
-    
-  });  
-  
-</script>
-
-    {% endif %}
