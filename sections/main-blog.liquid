@@ -29,7 +29,7 @@
 
   <ul>
     {% for article in blog.articles %}
-    <li>
+    <li data-tags="{{ article.tags }}" >
       <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
       <a href="{{ article.url }}">
         Lire l'article
@@ -38,19 +38,6 @@
        {{ article.title }}
       </h3>
     </li>
-
-    <script>
-
-  //filterByTag
-  $(document).ready(function() {
-    if (window.location.href.indexOf("{{ article.tags }}") > -1) {
-      alert("{{ article.title }}");
-    }
-  });
-  
-  
-</script>
-    
     {% endfor %}
   </ul>
   
@@ -58,3 +45,14 @@
 
 
 
+<script>
+
+  //filterByTag
+  $(document).ready(function() {
+    if (window.location.href.indexOf("{{ article.tags }}") > -1) {
+      alert("{{ article.tags }}");
+    }
+  });
+  
+  
+</script>
