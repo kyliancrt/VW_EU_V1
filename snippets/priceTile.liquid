@@ -1,5 +1,0 @@
-{% unless customer and customer.tags contains 'pro' %}
-{% assign priceTile = product.first_available_variant.price | money %}
-{% else %}
-{% assign priceTile = product.first_available_variant.price | money | divided_by: 1.2 | round: 2 %}
-{% endunless %}
