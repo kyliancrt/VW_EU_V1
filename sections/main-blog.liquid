@@ -27,11 +27,18 @@
   
 {% render 'listFilterBlog' %}
 
-{% for link in linklists.blogs.links %}
-  {% assign blog = link.object %}
-  {% for article in blog.articles %}
-    <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-  {% endfor %} 
-{% endfor %}
+  <ul>
+    {% for article in blogs.this.articles %}
+    <li>
+      <div style="background-image: url('{{ article.image.src | img_url:'500x' }}');"></div>
+      <a href="{{ article.url }}">
+        Lire l'article
+      </a>
+      <h3>
+       {{ article.title }}
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
   
 </section>
