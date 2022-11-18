@@ -2,6 +2,9 @@
 {{ 'main-cart-items.js' | asset_url | script_tag }}
 
 
+{% render 'priceTile' %}
+
+
 <cart-items class="{% if cart == empty %}is-empty{% endif %}">
  <section class="cartTemplate">
 
