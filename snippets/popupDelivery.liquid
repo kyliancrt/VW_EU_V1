@@ -7,7 +7,7 @@
               <div>
                 <div>
                    <span>Réductions</span>
-                  {% unless customer and current_tags contains 'pro' %}
+                  {% unless customer and customer.tags contains 'pro' %}
                   <p>Plus de <strong>30</strong> carreaux : <span class="reduc">-10%</span></p>
                   <p>Plus de <strong>60</strong> carreaux : <span class="reduc">-15%</span></p>
                   <p>Plus de <strong>90</strong> carreaux : <span class="reduc">-20%</span></p>
