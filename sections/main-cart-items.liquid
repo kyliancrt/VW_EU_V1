@@ -201,7 +201,7 @@
         let discountPercent = 1;
         let decTotalPrice = $('#regularPrice').text().replace(',' , '.');
         let totalPrice = parseFloat(decTotalPrice);
-        let totalQuantity = parseInt(totalPrice / 2.99);
+        let totalQuantity = {{ cart.item_count }};
 
         if (totalQuantity >= 30) {
             $('.productPrice').addClass('discountEnable');
