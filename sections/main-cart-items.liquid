@@ -19,7 +19,7 @@
               {% unless customer and customer.tags contains 'pro' %}
               {% assign priceTile = 2.99 | times: item.quantity %}
               {% else %}
-              {% assign priceTile = item.original_line_price | money %}
+              {% assign priceTile = item.original_line_price | money_without_currency %}
               {% assign customerPro = true %}
               {% endunless %}
 
