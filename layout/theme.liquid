@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% else %}
   {%  for product in collections.all.products %}
     {% if product.handle contains "carreaux-adhesif-test" %}
-      {% assign priceTile = product.first_available_variant.price | money_without_currency %}
+      {% assign priceTile = 2.99 %}
     {% endif %}
   {% endfor %}
   {% assign customerPro = true %}
