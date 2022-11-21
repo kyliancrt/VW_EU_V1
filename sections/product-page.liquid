@@ -2,12 +2,24 @@
 {{ 'main-product-page.js' | asset_url | script_tag }}
 
 
-{% unless customer and customer.tags contains 'pro' %}
-{% assign priceTile = 2.99 %}
-{% else %}
-{% assign priceTile = product.first_available_variant.price | money_without_currency %}
-{% assign customerPro = true %}
-{% endunless %}
+              {% unless customer and customer.tags contains 'pro' %}
+              {% assign priceTile = 2.99 %}
+              {% else %}
+              {% assign priceTile = product.first_available_variant.price | money_without_currency %}
+              {% assign customerPro = true %}
+              {% endunless %}
+
+              {% for tag in product.tags %}
+                      {% if tag contains 'motifs_1' %}
+                      {% assign nbMotifs = 1 %}
+                      {% elsif tag contains 'motifs_2' %}
+                      {% assign nbMotifs = 2 %}
+                      {% elsif tag contains 'motifs_4' %}
+                      {% assign nbMotifs = 4 %}
+                      {% elsif tag contains 'motifs_8' %}
+                      {% assign nbMotifs = 8 %}
+                      {% endif %}
+                    {% endfor %}
 
 
         <section class="productImage">
@@ -29,18 +41,6 @@
               <img alt="Carreau adhésif Vinyl Way : {{ product.title }} - Carreau numéro 7" class="tile7" src="{{ product.images[8] | img_url:'150x' }}">     
               <img alt="Carreau adhésif Vinyl Way : {{ product.title }} - Carreau numéro 8" class="tile8" src="{{ product.images[9] | img_url:'150x' }}">    
               </div>
-
-              {% for tag in product.tags %}
-                      {% if tag contains 'motifs_1' %}
-                      {% assign nbMotifs = 1 %}
-                      {% elsif tag contains 'motifs_2' %}
-                      {% assign nbMotifs = 2 %}
-                      {% elsif tag contains 'motifs_4' %}
-                      {% assign nbMotifs = 4 %}
-                      {% elsif tag contains 'motifs_8' %}
-                      {% assign nbMotifs = 8 %}
-                      {% endif %}
-                    {% endfor %}
               
               <p>
                 Ce visuel contient <strong>{{ nbMotifs }} motif{% unless nbMotifs == 1 %}s différents{% endunless %}</strong>.<br>
