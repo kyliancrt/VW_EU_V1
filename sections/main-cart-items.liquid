@@ -147,6 +147,7 @@
                         <span id="discountPercent">0%</span>
                     </div>
                     <span class="price"><span id="totalPrice">{{ cart.total_price | money_without_currency }}</span>€</span>
+                    <small>{% if customerPro %}HT{% else %}TTC{% endif %}</small>
                 </div>
             </div>
 
