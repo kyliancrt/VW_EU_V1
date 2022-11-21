@@ -27,6 +27,22 @@
             
         <div class="listTiles">
                 <a href="{{ item.url }}">
+
+            
+           {% for tag in item.product.tags %}
+                      {% if tag contains 'motifs_1' %}
+                      {% assign nbMotifs = 1 %}
+                      {% elsif tag contains 'motifs_2' %}
+                      {% assign nbMotifs = 2 %}
+                      {% elsif tag contains 'motifs_4' %}
+                      {% assign nbMotifs = 4 %}
+                      {% elsif tag contains 'motifs_8' %}
+                      {% assign nbMotifs = 8 %}
+                        {% else %}
+                      {% assign nbMotifs = 'X' %}
+                      {% endif %}
+                    {% endfor %}
+            
             <ul>
                     <li>
                         <img alt="Carreau adhésif Vinyl Way : {{ item.product.title }} - Carreau numéro 1" loading="lazy" src="{{ item.product.images[2] | image_url: width: 100 }}">
@@ -54,20 +70,6 @@
                     </li>
                 </ul>
                 </a>
-
-           {% for tag in item.product.tags %}
-                      {% if tag contains 'motifs_1' %}
-                      {% assign nbMotifs = 1 %}
-                      {% elsif tag contains 'motifs_2' %}
-                      {% assign nbMotifs = 2 %}
-                      {% elsif tag contains 'motifs_4' %}
-                      {% assign nbMotifs = 4 %}
-                      {% elsif tag contains 'motifs_8' %}
-                      {% assign nbMotifs = 8 %}
-                        {% else %}
-                      {% assign nbMotifs = 'X' %}
-                      {% endif %}
-                    {% endfor %}
           
                   <p>
                 Ce visuel contient <strong>{{ nbMotifs }} motif{% unless nbMotifs == 1 %}s différents{% endunless %}</strong>.<br>
