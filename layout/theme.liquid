@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% unless customer and customer.tags contains 'pro' %}
   {% assign priceTile = 2.99 %}
 {% else %}
-  {% for product in collection.products %}
+  {%  for product in collections.all.products %}
     {% if product.handle contains "carreaux-adhesif-test" %}
       {% assign priceTile = product.first_available_variant.price | money_without_currency %}
     {% endif %}
