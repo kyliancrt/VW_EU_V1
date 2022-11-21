@@ -12,13 +12,16 @@
         </div>
         <form action="{{ routes.cart_url }}" method="post">
           
-              {% assign priceTile = 2 %}
-              
         <div class="cartGrid">
 
           {% for item in cart.items %}
             
-              
+              {% unless customer and customer.tags contains 'pro' %}
+              {% assign priceTile = 2.99 | times: 2 %}
+              {% else %}
+              {% assign priceTile = '2' %}
+              {% assign customerPro = true %}
+              {% endunless %}
 
                {% for tag in item.product.tags %}
                       {% if tag contains 'motifs_1' %}
