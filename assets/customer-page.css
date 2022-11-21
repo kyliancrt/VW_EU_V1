@@ -68,6 +68,14 @@ form {
   padding-bottom: 2rem;
 }
 
+.template-customers-register .paragraphPro {
+  display: none;
+}
+
+.template-customers-register.pro .paragraphPro {
+  display: block;
+}
+
 .template-customers-register form {
   display: grid;
   grid-template-columns: repeat(2,1fr);
