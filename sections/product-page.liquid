@@ -318,8 +318,8 @@
       let priceTileWithDot = priceTile.replace(/,/g, '.');
       alert(priceTileWithDot);
       
-        let discountPrice = (valQuantity * {{ priceTile }} * discountPercent).toFixed(2);
-        let regularPrice = (valQuantity * {{ priceTile }}).toFixed(2);
+        let discountPrice = (valQuantity * priceTileWithDot * discountPercent).toFixed(2);
+        let regularPrice = (valQuantity * priceTileWithDot).toFixed(2);
         $('#regularPrice').text(regularPrice);
         $('#price').text(discountPrice);
 
