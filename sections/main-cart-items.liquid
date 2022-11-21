@@ -89,7 +89,7 @@
             <div>
             <div class="productPrice">
                  <div>
-                        <span class="price" id="price">{{ item.original_line_price | money }}</span>
+                        <span class="price" id="price">{{line_item.quantity }}</span>{{line_item.quantity }}
                     </div>
               <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
