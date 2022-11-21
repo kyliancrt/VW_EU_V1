@@ -2,13 +2,6 @@
 {{ 'main-cart-items.js' | asset_url | script_tag }}
 
 
-{% unless customer and customer.tags contains 'pro' %}
-{% assign priceTile = 2.99 %}
-{% else %}
-{% assign priceTile = 2.99 | round: 2 %}
-{% assign customerPro = true %}
-{% endunless %}
-
 
 <cart-items class="{% if cart == empty %}is-empty{% endif %}">
  <section class="cartTemplate">
@@ -27,6 +20,13 @@
               {% assign priceTile = '2,99€' %}
               {% else %}
               {% assign priceTile = item.original_line_price | money %}
+              {% assign customerPro = true %}
+              {% endunless %}         
+
+              {% unless customer and customer.tags contains 'pro' %}
+              {% assign priceTile = 2.99 | times: 2 %}
+              {% else %}
+              {% assign priceTile = 2.99 | times: 2 %}
               {% assign customerPro = true %}
               {% endunless %}
 
