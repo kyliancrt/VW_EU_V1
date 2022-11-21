@@ -204,6 +204,11 @@
         let totalQuantity = {{ cart.item_count }};
 
       {% if customer and customer.tags contains 'pro' %}
+        
+            discountPercent = 0.70;
+            $('#discountPercent').text('-30%');
+      {% else %}        
+      
         if (totalQuantity >= 30) {
             $('.productPrice').addClass('discountEnable');
         }
@@ -223,9 +228,6 @@
             discountPercent = 0.80;
             $('#discountPercent').text('-20%');
         }    
-      {% else %}        
-            discountPercent = 0.70;
-            $('#discountPercent').text('-30%');
       {% endif %}
       
         let discountPrice = (totalPrice * discountPercent).toFixed(2);
