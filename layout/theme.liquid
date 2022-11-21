@@ -67,6 +67,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+
+    
+{% unless customer and customer.tags contains 'pro' %}
+{% assign priceTile = 2.99 %}
+{% else %}
+{% assign priceTile = product.first_available_variant.price | money_without_currency %}
+{% assign customerPro = true %}
+{% endunless %}
+
+    
   </head>
 
   <body class="gradient">
