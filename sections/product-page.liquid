@@ -316,7 +316,7 @@
 
       let priceTile = "{{ priceTile }}"
       let priceTileWithDot = priceTile.replace(",",".");
-      alert(priceTile);
+      alert(priceTileWithDot);
       
         let discountPrice = (valQuantity * {{ priceTile }} * discountPercent).toFixed(2);
         let regularPrice = (valQuantity * {{ priceTile }}).toFixed(2);
