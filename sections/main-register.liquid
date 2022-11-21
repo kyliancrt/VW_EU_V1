@@ -212,7 +212,7 @@
                 $(".toggleTypeAccount").text('Je suis un particulier');
                 $("h1").append('<span>Professionnel</spann>');
                 $(".toggleTypeAccount").attr("href", "/account/register/")
-                $("#customer_tags").val('pro');                
+                $("#customer_tags").val('pro_' + $("#RegisterForm-country").val());                
               }
               else {
                 $('.inputPro input').prop('disabled', true);
