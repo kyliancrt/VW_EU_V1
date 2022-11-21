@@ -2,10 +2,15 @@
 {{ 'header.js' | asset_url | script_tag }}
 
     
+   
 {% unless customer and customer.tags contains 'pro' %}
   {% assign priceTile = 2.99 %}
 {% else %}
+  {%  for product in collections.all.products %}
+    {% if product.handle contains "carreaux-adhesif-test" %}
       {% assign priceTile = 2.99 %}
+    {% endif %}
+  {% endfor %}
   {% assign customerPro = true %}
 {% endunless %}
 
