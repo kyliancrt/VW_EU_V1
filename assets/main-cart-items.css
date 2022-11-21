@@ -265,11 +265,8 @@
 
 .template-cart .divTotal .btnInfos {
     padding-bottom: 4px;
-    border-bottom: 2px solid #000;
     width: max-content;
     position: relative;
-    outline: 1px solid #fff;
-    outline-offset: -1px;
     transition: all 0.1s ease;
     cursor: pointer;
 }
@@ -285,11 +282,7 @@ transition: all .2s ease;
 
 .template-cart .divTotal .btnInfos:hover::before {
     margin-right: 0.3rem;
-    margin-left: 0.1rem;
-}
-
-.template-cart .divTotal .btnInfos:hover {
-    outline-color: transparent;
+    margin-left: 0.3rem;
 }
 
 .template-cart .divTotal {
