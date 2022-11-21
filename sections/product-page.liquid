@@ -316,8 +316,8 @@
 
         let discountPrice = (valQuantity * {{ priceTile }} * discountPercent).toFixed(2);
         let regularPrice = (valQuantity * {{ priceTile }}).toFixed(2);
-        $('#regularPrice').text(regularPrice);
-        $('#price').text(discountPrice);
+        $('#regularPrice').text(regularPrice).replace(',','.');
+        $('#price').text(discountPrice).replace(',','.');
 
     };
   
