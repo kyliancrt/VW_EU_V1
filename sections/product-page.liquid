@@ -1,10 +1,5 @@
 {{ 'main-product-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-product-page.js' | asset_url | script_tag }}
-
-              {{ shop.url }}
-              <br>
-              {{ shop.domain }}
-
               {% unless customer and customer.tags contains 'pro' %}
               {% assign priceTile = 2.99 %}
               {% else %}
