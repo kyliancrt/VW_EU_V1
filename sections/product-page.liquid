@@ -3,9 +3,9 @@
 
 
 {% unless customer and customer.tags contains 'pro' %}
-{% assign priceTile = product.first_available_variant.price %}
-{% else %}
 {% assign priceTile = 2.99 %}
+{% else %}
+{% assign priceTile = product.first_available_variant.price %}
 {% assign customerPro = true %}
 {% endunless %}
 
