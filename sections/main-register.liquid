@@ -212,13 +212,18 @@
                 $(".toggleTypeAccount").text('Je suis un particulier');
                 $("h1").append('<span>Professionnel</spann>');
                 $(".toggleTypeAccount").attr("href", "/account/register/")
-                $("#customer_tags").val('pro_' + $("#RegisterForm-country").val());                
+                $("#customer_tags").val('pro');                
               }
               else {
                 $('.inputPro input').prop('disabled', true);
                 $('.inputPro select').prop('disabled', true);
               }
           });              
+          $( "#customer_tags" ).change(function() {
+            $("#customer_tags").val('pro_' + $("#RegisterForm-country").val());  
+          });
+              
+              
 
              // verificationTVA
         function verificationTVA() {         
