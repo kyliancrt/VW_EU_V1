@@ -1,6 +1,15 @@
 {{ 'header.css' | asset_url | stylesheet_tag }}
 {{ 'header.js' | asset_url | script_tag }}
 
+    
+{% unless customer and customer.tags contains 'pro' %}
+  {% assign priceTile = 2.99 %}
+{% else %}
+      {% assign priceTile = 2.99 %}
+  {% assign customerPro = true %}
+{% endunless %}
+
+
 <header class="Header">
         <div class="announcement">
             <span class="madeinfrance"><img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/madeinfrance.svg?v=1666779214">Made in France</span>
@@ -44,7 +53,7 @@
             </div>
             <div class="logoHeader">
                 <a href="/"><img src="https://cdn.shopify.com/s/files/1/0567/1220/0371/files/LogoVw.svg?v=1666779214">
-                    <span>Vinyl Way</span>
+                    <span>Vinyl Way</span> {{ priceTile }}
                 </a>
             </div>
             <div class="btnsHeader">
@@ -61,14 +70,4 @@
                 </div>
             </div>
         </div>
-                              {{ priceTile }}
     </header>
-
-
-    
-{% unless customer and customer.tags contains 'pro' %}
-  {% assign priceTile = 2.99 %}
-{% else %}
-      {% assign priceTile = 2.99 %}
-  {% assign customerPro = true %}
-{% endunless %}
