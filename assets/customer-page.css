@@ -67,6 +67,10 @@ form {
 .template-customers-register form {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  margin-top: 2rem;
+}
+.template-customers-register h1 {
+  margin-top: 2rem;
 }
 
 .template-customers-register form .inputPro {
