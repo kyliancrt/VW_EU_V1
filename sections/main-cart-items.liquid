@@ -203,7 +203,7 @@
         let totalPrice = parseFloat(decTotalPrice);
         let totalQuantity = {{ cart.item_count }};
 
-      {% unless customer and customer.tags contains 'pro' %}
+      {% if customer and customer.tags contains 'pro' %}
         if (totalQuantity >= 30) {
             $('.productPrice').addClass('discountEnable');
         }
@@ -226,7 +226,7 @@
       {% else %}        
             discountPercent = 0.70;
             $('#discountPercent').text('-30%');
-      {% endunless %}
+      {% endif %}
       
         let discountPrice = (totalPrice * discountPercent).toFixed(2);
         $('#totalPrice').text(discountPrice);
