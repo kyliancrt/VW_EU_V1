@@ -203,7 +203,7 @@
         let totalPrice = parseFloat(decTotalPrice);
         let totalQuantity = {{ cart.item_count }};
 
-      {% unless customerPro %}
+      {% unless customer and customer.tags contains 'pro' %}
         if (totalQuantity >= 30) {
             $('.productPrice').addClass('discountEnable');
         }
