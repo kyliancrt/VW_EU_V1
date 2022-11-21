@@ -68,6 +68,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     </script>
 
+  </head>
+
+  <body class="gradient">
 
     
 {% unless customer and customer.tags contains 'pro' %}
@@ -76,11 +79,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% assign priceTile = product.first_available_variant.price | money_without_currency %}
 {% assign customerPro = true %}
 {% endunless %}
-
-    
-  </head>
-
-  <body class="gradient">
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
