@@ -205,8 +205,10 @@
 
       {% if customer and customer.tags contains 'pro' %}
         
-            discountPercent = 0.70;
-            $('#discountPercent').text('-30%');
+        if (totalQuantity >= 30) {
+            discountPercent = 0.90;
+            $('#discountPercent').text('-10%');
+        }
       {% else %}        
       
         if (totalQuantity >= 30) {
