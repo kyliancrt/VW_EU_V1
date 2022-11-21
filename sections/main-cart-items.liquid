@@ -12,7 +12,8 @@
         </div>
         <form action="{{ routes.cart_url }}" method="post">
           
-              {% assign priceTile = '2' %}
+              {% assign priceTile = 2 %}
+              
         <div class="cartGrid">
 
           {% for item in cart.items %}
@@ -80,7 +81,7 @@
             <div>
             <div class="productPrice">
                  <div>
-                          <span>{{ priceTitle }}x</span>
+                          <span>{{ priceTile }}x</span>
                     </div>
               <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
