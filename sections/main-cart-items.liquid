@@ -23,13 +23,14 @@
 
           {% for item in cart.items %}
             
-        <div  id="CartItem-{{ item.index | plus: 1 }}">
-            
-        <div class="listTiles">
-                <a href="{{ item.url }}">
+              {% unless customer and customer.tags contains 'pro' %}
+              {% assign priceTile = '2,99€' %}
+              {% else %}
+              {% assign priceTile = item.original_line_price | money %}
+              {% assign customerPro = true %}
+              {% endunless %}
 
-            
-           {% for tag in item.product.tags %}
+              {% for tag in product.tags %}
                       {% if tag contains 'motifs_1' %}
                       {% assign nbMotifs = 1 %}
                       {% elsif tag contains 'motifs_2' %}
@@ -38,10 +39,13 @@
                       {% assign nbMotifs = 4 %}
                       {% elsif tag contains 'motifs_8' %}
                       {% assign nbMotifs = 8 %}
-                        {% else %}
-                      {% assign nbMotifs = 'X' %}
                       {% endif %}
                     {% endfor %}
+            
+        <div  id="CartItem-{{ item.index | plus: 1 }}">
+            
+        <div class="listTiles">
+                <a href="{{ item.url }}">
             
             <ul>
                     <li>
