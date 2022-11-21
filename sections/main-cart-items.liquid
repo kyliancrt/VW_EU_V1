@@ -204,7 +204,7 @@
         let totalQuantity = {{ cart.item_count }};
         let customerPro = false;
 
-      {% if customer %}
+      {% if customer and customer.tags contains 'pro' %}
         customerPro = true;
       {% endif %}
 
