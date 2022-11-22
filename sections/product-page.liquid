@@ -324,6 +324,8 @@
     
       let varTTC = $('#variant-TTC').data('href');
       let varHT = $('#variant-HT').data('href');
+    
+    if location.href.indexOf('variant') > 1 {
       window.location.href = varTTC;
      {% unless customer and customer.tags contains "pro"  %}      
       {% else %}            
@@ -331,6 +333,7 @@
       {% endunless %}
       window.location.href = varHT;
       {% endunless %}    
+    }
     
   })();
 
