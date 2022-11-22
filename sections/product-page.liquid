@@ -1,5 +1,6 @@
 {{ 'main-product-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-product-page.js' | asset_url | script_tag }}
+
               {% unless customer and customer.tags contains 'pro' %}
               {% assign priceTile = 2.99 %}
               {% else %}
@@ -278,7 +279,7 @@
 <script>
 
    // displayPrice
-    function displayPrice() {
+    (function displayPrice() {
         let discountPercent = 1;
         let valQuantity = $('#quantityCheckout').val();
 
@@ -316,10 +317,7 @@
         $('#regularPrice').text(regularPrice);
         $('#price').text(discountPrice);
 
-    };
-  
-  displayPrice();
+    })();
 
-  
   
 </script>
