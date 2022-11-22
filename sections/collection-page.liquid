@@ -220,7 +220,7 @@
           $(".template-collection .productsList li > div > span").click(function() {             
    let refProduct = this.id.replace("VIR","");
    let smallRefProduct = refProduct.slice(0, 5);
-   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(https://ftp.vinyl-wall.com/vinylway-europe/mes/" + resolutionMES + "/" + smallRefProduct + "-" + selectedPiece + ".jpg)");  
+   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(https://ftp.vinyl-wall.com/vinylway-europe/mes/" + resolutionMES + "/" + smallRefProduct + "-MES-" + selectedPiece + ".jpg)");  
    actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
    selectedHref = $(this).parent().children('a').attr('href');
    $(".template-collection .popupPreview .popupPreviewContent > div > :nth-child(2)").attr("href", selectedHref)
