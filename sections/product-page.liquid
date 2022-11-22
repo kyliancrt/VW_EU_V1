@@ -22,10 +22,20 @@
 
 
     {% for variant in product.variants %}
-    <span class="variantValut" id="{{ variant.id }}" data-href="{{ variant.url }}">{{ variant.title }}</span>
+    <span class="variantValue" id="{{ variant.id }}" data-href="{{ variant.url }}">{{ variant.title }}</span>
     {% endfor %}
-                    
+    
+    {% unless customer and customer.tags contains "pro"  %}
+      
+      {% else %}      
+      
+    {% unless customer.tags contains 'FR' %}
+      
+      {% endunless %}
 
+      {% endunless %}
+      
+                    
 
         <section class="productImage">
 
