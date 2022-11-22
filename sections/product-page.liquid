@@ -328,11 +328,11 @@
     if (window.location.href.indexOf('variant') === -1) {
      {% unless customer and customer.tags contains "pro"  %}      
       location.href = varTTC;
-      {% else %}            
+      {% else %}       
     {% unless customer.tags contains 'FR' %}
       {% endunless %}
       location.href = varHT;
-      {% endunless %}    
+      {% endunless %}
     }
     
   })();
