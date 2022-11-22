@@ -278,7 +278,7 @@
 <script>
 
    // displayPrice
-    (function displayPrice() {
+    function displayPrice() {
         let discountPercent = 1;
         let valQuantity = $('#quantityCheckout').val();
 
@@ -316,7 +316,10 @@
         $('#regularPrice').text(regularPrice);
         $('#price').text(discountPrice);
 
-    })();
+    };
+  
+  displayPrice();
 
+  
   
 </script>
