@@ -378,7 +378,7 @@
     transition: all .2s ease;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(1)::before {
+.template-collection .Products .black .productsList li>div> :nth-child(1)::before {
     filter: invert(1);
 }
 
