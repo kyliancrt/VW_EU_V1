@@ -325,13 +325,13 @@
       let varTTC = $('#variant-TTC').data('href');
       let varHT = $('#variant-HT').data('href');
     
-    if (location.href.indexOf('variant')) > -1 {
-      window.location.href = varTTC;
+    if (window.location.href.indexOf('variant')) > -1 {
+      location.href = varTTC;
      {% unless customer and customer.tags contains "pro"  %}      
       {% else %}            
     {% unless customer.tags contains 'FR' %}
       {% endunless %}
-      window.location.href = varHT;
+      location.href = varHT;
       {% endunless %}    
     }
     
