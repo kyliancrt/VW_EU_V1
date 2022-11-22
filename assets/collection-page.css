@@ -368,6 +368,16 @@
     color: #000;
 }
 
+.template-collection .Products .white .productsList li>div> :nth-child(1)::before {
+    content: "";
+    background-image: url(https://cdn.shopify.com/s/files/1/0567/1220/0371/files/arrow.svg?v=1667990253);
+    width: 15px;
+    height: 15px;
+    margin-right: .4rem;
+    display: block;
+    transition: all .2s ease;
+}
+
 .template-collection .Products .white .productsList li>div> :nth-child(2) {
     border-color: #fff;
     fill: #fff;
