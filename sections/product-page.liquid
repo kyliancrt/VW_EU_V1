@@ -23,8 +23,6 @@
                   {% for variant in product.variants %}
                      <input id="variant-{{ variant.option3 }}" data-href="{{ variant.url }}" type="hidden" value="variant-{{ variant.option3 }}" />
                   {% endfor %}
-      
-                    {{ product.selected_or_first_available_variant.option3 }}
 
         <section class="productImage">
 
