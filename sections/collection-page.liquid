@@ -254,7 +254,7 @@
 
          $(".template-collection .headerCollection .blocFilters ul li").not(".active").click(function() {
           let dataHref = $(this).children('a').data('href');
-          location.href = dataHref + "?" + selectedPiece.toLowerCase();
+          location.href = dataHref + "/+" + selectedPiece.toLowerCase();
         });
 
        // loadUrlPiece
@@ -275,7 +275,7 @@
        // productHref
          $(".template-collection .Products .productsList li > div > a").click(function() {
           let dataHref = $(this).data('href');
-          location.href = dataHref + "?" + selectedPiece.toLowerCase();
+          location.href = dataHref + "/+" + selectedPiece.toLowerCase();
         });
 
         
