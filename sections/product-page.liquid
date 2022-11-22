@@ -315,7 +315,7 @@
     
     if (window.location.href.indexOf('variant') === -1) {
      {% if customer and customer.tags contains "pro"  %}
-    {% unless customer.tags contains 'pro_FR' %}
+    {% unless customer.tags contains 'pro_R' %}
       location.href = varHT;
       {% endunless %}
       {% endif %}
