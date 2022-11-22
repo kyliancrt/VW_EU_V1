@@ -4,7 +4,7 @@
               {% unless customer and customer.tags contains 'pro' %}
               {% assign priceTile = 2.99 %}
               {% else %}
-              {% assign priceTile = product.first_available_variant.price | money_without_currency %}
+              {% assign priceTile = 2.49 %}
               {% assign customerPro = true %}
               {% endunless %}
 
