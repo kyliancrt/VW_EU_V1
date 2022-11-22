@@ -336,9 +336,6 @@
        {% unless customer and customer.tags contains "pro"  %}      
       location.href = varTTC;
       {% else %}       
-    {% unless customer.tags contains 'FR' %}
-      location.href = varHT;
-      {% endunless %}
       {% endunless %}
     }
     
