@@ -20,6 +20,17 @@
                     {% endfor %}
 
 
+
+    {% for variant in product.variants %}
+    <option value="{{ variant.id }}"
+      {% if variant == current_variant %}selected="selected"{% endif %}
+    >
+      {{ variant.title }} - {{ variant.price | money }}
+    </option>
+  {% endfor %}
+                    
+
+
         <section class="productImage">
 
           <div class="ProductImageContent">
