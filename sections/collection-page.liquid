@@ -240,7 +240,7 @@
         $(this).removeClass('active');
           location.href = "{{ collection.url }}/?" + selectedPiece.toLowerCase();
           } else {
-          location.href = "{{ collection.url }}/" + this.id + "?" + selectedPiece.toLowerCase();
+          location.href = "{{ collection.url }}/" + this.id + "+" + selectedPiece.toLowerCase();
           } 
           });
        
@@ -254,7 +254,7 @@
 
          $(".template-collection .headerCollection .blocFilters ul li").not(".active").click(function() {
           let dataHref = $(this).children('a').data('href');
-          location.href = dataHref + "?" + selectedPiece.toLowerCase();
+          location.href = dataHref + "+" + selectedPiece.toLowerCase();
         });
 
        // loadUrlPiece
