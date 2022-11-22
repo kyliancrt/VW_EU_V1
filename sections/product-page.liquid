@@ -24,7 +24,7 @@
                   <span class="variantValue" id="variant-{{ variant.option3 }}" data-href="{{ variant.url }}">variant-{{ variant.option3 }}</span>
                   {% endfor %}
       
-                    {{ product.selected_variant.price }}
+                    {{ product.selected_or_first_available_variant.option3 }}
 
         <section class="productImage">
 
