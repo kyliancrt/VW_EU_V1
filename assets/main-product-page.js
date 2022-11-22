@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let floorArray = ['sol', 'floor'];
     let furnitureArray = ['meuble', 'furniture'];
     
-    let urlPiece = location.href.substring(location.href.indexOf('#') + 1);
+    let urlPiece = location.href.substring(location.href.indexOf('#?') + 1);
     let selectedPiece;
 if(window.location.href.indexOf('#') > -1 ) {
    if ($.inArray(urlPiece , kitchenArray) > -1) {
@@ -170,7 +170,6 @@ if(window.location.href.indexOf('#') > -1 ) {
         $('.template-product .productImage .slide').removeClass('active');
         $('.' + selectedPiece).addClass('active');
         $('#' + selectedPiece).addClass('active');
-          alert(selectedPiece);
   }
   
   loadPiece();
