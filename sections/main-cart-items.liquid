@@ -17,9 +17,7 @@
           {% for item in cart.items %}
             
               {% unless customer and customer.tags contains 'pro' %}
-              {% assign priceTile = 2.99 | times: item.quantity %}
               {% else %}
-              {% assign priceTile = item.original_line_price | money_without_currency %}
               {% assign customerPro = true %}
               {% endunless %}
 
@@ -82,7 +80,7 @@
             <div>
             <div class="productPrice">
                  <div>
-                           <span class="price" id="price">{{ item.price | money_without_currency }}€</span>
+                           <span class="price" id="price">{{ item.original_line_price | money_without_currency }}€</span>
                     </div>
               <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
