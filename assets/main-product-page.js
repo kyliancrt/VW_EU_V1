@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     let urlPiece = location.href.substring(location.href.indexOf('#') + 1);
     let selectedPiece;
-if(location.href.indexOf('#')) {
+if(window.location.href.indexOf('#')) {
    if ($.inArray(urlPiece , kitchenArray) > -1) {
      selectedPiece = "slide1";
     }
