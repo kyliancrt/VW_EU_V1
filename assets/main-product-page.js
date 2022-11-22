@@ -172,9 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
           
   }
   
-    if (window.location.href.indexOf("?") > -1) {
   loadPiece();
-    }
   
 
   
