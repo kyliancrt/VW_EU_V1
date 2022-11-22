@@ -322,14 +322,14 @@
   
   (function loadVariant(){
     
-     {% unless customer and customer.tags contains "pro"  %}
-      
-      {% else %}      
-      
+      let varTTC = $('#variant-TTC').data('href');
+      let varHT = $('#variant-HT').data('href');
+      window.location.href = varTCT;
+     {% unless customer and customer.tags contains "pro"  %}      
+      {% else %}            
     {% unless customer.tags contains 'FR' %}
-      
       {% endunless %}
-
+      window.location.href = varHT;
       {% endunless %}    
     
   })();
