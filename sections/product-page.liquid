@@ -20,21 +20,9 @@
                       {% endif %}
                     {% endfor %}
 
-
-
-    {% for variant in product.variants %}
-    <span class="variantValue" id="variant-{{ variant.option3 }}" data-href="{{ variant.url }}">variant-{{ variant.option3 }}</span>
-    {% endfor %}
-    
-    {% unless customer and customer.tags contains "pro"  %}
-      
-      {% else %}      
-      
-    {% unless customer.tags contains 'FR' %}
-      
-      {% endunless %}
-
-      {% endunless %}
+                  {% for variant in product.variants %}
+                  <span class="variantValue" id="variant-{{ variant.option3 }}" data-href="{{ variant.url }}">variant-{{ variant.option3 }}</span>
+                  {% endfor %}
       
                     
 
