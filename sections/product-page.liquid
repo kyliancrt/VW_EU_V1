@@ -22,12 +22,8 @@
 
 
     {% for variant in product.variants %}
-    <option value="{{ variant.id }}"
-      {% if variant == current_variant %}selected="selected"{% endif %}
-    >
-      {{ variant.title }} - {{ variant.price | money }}
-    </option>
-  {% endfor %}
+    <span id="{{ variant.id }}" data-href="{{ variant.url }}">{{ variant.title }}</span>
+    {% endfor %}
                     
 
 
