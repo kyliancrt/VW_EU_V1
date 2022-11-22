@@ -321,7 +321,7 @@
     else {
      {% if customer and customer.tags contains "pro"  %}
     {% unless customer.tags contains 'pro_R' %}
-      location.href = varHT;
+      location.href = "{{ product.url }}";
       {% endunless %}
       {% endif %}
     }
