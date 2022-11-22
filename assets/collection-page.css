@@ -379,7 +379,7 @@
 }
 
 .template-collection .Products .productsList li>div> :nth-child(1)::before {
-filter: reverse;
+    filter: invert(1);
 }
 
 .template-collection .Products .white .productsList li>div> :nth-child(2) {
