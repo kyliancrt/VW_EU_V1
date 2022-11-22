@@ -141,7 +141,7 @@
             </div>
             <div class="btnsOrders">
               
-          <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+          <input name="id" value="{{ product.selected_or_first_available_variant.id }}" type="hidden" />
           <input id="btnCheckout" class="btnCheckout" name="add" value="Ajouter au panier" type="submit" /> 
                 <a class="btnSample">commander un échantillon</a>
             </div>
