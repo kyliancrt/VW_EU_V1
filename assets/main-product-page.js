@@ -160,11 +160,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
    if ($.inArray(urlPiece , furnitureArray) > -1) {
      selectedPiece = "slide7";
-    }
+    }   
     
-   else {
-     selectedPiece = "slide1";
-    }
         $('.template-product .productImage .pagination ul li').removeClass('active');
         $('.template-product .productImage .slide').removeClass('active');
         $('.' + selectedPiece).addClass('active');
