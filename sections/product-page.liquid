@@ -316,6 +316,8 @@
      if (window.location.href.indexOf("variant") > -1) {
        {% unless customer and customer.tags contains "pro"  %}      
       location.href = '{{ product.url }}';
+       {% elsif customer and customer.tags contains "pro_FR" %}           
+      location.href = '{{ product.url }}';
       {% endunless %}
     }
     else {
