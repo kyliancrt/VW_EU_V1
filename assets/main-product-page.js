@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let floorArray = ['sol', 'floor'];
     let furnitureArray = ['meuble', 'furniture'];
     
-    let urlPiece = location.href.substring(location.href.indexOf('?') + 1);
+    let urlPiece = location.href.substring(location.href.indexOf('#') + 1);
     let selectedPiece;
   
    if ($.inArray(urlPiece , kitchenArray) > -1) {
