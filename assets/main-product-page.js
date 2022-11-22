@@ -170,7 +170,6 @@ if(window.location.href.indexOf('#')) {
         $('.template-product .productImage .slide').removeClass('active');
         $('.' + selectedPiece).addClass('active');
         $('#' + selectedPiece).addClass('active');
-          alert(selectedPiece);
   }
   
   loadPiece();
