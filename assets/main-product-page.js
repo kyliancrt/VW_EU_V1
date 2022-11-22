@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
    if ($.inArray(urlPiece , showerArray) > -1) {
      selectedPiece = "slide5";
-     alert('douche');
     }
     
    if ($.inArray(urlPiece , floorArray) > -1) {
