@@ -89,8 +89,9 @@
 
 
            <div class="black">
-                <ul class="productsList">                  
-                   {% for product in collection.products %}               
+                <ul class="productsList">    
+                  
+                  {% for item in search.results %}               
                     <li>
                         <span>{{ product.title }}</span>
                         <a>
