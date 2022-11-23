@@ -383,6 +383,12 @@
   animation: searchHeaderDesktopHover 0.7s forwards;
 }
 
+.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.notActive input {
+  display: flex;
+  -webkit-animation: searchHeaderDesktopHover 0.7s backwards;
+  animation: searchHeaderDesktopHover 0.7s backwards;
+}
+
 @keyframes searchHeaderDesktopHover {
     0% {
         width: 0;
