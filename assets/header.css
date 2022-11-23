@@ -412,5 +412,14 @@
         font-weight: bold;
     }
 
+    .Header .btnsHeader .btnPro {
+      display: flex;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      padding: 5px 10px;
+      align-items: center;
+    }
+
 
 }
