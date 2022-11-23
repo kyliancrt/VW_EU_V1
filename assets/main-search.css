@@ -1,5 +1,5 @@
 
-.productItem {
+.itemProduct {
     padding-bottom: 1.5rem;
     width: 100%;
     display: flex;
@@ -7,12 +7,12 @@
 }
 
 
-.productItem>span {
+.itemProduct>span {
     font-weight: 900;
     font-size: 1.2rem;
 }
 
-.productItem>a img {
+.itemProduct>a img {
     margin: 0.7rem 0;
     transition: all 0.2s ease;
     width: 150px;
@@ -20,12 +20,12 @@
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.productItem>a img:hover {
+.itemProduct>a img:hover {
     margin: 0.7rem 0;
     transform: scale(1.04);
 }
 
-.productItem>div {
+.itemProduct>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@
     margin: auto;
 }
 
-.productItem>div> :nth-child(1) {
+.itemProduct>div> :nth-child(1) {
     background-color: transparent;
     text-transform: uppercase;
     height: 100%;
@@ -46,7 +46,7 @@
     padding: 0;
 }
 
-.productItem>div> :nth-child(2) {
+.itemProduct>div> :nth-child(2) {
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -62,44 +62,44 @@
     align-items: center;
 }
 
-.productItem>div> :nth-child(2) svg {
+.itemProduct>div> :nth-child(2) svg {
     width: 19px;
 }
 
-.productItem>div> :nth-child(1) {
+.itemProduct>div> :nth-child(1) {
     background-color: #000;
     color: #fff;
     border: 2px solid transparent;
 }
 
-.productItem>div> :nth-child(1):hover {
+.itemProduct>div> :nth-child(1):hover {
     filter: invert(1);
     border-color: #fff;
 }
 
 
-.productItem>div> :nth-child(2) {
+.itemProduct>div> :nth-child(2) {
     border-color: #000;
     fill: #000;
 }
 
-.productItem>span {
+.itemProduct>span {
     color: #000;
 }
 
-.productItem>div> :nth-child(2):hover {
+.itemProduct>div> :nth-child(2):hover {
     background-color: #000;
     border-color: transparent;
     fill: #fff;
 }
 
 
-.productItem>div> :nth-child(1) {
+.itemProduct>div> :nth-child(1) {
     background-color: #fff;
     color: #000;
 }
 
-.productItem>div> :nth-child(1)::before {
+.itemProduct>div> :nth-child(1)::before {
     content: "";
     background-image: url(https://cdn.shopify.com/s/files/1/0567/1220/0371/files/arrow.svg?v=1667990253);
     width: 15px;
@@ -109,11 +109,11 @@
     transition: all .2s ease;
 }
 
-.productItem>div> :nth-child(1)::before {
+.itemProduct>div> :nth-child(1)::before {
     filter: invert(1);
 }
 
-.productItem>div> :nth-child(2) {
+.itemProduct>div> :nth-child(2) {
     border-color: #fff;
     fill: #fff;
 }
