@@ -392,10 +392,12 @@
 
 @keyframes searchHeaderDesktopHover {
     0% {
+        display: none;
         width: 0;
     }
 
     100% {
+        display: flex;
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
         width: 100%;
