@@ -688,7 +688,7 @@
     }
 
      .Products .productsList li>div> :nth-child(1) {
-        padding: 0 1rem;
+        padding: 0;
     }
 
 }
@@ -916,10 +916,6 @@
 
      .Products .productsList li>div {
         width: 170px;
-    }
-
-     .Products .productsList li>div> :nth-child(1) {
-        padding: 0 1rem;
     }
 
      .collectionCollections .Products>div {
