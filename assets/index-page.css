@@ -730,12 +730,13 @@ se
 
 .template-index .Transform .parallax-container {
   position: relative;
-  min-height: 100vh;
   overflow: hidden;
 }
 
 .template-index .Transform .bgTiles .parallax {
-   position: absolute;
+  position: absolute;
+  width: auto;
+  height: 150%;  
 }
 
 
