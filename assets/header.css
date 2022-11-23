@@ -336,6 +336,33 @@
       display: none;
     }
 
+.searchHeader {
+  display: flex;
+  align-items: center;
+}
+.searchHeader input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid rgb(0 0 0 / .3);
+  height: 30px;
+  width: 150px;
+  padding-left: 8px;
+  border-radius: 100px;
+}
+.searchHeader button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchHeader button {
+  width: 25px;
+  padding-bottom: 2px;
+  height: 25px;
+}
+
 
 /* MEDIA SCREEN */
 
