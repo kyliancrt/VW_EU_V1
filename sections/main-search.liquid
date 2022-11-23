@@ -77,8 +77,7 @@
            <div class="black">
                 <ul class="productsList">  
                   {% for item in search.results %}
-                 {%- case item.object_type -%}
-                      {%- when 'product' -%}
+                 {% if item.object_type contains "product" %}
                   <li>
                         <span>{{ product.title }}</span>
                         <a>
@@ -96,7 +95,7 @@
                                 </svg></span>
                         </div>
                     </li>           
-                    {%- endcase -%}
+                    {% endif %}
               {% endfor %}    
                 </ul>
                                     </div>
