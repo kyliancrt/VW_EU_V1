@@ -82,7 +82,7 @@
                   <li>
                         <span>{{ product.title }}</span>
                         <a>
-                          <img alt="Carreau adhésif {{ product.title }}" loading="lazy" src="{{ item.product.images[1] | image_url: width: 100 }}">
+                          <img alt="Carreau adhésif {{ product.title }}" loading="lazy" src="{{ item.product.images[1] |  img_url: '200x' }}">
                         </a>
                         <div>
                             <a data-href="{{ product.url }}">Produit</a>
