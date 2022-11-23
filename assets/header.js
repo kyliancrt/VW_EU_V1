@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $( ".searchHeaderDesktop img" ).hover(function() {
     $(".searchHeaderDesktop").addClass("active");
 });
-  $( ".Header" ).mouseuut(function() {
+  $( "main" ).hover(function() {
     $(".searchHeaderDesktop").removeClass("active");
 });
 
