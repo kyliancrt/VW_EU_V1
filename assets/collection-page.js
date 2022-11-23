@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if ($(window).width() < 1025) {
         //popupPreviewShow
 
-        $(".template-collection .productsList li > div > :nth-child(2)").click(function () {
+        $(".productsList li > div > :nth-child(2)").click(function () {
             $(".popupPreview").addClass("active");
             $('body').css('overflow', 'hidden');
         });
@@ -78,13 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $(this).addClass("active");
     });
 
-    //bodyOverflowCollections
-    if ($(".template-collection").hasClass("collectionCollections")) {
-        $("body").css("overflow", "hidden");
-    }
-
   //previewClickProduct
-        $(".template-collection .Products .productsList li > a").click(function () {           
+        $(".Products .productsList li > a").click(function () {           
           $(this).parent().find( "div" ).find( "span" ).trigger('click');   
         });
 
