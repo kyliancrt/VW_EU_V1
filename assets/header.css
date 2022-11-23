@@ -364,12 +364,12 @@
   height: 25px;
 }
 
-.Header .nav .btnsHeader .searchHeader .searchHeaderDesktop input {
+.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop input {
   display: none;
 }
 
-.Header .nav .btnsHeader .searchHeader .searchHeaderDesktop input {
-  display: none;
+.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.active input {
+  display: flex;
 }
 
 
