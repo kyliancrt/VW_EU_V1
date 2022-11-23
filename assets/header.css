@@ -375,26 +375,10 @@
 }
 
 .Header .nav .btnsHeader .searchHeader.searchHeaderDesktop input {
-  display: none;
+  display: active;
 }
 
-.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.active input {
-  display: flex;
-  -webkit-animation: searchHeaderDesktopHover 0.7s forwards;
-  animation: searchHeaderDesktopHover 0.7s forwards;
-}
 
-@keyframes searchHeaderDesktopHover {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        width: 100%;
-    }
-}
 .Header .nav .btnsHeader .searchHeader.searchHeaderDesktop {
   display: none;
 }
