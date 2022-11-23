@@ -344,6 +344,8 @@
   width: 150px;
   height: 30px;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Header .nav .btnsHeader .searchHeader input {
@@ -383,8 +385,6 @@
 
 @keyframes searchHeaderDesktopHover {
     0% {
-        transform: translateX(px);
-        -webkit-transform: translateX(100px);
         width: 0;
     }
 
