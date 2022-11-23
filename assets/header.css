@@ -350,6 +350,7 @@
   width: 150px;
   padding-left: 8px;
   border-radius: 100px;
+  transition: all 1s ease;
 }
 .Header .nav .btnsHeader .searchHeader button {
   background: transparent;
@@ -362,6 +363,15 @@
   padding-bottom: 2px;
   height: 25px;
 }
+
+.Header .nav .btnsHeader .searchHeader .searchHeaderDesktop input {
+  display: none;
+}
+
+.Header .nav .btnsHeader .searchHeader .searchHeaderDesktop input {
+  display: none;
+}
+
 
 
 /* MEDIA SCREEN */
