@@ -859,12 +859,7 @@ se
   
 
 .template-index .Transform .bgTiles img {
-  position: absolute;
-    width: auto;
     transform: rotate(80deg);
-    bottom: 20%;    
-  min-height: 120%;
-  left: -40%;
 }
 
   
