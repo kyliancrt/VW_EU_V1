@@ -858,7 +858,7 @@ se
 
   
 
-.template-index .Transform .bgTiles img {
+.template-index .Transform .bgTiles .parallax {
     transform: rotate(80deg);
 }
 
