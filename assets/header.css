@@ -377,7 +377,7 @@
 @keyframes searchHeaderDesktopHover {
     0% {
         transform: translateX(px);
-        -webkit-transform: translateX(200px);
+        -webkit-transform: translateX(100px);
     }
 
     100% {
