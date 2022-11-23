@@ -134,29 +134,29 @@
       if ($(window).width() < 600) {
       resolutionMES = "500x";
       }       
-  let actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
+  let actualBackgroundRoom = $('.popupPreview .popupPreviewContent').css('background-image');
        
        //changeImageMES 
        
-          $(".template-collection .productsList li > div > span").click(function() {             
+          $(".productsList li > div > span").click(function() {             
    let refProduct = this.id.replace("VIR","");
    let smallRefProduct = refProduct.slice(0, 5);
-   $(".template-collection .popupPreview .popupPreviewContent").css("background-image", "url(https://ftp.vinyl-wall.com/vinylway-europe/mes/" + resolutionMES + "/" + smallRefProduct + "-MES-" + selectedPiece + ".jpg)");  
-   actualBackgroundRoom = $('.template-collection .popupPreview .popupPreviewContent').css('background-image');
+   $(".popupPreview .popupPreviewContent").css("background-image", "url(https://ftp.vinyl-wall.com/vinylway-europe/mes/" + resolutionMES + "/" + smallRefProduct + "-MES-" + selectedPiece + ".jpg)");  
+   actualBackgroundRoom = $('.popupPreview .popupPreviewContent').css('background-image');
    selectedHref = $(this).parent().children('a').attr('href');
-   $(".template-collection .popupPreview .popupPreviewContent > div > :nth-child(2)").attr("href", selectedHref)
+   $(".popupPreview .popupPreviewContent > div > :nth-child(2)").attr("href", selectedHref)
           });
 
        //changeRoomMES
        
-        $(".template-collection .popupPreview .popupPreviewContent > div > .listRooms ul li").click(function() {
+        $(".popupPreview .popupPreviewContent > div > .listRooms ul li").click(function() {
         selectedPiece = this.id;   
         let newBackgroundRoom = actualBackgroundRoom.replace(/CUISINE|MUR|SALLEDEBAIN|DOUCHE|SOL|MEUBLE/g, selectedPiece);
-        $('.template-collection .popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);          
-        $('.template-collection .popupPreview .popupPreviewContent > div > .listRooms > div span').text($(this).text());          
+        $('.popupPreview .popupPreviewContent').css('background-image' , newBackgroundRoom);          
+        $('.popupPreview .popupPreviewContent > div > .listRooms > div span').text($(this).text());          
         });
         
-        $(".template-collection .Products .filters ul li").click(function() {    
+        $(".Products .filters ul li").click(function() {    
           if ( $(this).hasClass('active') ) {
         $(this).removeClass('active');
           location.href = "{{ collection.url }}/?" + selectedPiece.toLowerCase();
@@ -165,7 +165,7 @@
           } 
           });
        
-        $(".template-collection .Products .filters ul li").each(function() {    
+        $(".Products .filters ul li").each(function() {    
         if (window.location.href.indexOf(this.id) > -1) {
         $(this).addClass('active');
         }
@@ -173,7 +173,7 @@
 
        // listFiltersHref
 
-         $(".template-collection .headerCollection .blocFilters ul li").not(".active").click(function() {
+         $(".headerCollection .blocFilters ul li").not(".active").click(function() {
           let dataHref = $(this).children('a').data('href');
           location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
@@ -188,13 +188,13 @@
        
        // loadFirstProduct
        function loadFirstProduct() {         
-          $(".template-collection .productsList :nth-child(1) > div > span").trigger('click');            
+          $(".productsList :nth-child(1) > div > span").trigger('click');            
        }       
        loadFirstProduct(); 
        
 
        // productHref
-         $(".template-collection .Products .productsList li > div > a").click(function() {
+         $(".Products .productsList li > div > a").click(function() {
           let dataHref = $(this).data('href');
           location.href = dataHref + "?" + selectedPiece.toLowerCase();
         });
