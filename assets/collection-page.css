@@ -516,6 +516,7 @@
 
  .popupPreview.active {
     display: block;
+   z-index: 2;
 }
 
  .popupPreview .popupPreviewContent {
