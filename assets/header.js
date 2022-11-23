@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
   
   //SearchDesktopHover
   $( ".searchHeaderDesktop img" ).hover(function() {
+    $(".searchHeaderDesktop").removeClass("notActive");
     $(".searchHeaderDesktop").addClass("active");
 });
   $( "main" ).hover(function() {
     $(".searchHeaderDesktop").removeClass("active");
+    $(".searchHeaderDesktop").addClass("notActive");
 });
 
 
