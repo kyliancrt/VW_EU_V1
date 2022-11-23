@@ -43,3 +43,34 @@
   width: 25px;
   height: 25px;
 }
+
+
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (min-width: 1025px) {
+
+.searchItems {
+  float: right;
+width: 200px;
+border: 0;
+height: 40px;
+gap: 0.5rem;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+.searchItems {
+  float: right;
+  width: max-content;
+  gap:1rem;
+  padding-right:1rem;
+}
+
+}
+
+
+
