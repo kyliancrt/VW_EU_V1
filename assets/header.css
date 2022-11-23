@@ -207,6 +207,7 @@
     padding: 0;
     gap: 0.5rem;
     z-index: 2;
+    padding-right: 1rem;
 }
 
 .Header .nav .btnsHeader>div {
@@ -348,6 +349,10 @@
 
 
 @media only screen and (min-width: 1025px) {
+  
+.Header .nav .btnsHeader {
+  padding-right: 0;
+}
 
   .Header .nav .logoHeader {
   justify-content: flex-start;
