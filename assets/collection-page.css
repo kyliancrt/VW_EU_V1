@@ -374,7 +374,7 @@
     width: 15px;
     height: 15px;
     margin-right: .4rem;
-    display: block;
+    display: none;
     transition: all .2s ease;
 }
 
@@ -679,6 +679,9 @@
 @media only screen and (min-width: 370px) {
 
 
+ .Products .productsList li>div> :nth-child(1)::before {
+  display: block;
+ }
 
      .Products .productsList li>a img {
         width: 170px;
