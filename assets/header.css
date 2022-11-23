@@ -378,11 +378,13 @@
     0% {
         transform: translateX(px);
         -webkit-transform: translateX(100px);
+        width: 0;
     }
 
     100% {
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
+        width: 100%;
     }
 }
 
