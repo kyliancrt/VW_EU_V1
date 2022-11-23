@@ -331,6 +331,10 @@
   border-top: 1px solid #000;
 }
 
+.Header .btnsHeader .btnPro {
+      display: none;
+    }
+
 
 /* MEDIA SCREEN */
 
