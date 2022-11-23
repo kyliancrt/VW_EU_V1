@@ -728,19 +728,15 @@ se
   height: 80vw;
 }
 
-.template-index .Transform .bgTiles {
+.template-index .Transform .parallax-container {
   position: relative;
   overflow: hidden;
 }
 
-.template-index .Transform .bgTiles img {
+.template-index .Transform .bgTiles .parallax {
   position: absolute;
   width: auto;
-  height: 100%;  
-    -webkit-animation: moveTilesMobile 5s infinite;
-    animation: moveTilesMobile 5s infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  height: 150%;  
 }
 
 
@@ -859,6 +855,7 @@ se
 
 @media only screen and (min-width: 1025px) {
 
+
   
 
 .template-index .Transform .bgTiles img {
@@ -866,23 +863,8 @@ se
     width: auto;
     transform: rotate(80deg);
     bottom: 20%;    
-    -webkit-animation: moveTiles 5s infinite;
-    animation: moveTiles 5s infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
   min-height: 120%;
   left: -40%;
-}
-
-
-@keyframes moveTiles {
-    0% {
-    bottom: 20%;    
-    }
-
-    100% {
-       bottom: -40%;
-    }
 }
 
   
@@ -1241,11 +1223,8 @@ padding-bottom: 30px;
 
 @media only screen and (min-width: 1400px) {
 
+
   
-.template-index .Transform .bgTiles img {
-    min-height: 150%;
-    left: -38%;
-}
 
     .template-index .Transform p,
     .template-index .Quality p {
