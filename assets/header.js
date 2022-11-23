@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   //SearchDesktopHover
   $( ".searchHeaderDesktop img" ).hover(function() {
-    $(".searchHeaderDesktop input").addClass("active");
+    $(".searchHeaderDesktop").addClass("active");
 });
 
 
