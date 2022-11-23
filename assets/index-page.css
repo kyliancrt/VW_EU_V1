@@ -732,8 +732,6 @@ se
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  margin-top: 1000px;
-  margin-bottom: 1000px;
 }
 
 .template-index .Transform .bgTiles .parallax {
