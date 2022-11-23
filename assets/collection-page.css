@@ -10,11 +10,11 @@
     position: fixed;
 }
 
-.template-collection section {
+ section {
     width: 100%;
 }
 
-.template-collection .headerCollection {
+ .headerCollection {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -23,11 +23,11 @@
     z-index: 2;
 }
 
-.template-collection .headerCollection img {
+ .headerCollection img {
     width: 100%;
 }
 
-.template-collection .headerCollection .title {
+ .headerCollection .title {
     display: flex;
     width: 100%;
     height: 50px;
@@ -44,12 +44,12 @@
     transition: all 0.1s ease;
 }
 
-.template-collection .headerCollection .title h1 {
+ .headerCollection .title h1 {
     font-size: 1rem;
     margin: 0;
 }
 
-.template-collection .headerCollection .title h1>small {
+ .headerCollection .title h1>small {
     font-size: 100%;
     font-weight: normal;
     opacity: 0;
@@ -57,17 +57,17 @@
 }
 
 
-.template-collection .headerCollection .title h1 small:nth-child(1) {
+ .headerCollection .title h1 small:nth-child(1) {
     animation: tileInfoAnimation 8s infinite;
 }
 
-.template-collection .headerCollection .title h1 small:nth-child(2) {
+ .headerCollection .title h1 small:nth-child(2) {
     animation: tileInfoAnimation 8s infinite;
     animation-delay: 4s;
 }
 
 
-.template-collection .headerCollection .title h1 span {
+ .headerCollection .title h1 span {
     visibility: hidden;
 }
 
@@ -91,7 +91,7 @@
 }
 
 
-.template-collection .headerCollection .blocFilters {
+ .headerCollection .blocFilters {
     width: 100%;
     position: fixed;
     top: 150px;
@@ -100,7 +100,7 @@
 
 
 
-.template-collection .headerCollection .blocFilters ul {
+ .headerCollection .blocFilters ul {
     width: 75%;
     margin: auto;
     padding: 0;  
@@ -109,44 +109,44 @@
 }
 
 
-.template-collection .collectionFilters .headerCollection .blocFilters ul {
+ .collectionFilters .headerCollection .blocFilters ul {
     width: 100%;
 }
 
 
-.template-collection.scroll .headerCollection .title,
-.template-collection.scroll .headerCollection .blocFilters {
+.scroll .headerCollection .title,
+.scroll .headerCollection .blocFilters {
     margin-top: -40px;
 }
 
-.template-collection.scroll .blocFilters ul {
+.scroll .blocFilters ul {
     width: 100%;
 }
 
 
-.template-collection.scroll.collectionFilters .filters {
+.scroll.collectionFilters .filters {
     margin-top: -40px;
 }
 
 
-.template-collection .collectionFilters .Products {
+ .collectionFilters .Products {
     padding-top: 89px;
   transition: all .1s ease;
 }
 
-.template-collection .Products>div {
+ .Products>div {
     padding-top: 1.6rem;
 }
 
-.template-collection .collectionFilters .Products>:nth-child(1) {
+ .collectionFilters .Products>:nth-child(1) {
     padding-top: 0;
 }
-.template-collection.scroll .collectionFilters .Products {
+.scroll .collectionFilters .Products {
   padding-top: 49px;
 }
 
 
-.template-collection .headerCollection .blocFilters ul li {
+ .headerCollection .blocFilters ul li {
     display: none;
     align-items: center;
     justify-content: center;
@@ -163,11 +163,11 @@
     order:2;
 }
 
-.template-collection .headerCollection .blocFilters ul li:nth-child(1) {
+ .headerCollection .blocFilters ul li:nth-child(1) {
     border-bottom: 0;
 }
 
-.template-collection .headerCollection .blocFilters ul li a {
+ .headerCollection .blocFilters ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,7 +178,7 @@
 }
 
 
-.template-collection .headerCollection .blocFilters ul li small {
+ .headerCollection .blocFilters ul li small {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +188,7 @@
     font-weight: normal;
 }
 
-.template-collection .headerCollection .blocFilters ul li.active {
+ .headerCollection .blocFilters ul li.active {
     display: flex;
     background-color: #000;
     color: #fff;
@@ -196,7 +196,7 @@
   order:1;
 }
 
-.template-collection .headerCollection .blocFilters ul li.active svg {
+ .headerCollection .blocFilters ul li.active svg {
     transform-origin: 0%;
     transform: rotate(90deg);
     transform-origin: center;
@@ -205,45 +205,45 @@
     fill: #FFF;
 }
 
-.template-collection .headerCollection .blocFilters ul li:hover {
+ .headerCollection .blocFilters ul li:hover {
     background-color: #000;
     color: #fff;
     fill: #000;
 }
 
-.template-collection .headerCollection .blocFilters ul:hover li.active {
+ .headerCollection .blocFilters ul:hover li.active {
     background-color: #fff;
     color: #000;
 }
 
-.template-collection .headerCollection .blocFilters ul.active li {
+ .headerCollection .blocFilters ul.active li {
     display: flex
 }
 
-.template-collection .headerCollection .blocFilters ul.active li.active {
+ .headerCollection .blocFilters ul.active li.active {
     border-bottom: 1px solid #000;
 }
 
-.template-collection .headerCollection .blocFilters ul.active li.active svg {
+ .headerCollection .blocFilters ul.active li.active svg {
     transform: rotate(-90deg);
     fill: #FFF
 }
 
-.template-collection .Products {
+ .Products {
     width: 100%;
     padding-top: 1.5rem;
     text-align: center;
 }
 
-.template-collection .Products>div {
+ .Products>div {
     padding-top: 1.6rem;
 }
 
-.template-collection .Products>:nth-child(1) {
+ .Products>:nth-child(1) {
     padding-top: calc(1.6rem + 40px);
 }
 
-.template-collection .Products .productsList {
+ .Products .productsList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
@@ -256,31 +256,31 @@
     gap: 0.5rem;
 }
 
-.template-collection .collectionFilters .Products .productsList {
+ .collectionFilters .Products .productsList {
     margin-top: 70px;
 }
 
-.template-collection .collectionBest .Products .productsList {
+ .collectionBest .Products .productsList {
     margin-top: 30px;
 }
 
-.template-collection .Products .productsList li {
+ .Products .productsList li {
     padding-bottom: 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.template-collection .Products>h2 {
+ .Products>h2 {
     margin-top: 0;
 }
 
-.template-collection .Products .productsList li>span {
+ .Products .productsList li>span {
     font-weight: 900;
     font-size: 1.2rem;
 }
 
-.template-collection .Products .productsList li>a img {
+ .Products .productsList li>a img {
     margin: 0.7rem 0;
     transition: all 0.2s ease;
     width: 150px;
@@ -288,12 +288,12 @@
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.template-collection .Products .productsList li>a img:hover {
+ .Products .productsList li>a img:hover {
     margin: 0.7rem 0;
     transform: scale(1.04);
 }
 
-.template-collection .Products .productsList li>div {
+ .Products .productsList li>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -303,7 +303,7 @@
     margin: auto;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(1) {
+ .Products .productsList li>div> :nth-child(1) {
     background-color: transparent;
     text-transform: uppercase;
     height: 100%;
@@ -314,7 +314,7 @@
     padding: 0;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(2) {
+ .Products .productsList li>div> :nth-child(2) {
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -330,45 +330,45 @@
     align-items: center;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(2) svg {
+ .Products .productsList li>div> :nth-child(2) svg {
     width: 19px;
 }
 
-.template-collection .Products .black .productsList li>div> :nth-child(1) {
+ .Products .black .productsList li>div> :nth-child(1) {
     background-color: #000;
     color: #fff;
     border: 2px solid transparent;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(1):hover {
+ .Products .productsList li>div> :nth-child(1):hover {
     filter: invert(1);
     border-color: #fff;
 }
 
 
-.template-collection .Products .black .productsList li>div> :nth-child(2) {
+ .Products .black .productsList li>div> :nth-child(2) {
     border-color: #000;
     fill: #000;
 }
 
-.template-collection .Products .black>h2,
-.template-collection .Products .black .productsList li>span {
+ .Products .black>h2,
+ .Products .black .productsList li>span {
     color: #000;
 }
 
-.template-collection .Products .black .productsList li>div> :nth-child(2):hover {
+ .Products .black .productsList li>div> :nth-child(2):hover {
     background-color: #000;
     border-color: transparent;
     fill: #fff;
 }
 
 
-.template-collection .Products .white .productsList li>div> :nth-child(1) {
+ .Products .white .productsList li>div> :nth-child(1) {
     background-color: #fff;
     color: #000;
 }
 
-.template-collection .Products .productsList li>div> :nth-child(1)::before {
+ .Products .productsList li>div> :nth-child(1)::before {
     content: "";
     background-image: url(https://cdn.shopify.com/s/files/1/0567/1220/0371/files/arrow.svg?v=1667990253);
     width: 15px;
@@ -378,35 +378,35 @@
     transition: all .2s ease;
 }
 
-.template-collection .Products .black .productsList li>div> :nth-child(1)::before {
+ .Products .black .productsList li>div> :nth-child(1)::before {
     filter: invert(1);
 }
 
-.template-collection .Products .white .productsList li>div> :nth-child(2) {
+ .Products .white .productsList li>div> :nth-child(2) {
     border-color: #fff;
     fill: #fff;
 }
 
-.template-collection .Products .white>h2,
-.template-collection .Products .white .productsList li>span {
+ .Products .white>h2,
+ .Products .white .productsList li>span {
     color: #fff;
 }
 
-.template-collection .Products .white .productsList li>div> :nth-child(2):hover {
+ .Products .white .productsList li>div> :nth-child(2):hover {
     fill: #000;
     background-color: #fff;
     border-color: transparent;
 }
 
-.template-collection .Products .newport {
+ .Products .newport {
     background-color: #284B77;
 }
 
-.template-collection .Products .ceramics {
+ .Products .ceramics {
     background-color: #CFA9A6;
 }
 
-.template-collection .Products .filters {
+ .Products .filters {
     background-color: #f5f5f5;
     width: 100%;
     height: 60px;
@@ -418,7 +418,7 @@
 }
 
 
-.template-collection .Products .filterColors ul {
+ .Products .filterColors ul {
     width: 94%;
     height: 100%;
     display: grid;
@@ -431,7 +431,7 @@
     max-width: 500px;
 }
 
-.template-collection .Products .filterColors ul li {
+ .Products .filterColors ul li {
     width: 100%;
     aspect-ratio: 1/1;
     height: auto;
@@ -442,20 +442,20 @@
     max-height: 25px;
 }
 
-.template-collection .Products .filterColors ul li.active {
+ .Products .filterColors ul li.active {
     transform: scale(1.3);
     transform-origin: 40%;
 }
 
-.template-collection .Products .filterColors ul li.active:hover {
+ .Products .filterColors ul li.active:hover {
     transform: scale(1.3);
 }
 
-.template-collection .Products .filterColors ul li:hover {
+ .Products .filterColors ul li:hover {
     transform: scale(1.1);
 }
 
-.template-collection .Products .filterStyles ul {
+ .Products .filterStyles ul {
     width: 100%;
     height: 100%;
     display: grid;
@@ -469,7 +469,7 @@
     padding: 0;
 }
 
-.template-collection .Products .filterStyles ul li {
+ .Products .filterStyles ul li {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -480,22 +480,22 @@
     padding: 1rem 0;
 }
 
-.template-collection .Products .filterStyles ul li:nth-child(1) {
+ .Products .filterStyles ul li:nth-child(1) {
     border-left: 0;
 }
 
-.template-collection .Products .filterStyles ul li:hover {
+ .Products .filterStyles ul li:hover {
     background-color: rgb(0, 0, 0, 0.05);
 }
 
-.template-collection .Products .filterStyles ul li.active {
+ .Products .filterStyles ul li.active {
     font-weight: bold;
     background-color: rgb(0, 0, 0, 0.3);
     color: #fff;
     cursor: default;
 }
 
-.template-collection .popupPreview {
+ .popupPreview {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -503,22 +503,22 @@
     display: none;
 }
 
-.template-collection.template-collection .collectionFilters .popupPreview {
+ .collectionFilters .popupPreview {
     padding-top: 175px;
 }
 
-.template-collection .popupPreview .popupPreviewBg {
+ .popupPreview .popupPreviewBg {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
 }
 
-.template-collection .popupPreview.active {
+ .popupPreview.active {
     display: block;
 }
 
-.template-collection .popupPreview .popupPreviewContent {
+ .popupPreview .popupPreviewContent {
     z-index: 2;
     height: 50vh;
     width: 90%;
@@ -530,7 +530,7 @@
     box-shadow: 0px 0px 1000px rgb(0, 0, 0, 1);
 }
 
-.template-collection .popupPreview .popupPreviewContent>span {
+ .popupPreview .popupPreviewContent>span {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -546,7 +546,7 @@
     cursor: pointer;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div {
+ .popupPreview .popupPreviewContent>div {
     width: 100%;
     padding: 6px;
     position: absolute;
@@ -557,7 +557,7 @@
     text-transform: uppercase;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms {
+ .popupPreview .popupPreviewContent>div>.listRooms {
     display: flex;
     width: 100%;
     flex-basis: content;
@@ -568,7 +568,7 @@
     position: relative;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms>div {
+ .popupPreview .popupPreviewContent>div>.listRooms>div {
     display: flex;
     background-color: #fff;
     width: 100%;
@@ -583,7 +583,7 @@
     position: relative;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul {
+ .popupPreview .popupPreviewContent>div>.listRooms ul {
     display: none;
     background-color: #fff;
     width: 100%;
@@ -599,26 +599,26 @@
     padding: 0;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active ul {
+ .popupPreview .popupPreviewContent>div>.listRooms.active ul {
     display: flex;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li {
+ .popupPreview .popupPreviewContent>div>.listRooms ul li {
     padding: 0.8rem 0;
     border-bottom: 1px solid #F5F5F5;
     width: 100%;
     text-align: center;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li:hover,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms ul li.active {
+ .popupPreview .popupPreviewContent>div>.listRooms ul li:hover,
+ .popupPreview .popupPreviewContent>div>.listRooms ul li.active {
     background-color: #F5F5F5;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms.active>div:hover,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover>div:hover {
+ .popupPreview .popupPreviewContent>div>.listRooms.active>div,
+ .popupPreview .popupPreviewContent>div>.listRooms.active>div:hover,
+ .popupPreview .popupPreviewContent>div>.listRooms:hover>div,
+ .popupPreview .popupPreviewContent>div>.listRooms:hover>div:hover {
     background-color: #F5F5F5;
     color: #000;
     fill: #000;
@@ -626,14 +626,14 @@
 
 
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms svg {
+ .popupPreview .popupPreviewContent>div>.listRooms svg {
     margin-left: 0.5rem;
     transform: rotate(90deg);
     transform-origin: center;
     margin-top: -0.1rem;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>:nth-child(2) {
+ .popupPreview .popupPreviewContent>div>:nth-child(2) {
     display: flex;
     background-color: #1B8886;
     color: #fff;
@@ -648,27 +648,27 @@
     cursor: pointer;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>:nth-child(2) small {
+ .popupPreview .popupPreviewContent>div>:nth-child(2) small {
     font-weight: bold;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>:nth-child(2) span {
+ .popupPreview .popupPreviewContent>div>:nth-child(2) span {
     font-weight: 900;
 }
 
-.template-collection .popupPreview .popupPreviewContent>span:hover,
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms>div:hover {
+ .popupPreview .popupPreviewContent>span:hover,
+ .popupPreview .popupPreviewContent>div>.listRooms>div:hover {
     background-color: #000;
     color: #fff;
     fill: #fff;
 }
 
-.template-collection .popupPreview .popupPreviewContent>div>:nth-child(2):hover {
+ .popupPreview .popupPreviewContent>div>:nth-child(2):hover {
     background-color: #fff;
     color: #1B8886;
 }
 
-.template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
+ .popupPreview .popupPreviewContent > div > .listRooms > div small {
   display: none;
 }
 
@@ -679,15 +679,15 @@
 
 
 
-    .template-collection .Products .productsList li>a img {
+     .Products .productsList li>a img {
         width: 170px;
     }
 
-    .template-collection .Products .productsList li>div {
+     .Products .productsList li>div {
         width: 170px;
     }
 
-    .template-collection .Products .productsList li>div> :nth-child(1) {
+     .Products .productsList li>div> :nth-child(1) {
         padding: 0 1rem;
     }
 
@@ -696,28 +696,28 @@
 @media only screen and (min-width: 600px) {
 
   
-    .template-collection .Products .productsList {
+     .Products .productsList {
         width: calc(100% - 2rem);
         gap: 1rem;
     }
 
 
-    .template-collection .Products .productsList {
+     .Products .productsList {
         grid-template-columns: repeat(3, 1fr);
         max-width: 650px;
     }
 
-    .template-collection .Products h2 {
+     .Products h2 {
         margin: 2rem 0;
         font-size: 40px;
     }
 
-    .template-collection .collectionCollections .headerCollection .blocFilters ul {
+     .collectionCollections .headerCollection .blocFilters ul {
         max-width: 650px;
     }
 
 
-    .template-collection.scroll .blocFilters ul {
+    .scroll .blocFilters ul {
         max-width: 100%;
     }
 
@@ -726,12 +726,12 @@
 
 @media only screen and (min-width: 1025px) {
 
-  .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div small {
+   .popupPreview .popupPreviewContent > div > .listRooms > div small {
     display: block;
     font-weight: 400;
   }
 
-  .template-collection .popupPreview .popupPreviewContent > div > .listRooms > div {
+   .popupPreview .popupPreviewContent > div > .listRooms > div {
     background-color: #000;
     color: #fff;
     fill: #fff;
@@ -740,56 +740,56 @@
     font-size: 1rem;
   }
 
-.template-collection .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
+ .popupPreview .popupPreviewContent>div>.listRooms:hover ul {
     display: flex;
 }
 
-.template-collection .headerCollection .blocFilters ul li.active:hover svg,
-  .template-collection .headerCollection .blocFilters ul.active li.active svg {
+ .headerCollection .blocFilters ul li.active:hover svg,
+   .headerCollection .blocFilters ul.active li.active svg {
     fill: #000;
 }
 
   
-  .template-collection .popupPreview .popupPreviewContent > div {
+   .popupPreview .popupPreviewContent > div {
     width: 290px;
     height: 52px;
     top: -2px;
   }
-  .template-collection .popupPreview .popupPreviewContent > div > .listRooms ul {
+   .popupPreview .popupPreviewContent > div > .listRooms ul {
     bottom:auto;
     top:100%;
   }
 
-    .template-collection .Products {
+     .Products {
         width: 50%;
     }
 
-    .template-collection .Products .productsList {
+     .Products .productsList {
         gap: 0.5rem;
     }
 
-  .template-collection .Products .productsList li a {
+   .Products .productsList li a {
     cursor: pointer;
   }
 
-    .template-collection .Products .productsList li>a img {
+     .Products .productsList li>a img {
         width: 140px;
     }
 
-    .template-collection .Products .productsList li>div {
+     .Products .productsList li>div {
         width: 140px;
     }
 
-    .template-collection .Products .productsList li>div> :nth-child(1) {
+     .Products .productsList li>div> :nth-child(1) {
         padding: 0;
     }
 
-    .template-collection .headerCollection .title {
+     .headerCollection .title {
         width: 50%;
         justify-content: flex-start;
     }
 
-    .template-collection .headerCollection .blocFilters {
+     .headerCollection .blocFilters {
         width: 50%;
         top: 100px;
         z-index: 3;
@@ -798,7 +798,7 @@
         padding-top: 4px;
     }
 
-    .template-collection .headerCollection .blocFilters {
+     .headerCollection .blocFilters {
         width: 50%;
         top: 100px;
         z-index: 3;
@@ -809,7 +809,7 @@
         position: fixed;
     }
 
-    .template-collection .popupPreview {
+     .popupPreview {
         width: 50%;
         padding-top: 0;
         display: block;
@@ -817,11 +817,11 @@
         height: calc(100% - 100px);
     }
 
-    .template-collection .popupPreview .popupPreviewBg {
+     .popupPreview .popupPreviewBg {
         display: none;
     }
 
-    .template-collection .popupPreview .popupPreviewContent {
+     .popupPreview .popupPreviewContent {
         height: 100%;
         width: 100%;
         height: 100%;
@@ -831,46 +831,46 @@
         box-shadow: none;
     }
 
-    .template-collection .popupPreview .popupPreviewContent>span,
-  .template-collection .popupPreview .popupPreviewContent>div>:nth-child(2) {
+     .popupPreview .popupPreviewContent>span,
+   .popupPreview .popupPreviewContent>div>:nth-child(2) {
         display: none;
     }
   
 
-    .template-collection .collectionCollections .Products>div {
+     .collectionCollections .Products>div {
         padding-top: 40px;
     }
 
-    .template-collection.template-collection .collectionFilters .popupPreview{
+     .collectionFilters .popupPreview{
         padding: 0;
     }
 
-    .template-collection .Products .filters {
+     .Products .filters {
         width: 50%;
         top: 145px;
     }
 
-    .template-collection .Products .filterColors ul {
+     .Products .filterColors ul {
         gap: 15px;
         padding: 0;
     }
 
-    .template-collection .Products .filterColors ul li {
+     .Products .filterColors ul li {
         max-width: 30px;
         max-height: 30px;
     }
 
-    .template-collection .headerCollection .blocFilters ul li small {
+     .headerCollection .blocFilters ul li small {
         display: none;
     }
 
-    .template-collection .headerCollection .blocFilters ul,
-    .template-collection .collectionFilters .headerCollection .blocFilters ul {
+     .headerCollection .blocFilters ul,
+     .collectionFilters .headerCollection .blocFilters ul {
         width: 200px;
         float: right;
     }
 
-    .template-collection .collectionFilters .Products .productsList {
+     .collectionFilters .Products .productsList {
         margin-top: 60px;
     }
 }
@@ -879,16 +879,16 @@
 @media only screen and (min-width: 1200px) {
 
 
-    .template-collection .headerCollection .blocFilters ul,
-    .template-collection .collectionFilters .headerCollection .blocFilters ul {
+     .headerCollection .blocFilters ul,
+     .collectionFilters .headerCollection .blocFilters ul {
         width: 290px;
     }
 
-    .template-collection .headerCollection .blocFilters ul li small {
+     .headerCollection .blocFilters ul li small {
         display: block;
     }
 
-    .template-collection .collectionCollections .Products {
+     .collectionCollections .Products {
         overflow-y: scroll;
         height: calc(100vh - 100px);
         scroll-snap-points-y: repeat(calc(100vh - 100px));
@@ -897,32 +897,32 @@
         scrollbar-width: thin;
     }
 
-    .template-collection .collectionCollections .Products>div {
+     .collectionCollections .Products>div {
         height: calc(100vh - 100px);
         scroll-snap-align: start;
         position: relative;
     }
 
-    .template-collection .Products .productsList {
+     .Products .productsList {
         width: calc(100% - 2rem);
         gap: 1rem;
         margin-top: 3rem;
     }
 
 
-    .template-collection .Products .productsList li>a img {
+     .Products .productsList li>a img {
         width: 170px;
     }
 
-    .template-collection .Products .productsList li>div {
+     .Products .productsList li>div {
         width: 170px;
     }
 
-    .template-collection .Products .productsList li>div> :nth-child(1) {
+     .Products .productsList li>div> :nth-child(1) {
         padding: 0 1rem;
     }
 
-    .template-collection .collectionCollections .Products>div {
+     .collectionCollections .Products>div {
         height: calc(100vh - 100px);
         padding-top: calc(1.6rem + 40px);
     }
