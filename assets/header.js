@@ -24,11 +24,5 @@ document.addEventListener('DOMContentLoaded', function () {
           }, 1000);
         });
     }
-  
-  //SearchDesktopHover
-  $( ".searchHeaderDesktop img" ).click(function() {
-    $(".searchHeaderDesktop").addClass("active");
-});
-
 
 });
