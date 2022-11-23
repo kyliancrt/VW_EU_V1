@@ -84,8 +84,8 @@
                           <img alt="Carreau adhésif {{ item.title }}" loading="lazy" src="{{ item.images[1] |  img_url: '200x' }}">
                         </a>
                         <div>
-                            <a data-href="{{ product.url }}">Produit</a>
-                            <span id="{% assign current_variant = product.selected_or_first_available_variant %}{{ current_variant.sku }}">
+                            <a data-href="{{ item.url }}">Produit</a>
+                            <span id="{% assign current_variant = item.selected_or_first_available_variant %}{{ current_variant.sku }}">
                               <svg version="1.1" xmlns="https://www.w3.org/2000/svg"
                                     xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
