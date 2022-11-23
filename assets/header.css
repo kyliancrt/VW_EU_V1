@@ -383,21 +383,12 @@
   animation: searchHeaderDesktopHover 0.7s forwards;
 }
 
-.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.notActive input {
-  display: flex;
-  -webkit-animation: searchHeaderDesktopHover 0.7s forwards;
-  animation: searchHeaderDesktopHover 0.7s forwards;
-  animation-direction: reverse;
-}
-
 @keyframes searchHeaderDesktopHover {
     0% {
-        display: none;
         width: 0;
     }
 
     100% {
-        display: flex;
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
         width: 100%;
