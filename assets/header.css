@@ -379,8 +379,8 @@
 
 .Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.active input {
   display: flex;
-  -webkit-animation: searchHeaderDesktopHover 1s infinite;
-  animation: searchHeaderDesktopHover 1s infinite;
+  -webkit-animation: searchHeaderDesktopHover 1s forwards;
+  animation: searchHeaderDesktopHover 1s forwards;
 }
 
 @keyframes searchHeaderDesktopHover {
