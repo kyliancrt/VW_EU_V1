@@ -737,10 +737,6 @@ se
   position: absolute;
   width: auto;
   height: 100%;  
-    -webkit-animation: moveTilesMobile 5s infinite;
-    animation: moveTilesMobile 5s infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 
