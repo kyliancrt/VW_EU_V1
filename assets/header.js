@@ -26,9 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
   //SearchDesktopHover
-  $( ".searchHeaderDesktop" ).hover(function() {
-  $( this ).fadeOut( 100 );
-  $( this ).fadeIn( 500 );
+  $( ".searchHeaderDesktop img" ).hover(function() {
+    $(".searchHeaderDesktop input").addClass("active");
 });
 
 
