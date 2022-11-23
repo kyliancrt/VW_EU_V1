@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
   //SearchDesktopHover
   $( ".searchHeaderDesktop button" ).click(function() {
     if( $(this).parent().hasClassActive ) {
-    $(".searchHeaderDesktop").addClass("active");
     }
     else {
      e.preventDefault();
+    $(".searchHeaderDesktop").addClass("active");
     }
 });
 
