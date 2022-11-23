@@ -1,9 +1,24 @@
+.bgCollection.dublin {
+  background-color:#9F9A92;
+}
+.bgCollection.londres {
+  background-color:#DDDDDD;
+}
+.bgCollection.berlin {
+  background-color:#211E21;
+}
+.bgCollection.hossegor {
+  background-color:#9B7B5E;
+}
+.bgCollection.florence {
+  background-color:#BCB5B3;
+}
+.bgCollection.brooklyn {
+  background-color:#845E48;
+}
 .bgCollection.bois {
   background-color:#6D5644;
 }
-
-
-
 
 body {
     margin: 0;
@@ -86,6 +101,7 @@ h2 {
     background-color: #000;
     color: #fff;
 }
+
 
 .page-width {
   width:95%;
