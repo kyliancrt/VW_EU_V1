@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   //SearchDesktopHover
   $( ".searchHeaderDesktop button" ).click(function() {
-    if( $(this).parent().hasClassActive ) {
+    if( $(this).parent().hasClass('active' ) {
     }
     else {
      e.preventDefault();
