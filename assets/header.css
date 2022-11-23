@@ -385,8 +385,9 @@
 
 .Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.notActive input {
   display: flex;
-  -webkit-animation: searchHeaderDesktopHover 0.7s backwards;
-  animation: searchHeaderDesktopHover 0.7s backwards;
+  -webkit-animation: searchHeaderDesktopHover 0.7s forwards;
+  animation: searchHeaderDesktopHover 0.7s forwards;
+  animation-direction: reverse;
 }
 
 @keyframes searchHeaderDesktopHover {
