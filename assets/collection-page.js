@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() >= 1) {
                 $('.Header').addClass('scroll');
-                $('').addClass('scroll');
+                $('.template-collection').addClass('scroll');
             }
             else {
                 $('.Header').removeClass('scroll');
-                $('').removeClass('scroll');
+                $('.template-collection').removeClass('scroll');
             }
         });
     }
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if ($(window).width() < 1025) {
         //popupPreviewShow
 
-        $(".productsList li > div > :nth-child(2)").click(function () {
+        $(".template-collection .productsList li > div > :nth-child(2)").click(function () {
             $(".popupPreview").addClass("active");
             $('body').css('overflow', 'hidden');
         });
@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //bodyOverflowCollections
-    if ($("").hasClass("collectionCollections")) {
+    if ($(".template-collection").hasClass("collectionCollections")) {
         $("body").css("overflow", "hidden");
     }
 
   //previewClickProduct
-        $(".Products .productsList li > a").click(function () {           
+        $(".template-collection .Products .productsList li > a").click(function () {           
           $(this).parent().find( "div" ).find( "span" ).trigger('click');   
         });
 
