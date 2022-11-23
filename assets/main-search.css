@@ -58,6 +58,12 @@ border: 0;
 height: 40px;
 gap: 0.5rem;
 }
+  
+  .searchItems input {
+  background-color: #fff;
+  border-radius: 100px;
+}
+
 
 }
 
@@ -68,11 +74,5 @@ gap: 0.5rem;
   width: max-content;
   padding-right:0.5rem;
 }
-  .searchItems input {
-  background-color: #fff;
-  border-radius: 100px;
-
-}
-
 
 
