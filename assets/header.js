@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
           }, 1000);
         });
     }
+  
+  //SearchDesktopHover
+  $( ".searchHeaderDesktop" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
 
 
 });
