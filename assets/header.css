@@ -374,7 +374,8 @@
   justify-content: center;
 }
 
-.Header .searchMobile {
+.Header .searchMobile,
+.Header .nav .menuHamburger {
   display: inline-block;
 }
 
