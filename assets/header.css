@@ -421,7 +421,7 @@
 @media only screen and (min-width: 1025px) {
 
   
-.Header .searchMobile {
+.Header .menu-toggle {
   display: none;
 }
 
