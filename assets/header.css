@@ -416,6 +416,8 @@
   
 .Header .nav .btnsHeader {
   padding-right: 0;
+  display: flex;
+  align-items: center;
 }
 
   .Header .nav .logoHeader {
