@@ -378,17 +378,11 @@
   display: none;
 }
 
-@keyframes searchHeaderDesktopHover {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        width: 100%;
-    }
+.Header .nav .btnsHeader .searchHeader.searchHeaderDesktop.active input {
+  display: flex;
 }
+
+
 .Header .nav .btnsHeader .searchHeader.searchHeaderDesktop {
   display: none;
 }
