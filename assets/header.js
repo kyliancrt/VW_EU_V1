@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
   //SearchDesktopHover
-  $( ".searchHeaderDesktop button" ).click(function() {
+  $( ".searchHeaderDesktop button" ).click(function(e) {
     if( $(".searchHeaderDesktop").hasClass('active') ) {
     }
     else {
