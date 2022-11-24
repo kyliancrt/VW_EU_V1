@@ -373,6 +373,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.Header .searchMobile {
+  display: inline-block;
+}
+
 .Header .nav .btnsHeader .searchHeader img,
 .Header .searchMobile img {
   width: 25px;
