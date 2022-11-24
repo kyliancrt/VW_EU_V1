@@ -342,8 +342,7 @@
   height: max-content;
   padding: 5px;
   border-radius: 100px;
-  transition: all 0.5s all;
-  width: 40px;
+  transition: all 0.5s ease;
 }
 
 .Header .nav .btnsHeader .searchHeader .inputContainer {
