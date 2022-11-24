@@ -379,6 +379,11 @@
   display: inline-block;
 }
 
+.Header .searchMobile {
+vertical-align: -8px;
+padding: 0;
+}
+
 .Header .nav .btnsHeader .searchHeader img,
 .Header .searchMobile img {
   width: 25px;
