@@ -375,7 +375,7 @@
 }
 
 .Header .searchMobile,
-.Header .nav .menuHamburger {
+.Header .menu-toggle {
   display: inline-block;
 }
 
@@ -421,7 +421,7 @@
 @media only screen and (min-width: 1025px) {
 
   
-.Header .menu-toggle {
+.Header .searchMobile {
   display: none;
 }
 
