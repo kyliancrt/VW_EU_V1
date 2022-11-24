@@ -366,13 +366,15 @@
   border-radius: 100px;
   transition: all 1s ease;
 }
-.Header .nav .btnsHeader .searchHeader button {
+.Header .nav .btnsHeader .searchHeader button,
+.Header .searchMobile {
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Header .nav .btnsHeader .searchHeader img {
+.Header .nav .btnsHeader .searchHeader img,
+.Header .searchMobile img {
   width: 25px;
   padding-bottom: 2px;
   height: 25px;
