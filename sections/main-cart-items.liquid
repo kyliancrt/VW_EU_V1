@@ -122,7 +122,7 @@
         <div>
             <div>
             <button type="submit" name="checkout" class="btnCheckout">Procéder au paiement
-        <small>4 fois sans frais {% if cart.total_price < 49 %}à partir de 49€{% else %}disponible !{% endif %}</small></small>
+        <small>4 fois sans frais {% if cart.item_count < 17 %}à partir de 49€{% else %}disponible !{% endif %}</small></small>
             </button>
 
         <div class="additional-checkout-buttons btnPaypal">{{ content_for_additional_checkout_buttons }}</div>
