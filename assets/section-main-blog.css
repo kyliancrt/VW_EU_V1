@@ -1,3 +1,7 @@
+.blocFilters {
+  display: none !important;
+}
+
 .intro {
   position: relative;
   width:100%;
